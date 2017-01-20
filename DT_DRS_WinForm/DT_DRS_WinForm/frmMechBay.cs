@@ -30,6 +30,8 @@ namespace DT_DRS_WinForm
                     foreach (DS_BTDRSMechs Mech in Mechs.FindAll())
                     {
                         lbMechs.Items.Add(Mech.Name + "(" + Mech.Model + ")");
+
+
                     }
 
                 }
