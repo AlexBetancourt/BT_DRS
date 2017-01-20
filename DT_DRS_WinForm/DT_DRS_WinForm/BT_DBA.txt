@@ -1,0 +1,76 @@
+formas
+-------
+MDI
+MechBay
+MechLab
+Barracks
+--------
+
+Tablas
+--------
+Mechs
+	MechID
+	Name
+	Code
+	PilotID
+	Walk
+	Run
+	Jump
+	Heatsinks
+	AH_HP
+	ACT_HP
+	ART_HP
+	ALT_HP
+	ALA_HP
+	ARA_HP
+	ALL_HP
+	ARL_HP
+	ACTR_HP
+	ARTR_HP
+	IH_HP
+	LTR_HP
+	ICT_HP
+	IRT_HP
+	ILT_HP
+	ILA_HP
+	IRA_HP
+	ILL_HP
+	IRL_HP
+	Tons
+	Status
+MechLocations
+	LocationID
+	Description
+Weapons
+	WeaponID
+	Name
+	Damage
+	Heat
+	Minimum
+	Short
+	Medium
+	Large
+	MaxRange
+	Tons
+	Ammo
+MechPilots
+	PilotID
+	Name
+	Affiliation
+	Rank
+	Description
+	PilotingSkill
+	GunnerySkill
+	HitPoints
+	DamageTaken
+	Kills
+	Status
+MechWeapons
+	MechWpnID
+	MechID
+	WeaponID
+	AmmoSpent
+	Status
+WeaponAllocation
+	MechWpnID
+	LocationID

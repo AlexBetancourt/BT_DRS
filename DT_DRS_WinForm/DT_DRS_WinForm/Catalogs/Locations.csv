@@ -1,0 +1,20 @@
+LocationID,Description
+1,Head
+2,Center Torso
+3,Left Torso
+4,Right Torso
+5,Left Arm
+6,Right Arm
+7,Left Leg
+8,Right Leg
+9,Center Torso Rear
+10,Left Torso Rear
+11,Right Torso Rear
+12,Internal Head
+13,Internal Center Torso
+14,Internal Left Torso
+15,Internal Right Torso
+16,Internal Left Arm
+17,Internal Right Arm
+18,Internal Left Leg
+19,Internal Right Leg

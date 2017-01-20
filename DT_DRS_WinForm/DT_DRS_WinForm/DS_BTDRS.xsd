@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_BTDRS" targetNamespace="http://tempuri.org/DS_BTDRS.xsd" xmlns:mstns="http://tempuri.org/DS_BTDRS.xsd" xmlns="http://tempuri.org/DS_BTDRS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_BTDRS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_BTDRS" msprop:Generator_UserDSName="DS_BTDRS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MechPilots" msprop:Generator_TableClassName="MechPilotsDataTable" msprop:Generator_TableVarName="tableMechPilots" msprop:Generator_TablePropName="MechPilots" msprop:Generator_RowDeletingName="MechPilotsRowDeleting" msprop:Generator_RowChangingName="MechPilotsRowChanging" msprop:Generator_RowEvHandlerName="MechPilotsRowChangeEventHandler" msprop:Generator_RowDeletedName="MechPilotsRowDeleted" msprop:Generator_UserTableName="MechPilots" msprop:Generator_RowChangedName="MechPilotsRowChanged" msprop:Generator_RowEvArgName="MechPilotsRowChangeEvent" msprop:Generator_RowClassName="MechPilotsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PilotID" msprop:Generator_ColumnVarNameInTable="columnPilotID" msprop:Generator_ColumnPropNameInRow="PilotID" msprop:Generator_ColumnPropNameInTable="PilotIDColumn" msprop:Generator_UserColumnName="PilotID" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Callsign" msprop:Generator_ColumnVarNameInTable="columnCallsign" msprop:Generator_ColumnPropNameInRow="Callsign" msprop:Generator_ColumnPropNameInTable="CallsignColumn" msprop:Generator_UserColumnName="Callsign" type="xs:string" minOccurs="0" />
+              <xs:element name="Affiliation" msprop:Generator_ColumnVarNameInTable="columnAffiliation" msprop:Generator_ColumnPropNameInRow="Affiliation" msprop:Generator_ColumnPropNameInTable="AffiliationColumn" msprop:Generator_UserColumnName="Affiliation" type="xs:string" minOccurs="0" />
+              <xs:element name="Rank" msprop:Generator_ColumnVarNameInTable="columnRank" msprop:Generator_ColumnPropNameInRow="Rank" msprop:Generator_ColumnPropNameInTable="RankColumn" msprop:Generator_UserColumnName="Rank" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="PilotingSkill" msprop:Generator_ColumnVarNameInTable="columnPilotingSkill" msprop:Generator_ColumnPropNameInRow="PilotingSkill" msprop:Generator_ColumnPropNameInTable="PilotingSkillColumn" msprop:Generator_UserColumnName="PilotingSkill" type="xs:int" minOccurs="0" />
+              <xs:element name="GunnerySkill" msprop:Generator_ColumnVarNameInTable="columnGunnerySkill" msprop:Generator_ColumnPropNameInRow="GunnerySkill" msprop:Generator_ColumnPropNameInTable="GunnerySkillColumn" msprop:Generator_UserColumnName="GunnerySkill" type="xs:int" minOccurs="0" />
+              <xs:element name="HitPoints" msprop:Generator_ColumnVarNameInTable="columnHitPoints" msprop:Generator_ColumnPropNameInRow="HitPoints" msprop:Generator_ColumnPropNameInTable="HitPointsColumn" msprop:Generator_UserColumnName="HitPoints" type="xs:int" minOccurs="0" />
+              <xs:element name="DamageTaken" msprop:Generator_ColumnVarNameInTable="columnDamageTaken" msprop:Generator_ColumnPropNameInRow="DamageTaken" msprop:Generator_ColumnPropNameInTable="DamageTakenColumn" msprop:Generator_UserColumnName="DamageTaken" type="xs:int" minOccurs="0" />
+              <xs:element name="Kills" msprop:Generator_ColumnVarNameInTable="columnKills" msprop:Generator_ColumnPropNameInRow="Kills" msprop:Generator_ColumnPropNameInTable="KillsColumn" msprop:Generator_UserColumnName="Kills" type="xs:int" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Mechs" msprop:Generator_TableClassName="MechsDataTable" msprop:Generator_TableVarName="tableMechs" msprop:Generator_TablePropName="Mechs" msprop:Generator_RowDeletingName="MechsRowDeleting" msprop:Generator_RowChangingName="MechsRowChanging" msprop:Generator_RowEvHandlerName="MechsRowChangeEventHandler" msprop:Generator_RowDeletedName="MechsRowDeleted" msprop:Generator_UserTableName="Mechs" msprop:Generator_RowChangedName="MechsRowChanged" msprop:Generator_RowEvArgName="MechsRowChangeEvent" msprop:Generator_RowClassName="MechsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MechID" msprop:Generator_ColumnVarNameInTable="columnMechID" msprop:Generator_ColumnPropNameInRow="MechID" msprop:Generator_ColumnPropNameInTable="MechIDColumn" msprop:Generator_UserColumnName="MechID" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Walk" msprop:Generator_ColumnVarNameInTable="columnWalk" msprop:Generator_ColumnPropNameInRow="Walk" msprop:Generator_ColumnPropNameInTable="WalkColumn" msprop:Generator_UserColumnName="Walk" type="xs:int" minOccurs="0" />
+              <xs:element name="Run" msprop:Generator_ColumnVarNameInTable="columnRun" msprop:Generator_ColumnPropNameInRow="Run" msprop:Generator_ColumnPropNameInTable="RunColumn" msprop:Generator_UserColumnName="Run" type="xs:int" minOccurs="0" />
+              <xs:element name="Heatsinks" msprop:Generator_ColumnVarNameInTable="columnHeatsinks" msprop:Generator_ColumnPropNameInRow="Heatsinks" msprop:Generator_ColumnPropNameInTable="HeatsinksColumn" msprop:Generator_UserColumnName="Heatsinks" type="xs:int" minOccurs="0" />
+              <xs:element name="Tons" msprop:Generator_ColumnVarNameInTable="columnTons" msprop:Generator_ColumnPropNameInRow="Tons" msprop:Generator_ColumnPropNameInTable="TonsColumn" msprop:Generator_UserColumnName="Tons" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Jump" msprop:Generator_ColumnVarNameInTable="columnJump" msprop:Generator_ColumnPropNameInRow="Jump" msprop:Generator_ColumnPropNameInTable="JumpColumn" msprop:Generator_UserColumnName="Jump" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Weapons" msprop:Generator_TableClassName="WeaponsDataTable" msprop:Generator_TableVarName="tableWeapons" msprop:Generator_TablePropName="Weapons" msprop:Generator_RowDeletingName="WeaponsRowDeleting" msprop:Generator_RowChangingName="WeaponsRowChanging" msprop:Generator_RowEvHandlerName="WeaponsRowChangeEventHandler" msprop:Generator_RowDeletedName="WeaponsRowDeleted" msprop:Generator_UserTableName="Weapons" msprop:Generator_RowChangedName="WeaponsRowChanged" msprop:Generator_RowEvArgName="WeaponsRowChangeEvent" msprop:Generator_RowClassName="WeaponsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WeaponID" msprop:Generator_ColumnVarNameInTable="columnWeaponID" msprop:Generator_ColumnPropNameInRow="WeaponID" msprop:Generator_ColumnPropNameInTable="WeaponIDColumn" msprop:Generator_UserColumnName="WeaponID" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Damage" msprop:Generator_ColumnVarNameInTable="columnDamage" msprop:Generator_ColumnPropNameInRow="Damage" msprop:Generator_ColumnPropNameInTable="DamageColumn" msprop:Generator_UserColumnName="Damage" type="xs:int" minOccurs="0" />
+              <xs:element name="Heat" msprop:Generator_ColumnVarNameInTable="columnHeat" msprop:Generator_ColumnPropNameInRow="Heat" msprop:Generator_ColumnPropNameInTable="HeatColumn" msprop:Generator_UserColumnName="Heat" type="xs:int" minOccurs="0" />
+              <xs:element name="Minimum" msprop:Generator_ColumnVarNameInTable="columnMinimum" msprop:Generator_ColumnPropNameInRow="Minimum" msprop:Generator_ColumnPropNameInTable="MinimumColumn" msprop:Generator_UserColumnName="Minimum" type="xs:int" minOccurs="0" />
+              <xs:element name="Short" msprop:Generator_ColumnVarNameInTable="columnShort" msprop:Generator_ColumnPropNameInRow="Short" msprop:Generator_ColumnPropNameInTable="ShortColumn" msprop:Generator_UserColumnName="Short" type="xs:int" minOccurs="0" />
+              <xs:element name="Medium" msprop:Generator_ColumnVarNameInTable="columnMedium" msprop:Generator_ColumnPropNameInRow="Medium" msprop:Generator_ColumnPropNameInTable="MediumColumn" msprop:Generator_UserColumnName="Medium" type="xs:int" minOccurs="0" />
+              <xs:element name="Long" msprop:Generator_ColumnVarNameInTable="columnLong" msprop:Generator_ColumnPropNameInRow="Long" msprop:Generator_ColumnPropNameInTable="LongColumn" msprop:Generator_UserColumnName="Long" type="xs:int" minOccurs="0" />
+              <xs:element name="MaxRange" msprop:Generator_ColumnVarNameInTable="columnMaxRange" msprop:Generator_ColumnPropNameInRow="MaxRange" msprop:Generator_ColumnPropNameInTable="MaxRangeColumn" msprop:Generator_UserColumnName="MaxRange" type="xs:int" minOccurs="0" />
+              <xs:element name="Tons" msprop:Generator_ColumnVarNameInTable="columnTons" msprop:Generator_ColumnPropNameInRow="Tons" msprop:Generator_ColumnPropNameInTable="TonsColumn" msprop:Generator_UserColumnName="Tons" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Ammo" msprop:Generator_ColumnVarNameInTable="columnAmmo" msprop:Generator_ColumnPropNameInRow="Ammo" msprop:Generator_ColumnPropNameInTable="AmmoColumn" msprop:Generator_UserColumnName="Ammo" type="xs:int" minOccurs="0" />
+              <xs:element name="WeaponType" msprop:Generator_ColumnVarNameInTable="columnWeaponType" msprop:Generator_ColumnPropNameInRow="WeaponType" msprop:Generator_ColumnPropNameInTable="WeaponTypeColumn" msprop:Generator_UserColumnName="WeaponType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Locations" msprop:Generator_TableClassName="LocationsDataTable" msprop:Generator_TableVarName="tableLocations" msprop:Generator_TablePropName="Locations" msprop:Generator_RowDeletingName="LocationsRowDeleting" msprop:Generator_RowChangingName="LocationsRowChanging" msprop:Generator_RowEvHandlerName="LocationsRowChangeEventHandler" msprop:Generator_RowDeletedName="LocationsRowDeleted" msprop:Generator_UserTableName="Locations" msprop:Generator_RowChangedName="LocationsRowChanged" msprop:Generator_RowEvArgName="LocationsRowChangeEvent" msprop:Generator_RowClassName="LocationsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LocationID" msprop:Generator_ColumnVarNameInTable="columnLocationID" msprop:Generator_ColumnPropNameInRow="LocationID" msprop:Generator_ColumnPropNameInTable="LocationIDColumn" msprop:Generator_UserColumnName="LocationID" type="xs:int" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MechLocation" msprop:Generator_TableClassName="MechLocationDataTable" msprop:Generator_TableVarName="tableMechLocation" msprop:Generator_TablePropName="MechLocation" msprop:Generator_RowDeletingName="MechLocationRowDeleting" msprop:Generator_RowChangingName="MechLocationRowChanging" msprop:Generator_RowEvHandlerName="MechLocationRowChangeEventHandler" msprop:Generator_RowDeletedName="MechLocationRowDeleted" msprop:Generator_UserTableName="MechLocation" msprop:Generator_RowChangedName="MechLocationRowChanged" msprop:Generator_RowEvArgName="MechLocationRowChangeEvent" msprop:Generator_RowClassName="MechLocationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MechLocationID" msprop:Generator_ColumnVarNameInTable="columnMechLocationID" msprop:Generator_ColumnPropNameInRow="MechLocationID" msprop:Generator_ColumnPropNameInTable="MechLocationIDColumn" msprop:Generator_UserColumnName="MechLocationID" type="xs:int" />
+              <xs:element name="MechID" msprop:Generator_ColumnVarNameInTable="columnMechID" msprop:Generator_ColumnPropNameInRow="MechID" msprop:Generator_ColumnPropNameInTable="MechIDColumn" msprop:Generator_UserColumnName="MechID" type="xs:int" />
+              <xs:element name="LocationID" msprop:Generator_ColumnVarNameInTable="columnLocationID" msprop:Generator_ColumnPropNameInRow="LocationID" msprop:Generator_ColumnPropNameInTable="LocationIDColumn" msprop:Generator_UserColumnName="LocationID" type="xs:int" />
+              <xs:element name="HitPoints" msprop:Generator_ColumnVarNameInTable="columnHitPoints" msprop:Generator_ColumnPropNameInRow="HitPoints" msprop:Generator_ColumnPropNameInTable="HitPointsColumn" msprop:Generator_UserColumnName="HitPoints" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MechWeaponLocation" msprop:Generator_TableClassName="MechWeaponLocationDataTable" msprop:Generator_TableVarName="tableMechWeaponLocation" msprop:Generator_TablePropName="MechWeaponLocation" msprop:Generator_RowDeletingName="MechWeaponLocationRowDeleting" msprop:Generator_RowChangingName="MechWeaponLocationRowChanging" msprop:Generator_RowEvHandlerName="MechWeaponLocationRowChangeEventHandler" msprop:Generator_RowDeletedName="MechWeaponLocationRowDeleted" msprop:Generator_UserTableName="MechWeaponLocation" msprop:Generator_RowChangedName="MechWeaponLocationRowChanged" msprop:Generator_RowEvArgName="MechWeaponLocationRowChangeEvent" msprop:Generator_RowClassName="MechWeaponLocationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MechWeaponLocationID" msprop:Generator_ColumnVarNameInTable="columnMechWeaponLocationID" msprop:Generator_ColumnPropNameInRow="MechWeaponLocationID" msprop:Generator_ColumnPropNameInTable="MechWeaponLocationIDColumn" msprop:Generator_UserColumnName="MechWeaponLocationID" type="xs:int" />
+              <xs:element name="MechLocationID" msprop:Generator_ColumnVarNameInTable="columnMechLocationID" msprop:Generator_ColumnPropNameInRow="MechLocationID" msprop:Generator_ColumnPropNameInTable="MechLocationIDColumn" msprop:Generator_UserColumnName="MechLocationID" type="xs:int" />
+              <xs:element name="WeaponID" msprop:Generator_ColumnVarNameInTable="columnWeaponID" msprop:Generator_ColumnPropNameInRow="WeaponID" msprop:Generator_ColumnPropNameInTable="WeaponIDColumn" msprop:Generator_UserColumnName="WeaponID" type="xs:int" />
+              <xs:element name="AmmoSpent" msprop:Generator_ColumnVarNameInTable="columnAmmoSpent" msprop:Generator_ColumnPropNameInRow="AmmoSpent" msprop:Generator_ColumnPropNameInTable="AmmoSpentColumn" msprop:Generator_UserColumnName="AmmoSpent" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:MechPilots" />
+      <xs:field xpath="mstns:PilotID" />
+    </xs:unique>
+    <xs:unique name="Mechs_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:Mechs" />
+      <xs:field xpath="mstns:MechID" />
+    </xs:unique>
+    <xs:unique name="Weapons_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Weapons" />
+      <xs:field xpath="mstns:WeaponID" />
+    </xs:unique>
+    <xs:unique name="Locations_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Locations" />
+      <xs:field xpath="mstns:LocationID" />
+    </xs:unique>
+    <xs:unique name="MechLocationKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MechLocation" />
+      <xs:field xpath="mstns:MechID" />
+      <xs:field xpath="mstns:LocationID" />
+    </xs:unique>
+    <xs:unique name="MechLocation_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:MechLocation" />
+      <xs:field xpath="mstns:MechID" />
+    </xs:unique>
+    <xs:unique name="Constraint2">
+      <xs:selector xpath=".//mstns:MechLocation" />
+      <xs:field xpath="mstns:LocationID" />
+    </xs:unique>
+    <xs:unique name="MechWeaponLocation_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MechWeaponLocation" />
+      <xs:field xpath="mstns:MechWeaponLocationID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Locations_MechLocation" msdata:parent="Locations" msdata:child="MechLocation" msdata:parentkey="LocationID" msdata:childkey="LocationID" msprop:Generator_UserChildTable="MechLocation" msprop:Generator_ChildPropName="GetMechLocationRows" msprop:Generator_UserRelationName="Locations_MechLocation" msprop:Generator_ParentPropName="LocationsRow" msprop:Generator_RelationVarName="relationLocations_MechLocation" msprop:Generator_UserParentTable="Locations" />
+      <msdata:Relationship name="Mechs_MechLocation" msdata:parent="Mechs" msdata:child="MechLocation" msdata:parentkey="MechID" msdata:childkey="MechID" msprop:Generator_UserChildTable="MechLocation" msprop:Generator_ChildPropName="GetMechLocationRows" msprop:Generator_UserRelationName="Mechs_MechLocation" msprop:Generator_ParentPropName="MechsRow" msprop:Generator_RelationVarName="relationMechs_MechLocation" msprop:Generator_UserParentTable="Mechs" />
+      <msdata:Relationship name="MechLocation_MechWeaponLocation" msdata:parent="MechLocation" msdata:child="MechWeaponLocation" msdata:parentkey="MechLocationID" msdata:childkey="MechLocationID" msprop:Generator_UserChildTable="MechWeaponLocation" msprop:Generator_ChildPropName="GetMechWeaponLocationRows" msprop:Generator_UserRelationName="MechLocation_MechWeaponLocation" msprop:Generator_ParentPropName="MechLocationRow" msprop:Generator_RelationVarName="relationMechLocation_MechWeaponLocation" msprop:Generator_UserParentTable="MechLocation" />
+      <msdata:Relationship name="Weapons_MechWeaponLocation" msdata:parent="Weapons" msdata:child="MechWeaponLocation" msdata:parentkey="WeaponID" msdata:childkey="WeaponID" msprop:Generator_UserChildTable="MechWeaponLocation" msprop:Generator_ChildPropName="GetMechWeaponLocationRows" msprop:Generator_UserRelationName="Weapons_MechWeaponLocation" msprop:Generator_ParentPropName="WeaponsRow" msprop:Generator_RelationVarName="relationWeapons_MechWeaponLocation" msprop:Generator_UserParentTable="Weapons" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

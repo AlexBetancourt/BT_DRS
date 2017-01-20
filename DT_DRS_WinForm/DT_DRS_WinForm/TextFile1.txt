@@ -1,0 +1,10 @@
+﻿TO DO List
+	Crear MechBay
+		Ahi se asignaran los pilotos a los Mechs
+	Crear Archivo de Batalla
+		Ahi se creara un archivo con los Id's de los mechs que se encuentran en batalla
+		como todos los cambios en los mechs se registraran en el momento solo sera necesario
+		guardar los id's para que se carguen en la batalla
+			crear una instancia y ventana por cada mech para que se muestren las mini formas
+	Codificar MechLab para guardar toda la informacion del mech dentro de sus tablas
+	Crear y Codificar Barracks donde se capturara la informacion de los pilotos
