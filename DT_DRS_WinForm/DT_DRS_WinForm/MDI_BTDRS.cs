@@ -169,7 +169,7 @@ namespace DT_DRS_WinForm
                         while (!LocationRows.EndOfStream)
                         {
                             var line = LocationRows.ReadLine();
-                            var values = line.Split(',');
+                            var values = line.Split('|');
                             if (values[0] != "LocationID")
                             {
                                 var Location = new DS_BTDRSLocations
@@ -193,7 +193,7 @@ namespace DT_DRS_WinForm
                         while (!WeaponRows.EndOfStream)
                         {
                             var line = WeaponRows.ReadLine();
-                            var values = line.Split(',');
+                            var values = line.Split('|');
                             if (values[0] != "WeaponID")
                             {
                                 var Weapon = new DS_BTDRSWeapons
@@ -226,7 +226,7 @@ namespace DT_DRS_WinForm
                         while (!AmmoRows.EndOfStream)
                         {
                             var line = AmmoRows.ReadLine();
-                            var values = line.Split(',');
+                            var values = line.Split('|');
                             if (values[0] != "AmmoID")
                             {
                                 var Ammo = new DS_BTDRSAmmo
@@ -255,7 +255,7 @@ namespace DT_DRS_WinForm
                         while (!MechsRows.EndOfStream)
                         {
                             var line = MechsRows.ReadLine();
-                            var values = line.Split(',');
+                            var values = line.Split('|');
                             if (values[0] != "MechID")
                             {
                                 var Mech = new DS_BTDRSMechs
