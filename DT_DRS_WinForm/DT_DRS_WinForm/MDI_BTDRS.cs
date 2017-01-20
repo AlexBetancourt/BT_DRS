@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
+using System.Globalization;
 
 namespace DT_DRS_WinForm
 {
@@ -158,7 +159,9 @@ namespace DT_DRS_WinForm
                 {
                     using (var Database = new LiteDatabase(@"DRS.db"))
                     {
-
+                        // Some language locals (eg. Hungarian) use "," as a decimal separator so we change that.
+                        NumberFormatInfo nfi = new NumberFormatInfo();
+                        nfi.NumberDecimalSeparator = ".";
                         //LOCATIONS
                         var LocationRows = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\Locations.csv"));
                         var Locations = Database.GetCollection<DS_BTDRSLocations>("Locations");
@@ -190,12 +193,14 @@ namespace DT_DRS_WinForm
 
                         Weapons.Delete(Query.All(1));
                         MessageBox.Show("Weapon Count: " + Weapons.Count().ToString());
+                        
                         while (!WeaponRows.EndOfStream)
                         {
                             var line = WeaponRows.ReadLine();
                             var values = line.Split('|');
                             if (values[0] != "WeaponID")
                             {
+                               // decimal tonnage = decimal.Parse(values[8]);
                                 var Weapon = new DS_BTDRSWeapons
                                 {
                                     WeaponID = int.Parse(values[0]),
@@ -206,13 +211,15 @@ namespace DT_DRS_WinForm
                                     Short = values[5],
                                     Medium = values[6],
                                     Long = values[7],
-                                    Tons = decimal.Parse(values[8]),
+                                    Tons = decimal.Parse(values[8],nfi),
                                     Crits = int.Parse(values[9]),
                                     Ammo = values[10],
                                     WeaponType = values[13]
                                 };
                                 Weapons.Insert(Weapon);
                             }
+                                                       
+
                         }
                         MessageBox.Show("Weapon Count: " + Weapons.Count().ToString());
 
@@ -234,7 +241,7 @@ namespace DT_DRS_WinForm
                                     AmmoID = int.Parse(values[0]),
                                     AmmoName = values[1],
                                     Ammo = values[2],
-                                    Tons = decimal.Parse(values[3]),
+                                    Tons = decimal.Parse(values[3],nfi),
                                     Cost = int.Parse(values[4]),
                                     BV = int.Parse(values[5])
                                 };
