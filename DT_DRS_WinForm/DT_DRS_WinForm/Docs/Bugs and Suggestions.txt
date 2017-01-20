@@ -1,0 +1,70 @@
+22 hours ago
+
+I've been messing around with you program for about a half hour now and my first impression is that it is great at keeping track of armor 
+and internal damage, and it is also very good at keeping track of heat and it's effects.
+So as it stands it is very usable in those aspects, however, I would still need to have the paper records to use along with the program. 
+The reason being is that in this version there doesn't appear to me to be a way to keep track of what weapons the 'Mech has on it. 
+(Of course if I'm just blind and not seeing thing properly let me know) Also kinda tied into that, the critical hit tables don't seem 
+to be working at the moment.
+This also applies to the Mech Lab where it seems you can only assign things to the Head crit table and nothing else. 
+So if I wanted to put a Medium Laser in the Center Torso the program wont let me. Also, the option for equipment in the 'Mech lab don't 
+seem to go beyond single slot equipment.
+Despite all of that I would like to reiterate that the programs capabilities to keep track of damage and heat are phenomenal.
+
+And the quick access to all of the tables is really nice. Also I like the sound effects from the weapons fire and Bitchin' Betty. 
+Which leads me to a question I have to ask. I saw in the sound folder in the directory that there were a lot of sounds from various MW games. 
+So in the future will there be an option to change the sound effects that are used, like using MW2's Betty rather MW3's?
+So great work I look forward to seeing your future developments on the program. I will keep messing around and see if I can't find 
+anything else that might help you further improve your project. Or I might find out i'm a dummy and missed something.
+
+
+
+
+Requires admin privileges right now. Is there any way to avoid that?
+
+The program stalls if you try to do anything without privileges. After locking up and trying to load for a minute it does give an error 
+message letting you know you can’t do anything, but it won’t let you do anything while it is trying.
+
+Import Weapons and Equipment could be clearer. I can tell what it does, importing all of the weapons and mechs from the excel files, 
+but it wasn’t clear that I should do that when I first opened the program and it wasn’t clear what it was doing while it was running. 
+Consider a first time pop-up when the program opens with nothing in the catalogs asking if they want to import them.
+
+Dice roll as a small window with buttons that displays the result immediately rather than as a separate pop-up
+I like the Barracks, excellent addition. Need a way to import those mechwarriors into record sheets.
+Mechlab doesn’t show weapons/criticals yet, I’m sure you know that.
+
+Unclear how to import a mech from the mechlab onto a record sheet. Is the only way through the Mech Bay right now?
+
+Show amount of heat you have accumulated as a number in addition to the bar
+
+For heat modifiers, show the current penalty next to the abbreviations
+
+The “Destroyed” alert that plays when a part is destroyed should probably specify what type of part was destroyed. 
+Arm destroyed is significantly different than losing a torso.
+
+Make arms no longer selectable for damage after the associated torso has been destroyed.
+
+Consider adding a tracking of how much damage a mech has taken in a round for triggering piloting rolls. 
+Then you can turn the Apply Heatsinks button into an End Turn button that applies heat sinks and resets the damage count.
+
+Add a pilot hit when the heat is hit and add some kind of reminder that a consciousness check is needed.
+
+Is saving and loading mech status currently disabled?
+
+In the MechLab the “Load Mech” button doesn’t seem to do anything.
+
+I think the internal structure is based on the tonnage on the tonnage of the mech. 
+When designing a mech in the MechLab consider setting the internal structure values when you set the tonnage and prevent the 
+player from altering them. I would need to check the construction rules to be sure.
+
+The “Update” button on the MechLab doesn’t seem to work. It returned the following error when I tried to use 
+it: “Invalid BSON data type ‘Null’ on field ‘_id’”
+
+I assume the “Update” button should update the values recorded in the excel sheet. Consider combining it with the “Save Mech” button. 
+Pressing the “Save Mech” button creates a new entry even if you already have a mech with the same Variant value.
+
+Consider adding a “Remove” option on the MechLab. I currently have two Test Mechs in the excel file.
+
+Restrict the tonnage to a multiple of 5.
+
+Restrict the armor based on the underlying internal structure. 

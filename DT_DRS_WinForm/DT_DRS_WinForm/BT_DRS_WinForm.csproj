@@ -179,6 +179,8 @@
     <Content Include="BT_DBA.txt" />
     <None Include="Resources\índice.jpg" />
     <None Include="Resources\TwoDice.jpg" />
+    <Content Include="Docs\Bugs and Suggestions.txt" />
+    <Content Include="Docs\ToDoList.txt" />
     <Content Include="Images\Magistrate of Canopus.ico" />
     <Content Include="Images\Outworlds Alliance.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

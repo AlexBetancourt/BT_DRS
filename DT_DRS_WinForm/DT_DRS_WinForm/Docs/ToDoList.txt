@@ -1,0 +1,18 @@
+The following is a list of the features left to do before the first release:
+
+    Add Internal components to Digital Record Sheet screen so you can keep track of critical damage.
+    Add Ammo tracking.
+    Add Save feature for the Battle session so you can load it on a later session.
+    Add Internal components to MechLab screen so you can customize the components location.
+OK    Modify the Apply Damage feature to correctly asign the LRM hit locations. 
+OK    Add Walk/Run/Jump into the Heat calculation.
+OK    Complete Damage Transfer (right now it only goes armor to internal).
+
+
+This following list is for the features to be released at later versions (In success! 😝):
+
+    Add BT DiceRoller dynamics to the Apply Damage feature.
+    Add Damage and Components modifiers.
+    Show damage on the Mech's Avatar image
+    Add background images, mech images, pilot portraits, icons (just to make it a little more pleasing to the eye), more sounds and maybe some background music.
+OK    Add essential BT tables as reference (Movement cost, facing after fall, cluster hits, piloting skill roll, mech hit location, attack modifiers, heat point, physical attack modifiers, determining critical hits, mech punch location, mech kick location)
