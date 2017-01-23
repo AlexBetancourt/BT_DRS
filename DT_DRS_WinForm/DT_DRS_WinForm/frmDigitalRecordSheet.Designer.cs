@@ -131,6 +131,13 @@
             this.tabLeftLeg = new System.Windows.Forms.TabPage();
             this.tabRightLeg = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
             this.rdLRM20 = new System.Windows.Forms.RadioButton();
             this.rdLRM15 = new System.Windows.Forms.RadioButton();
             this.rdLRM10 = new System.Windows.Forms.RadioButton();
@@ -237,13 +244,6 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -1418,6 +1418,76 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "WEAPONS & EQUIPMENT INVENTORY";
             // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.ForeColor = System.Drawing.Color.Red;
+            this.label41.Location = new System.Drawing.Point(189, 198);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(51, 13);
+            this.label41.TabIndex = 39;
+            this.label41.Text = "+10 Heat";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.ForeColor = System.Drawing.Color.Red;
+            this.label36.Location = new System.Drawing.Point(189, 170);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(78, 13);
+            this.label36.TabIndex = 38;
+            this.label36.Text = "+2/4/5/6 Heat";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.ForeColor = System.Drawing.Color.Red;
+            this.label35.Location = new System.Drawing.Point(189, 140);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(67, 13);
+            this.label35.TabIndex = 37;
+            this.label35.Text = "+2/3/4 Heat";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.ForeColor = System.Drawing.Color.Red;
+            this.label34.Location = new System.Drawing.Point(189, 111);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(78, 13);
+            this.label34.TabIndex = 36;
+            this.label34.Text = "+1/1/3/7 Heat";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.ForeColor = System.Drawing.Color.Red;
+            this.label33.Location = new System.Drawing.Point(189, 82);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(45, 13);
+            this.label33.TabIndex = 35;
+            this.label33.Text = "+8 Heat";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.ForeColor = System.Drawing.Color.Red;
+            this.label32.Location = new System.Drawing.Point(189, 53);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(45, 13);
+            this.label32.TabIndex = 34;
+            this.label32.Text = "+3 Heat";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.ForeColor = System.Drawing.Color.Red;
+            this.label31.Location = new System.Drawing.Point(189, 24);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(45, 13);
+            this.label31.TabIndex = 33;
+            this.label31.Text = "+1 Heat";
+            // 
             // rdLRM20
             // 
             this.rdLRM20.Appearance = System.Windows.Forms.Appearance.Button;
@@ -1674,42 +1744,42 @@
             this.hitsToolStripMenuItem8,
             this.hitsToolStripMenuItem9});
             this.lRM5ToolStripMenuItem.Name = "lRM5ToolStripMenuItem";
-            this.lRM5ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.lRM5ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.lRM5ToolStripMenuItem.Text = "LRM5";
             this.lRM5ToolStripMenuItem.Click += new System.EventHandler(this.lRM5ToolStripMenuItem_Click);
             // 
             // hitToolStripMenuItem1
             // 
             this.hitToolStripMenuItem1.Name = "hitToolStripMenuItem1";
-            this.hitToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.hitToolStripMenuItem1.Size = new System.Drawing.Size(109, 22);
             this.hitToolStripMenuItem1.Text = "1 Hit";
             this.hitToolStripMenuItem1.Click += new System.EventHandler(this.hitToolStripMenuItem1_Click);
             // 
             // hitsToolStripMenuItem6
             // 
             this.hitsToolStripMenuItem6.Name = "hitsToolStripMenuItem6";
-            this.hitsToolStripMenuItem6.Size = new System.Drawing.Size(152, 22);
+            this.hitsToolStripMenuItem6.Size = new System.Drawing.Size(109, 22);
             this.hitsToolStripMenuItem6.Text = "2 Hits";
             this.hitsToolStripMenuItem6.Click += new System.EventHandler(this.hitsToolStripMenuItem6_Click);
             // 
             // hitsToolStripMenuItem7
             // 
             this.hitsToolStripMenuItem7.Name = "hitsToolStripMenuItem7";
-            this.hitsToolStripMenuItem7.Size = new System.Drawing.Size(152, 22);
+            this.hitsToolStripMenuItem7.Size = new System.Drawing.Size(109, 22);
             this.hitsToolStripMenuItem7.Text = "3 Hits";
             this.hitsToolStripMenuItem7.Click += new System.EventHandler(this.hitsToolStripMenuItem7_Click);
             // 
             // hitsToolStripMenuItem8
             // 
             this.hitsToolStripMenuItem8.Name = "hitsToolStripMenuItem8";
-            this.hitsToolStripMenuItem8.Size = new System.Drawing.Size(152, 22);
+            this.hitsToolStripMenuItem8.Size = new System.Drawing.Size(109, 22);
             this.hitsToolStripMenuItem8.Text = "4 Hits";
             this.hitsToolStripMenuItem8.Click += new System.EventHandler(this.hitsToolStripMenuItem8_Click);
             // 
             // hitsToolStripMenuItem9
             // 
             this.hitsToolStripMenuItem9.Name = "hitsToolStripMenuItem9";
-            this.hitsToolStripMenuItem9.Size = new System.Drawing.Size(152, 22);
+            this.hitsToolStripMenuItem9.Size = new System.Drawing.Size(109, 22);
             this.hitsToolStripMenuItem9.Text = "5 Hits";
             this.hitsToolStripMenuItem9.Click += new System.EventHandler(this.hitsToolStripMenuItem9_Click);
             // 
@@ -1722,7 +1792,7 @@
             this.hitsToolStripMenuItem13,
             this.hitsToolStripMenuItem14});
             this.lRM10ToolStripMenuItem.Name = "lRM10ToolStripMenuItem";
-            this.lRM10ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.lRM10ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.lRM10ToolStripMenuItem.Text = "LRM10";
             // 
             // hitsToolStripMenuItem10
@@ -1769,7 +1839,7 @@
             this.hitsToolStripMenuItem18,
             this.hItsToolStripMenuItem19});
             this.lRM15ToolStripMenuItem.Name = "lRM15ToolStripMenuItem";
-            this.lRM15ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.lRM15ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.lRM15ToolStripMenuItem.Text = "LRM15";
             // 
             // hitsToolStripMenuItem15
@@ -1816,7 +1886,7 @@
             this.hitsToolStripMenuItem23,
             this.hitsToolStripMenuItem24});
             this.lRM20ToolStripMenuItem.Name = "lRM20ToolStripMenuItem";
-            this.lRM20ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.lRM20ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.lRM20ToolStripMenuItem.Text = "LRM20";
             // 
             // hitsToolStripMenuItem20
@@ -2431,76 +2501,6 @@
             this.label25.Size = new System.Drawing.Size(63, 13);
             this.label25.TabIndex = 53;
             this.label25.Text = "TH = To Hit";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.ForeColor = System.Drawing.Color.Red;
-            this.label31.Location = new System.Drawing.Point(189, 24);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(45, 13);
-            this.label31.TabIndex = 33;
-            this.label31.Text = "+1 Heat";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.ForeColor = System.Drawing.Color.Red;
-            this.label32.Location = new System.Drawing.Point(189, 53);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(45, 13);
-            this.label32.TabIndex = 34;
-            this.label32.Text = "+3 Heat";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.ForeColor = System.Drawing.Color.Red;
-            this.label33.Location = new System.Drawing.Point(189, 82);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(45, 13);
-            this.label33.TabIndex = 35;
-            this.label33.Text = "+8 Heat";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.ForeColor = System.Drawing.Color.Red;
-            this.label34.Location = new System.Drawing.Point(189, 111);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(78, 13);
-            this.label34.TabIndex = 36;
-            this.label34.Text = "+1/1/3/7 Heat";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.ForeColor = System.Drawing.Color.Red;
-            this.label35.Location = new System.Drawing.Point(189, 140);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(67, 13);
-            this.label35.TabIndex = 37;
-            this.label35.Text = "+2/3/4 Heat";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.ForeColor = System.Drawing.Color.Red;
-            this.label36.Location = new System.Drawing.Point(189, 170);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(78, 13);
-            this.label36.TabIndex = 38;
-            this.label36.Text = "+2/4/5/6 Heat";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.ForeColor = System.Drawing.Color.Red;
-            this.label41.Location = new System.Drawing.Point(189, 198);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(51, 13);
-            this.label41.TabIndex = 39;
-            this.label41.Text = "+10 Heat";
             // 
             // frmDigitalRecordSheet
             // 

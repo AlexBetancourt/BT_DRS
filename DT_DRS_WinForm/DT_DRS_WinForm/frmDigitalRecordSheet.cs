@@ -817,7 +817,14 @@ namespace DT_DRS_WinForm
                 if (pgbHeat.Value >= 5)
                 {
                     lbl1M.Visible = true;
-                    lblMModWalk.Text = lblMModRun.Text = lblMModJump.Text = "-1";
+                    lblMModWalk.Text = "-1";
+
+                    double RunMod;
+                    RunMod = (int.Parse(txtWalk.Text) - 1) * 1.5;
+                    int RunModRounded = int.Parse(Math.Ceiling(RunMod).ToString());
+                    lblMModRun.Text ="-" + (int.Parse(txtRun.Text)-RunModRounded).ToString();
+                       
+
                 }
                 else
                 {
@@ -833,7 +840,11 @@ namespace DT_DRS_WinForm
                 if (pgbHeat.Value >= 10)
                 {
                     lbl2M.Visible = true;
-                    lblMModWalk.Text = lblMModRun.Text = lblMModJump.Text = "-2";
+                    lblMModWalk.Text = "-2";
+                    double RunMod;
+                    RunMod = (int.Parse(txtWalk.Text) - 2) * 1.5;
+                    int RunModRounded = int.Parse(Math.Ceiling(RunMod).ToString());
+                    lblMModRun.Text = "-" + (int.Parse(txtRun.Text) - RunModRounded).ToString();
                 }
                 else
                 {
@@ -853,7 +864,11 @@ namespace DT_DRS_WinForm
                 if (pgbHeat.Value >= 15)
                 {
                     lbl3M.Visible = true;
-                    lblMModWalk.Text = lblMModRun.Text = lblMModJump.Text = "-3";
+                    lblMModWalk.Text =  "-3";
+                    double RunMod;
+                    RunMod = (int.Parse(txtWalk.Text) - 3) * 1.5;
+                    int RunModRounded = int.Parse(Math.Ceiling(RunMod).ToString());
+                    lblMModRun.Text = "-" + (int.Parse(txtRun.Text) - RunModRounded).ToString();
 
                 }
                 else
@@ -880,8 +895,11 @@ namespace DT_DRS_WinForm
                 if (pgbHeat.Value >= 20)
                 {
                     lbl4M.Visible = true;
-                    lblMModWalk.Text = lblMModRun.Text = lblMModJump.Text = "-4";
-
+                    lblMModWalk.Text =  "-4";
+                    double RunMod;
+                    RunMod = (int.Parse(txtWalk.Text) - 4) * 1.5;
+                    int RunModRounded = int.Parse(Math.Ceiling(RunMod).ToString());
+                    lblMModRun.Text = "-" + (int.Parse(txtRun.Text) - RunModRounded).ToString();
                 }
                 else
                 {
@@ -907,8 +925,12 @@ namespace DT_DRS_WinForm
                 if (pgbHeat.Value >= 25)
                 {
                     lbl5M.Visible = true;
-                    lblMModWalk.Text = lblMModRun.Text = lblMModJump.Text = "-5";
+                    lblMModWalk.Text = "-5";
 
+                    double RunMod;
+                    RunMod = (int.Parse(txtWalk.Text) - 5) * 1.5;
+                    int RunModRounded = int.Parse(Math.Ceiling(RunMod).ToString());
+                    lblMModRun.Text = "-" + (int.Parse(txtRun.Text) - RunModRounded).ToString();
                 }
                 else
                 {

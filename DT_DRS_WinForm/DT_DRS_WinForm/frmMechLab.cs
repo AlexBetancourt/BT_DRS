@@ -52,141 +52,155 @@ namespace DT_DRS_WinForm
                     using (var DataBase = new LiteDatabase(@"DRS.db"))
                     {
                         var Mechs = DataBase.GetCollection<DS_BTDRSMechs>("Mechs");
-                        var Mech = new DS_BTDRSMechs
+
+
+                        DS_BTDRSMechs MechVal = Mechs.FindOne(Query.EQ("Model", txtModel.Text));
+
+                        if (MechVal == null)
                         {
+                            var Mech = new DS_BTDRSMechs
+                            {
 
-                            MechID = int.Parse(Mechs.Count().ToString()) + 1,
-                            Name = txtName.Text,
-                            Model = txtModel.Text,
-                            Walk = int.Parse(txtWalk.Text),
-                            Run = int.Parse(txtRun.Text),
-                            Jump = int.Parse(txtJump.Text),
-                            Heatsinks = int.Parse(txtHeatSinks.Text),
-                            Tons = int.Parse(txtTons.Text)
-                        };
-                        Mechs.Insert(Mech);
+                                MechID = int.Parse(Mechs.Count().ToString()) + 1,
+                                Name = txtName.Text,
+                                Model = txtModel.Text,
+                                Walk = int.Parse(txtWalk.Text),
+                                Run = int.Parse(txtRun.Text),
+                                Jump = int.Parse(txtJump.Text),
+                                Heatsinks = int.Parse(txtHeatSinks.Text),
+                                Tons = int.Parse(txtTons.Text)
+                            };
+                            Mechs.Insert(Mech);
 
-                        var MechLocations = DataBase.GetCollection<DS_BTDRSMechLocation>("MechLocations");
-                        var Mechlocation = new DS_BTDRSMechLocation
+                            var MechLocations = DataBase.GetCollection<DS_BTDRSMechLocation>("MechLocations");
+                            var Mechlocation = new DS_BTDRSMechLocation
+                            {
+                                MechLocationID = MechLocations.Count() + 1,
+                                MechID = Mech.MechID,
+                                LocationID = 1,
+                                HitPoints = int.Parse(txtH.Text),
+
+                            };
+                            MechLocations.Insert(Mechlocation);
+
+                            Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                            Mechlocation.MechID = Mech.MechID;
+                            Mechlocation.LocationID = 2;
+                            Mechlocation.HitPoints = int.Parse(txtCT.Text);
+                            MechLocations.Insert(Mechlocation);
+
+                            Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                            Mechlocation.MechID = Mech.MechID;
+                            Mechlocation.LocationID = 3;
+                            Mechlocation.HitPoints = int.Parse(txtLT.Text);
+                            MechLocations.Insert(Mechlocation);
+
+                            Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                            Mechlocation.MechID = Mech.MechID;
+                            Mechlocation.LocationID = 4;
+                            Mechlocation.HitPoints = int.Parse(txtRT.Text);
+                            MechLocations.Insert(Mechlocation);
+
+                            Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                            Mechlocation.MechID = Mech.MechID;
+                            Mechlocation.LocationID = 5;
+                            Mechlocation.HitPoints = int.Parse(txtLA.Text);
+                            MechLocations.Insert(Mechlocation);
+
+                            Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                            Mechlocation.MechID = Mech.MechID;
+                            Mechlocation.LocationID = 6;
+                            Mechlocation.HitPoints = int.Parse(txtRA.Text);
+                            MechLocations.Insert(Mechlocation);
+
+                            Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                            Mechlocation.MechID = Mech.MechID;
+                            Mechlocation.LocationID = 7;
+                            Mechlocation.HitPoints = int.Parse(txtLL.Text);
+                            MechLocations.Insert(Mechlocation);
+
+                            Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                            Mechlocation.MechID = Mech.MechID;
+                            Mechlocation.LocationID = 8;
+                            Mechlocation.HitPoints = int.Parse(txtRL.Text);
+                            MechLocations.Insert(Mechlocation);
+
+                            Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                            Mechlocation.MechID = Mech.MechID;
+                            Mechlocation.LocationID = 9;
+                            Mechlocation.HitPoints = int.Parse(txtCTR.Text);
+                            MechLocations.Insert(Mechlocation);
+
+                            Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                            Mechlocation.MechID = Mech.MechID;
+                            Mechlocation.LocationID = 10;
+                            Mechlocation.HitPoints = int.Parse(txtLTR.Text);
+                            MechLocations.Insert(Mechlocation);
+
+                            Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                            Mechlocation.MechID = Mech.MechID;
+                            Mechlocation.LocationID = 11;
+                            Mechlocation.HitPoints = int.Parse(txtRTR.Text);
+                            MechLocations.Insert(Mechlocation);
+
+                            Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                            Mechlocation.MechID = Mech.MechID;
+                            Mechlocation.LocationID = 12;
+                            Mechlocation.HitPoints = int.Parse(txtIH.Text);
+                            MechLocations.Insert(Mechlocation);
+
+                            Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                            Mechlocation.MechID = Mech.MechID;
+                            Mechlocation.LocationID = 13;
+                            Mechlocation.HitPoints = int.Parse(txtICT.Text);
+                            MechLocations.Insert(Mechlocation);
+
+                            Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                            Mechlocation.MechID = Mech.MechID;
+                            Mechlocation.LocationID = 14;
+                            Mechlocation.HitPoints = int.Parse(txtILT.Text);
+                            MechLocations.Insert(Mechlocation);
+
+                            Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                            Mechlocation.MechID = Mech.MechID;
+                            Mechlocation.LocationID = 15;
+                            Mechlocation.HitPoints = int.Parse(txtIRT.Text);
+                            MechLocations.Insert(Mechlocation);
+
+                            Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                            Mechlocation.MechID = Mech.MechID;
+                            Mechlocation.LocationID = 16;
+                            Mechlocation.HitPoints = int.Parse(txtILA.Text);
+                            MechLocations.Insert(Mechlocation);
+
+                            Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                            Mechlocation.MechID = Mech.MechID;
+                            Mechlocation.LocationID = 17;
+                            Mechlocation.HitPoints = int.Parse(txtIRA.Text);
+                            MechLocations.Insert(Mechlocation);
+
+                            Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                            Mechlocation.MechID = Mech.MechID;
+                            Mechlocation.LocationID = 18;
+                            Mechlocation.HitPoints = int.Parse(txtILL.Text);
+                            MechLocations.Insert(Mechlocation);
+
+                            Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                            Mechlocation.MechID = Mech.MechID;
+                            Mechlocation.LocationID = 19;
+                            Mechlocation.HitPoints = int.Parse(txtIRL.Text);
+                            MechLocations.Insert(Mechlocation);
+
+                            MessageBox.Show("Mech Count: " + Mechs.Count().ToString());
+                            MessageBox.Show("Mech Locations Count: " + MechLocations.Count().ToString());
+                        }
+                        else
                         {
-                            MechLocationID = MechLocations.Count() + 1,
-                            MechID = Mech.MechID,
-                            LocationID = 1,
-                            HitPoints = int.Parse(txtH.Text),
-
-                        };
-                        MechLocations.Insert(Mechlocation);
-
-                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
-                        Mechlocation.MechID = Mech.MechID;
-                        Mechlocation.LocationID = 2;
-                        Mechlocation.HitPoints = int.Parse(txtCT.Text);
-                        MechLocations.Insert(Mechlocation);
-
-                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
-                        Mechlocation.MechID = Mech.MechID;
-                        Mechlocation.LocationID = 3;
-                        Mechlocation.HitPoints = int.Parse(txtLT.Text);
-                        MechLocations.Insert(Mechlocation);
-
-                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
-                        Mechlocation.MechID = Mech.MechID;
-                        Mechlocation.LocationID = 4;
-                        Mechlocation.HitPoints = int.Parse(txtRT.Text);
-                        MechLocations.Insert(Mechlocation);
-
-                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
-                        Mechlocation.MechID = Mech.MechID;
-                        Mechlocation.LocationID = 5;
-                        Mechlocation.HitPoints = int.Parse(txtLA.Text);
-                        MechLocations.Insert(Mechlocation);
-
-                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
-                        Mechlocation.MechID = Mech.MechID;
-                        Mechlocation.LocationID = 6;
-                        Mechlocation.HitPoints = int.Parse(txtRA.Text);
-                        MechLocations.Insert(Mechlocation);
-
-                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
-                        Mechlocation.MechID = Mech.MechID;
-                        Mechlocation.LocationID = 7;
-                        Mechlocation.HitPoints = int.Parse(txtLL.Text);
-                        MechLocations.Insert(Mechlocation);
-
-                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
-                        Mechlocation.MechID = Mech.MechID;
-                        Mechlocation.LocationID = 8;
-                        Mechlocation.HitPoints = int.Parse(txtRL.Text);
-                        MechLocations.Insert(Mechlocation);
-
-                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
-                        Mechlocation.MechID = Mech.MechID;
-                        Mechlocation.LocationID = 9;
-                        Mechlocation.HitPoints = int.Parse(txtCTR.Text);
-                        MechLocations.Insert(Mechlocation);
-
-                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
-                        Mechlocation.MechID = Mech.MechID;
-                        Mechlocation.LocationID = 10;
-                        Mechlocation.HitPoints = int.Parse(txtLTR.Text);
-                        MechLocations.Insert(Mechlocation);
-
-                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
-                        Mechlocation.MechID = Mech.MechID;
-                        Mechlocation.LocationID = 11;
-                        Mechlocation.HitPoints = int.Parse(txtRTR.Text);
-                        MechLocations.Insert(Mechlocation);
-
-                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
-                        Mechlocation.MechID = Mech.MechID;
-                        Mechlocation.LocationID = 12;
-                        Mechlocation.HitPoints = int.Parse(txtIH.Text);
-                        MechLocations.Insert(Mechlocation);
-
-                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
-                        Mechlocation.MechID = Mech.MechID;
-                        Mechlocation.LocationID = 13;
-                        Mechlocation.HitPoints = int.Parse(txtICT.Text);
-                        MechLocations.Insert(Mechlocation);
-
-                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
-                        Mechlocation.MechID = Mech.MechID;
-                        Mechlocation.LocationID = 14;
-                        Mechlocation.HitPoints = int.Parse(txtILT.Text);
-                        MechLocations.Insert(Mechlocation);
-
-                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
-                        Mechlocation.MechID = Mech.MechID;
-                        Mechlocation.LocationID = 15;
-                        Mechlocation.HitPoints = int.Parse(txtIRT.Text);
-                        MechLocations.Insert(Mechlocation);
-
-                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
-                        Mechlocation.MechID = Mech.MechID;
-                        Mechlocation.LocationID = 16;
-                        Mechlocation.HitPoints = int.Parse(txtILA.Text);
-                        MechLocations.Insert(Mechlocation);
-
-                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
-                        Mechlocation.MechID = Mech.MechID;
-                        Mechlocation.LocationID = 17;
-                        Mechlocation.HitPoints = int.Parse(txtIRA.Text);
-                        MechLocations.Insert(Mechlocation);
-
-                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
-                        Mechlocation.MechID = Mech.MechID;
-                        Mechlocation.LocationID = 18;
-                        Mechlocation.HitPoints = int.Parse(txtILL.Text);
-                        MechLocations.Insert(Mechlocation);
-
-                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
-                        Mechlocation.MechID = Mech.MechID;
-                        Mechlocation.LocationID = 19;
-                        Mechlocation.HitPoints = int.Parse(txtIRL.Text);
-                        MechLocations.Insert(Mechlocation);
-
-                        MessageBox.Show("Mech Count: " + Mechs.Count().ToString());
-                        MessageBox.Show("Mech Locations Count: " + MechLocations.Count().ToString());
+                            if ( MessageBox.Show("That Model already exists Overwrite???","Existing Mech",MessageBoxButtons.OKCancel) == DialogResult.OK)
+                            {
+                                cmdUpdate_Click(null, null);
+                            }
+                        }
                     }
                 }
                 else
@@ -402,87 +416,146 @@ namespace DT_DRS_WinForm
                 {
                     var Mechs = db.GetCollection<DS_BTDRSMechs>("Mechs");
                     Mechs.EnsureIndex(x => x.Model);
+                    int MechIDTemp;
 
                     DS_BTDRSMechs Mech = Mechs.FindOne(Query.EQ("Model", txtModel.Text));
+
                     if (Mech != null)
                     {
-
+                        MechIDTemp = Mech.MechID;
+                        Mechs.Delete(Query.EQ("Model", Mech.Model));
+                        Mech.MechID = MechIDTemp;
                         Mech.Walk = int.Parse(txtWalk.Text);
                         Mech.Run = int.Parse(txtRun.Text);
                         Mech.Jump = int.Parse(txtJump.Text);
                         Mech.Heatsinks = int.Parse(txtHeatSinks.Text);
                         Mech.Tons = int.Parse(txtTons.Text);
                         Mech.Name = txtName.Text;
-                        Mechs.Update(Mech);
+                        Mech.Model = txtModel.Text;
+                        Mechs.Insert(Mech);
+
                         var MechLocations = db.GetCollection<DS_BTDRSMechLocation>("MechLocations");
                         MechLocations.EnsureIndex(x => x.MechID);
 
-                        var MechLocationss = MechLocations.Find(Query.EQ("MechID", Mech.MechID));
-                        foreach (DS_BTDRSMechLocation MechLoc in MechLocationss)
+                        MechLocations.Delete(Query.EQ("MechID", Mech.MechID));
+
+                        var Mechlocation = new DS_BTDRSMechLocation
                         {
-                            switch (MechLoc.LocationID)
-                            {
-                                case 1:
-                                    txtH.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                case 2:
-                                    txtCT.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                case 3:
-                                    txtLT.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                case 4:
-                                    txtRT.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                case 5:
-                                    txtLA.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                case 6:
-                                    txtRA.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                case 7:
-                                    txtLL.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                case 8:
-                                    txtRL.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                case 9:
-                                    txtCTR.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                case 10:
-                                    txtLTR.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                case 11:
-                                    txtRTR.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                case 12:
-                                    txtIH.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                case 13:
-                                    txtICT.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                case 14:
-                                    txtILT.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                case 15:
-                                    txtIRT.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                case 16:
-                                    txtILA.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                case 17:
-                                    txtIRA.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                case 18:
-                                    txtILL.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                case 19:
-                                    txtIRL.Text = MechLoc.HitPoints.ToString();
-                                    break;
-                                default:
-                                    break;
-                            }
-                        }
+                            MechLocationID = MechLocations.Count() + 1,
+                            MechID = Mech.MechID,
+                            LocationID = 1,
+                            HitPoints = int.Parse(txtH.Text),
+
+                        };
+                        MechLocations.Insert(Mechlocation);
+
+                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                        Mechlocation.MechID = Mech.MechID;
+                        Mechlocation.LocationID = 2;
+                        Mechlocation.HitPoints = int.Parse(txtCT.Text);
+                        MechLocations.Insert(Mechlocation);
+
+                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                        Mechlocation.MechID = Mech.MechID;
+                        Mechlocation.LocationID = 3;
+                        Mechlocation.HitPoints = int.Parse(txtLT.Text);
+                        MechLocations.Insert(Mechlocation);
+
+                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                        Mechlocation.MechID = Mech.MechID;
+                        Mechlocation.LocationID = 4;
+                        Mechlocation.HitPoints = int.Parse(txtRT.Text);
+                        MechLocations.Insert(Mechlocation);
+
+                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                        Mechlocation.MechID = Mech.MechID;
+                        Mechlocation.LocationID = 5;
+                        Mechlocation.HitPoints = int.Parse(txtLA.Text);
+                        MechLocations.Insert(Mechlocation);
+
+                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                        Mechlocation.MechID = Mech.MechID;
+                        Mechlocation.LocationID = 6;
+                        Mechlocation.HitPoints = int.Parse(txtRA.Text);
+                        MechLocations.Insert(Mechlocation);
+
+                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                        Mechlocation.MechID = Mech.MechID;
+                        Mechlocation.LocationID = 7;
+                        Mechlocation.HitPoints = int.Parse(txtLL.Text);
+                        MechLocations.Insert(Mechlocation);
+
+                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                        Mechlocation.MechID = Mech.MechID;
+                        Mechlocation.LocationID = 8;
+                        Mechlocation.HitPoints = int.Parse(txtRL.Text);
+                        MechLocations.Insert(Mechlocation);
+
+                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                        Mechlocation.MechID = Mech.MechID;
+                        Mechlocation.LocationID = 9;
+                        Mechlocation.HitPoints = int.Parse(txtCTR.Text);
+                        MechLocations.Insert(Mechlocation);
+
+                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                        Mechlocation.MechID = Mech.MechID;
+                        Mechlocation.LocationID = 10;
+                        Mechlocation.HitPoints = int.Parse(txtLTR.Text);
+                        MechLocations.Insert(Mechlocation);
+
+                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                        Mechlocation.MechID = Mech.MechID;
+                        Mechlocation.LocationID = 11;
+                        Mechlocation.HitPoints = int.Parse(txtRTR.Text);
+                        MechLocations.Insert(Mechlocation);
+
+                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                        Mechlocation.MechID = Mech.MechID;
+                        Mechlocation.LocationID = 12;
+                        Mechlocation.HitPoints = int.Parse(txtIH.Text);
+                        MechLocations.Insert(Mechlocation);
+
+                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                        Mechlocation.MechID = Mech.MechID;
+                        Mechlocation.LocationID = 13;
+                        Mechlocation.HitPoints = int.Parse(txtICT.Text);
+                        MechLocations.Insert(Mechlocation);
+
+                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                        Mechlocation.MechID = Mech.MechID;
+                        Mechlocation.LocationID = 14;
+                        Mechlocation.HitPoints = int.Parse(txtILT.Text);
+                        MechLocations.Insert(Mechlocation);
+
+                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                        Mechlocation.MechID = Mech.MechID;
+                        Mechlocation.LocationID = 15;
+                        Mechlocation.HitPoints = int.Parse(txtIRT.Text);
+                        MechLocations.Insert(Mechlocation);
+
+                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                        Mechlocation.MechID = Mech.MechID;
+                        Mechlocation.LocationID = 16;
+                        Mechlocation.HitPoints = int.Parse(txtILA.Text);
+                        MechLocations.Insert(Mechlocation);
+
+                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                        Mechlocation.MechID = Mech.MechID;
+                        Mechlocation.LocationID = 17;
+                        Mechlocation.HitPoints = int.Parse(txtIRA.Text);
+                        MechLocations.Insert(Mechlocation);
+
+                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                        Mechlocation.MechID = Mech.MechID;
+                        Mechlocation.LocationID = 18;
+                        Mechlocation.HitPoints = int.Parse(txtILL.Text);
+                        MechLocations.Insert(Mechlocation);
+
+                        Mechlocation.MechLocationID = MechLocations.Count() + 1;
+                        Mechlocation.MechID = Mech.MechID;
+                        Mechlocation.LocationID = 19;
+                        Mechlocation.HitPoints = int.Parse(txtIRL.Text);
+                        MechLocations.Insert(Mechlocation);
 
 
                     }
@@ -514,6 +587,29 @@ namespace DT_DRS_WinForm
                 MessageBox.Show(ex.Message);
 
             }
+        }
+
+        private void cmdDelete_Click(object sender, EventArgs e)
+        {
+            using (var db = new LiteDatabase(@"DRS.db"))
+            {
+                var Mechs = db.GetCollection<DS_BTDRSMechs>("Mechs");
+                Mechs.EnsureIndex(x => x.MechID);
+
+                string[] MDL = new string[2];
+                MDL = lbMechs.SelectedItem.ToString().Split('(');
+                if (MDL.Length > 1)
+                {
+                    Mechs.Delete(Query.EQ("Model", MDL[1].Substring(0, MDL[1].Length - 1)));
+                }
+                LoadMechList();
+                //lbMechs.Items.RemoveAt(lbMechs.SelectedValue);
+            }
+        }
+
+        private void cmdRefresh_Click(object sender, EventArgs e)
+        {
+            LoadMechList();
         }
     }
 }

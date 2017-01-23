@@ -136,7 +136,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbMechs = new System.Windows.Forms.ListBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cmdDelete = new System.Windows.Forms.Button();
+            this.cmdRefresh = new System.Windows.Forms.Button();
             this.groupBox6.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabHead.SuspendLayout();
@@ -1335,7 +1336,8 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.button1);
+            this.groupBox4.Controls.Add(this.cmdRefresh);
+            this.groupBox4.Controls.Add(this.cmdDelete);
             this.groupBox4.Controls.Add(this.lbMechs);
             this.groupBox4.Location = new System.Drawing.Point(964, 12);
             this.groupBox4.Name = "groupBox4";
@@ -1344,14 +1346,25 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "MECHS";
             // 
-            // button1
+            // cmdDelete
             // 
-            this.button1.Location = new System.Drawing.Point(100, 638);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Load Mech";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cmdDelete.Location = new System.Drawing.Point(6, 638);
+            this.cmdDelete.Name = "cmdDelete";
+            this.cmdDelete.Size = new System.Drawing.Size(98, 23);
+            this.cmdDelete.TabIndex = 15;
+            this.cmdDelete.Text = "Delete Mech";
+            this.cmdDelete.UseVisualStyleBackColor = true;
+            this.cmdDelete.Click += new System.EventHandler(this.cmdDelete_Click);
+            // 
+            // cmdRefresh
+            // 
+            this.cmdRefresh.Location = new System.Drawing.Point(180, 638);
+            this.cmdRefresh.Name = "cmdRefresh";
+            this.cmdRefresh.Size = new System.Drawing.Size(98, 23);
+            this.cmdRefresh.TabIndex = 16;
+            this.cmdRefresh.Text = "Refresh";
+            this.cmdRefresh.UseVisualStyleBackColor = true;
+            this.cmdRefresh.Click += new System.EventHandler(this.cmdRefresh_Click);
             // 
             // frmMechLab
             // 
@@ -1512,6 +1525,7 @@
         private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.ListBox lbMechs;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button cmdDelete;
+        private System.Windows.Forms.Button cmdRefresh;
     }
 }
