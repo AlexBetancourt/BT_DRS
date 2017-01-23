@@ -136,8 +136,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbMechs = new System.Windows.Forms.ListBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.cmdDelete = new System.Windows.Forms.Button();
             this.cmdRefresh = new System.Windows.Forms.Button();
+            this.cmdDelete = new System.Windows.Forms.Button();
             this.groupBox6.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabHead.SuspendLayout();
@@ -914,6 +914,7 @@
             this.txtWalk.TabIndex = 6;
             this.txtWalk.Text = "0";
             this.txtWalk.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtWalk.TextChanged += new System.EventHandler(this.txtWalk_TextChanged);
             // 
             // label37
             // 
@@ -1346,16 +1347,6 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "MECHS";
             // 
-            // cmdDelete
-            // 
-            this.cmdDelete.Location = new System.Drawing.Point(6, 638);
-            this.cmdDelete.Name = "cmdDelete";
-            this.cmdDelete.Size = new System.Drawing.Size(98, 23);
-            this.cmdDelete.TabIndex = 15;
-            this.cmdDelete.Text = "Delete Mech";
-            this.cmdDelete.UseVisualStyleBackColor = true;
-            this.cmdDelete.Click += new System.EventHandler(this.cmdDelete_Click);
-            // 
             // cmdRefresh
             // 
             this.cmdRefresh.Location = new System.Drawing.Point(180, 638);
@@ -1365,6 +1356,16 @@
             this.cmdRefresh.Text = "Refresh";
             this.cmdRefresh.UseVisualStyleBackColor = true;
             this.cmdRefresh.Click += new System.EventHandler(this.cmdRefresh_Click);
+            // 
+            // cmdDelete
+            // 
+            this.cmdDelete.Location = new System.Drawing.Point(6, 638);
+            this.cmdDelete.Name = "cmdDelete";
+            this.cmdDelete.Size = new System.Drawing.Size(98, 23);
+            this.cmdDelete.TabIndex = 15;
+            this.cmdDelete.Text = "Delete Mech";
+            this.cmdDelete.UseVisualStyleBackColor = true;
+            this.cmdDelete.Click += new System.EventHandler(this.cmdDelete_Click);
             // 
             // frmMechLab
             // 

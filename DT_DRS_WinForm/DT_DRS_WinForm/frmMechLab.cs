@@ -611,5 +611,19 @@ namespace DT_DRS_WinForm
         {
             LoadMechList();
         }
+
+        private void txtWalk_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                double i = Int32.Parse(txtWalk.Text);
+                i = Math.Ceiling(i * 1.5);
+                txtRun.Text = i.ToString();
+            }
+            catch (FormatException)
+            {
+
+            }
+        }
     }
 }
