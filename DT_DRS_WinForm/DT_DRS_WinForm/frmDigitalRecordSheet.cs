@@ -1158,6 +1158,14 @@ namespace DT_DRS_WinForm
         private void cmdResetHeat_Click(object sender, EventArgs e)
         {
             pgbHeat.Value = 0;
+            if (checkBox1.Checked)
+            {
+                pgbHeat.Value = pgbHeat.Value + 5;
+            }
+            if (checkBox2.Checked)
+            {
+                pgbHeat.Value = pgbHeat.Value + 5;
+            }
             HeatModifiers();
         }
 
@@ -1631,8 +1639,27 @@ namespace DT_DRS_WinForm
             pgbHeat.Value = pgbHeat.Value + 3;
             HeatModifiers();
         }
+
         #endregion
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked) {
+                pgbHeat.Value = pgbHeat.Value + 5;
+                HeatModifiers();
+                checkBox1.Enabled = false;
+                txtHeat.Text = pgbHeat.Value.ToString();
+            };
+        }
 
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked) {
+                pgbHeat.Value = pgbHeat.Value + 5;
+                HeatModifiers();
+                checkBox2.Enabled = false;
+                txtHeat.Text = pgbHeat.Value.ToString();
+            };
+        }
     }
 }
