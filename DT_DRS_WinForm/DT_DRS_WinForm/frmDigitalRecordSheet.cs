@@ -822,8 +822,8 @@ namespace DT_DRS_WinForm
                     double RunMod;
                     RunMod = (int.Parse(txtWalk.Text) - 1) * 1.5;
                     int RunModRounded = int.Parse(Math.Ceiling(RunMod).ToString());
-                    lblMModRun.Text ="-" + (int.Parse(txtRun.Text)-RunModRounded).ToString();
-                       
+                    lblMModRun.Text = "-" + (int.Parse(txtRun.Text) - RunModRounded).ToString();
+
 
                 }
                 else
@@ -864,7 +864,7 @@ namespace DT_DRS_WinForm
                 if (pgbHeat.Value >= 15)
                 {
                     lbl3M.Visible = true;
-                    lblMModWalk.Text =  "-3";
+                    lblMModWalk.Text = "-3";
                     double RunMod;
                     RunMod = (int.Parse(txtWalk.Text) - 3) * 1.5;
                     int RunModRounded = int.Parse(Math.Ceiling(RunMod).ToString());
@@ -895,7 +895,7 @@ namespace DT_DRS_WinForm
                 if (pgbHeat.Value >= 20)
                 {
                     lbl4M.Visible = true;
-                    lblMModWalk.Text =  "-4";
+                    lblMModWalk.Text = "-4";
                     double RunMod;
                     RunMod = (int.Parse(txtWalk.Text) - 4) * 1.5;
                     int RunModRounded = int.Parse(Math.Ceiling(RunMod).ToString());
@@ -987,10 +987,21 @@ namespace DT_DRS_WinForm
                     }
                     InternalControl.BackColor = Color.Black;
                     InternalControl.ForeColor = Color.White;
+                    InternalControl.Enabled = false;
+                    InternalControl.ReadOnly = true;
                     InternalControl.Text = Armor.ToString();
 
                     TransferControl.Text = (int.Parse(TransferControl.Text) + (Damage - Armor)).ToString();
 
+                    if (InternalControl == txtLT)
+                    {
+                        validateInternalDamage(int.Parse(lblILA.Text), int.Parse(lblILA.Text), txtILA);
+
+                    }
+                    if (InternalControl == txtRT)
+                    {
+                        validateInternalDamage(int.Parse(lblIRA.Text), int.Parse(lblIRA.Text), txtILA);
+                    }
                 }
             }
             catch (Exception ex)
@@ -1028,6 +1039,8 @@ namespace DT_DRS_WinForm
                     InternalControl.Text = Armor.ToString();
 
                     txtCT.BackColor = txtCTR.BackColor = txtRT.BackColor = txtRTR.BackColor = txtLT.BackColor = txtLTR.BackColor = txtLA.BackColor = txtRA.BackColor = txtLL.BackColor = txtRL.BackColor = txtH.BackColor = txtIH.BackColor = txtICT.BackColor = txtILT.BackColor = txtIRT.BackColor = txtILA.BackColor = txtIRA.BackColor = txtILL.BackColor = txtIRL.BackColor = Color.Black;
+                    txtCT.Enabled = txtCTR.Enabled = txtRT.Enabled = txtRTR.Enabled = txtLT.Enabled = txtLTR.Enabled = txtLA.Enabled = txtRA.Enabled = txtLL.Enabled = txtRL.Enabled = txtH.Enabled = txtIH.Enabled = txtICT.Enabled = txtILT.Enabled = txtIRT.Enabled = txtILA.Enabled = txtIRA.Enabled = txtILL.Enabled = txtIRL.Enabled = false;
+                    txtCT.ReadOnly = txtCTR.ReadOnly = txtRT.ReadOnly = txtRTR.ReadOnly = txtLT.ReadOnly = txtLTR.ReadOnly = txtLA.ReadOnly = txtRA.ReadOnly = txtLL.ReadOnly = txtRL.ReadOnly = txtH.ReadOnly = txtIH.ReadOnly = txtICT.ReadOnly = txtILT.ReadOnly = txtIRT.ReadOnly = txtILA.ReadOnly = txtIRA.ReadOnly = txtILL.ReadOnly = txtIRL.ReadOnly = true;
 
                 }
             }
@@ -1063,6 +1076,8 @@ namespace DT_DRS_WinForm
                     }
                     InternalControl.BackColor = Color.Black;
                     InternalControl.ForeColor = Color.White;
+                    InternalControl.Enabled = false;
+                    InternalControl.ReadOnly = true;
                     InternalControl.Text = Armor.ToString();
                 }
             }
@@ -1091,8 +1106,12 @@ namespace DT_DRS_WinForm
                     Control.Text = Armor.ToString();
                     Control.BackColor = Color.Black;
                     Control.ForeColor = Color.White;
+                    Control.Enabled = false;
+                    Control.ReadOnly = true;
                     int InternalDamage;
                     InternalDamage = Damage - Armor;
+                    InternalControl.Enabled = true;
+                    InternalControl.ReadOnly = false;
                     InternalControl.Text = (int.Parse(InternalControl.Text.ToString()) + InternalDamage).ToString();
 
                     System.Media.SoundPlayer player = new System.Media.SoundPlayer(Application.StartupPath + @"\Sounds\MW4 V Betty - Armour Breached.wav");
@@ -1174,9 +1193,31 @@ namespace DT_DRS_WinForm
             if (pgbHeat.Value >= int.Parse(txtHeatSinks.Text))
             {
                 pgbHeat.Value = pgbHeat.Value - int.Parse(txtHeatSinks.Text);
+
+
             }
             else
                 pgbHeat.Value = 0;
+            if (checkBox1.Checked)
+            {
+                checkBox2.Enabled = true;
+                pgbHeat.Value = pgbHeat.Value + 5;
+                HeatModifiers();
+                //checkBox1.Enabled = false;
+                txtHeat.Text = pgbHeat.Value.ToString();
+            }
+            if (checkBox2.Checked)
+            {
+                checkBox3.Enabled = true;
+                pgbHeat.Value = pgbHeat.Value + 5;
+                HeatModifiers();
+                //checkBox1.Enabled = false;
+                txtHeat.Text = pgbHeat.Value.ToString();
+            }
+            if (checkBox3.Checked)
+            {
+                validateInternalDamage(int.Parse(lblICT.Text), int.Parse(lblICT.Text), txtICT);
+            }
             HeatModifiers();
         }
         private void frmDataRecordSheet_Load(object sender, EventArgs e)
@@ -1644,22 +1685,37 @@ namespace DT_DRS_WinForm
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked) {
-                pgbHeat.Value = pgbHeat.Value + 5;
-                HeatModifiers();
-                checkBox1.Enabled = false;
-                txtHeat.Text = pgbHeat.Value.ToString();
-            };
+            //if (checkBox1.Checked)
+            //{
+            //    pgbHeat.Value = pgbHeat.Value + 5;
+            //    HeatModifiers();
+            //    //checkBox1.Enabled = false;
+            //    txtHeat.Text = pgbHeat.Value.ToString();
+            //}
+            //else
+            //{
+            //    pgbHeat.Value = pgbHeat.Value + 5;
+            //    HeatModifiers();
+            //    //checkBox1.Enabled = false;
+            //    txtHeat.Text = pgbHeat.Value.ToString();
+            //}
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox2.Checked) {
-                pgbHeat.Value = pgbHeat.Value + 5;
-                HeatModifiers();
-                checkBox2.Enabled = false;
-                txtHeat.Text = pgbHeat.Value.ToString();
-            };
+            //if (checkBox2.Checked) {
+            //    pgbHeat.Value = pgbHeat.Value + 5;
+            //    HeatModifiers();
+            //    //checkBox2.Enabled = false;
+            //    txtHeat.Text = pgbHeat.Value.ToString();
+            //}
+            //else
+            //{
+            //    pgbHeat.Value = pgbHeat.Value + 5;
+            //    HeatModifiers();
+            //    //checkBox1.Enabled = false;
+            //    txtHeat.Text = pgbHeat.Value.ToString();
+            //}
         }
     }
 }

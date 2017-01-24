@@ -609,8 +609,10 @@
             // txtIRL
             // 
             this.txtIRL.BackColor = System.Drawing.Color.LawnGreen;
+            this.txtIRL.Enabled = false;
             this.txtIRL.Location = new System.Drawing.Point(156, 260);
             this.txtIRL.Name = "txtIRL";
+            this.txtIRL.ReadOnly = true;
             this.txtIRL.Size = new System.Drawing.Size(29, 20);
             this.txtIRL.TabIndex = 39;
             this.txtIRL.Text = "0";
@@ -630,8 +632,10 @@
             // txtILL
             // 
             this.txtILL.BackColor = System.Drawing.Color.LawnGreen;
+            this.txtILL.Enabled = false;
             this.txtILL.Location = new System.Drawing.Point(53, 260);
             this.txtILL.Name = "txtILL";
+            this.txtILL.ReadOnly = true;
             this.txtILL.Size = new System.Drawing.Size(29, 20);
             this.txtILL.TabIndex = 37;
             this.txtILL.Text = "0";
@@ -651,8 +655,10 @@
             // txtIRT
             // 
             this.txtIRT.BackColor = System.Drawing.Color.LawnGreen;
+            this.txtIRT.Enabled = false;
             this.txtIRT.Location = new System.Drawing.Point(146, 64);
             this.txtIRT.Name = "txtIRT";
+            this.txtIRT.ReadOnly = true;
             this.txtIRT.Size = new System.Drawing.Size(29, 20);
             this.txtIRT.TabIndex = 35;
             this.txtIRT.Text = "0";
@@ -672,8 +678,10 @@
             // txtILT
             // 
             this.txtILT.BackColor = System.Drawing.Color.LawnGreen;
+            this.txtILT.Enabled = false;
             this.txtILT.Location = new System.Drawing.Point(65, 64);
             this.txtILT.Name = "txtILT";
+            this.txtILT.ReadOnly = true;
             this.txtILT.Size = new System.Drawing.Size(29, 20);
             this.txtILT.TabIndex = 33;
             this.txtILT.Text = "0";
@@ -693,8 +701,10 @@
             // txtIRA
             // 
             this.txtIRA.BackColor = System.Drawing.Color.LawnGreen;
+            this.txtIRA.Enabled = false;
             this.txtIRA.Location = new System.Drawing.Point(189, 71);
             this.txtIRA.Name = "txtIRA";
+            this.txtIRA.ReadOnly = true;
             this.txtIRA.Size = new System.Drawing.Size(29, 20);
             this.txtIRA.TabIndex = 31;
             this.txtIRA.Text = "0";
@@ -714,8 +724,10 @@
             // txtILA
             // 
             this.txtILA.BackColor = System.Drawing.Color.LawnGreen;
+            this.txtILA.Enabled = false;
             this.txtILA.Location = new System.Drawing.Point(24, 71);
             this.txtILA.Name = "txtILA";
+            this.txtILA.ReadOnly = true;
             this.txtILA.Size = new System.Drawing.Size(29, 20);
             this.txtILA.TabIndex = 29;
             this.txtILA.Text = "0";
@@ -735,8 +747,10 @@
             // txtICT
             // 
             this.txtICT.BackColor = System.Drawing.Color.LawnGreen;
+            this.txtICT.Enabled = false;
             this.txtICT.Location = new System.Drawing.Point(108, 81);
             this.txtICT.Name = "txtICT";
+            this.txtICT.ReadOnly = true;
             this.txtICT.Size = new System.Drawing.Size(29, 20);
             this.txtICT.TabIndex = 27;
             this.txtICT.Text = "0";
@@ -756,8 +770,10 @@
             // txtIH
             // 
             this.txtIH.BackColor = System.Drawing.Color.LawnGreen;
+            this.txtIH.Enabled = false;
             this.txtIH.Location = new System.Drawing.Point(107, 35);
             this.txtIH.Name = "txtIH";
+            this.txtIH.ReadOnly = true;
             this.txtIH.Size = new System.Drawing.Size(29, 20);
             this.txtIH.TabIndex = 24;
             this.txtIH.Text = "0";
@@ -2153,6 +2169,7 @@
             // checkBox8
             // 
             this.checkBox8.AutoSize = true;
+            this.checkBox8.Enabled = false;
             this.checkBox8.Location = new System.Drawing.Point(124, 80);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(15, 14);
@@ -2180,6 +2197,7 @@
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
+            this.checkBox5.Enabled = false;
             this.checkBox5.Location = new System.Drawing.Point(124, 56);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(15, 14);
@@ -2207,6 +2225,7 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
+            this.checkBox3.Enabled = false;
             this.checkBox3.Location = new System.Drawing.Point(154, 33);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(15, 14);
@@ -2216,6 +2235,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
+            this.checkBox2.Enabled = false;
             this.checkBox2.Location = new System.Drawing.Point(124, 33);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(15, 14);
