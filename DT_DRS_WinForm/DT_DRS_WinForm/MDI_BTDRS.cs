@@ -400,6 +400,37 @@ namespace DT_DRS_WinForm
                         MessageBox.Show("Mech Count: " + Mechs.Count().ToString());
                         MessageBox.Show("Mech Locations Count: " + MechLocations.Count().ToString());
 
+                        //AMMO
+                        var MechConfigsRows = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\MechConfigs.csv"));
+                        var MechConfigs = Database.GetCollection<DS_BTDRSMechConfigs>("MechConfigs");
+                        MechConfigs.EnsureIndex(x => x.TonsWeight);
+
+                        MechConfigs.Delete(Query.All(1));
+                        MessageBox.Show("MechConfigs Count: " + MechConfigs.Count().ToString());
+                        while (!AmmoRows.EndOfStream)
+                        {
+                            var line = MechConfigsRows.ReadLine();
+                            var values = line.Split('|');
+                            if (values[0] != "Tons")
+                            {
+                                var MechConfig = new DS_BTDRSMechConfigs
+                                {
+                                    TonsWeight = int.Parse(values[0]),
+                                    StandarTons = decimal.Parse(values[1], nfi),
+                                    EndoTons = decimal.Parse(values[2], nfi),
+                                    HeadHP = int.Parse(values[3]),
+                                    CTorsoHP = int.Parse(values[4]),
+                                    LRTorsoHP = int.Parse(values[5]),
+                                    LRArmsHP = int.Parse(values[6]),
+                                    LRLegsHP = int.Parse(values[7]),
+                                    MaxArmor = values[8]
+                                };
+                                MechConfigs.Insert(MechConfig);
+                            }
+                        }
+
+
+
                     }
                 }
             }

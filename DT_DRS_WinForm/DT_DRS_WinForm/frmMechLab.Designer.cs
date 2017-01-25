@@ -138,6 +138,7 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cmdRefresh = new System.Windows.Forms.Button();
             this.cmdDelete = new System.Windows.Forms.Button();
+            this.nmTons = new System.Windows.Forms.NumericUpDown();
             this.groupBox6.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabHead.SuspendLayout();
@@ -156,6 +157,7 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nmTons)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox7
@@ -762,6 +764,7 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.nmTons);
             this.groupBox5.Controls.Add(this.label21);
             this.groupBox5.Controls.Add(this.txtModel);
             this.groupBox5.Controls.Add(this.label6);
@@ -1367,6 +1370,29 @@
             this.cmdDelete.UseVisualStyleBackColor = true;
             this.cmdDelete.Click += new System.EventHandler(this.cmdDelete_Click);
             // 
+            // nmTons
+            // 
+            this.nmTons.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.nmTons.Location = new System.Drawing.Point(334, 71);
+            this.nmTons.Minimum = new decimal(new int[] {
+            25,
+            0,
+            0,
+            0});
+            this.nmTons.Name = "nmTons";
+            this.nmTons.Size = new System.Drawing.Size(53, 20);
+            this.nmTons.TabIndex = 19;
+            this.nmTons.Value = new decimal(new int[] {
+            25,
+            0,
+            0,
+            0});
+            this.nmTons.ValueChanged += new System.EventHandler(this.nmTons_ValueChanged);
+            // 
             // frmMechLab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1412,6 +1438,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nmTons)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1528,5 +1555,6 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button cmdDelete;
         private System.Windows.Forms.Button cmdRefresh;
+        private System.Windows.Forms.NumericUpDown nmTons;
     }
 }

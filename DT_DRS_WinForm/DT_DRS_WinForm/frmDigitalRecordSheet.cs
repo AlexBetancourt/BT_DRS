@@ -28,7 +28,7 @@ namespace DT_DRS_WinForm
         #endregion
 
         #region "SOUNDS"
-
+        int Heat = 0;
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -39,14 +39,18 @@ namespace DT_DRS_WinForm
                 player.Play();
                 Thread.Sleep(1000);
             }
-            int Heat = 0;
 
-            Heat = pgbHeat.Value + 1;
+
+            Heat = Heat + 1;
             if (Heat > 30)
             {
-                Heat = 30;
+                pgbHeat.Value = 30;
             }
-            pgbHeat.Value = Heat;
+            else
+            {
+                pgbHeat.Value = Heat;
+            }
+            txtHeat.Text = Heat.ToString();
             HeatModifiers();
         }
 
@@ -101,14 +105,18 @@ namespace DT_DRS_WinForm
                     player.Play();
                     Thread.Sleep(1000);
                 }
-                int Heat = 0;
+                //int Heat = 0;
 
-                Heat = pgbHeat.Value + 3;
+                Heat = Heat + 3;
                 if (Heat > 30)
                 {
-                    Heat = 30;
+                    pgbHeat.Value = 30;
                 }
-                pgbHeat.Value = Heat;
+                else
+                {
+                    pgbHeat.Value = Heat;
+                }
+                txtHeat.Text = Heat.ToString();
                 HeatModifiers();
             }
             catch (Exception ex)
@@ -129,15 +137,19 @@ namespace DT_DRS_WinForm
                     player.Play();
                     Thread.Sleep(1000);
                 }
-                int Heat = 0;
+                //int Heat = 0;
 
-                Heat = pgbHeat.Value + 8;
+                Heat = Heat + 8;
 
                 if (Heat > 30)
                 {
-                    Heat = 30;
+                    pgbHeat.Value = 30;
                 }
-                pgbHeat.Value = Heat;
+                else
+                {
+                    pgbHeat.Value = Heat;
+                }
+                txtHeat.Text = Heat.ToString();
                 HeatModifiers();
             }
             catch (Exception ex)
@@ -158,22 +170,26 @@ namespace DT_DRS_WinForm
                     player.Play();
                     Thread.Sleep(1000);
                 }
-                int Heat = 0;
+                //int Heat = 0;
                 if (rdAC2.Checked || rdAC5.Checked)
                 {
-                    Heat = pgbHeat.Value + 1;
+                    Heat = Heat + 1;
                 }
                 else if (rdAC10.Checked)
                 {
-                    Heat = pgbHeat.Value + 3;
+                    Heat = Heat+ 3;
                 }
                 else if (rdAC20.Checked)
-                    Heat = pgbHeat.Value + 7;
+                    Heat = Heat  + 7;
+                txtHeat.Text = Heat.ToString();
                 if (Heat > 30)
                 {
-                    Heat = 30;
+                    pgbHeat.Value = 30;
                 }
-                pgbHeat.Value = Heat;
+                else
+                {
+                    pgbHeat.Value = Heat;
+                }
                 HeatModifiers();
             }
             catch (Exception ex)
@@ -195,19 +211,22 @@ namespace DT_DRS_WinForm
                     Thread.Sleep(1000);
                 }
 
-                int Heat = 0;
+                //int Heat = 0;
                 if (rdSRM2.Checked)
-                    Heat = pgbHeat.Value + 2;
+                    Heat = Heat + + 2;
                 else if (rdSRM4.Checked)
-                    Heat = pgbHeat.Value + 3;
+                    Heat = Heat + + 3;
                 else if (rdSRM6.Checked)
-                    Heat = pgbHeat.Value + 4;
-
+                    Heat = Heat + + 4;
+                txtHeat.Text = Heat.ToString();
                 if (Heat > 30)
                 {
-                    Heat = 30;
+                    pgbHeat.Value = 30;
                 }
-                pgbHeat.Value = Heat;
+                else
+                {
+                    pgbHeat.Value = Heat;
+                }
                 HeatModifiers();
             }
             catch (Exception ex)
@@ -229,14 +248,18 @@ namespace DT_DRS_WinForm
                     Thread.Sleep(1000);
                 }
 
-                int Heat = 0;
+               // int Heat = 0;
 
-                Heat = pgbHeat.Value + 10;
+                Heat = Heat + 10;
+                txtHeat.Text = Heat.ToString();
                 if (Heat > 30)
                 {
-                    Heat = 30;
+                    pgbHeat.Value = 30;
                 }
-                pgbHeat.Value = Heat;
+                else
+                {
+                    pgbHeat.Value = Heat;
+                }
 
                 HeatModifiers();
             }
@@ -260,7 +283,7 @@ namespace DT_DRS_WinForm
                     Thread.Sleep(1000);
                 }
 
-                int Heat = 0;
+                //int Heat = 0;
 
                 if (rdLRM5.Checked)
                     Heat = pgbHeat.Value + 2;
@@ -273,9 +296,13 @@ namespace DT_DRS_WinForm
 
                 if (Heat > 30)
                 {
-                    Heat = 30;
+                    pgbHeat.Value = 30;
                 }
-                pgbHeat.Value = Heat;
+                else
+                {
+                    pgbHeat.Value = Heat;
+                }
+                txtHeat.Text = Heat.ToString();
                 HeatModifiers();
             }
             catch (Exception ex)
@@ -953,7 +980,7 @@ namespace DT_DRS_WinForm
                 else
                     lblShutdown.Visible = false;
 
-                txtHeat.Text = pgbHeat.Value.ToString();
+                txtHeat.Text = Heat.ToString();
             }
             catch (Exception ex)
             {
@@ -993,14 +1020,19 @@ namespace DT_DRS_WinForm
 
                     TransferControl.Text = (int.Parse(TransferControl.Text) + (Damage - Armor)).ToString();
 
-                    if (InternalControl == txtLT)
+                    if (InternalControl.Name == "txtILT")
                     {
-                        validateInternalDamage(int.Parse(lblILA.Text), int.Parse(lblILA.Text), txtILA);
-
+                        txtLA.BackColor= txtILA.BackColor= Color.Black;
+                        txtLA.ForeColor=txtILA.ForeColor = Color.White;
+                        txtLA.Enabled = txtILA.Enabled = false;
+                        txtLA.ReadOnly= txtILA.ReadOnly = true;
                     }
-                    if (InternalControl == txtRT)
+                    if (InternalControl.Name == "txtIRT")
                     {
-                        validateInternalDamage(int.Parse(lblIRA.Text), int.Parse(lblIRA.Text), txtILA);
+                        txtRA.BackColor = txtIRA.BackColor = Color.Black;
+                        txtRA.ForeColor = txtIRA.ForeColor = Color.White;
+                        txtRA.Enabled = txtIRA.Enabled = false;
+                        txtRA.ReadOnly = txtIRA.ReadOnly = true;
                     }
                 }
             }
@@ -1190,34 +1222,43 @@ namespace DT_DRS_WinForm
 
         private void cmdHeatSinks_Click(object sender, EventArgs e)
         {
-            if (pgbHeat.Value >= int.Parse(txtHeatSinks.Text))
-            {
-                pgbHeat.Value = pgbHeat.Value - int.Parse(txtHeatSinks.Text);
 
-
-            }
-            else
-                pgbHeat.Value = 0;
             if (checkBox1.Checked)
             {
                 checkBox2.Enabled = true;
-                pgbHeat.Value = pgbHeat.Value + 5;
-                HeatModifiers();
+                Heat = Heat + 5;
+                
                 //checkBox1.Enabled = false;
-                txtHeat.Text = pgbHeat.Value.ToString();
+                txtHeat.Text = Heat.ToString();
+
+                HeatModifiers();
             }
             if (checkBox2.Checked)
             {
                 checkBox3.Enabled = true;
-                pgbHeat.Value = pgbHeat.Value + 5;
+                Heat = Heat + 5;
                 HeatModifiers();
                 //checkBox1.Enabled = false;
-                txtHeat.Text = pgbHeat.Value.ToString();
+                txtHeat.Text = Heat.ToString();
+
+                HeatModifiers();
             }
             if (checkBox3.Checked)
             {
                 validateInternalDamage(int.Parse(lblICT.Text), int.Parse(lblICT.Text), txtICT);
             }
+            if (Heat >= int.Parse(txtHeatSinks.Text))
+            {
+                Heat = Heat - int.Parse(txtHeatSinks.Text);
+                if (Heat > 30)
+                    pgbHeat.Value = 30;
+                else
+                    pgbHeat.Value = Heat;
+
+
+            }
+            else
+                pgbHeat.Value = 0;
             HeatModifiers();
         }
         private void frmDataRecordSheet_Load(object sender, EventArgs e)

@@ -196,7 +196,7 @@ namespace DT_DRS_WinForm
                         }
                         else
                         {
-                            if ( MessageBox.Show("That Model already exists Overwrite???","Existing Mech",MessageBoxButtons.OKCancel) == DialogResult.OK)
+                            if (MessageBox.Show("That Model already exists Overwrite???", "Existing Mech", MessageBoxButtons.OKCancel) == DialogResult.OK)
                             {
                                 cmdUpdate_Click(null, null);
                             }
@@ -624,6 +624,25 @@ namespace DT_DRS_WinForm
             {
 
             }
+        }
+
+        private void nmTons_ValueChanged(object sender, EventArgs e)
+        {
+            using (var db = new LiteDatabase(@"DRS.db"))
+            {
+                var MechConfigs = db.GetCollection<DS_BTDRSMechConfigs>("MechConfigs");
+                MechConfigs.EnsureIndex(x => x.TonsWeight);
+
+                DS_BTDRSMechConfigs MechConfig = MechConfigs.FindOne(Query.EQ("TonsWeight", int.Parse(nmTons.Value.ToString())));
+
+                txtIH.Text = MechConfig.HeadHP.ToString();
+                txtICT.Text = MechConfig.CTorsoHP.ToString();
+                txtILT.Text = txtIRT.Text = MechConfig.LRTorsoHP.ToString();
+                txtILA.Text = txtIRA.Text = MechConfig.LRArmsHP.ToString();
+                txtILL.Text = txtIRL.Text = MechConfig.LRLegsHP.ToString();
+
+            }
+
         }
     }
 }

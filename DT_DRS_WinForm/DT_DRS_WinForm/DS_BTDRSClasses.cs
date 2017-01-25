@@ -1,12 +1,5 @@
 ﻿using System.Xml.Serialization;
 
-/// <comentarios/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/DS_BTDRS.xsd")]
-[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/DS_BTDRS.xsd", IsNullable = false)]
 public partial class DS_BTDRS
 {
 
@@ -19,6 +12,7 @@ public partial class DS_BTDRS
     [System.Xml.Serialization.XmlElementAttribute("MechWeaponLocation", typeof(DS_BTDRSMechWeaponLocation))]
     [System.Xml.Serialization.XmlElementAttribute("Mechs", typeof(DS_BTDRSMechs))]
     [System.Xml.Serialization.XmlElementAttribute("Weapons", typeof(DS_BTDRSWeapons))]
+    [System.Xml.Serialization.XmlElementAttribute("MechConfgis", typeof(DS_BTDRSMechConfigs))]
     public object[] Items
     {
         get
@@ -32,12 +26,6 @@ public partial class DS_BTDRS
     }
 }
 
-/// <comentarios/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/DS_BTDRS.xsd")]
 public partial class DS_BTDRSLocations
 {
 
@@ -72,19 +60,13 @@ public partial class DS_BTDRSLocations
     }
 }
 
-/// <comentarios/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/DS_BTDRS.xsd")]
 public partial class DS_BTDRSMechLocation
 {
-        private int mechLocationIDField;
-        private int mechIDField;
-        private int locationIDField;
-        private int hitPointsField;
-        private bool hitPointsFieldSpecified;
+    private int mechLocationIDField;
+    private int mechIDField;
+    private int locationIDField;
+    private int hitPointsField;
+    private bool hitPointsFieldSpecified;
 
     /// <comentarios/>
     public int MechLocationID
@@ -153,12 +135,6 @@ public partial class DS_BTDRSMechLocation
     }
 }
 
-/// <comentarios/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/DS_BTDRS.xsd")]
 public partial class DS_BTDRSMechPilots
 {
 
@@ -439,12 +415,6 @@ public partial class DS_BTDRSMechPilots
     }
 }
 
-/// <comentarios/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/DS_BTDRS.xsd")]
 public partial class DS_BTDRSAmmo
 {
     private int ammoID;
@@ -463,7 +433,7 @@ public partial class DS_BTDRSAmmo
         }
         set
         {
-            this.ammoID= value;
+            this.ammoID = value;
         }
     }
 
@@ -474,14 +444,15 @@ public partial class DS_BTDRSAmmo
     }
 
     public string Ammo
-    { get { return this.ammo;}
-    set { this.ammo = value; }
+    {
+        get { return this.ammo; }
+        set { this.ammo = value; }
     }
 
     public decimal Tons
     {
         get { return this.tons; }
-        set { this.tons =value; }
+        set { this.tons = value; }
     }
 
     public int Cost
@@ -496,12 +467,6 @@ public partial class DS_BTDRSAmmo
     }
 }
 
-/// <comentarios/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/DS_BTDRS.xsd")]
 public partial class DS_BTDRSMechWeaponLocation
 {
 
@@ -597,45 +562,24 @@ public partial class DS_BTDRSMechWeaponLocation
     }
 }
 
-/// <comentarios/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/DS_BTDRS.xsd")]
 public partial class DS_BTDRSMechs
 {
 
     private int mechIDField;
-
     private bool mechIDFieldSpecified;
-
     private string nameField;
-
     private string modelField;
-
     private bool pilotIDFieldSpecified;
-
     private int walkField;
-
     private bool walkFieldSpecified;
-
     private int runField;
-
     private bool runFieldSpecified;
-
     private int heatsinksField;
-
     private bool heatsinksFieldSpecified;
-
     private decimal tonsField;
-
     private bool tonsFieldSpecified;
-
     private int jumpField;
-
     private bool jumpFieldSpecified;
-
     /// <comentarios/>
     public int MechID
     {
@@ -839,12 +783,72 @@ public partial class DS_BTDRSMechs
     }
 }
 
-/// <comentarios/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/DS_BTDRS.xsd")]
+public partial class DS_BTDRSMechConfigs
+{
+    private int tonsWeight;
+    private decimal standardTons;
+    private decimal endoTons;
+    private int headHP;
+    private int cTorsoHP;
+    private int lrTorsoHP;
+    private int lrArmsHP;
+    private int lrLegsHP;
+    private string MaxArmorBipedQuad;
+
+    /// <comentarios/>
+    public int TonsWeight
+    {
+        get { return this.tonsWeight; }
+        set { this.tonsWeight = value; }
+    }
+
+    public decimal StandarTons
+    {
+        get { return this.standardTons; }
+        set { this.standardTons = value; }
+    }
+
+    public decimal EndoTons
+    {
+        get { return this.endoTons; }
+        set { this.endoTons = value; }
+    }
+    public int HeadHP
+    {
+        get { return this.headHP; }
+        set { this.headHP = value; }
+    }
+    public int CTorsoHP
+    {
+        get { return this.cTorsoHP; }
+        set { this.cTorsoHP = value; }
+    }
+    public int LRTorsoHP
+    {
+        get { return this.lrTorsoHP; }
+        set { this.lrTorsoHP = value; }
+    }
+
+    public int LRArmsHP
+    {
+        get { return this.lrArmsHP; }
+        set { this.lrArmsHP = value; }
+    }
+    public int LRLegsHP
+    {
+        get { return this.lrLegsHP; }
+        set { this.lrLegsHP = value; }
+    }
+    public string MaxArmor
+    {
+        get { return this.MaxArmorBipedQuad; }
+        set { this.MaxArmorBipedQuad = value; }
+    }
+
+}
+
+
+
 public partial class DS_BTDRSWeapons
 {
 
