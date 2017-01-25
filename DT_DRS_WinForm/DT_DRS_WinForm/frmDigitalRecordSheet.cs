@@ -177,10 +177,10 @@ namespace DT_DRS_WinForm
                 }
                 else if (rdAC10.Checked)
                 {
-                    Heat = Heat+ 3;
+                    Heat = Heat + 3;
                 }
                 else if (rdAC20.Checked)
-                    Heat = Heat  + 7;
+                    Heat = Heat + 7;
                 txtHeat.Text = Heat.ToString();
                 if (Heat > 30)
                 {
@@ -213,11 +213,11 @@ namespace DT_DRS_WinForm
 
                 //int Heat = 0;
                 if (rdSRM2.Checked)
-                    Heat = Heat + + 2;
+                    Heat = Heat + +2;
                 else if (rdSRM4.Checked)
-                    Heat = Heat + + 3;
+                    Heat = Heat + +3;
                 else if (rdSRM6.Checked)
-                    Heat = Heat + + 4;
+                    Heat = Heat + +4;
                 txtHeat.Text = Heat.ToString();
                 if (Heat > 30)
                 {
@@ -248,7 +248,7 @@ namespace DT_DRS_WinForm
                     Thread.Sleep(1000);
                 }
 
-               // int Heat = 0;
+                // int Heat = 0;
 
                 Heat = Heat + 10;
                 txtHeat.Text = Heat.ToString();
@@ -1022,10 +1022,10 @@ namespace DT_DRS_WinForm
 
                     if (InternalControl.Name == "txtILT")
                     {
-                        txtLA.BackColor= txtILA.BackColor= Color.Black;
-                        txtLA.ForeColor=txtILA.ForeColor = Color.White;
+                        txtLA.BackColor = txtILA.BackColor = Color.Black;
+                        txtLA.ForeColor = txtILA.ForeColor = Color.White;
                         txtLA.Enabled = txtILA.Enabled = false;
-                        txtLA.ReadOnly= txtILA.ReadOnly = true;
+                        txtLA.ReadOnly = txtILA.ReadOnly = true;
                     }
                     if (InternalControl.Name == "txtIRT")
                     {
@@ -1227,7 +1227,7 @@ namespace DT_DRS_WinForm
             {
                 checkBox2.Enabled = true;
                 Heat = Heat + 5;
-                
+
                 //checkBox1.Enabled = false;
                 txtHeat.Text = Heat.ToString();
 
@@ -1670,7 +1670,11 @@ namespace DT_DRS_WinForm
 
         private void txtWalk_Click(object sender, EventArgs e)
         {
-            pgbHeat.Value = pgbHeat.Value + 1;
+            Heat = Heat + 1;
+            if (Heat > 30)
+                pgbHeat.Value = 30;
+            else
+                pgbHeat.Value = Heat;
             HeatModifiers();
         }
 
@@ -1710,15 +1714,13 @@ namespace DT_DRS_WinForm
             HeatModifiers();
         }
 
-        private void txtRun_Click(object sender, EventArgs e)
-        {
-            pgbHeat.Value = pgbHeat.Value + 2;
-            HeatModifiers();
-        }
-
         private void txtJump_Click(object sender, EventArgs e)
         {
-            pgbHeat.Value = pgbHeat.Value + 3;
+            Heat = Heat + 3;
+            if (Heat > 30)
+                pgbHeat.Value = 30;
+            else
+                pgbHeat.Value = Heat;
             HeatModifiers();
         }
 
@@ -1757,6 +1759,16 @@ namespace DT_DRS_WinForm
             //    //checkBox1.Enabled = false;
             //    txtHeat.Text = pgbHeat.Value.ToString();
             //}
+        }
+
+        private void txtRun_Click(object sender, EventArgs e)
+        {
+            Heat = Heat + 2;
+            if (Heat > 30)
+                pgbHeat.Value = 30;
+            else
+                pgbHeat.Value = Heat;
+            HeatModifiers();
         }
     }
 }

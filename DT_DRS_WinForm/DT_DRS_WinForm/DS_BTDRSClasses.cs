@@ -12,7 +12,7 @@ public partial class DS_BTDRS
     [System.Xml.Serialization.XmlElementAttribute("MechWeaponLocation", typeof(DS_BTDRSMechWeaponLocation))]
     [System.Xml.Serialization.XmlElementAttribute("Mechs", typeof(DS_BTDRSMechs))]
     [System.Xml.Serialization.XmlElementAttribute("Weapons", typeof(DS_BTDRSWeapons))]
-    [System.Xml.Serialization.XmlElementAttribute("MechConfgis", typeof(DS_BTDRSMechConfigs))]
+    [System.Xml.Serialization.XmlElementAttribute("MechConfigs", typeof(DS_BTDRSMechConfigs))]
     public object[] Items
     {
         get
@@ -785,7 +785,8 @@ public partial class DS_BTDRSMechs
 
 public partial class DS_BTDRSMechConfigs
 {
-    private int tonsWeight;
+    private int tonsField;
+    private bool tonsFieldSpecified;
     private decimal standardTons;
     private decimal endoTons;
     private int headHP;
@@ -796,11 +797,26 @@ public partial class DS_BTDRSMechConfigs
     private string MaxArmorBipedQuad;
 
     /// <comentarios/>
-    public int TonsWeight
+    public int Tons
     {
-        get { return this.tonsWeight; }
-        set { this.tonsWeight = value; }
+        get { return this.tonsField; }
+        set { this.tonsField = value; }
     }
+    /// <comentarios/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool TonsSpecified
+    {
+        get
+        {
+            return this.tonsFieldSpecified;
+        }
+        set
+        {
+            this.tonsFieldSpecified = value;
+        }
+    }
+
+
 
     public decimal StandarTons
     {

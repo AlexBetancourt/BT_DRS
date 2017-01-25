@@ -98,8 +98,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.txtHeat = new System.Windows.Forms.TextBox();
             this.lblMModJump = new System.Windows.Forms.Label();
             this.lblMModRun = new System.Windows.Forms.Label();
             this.lblMModWalk = new System.Windows.Forms.Label();
@@ -244,6 +242,8 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.txtHeat = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -1038,8 +1038,6 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.label30);
-            this.groupBox5.Controls.Add(this.txtHeat);
             this.groupBox5.Controls.Add(this.lblMModJump);
             this.groupBox5.Controls.Add(this.lblMModRun);
             this.groupBox5.Controls.Add(this.lblMModWalk);
@@ -1066,27 +1064,6 @@
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "MECH DATA";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label30.Location = new System.Drawing.Point(194, 72);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(70, 13);
-            this.label30.TabIndex = 39;
-            this.label30.Text = "Current Heat:";
-            // 
-            // txtHeat
-            // 
-            this.txtHeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHeat.Location = new System.Drawing.Point(268, 69);
-            this.txtHeat.Name = "txtHeat";
-            this.txtHeat.Size = new System.Drawing.Size(60, 22);
-            this.txtHeat.TabIndex = 38;
-            this.txtHeat.Text = "0";
-            this.txtHeat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtHeat.DoubleClick += new System.EventHandler(this.txtHeat_DoubleClick);
             // 
             // lblMModJump
             // 
@@ -1243,7 +1220,7 @@
             this.txtRun.TabIndex = 8;
             this.txtRun.Text = "6";
             this.txtRun.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtRun.Click += new System.EventHandler(this.txtRun_Click);
+            this.txtRun.DoubleClick += new System.EventHandler(this.txtRun_Click);
             // 
             // label39
             // 
@@ -1263,7 +1240,7 @@
             this.txtWalk.TabIndex = 6;
             this.txtWalk.Text = "4";
             this.txtWalk.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtWalk.Click += new System.EventHandler(this.txtWalk_Click);
+            this.txtWalk.DoubleClick += new System.EventHandler(this.txtWalk_Click);
             // 
             // label37
             // 
@@ -2274,9 +2251,9 @@
             // cmdResetHeat
             // 
             this.cmdResetHeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.cmdResetHeat.Location = new System.Drawing.Point(849, 694);
+            this.cmdResetHeat.Location = new System.Drawing.Point(935, 546);
             this.cmdResetHeat.Name = "cmdResetHeat";
-            this.cmdResetHeat.Size = new System.Drawing.Size(102, 23);
+            this.cmdResetHeat.Size = new System.Drawing.Size(32, 23);
             this.cmdResetHeat.TabIndex = 7;
             this.cmdResetHeat.Text = "Heat Reset";
             this.cmdResetHeat.UseVisualStyleBackColor = true;
@@ -2524,11 +2501,33 @@
             this.label25.TabIndex = 53;
             this.label25.Text = "TH = To Hit";
             // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.label30.Location = new System.Drawing.Point(896, 702);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(36, 13);
+            this.label30.TabIndex = 55;
+            this.label30.Text = "HEAT";
+            // 
+            // txtHeat
+            // 
+            this.txtHeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHeat.Location = new System.Drawing.Point(853, 697);
+            this.txtHeat.Name = "txtHeat";
+            this.txtHeat.Size = new System.Drawing.Size(37, 22);
+            this.txtHeat.TabIndex = 54;
+            this.txtHeat.Text = "0";
+            this.txtHeat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // frmDigitalRecordSheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(972, 724);
+            this.Controls.Add(this.label30);
+            this.Controls.Add(this.txtHeat);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.lblShutdown);
             this.Controls.Add(this.lblAE8);
@@ -2792,8 +2791,6 @@
         private System.Windows.Forms.Label lblMModJump;
         private System.Windows.Forms.Label lblMModRun;
         private System.Windows.Forms.Label lblMModWalk;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox txtHeat;
         private System.Windows.Forms.RadioButton rdLRM20;
         private System.Windows.Forms.RadioButton rdLRM15;
         private System.Windows.Forms.RadioButton rdLRM10;
@@ -2812,5 +2809,7 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox txtHeat;
     }
 }
