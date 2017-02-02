@@ -124,12 +124,14 @@ namespace DT_DRS_WinForm
 
                 if (Locations.Count() == 0)
                 {
-                    initializeDatabaseToolStripMenuItem_Click(null, null);
+                    AutoConfig = true;
+                    initializeWeaponsEquipmentToolStripMenuItem_Click(null, null);
                 }
-                //Form childForm = new frmDataRecordSheet();
-                //childForm.MdiParent = this;
-                //childForm.Text = "Window " + childFormNumber++;
-                //childForm.Show();
+                else
+                {
+                    tsLabel.Text = "Configuration Complete.";
+                    tsProgBar.Value = tsProgBar.Maximum;
+                }
             }
         }
 
@@ -150,12 +152,12 @@ namespace DT_DRS_WinForm
         {
 
         }
-
+        bool AutoConfig = false;
         private void initializeWeaponsEquipmentToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
             {
-                if (MessageBox.Show("Are you sure you want to Initialize the Database??? (It will erase all data excluding Introductory BoxSet Mechs)", "Initialize Database", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                if (AutoConfig || MessageBox.Show("Are you sure you want to Initialize the Database??? (It will erase all data excluding Introductory BoxSet Mechs)", "Initialize Database", MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
                     using (var Database = new LiteDatabase(@"DRS.db"))
                     {
@@ -163,12 +165,29 @@ namespace DT_DRS_WinForm
                         NumberFormatInfo nfi = new NumberFormatInfo();
                         nfi.NumberDecimalSeparator = ".";
                         //LOCATIONS
+                        var LocationRowsCount = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\Locations.csv"));
                         var LocationRows = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\Locations.csv"));
                         var Locations = Database.GetCollection<DS_BTDRSLocations>("Locations");
                         Locations.EnsureIndex(x => x.LocationID);
 
+                        tsLabel.Text = "Loading Configurations...";
+
+
                         Locations.Delete(Query.All(1));
-                        MessageBox.Show("Location Count: " + Locations.Count().ToString());
+                        tsLabel.Text = "Adding Locations";
+                        tsProgBar.Value = 0;
+                        int rowsCount = 0;
+                        while (!LocationRowsCount.EndOfStream)
+                        {
+                            var line = LocationRowsCount.ReadLine();
+                            var values = line.Split('|');
+                            if (values[0] != "LocationID")
+                            {
+                                rowsCount = rowsCount + 1;
+                            }
+                        }
+                        tsProgBar.Maximum = rowsCount;
+                        
                         while (!LocationRows.EndOfStream)
                         {
                             var line = LocationRows.ReadLine();
@@ -181,26 +200,41 @@ namespace DT_DRS_WinForm
                                     Description = values[1]
                                 };
                                 Locations.Insert(Location);
+                                tsProgBar.Value = tsProgBar.Value + 1;
                             }
                         }
-                        MessageBox.Show("Location Count: " + Locations.Count().ToString());
+                        //MessageBox.Show("Location Count: " + Locations.Count().ToString());
 
 
                         //WEAPONS AND EQUIPMENT
+                        var WeaponRowsCount = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\WeaponsNEquipment.csv"));
                         var WeaponRows = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\WeaponsNEquipment.csv"));
                         var Weapons = Database.GetCollection<DS_BTDRSWeapons>("Weapons");
                         Weapons.EnsureIndex(x => x.WeaponID);
 
                         Weapons.Delete(Query.All(1));
-                        MessageBox.Show("Weapon Count: " + Weapons.Count().ToString());
-                        
+                        tsLabel.Text = "Adding Weapons";
+                        tsProgBar.Value = 0;
+                        rowsCount = 0;
+                        while (!WeaponRowsCount.EndOfStream)
+                        {
+                            var line = WeaponRowsCount.ReadLine();
+                            var values = line.Split('|');
+                            if (values[0] != "WeaponID")
+                            {
+                                rowsCount = rowsCount + 1;
+                            }
+                        }
+                        tsProgBar.Maximum = rowsCount;
+
+
                         while (!WeaponRows.EndOfStream)
                         {
                             var line = WeaponRows.ReadLine();
                             var values = line.Split('|');
                             if (values[0] != "WeaponID")
                             {
-                               // decimal tonnage = decimal.Parse(values[8]);
+                                // decimal tonnage = decimal.Parse(values[8]);
                                 var Weapon = new DS_BTDRSWeapons
                                 {
                                     WeaponID = int.Parse(values[0]),
@@ -211,25 +245,39 @@ namespace DT_DRS_WinForm
                                     Short = values[5],
                                     Medium = values[6],
                                     Long = values[7],
-                                    Tons = decimal.Parse(values[8],nfi),
+                                    Tons = decimal.Parse(values[8], nfi),
                                     Crits = int.Parse(values[9]),
                                     Ammo = values[10],
                                     WeaponType = values[13]
                                 };
                                 Weapons.Insert(Weapon);
+                                tsProgBar.Value = tsProgBar.Value + 1;
                             }
-                                                       
+
 
                         }
-                        MessageBox.Show("Weapon Count: " + Weapons.Count().ToString());
+
 
                         //AMMO
+                        var AmmoRowsCount = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\Ammo.csv"));
                         var AmmoRows = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\Ammo.csv"));
                         var Ammos = Database.GetCollection<DS_BTDRSAmmo>("Ammos");
                         Ammos.EnsureIndex(x => x.AmmoID);
 
                         Ammos.Delete(Query.All(1));
-                        MessageBox.Show("Ammo Count: " + Ammos.Count().ToString());
+                        tsLabel.Text = "Adding Ammo";
+                        tsProgBar.Value = 0;
+                        rowsCount = 0;
+                        while (!AmmoRowsCount.EndOfStream)
+                        {
+                            var line = AmmoRowsCount.ReadLine();
+                            var values = line.Split('|');
+                            if (values[0] != "AmmoID")
+                            {
+                                rowsCount = rowsCount + 1;
+                            }
+                        }
+                        tsProgBar.Maximum = rowsCount;
                         while (!AmmoRows.EndOfStream)
                         {
                             var line = AmmoRows.ReadLine();
@@ -241,24 +289,38 @@ namespace DT_DRS_WinForm
                                     AmmoID = int.Parse(values[0]),
                                     AmmoName = values[1],
                                     Ammo = values[2],
-                                    Tons = decimal.Parse(values[3],nfi),
+                                    Tons = decimal.Parse(values[3], nfi),
                                     Cost = int.Parse(values[4]),
                                     BV = int.Parse(values[5])
                                 };
                                 Ammos.Insert(Ammo);
+                                tsProgBar.Value = tsProgBar.Value + 1;
                             }
                         }
-                        MessageBox.Show("Ammo Count: " + Ammos.Count().ToString());
+
 
 
                         //MECHS
+                        var MechsRowsCount = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\Mechs.csv"));
                         var MechsRows = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\Mechs.csv"));
                         var Mechs = Database.GetCollection<DS_BTDRSMechs>("Mechs");
                         Mechs.EnsureIndex(x => x.MechID);
                         var MechLocations = Database.GetCollection<DS_BTDRSMechLocation>("MechLocations");
                         MechLocations.Delete(Query.All());
                         Mechs.Delete(Query.All(1));
-                        MessageBox.Show("Mech Count: " + Mechs.Count().ToString());
+                        tsLabel.Text = "Adding Mechs";
+                        tsProgBar.Value = 0;
+                        rowsCount = 0;
+                        while (!MechsRowsCount.EndOfStream)
+                        {
+                            var line = MechsRowsCount.ReadLine();
+                            var values = line.Split('|');
+                            if (values[0] != "MechID")
+                            {
+                                rowsCount = rowsCount + 1;
+                            }
+                        }
+                        tsProgBar.Maximum = rowsCount;
                         while (!MechsRows.EndOfStream)
                         {
                             var line = MechsRows.ReadLine();
@@ -277,7 +339,7 @@ namespace DT_DRS_WinForm
                                     Tons = int.Parse(values[7])
                                 };
                                 Mechs.Insert(Mech);
-
+                                tsProgBar.Value = tsProgBar.Value + 1;
                                 //var MechLocations = Database.GetCollection<DS_BTDRSMechLocation>("MechLocations");
                                 var MechLocation = new DS_BTDRSMechLocation
                                 {
@@ -396,17 +458,31 @@ namespace DT_DRS_WinForm
                                 MechLocation.HitPoints = int.Parse(values[26]);
                                 MechLocations.Insert(MechLocation);
                             }
+                           
                         }
-                        MessageBox.Show("Mech Count: " + Mechs.Count().ToString());
-                        MessageBox.Show("Mech Locations Count: " + MechLocations.Count().ToString());
+
+
 
                         //AMMO
+                        var MechConfigsRowsCount = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\MechConfigs.csv"));
                         var MechConfigsRows = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\MechConfigs.csv"));
                         var MechConfigs = Database.GetCollection<DS_BTDRSMechConfigs>("MechConfigs");
                         MechConfigs.EnsureIndex(x => x.Tons);
 
                         MechConfigs.Delete(Query.All(1));
-                        MessageBox.Show("MechConfigs Count: " + MechConfigs.Count().ToString());
+                        tsLabel.Text = "Adding Configs";
+                        tsProgBar.Value = 0;
+                        rowsCount = 0;
+                        while (!MechConfigsRowsCount.EndOfStream)
+                        {
+                            var line = MechConfigsRowsCount.ReadLine();
+                            var values = line.Split('|');
+                            if (values[0] != "Tons")
+                            {
+                                rowsCount = rowsCount + 1;
+                            }
+                        }
+                        tsProgBar.Maximum = rowsCount;
                         while (!MechConfigsRows.EndOfStream)
                         {
                             var line = MechConfigsRows.ReadLine();
@@ -426,10 +502,12 @@ namespace DT_DRS_WinForm
                                     MaxArmor = values[8]
                                 };
                                 MechConfigs.Insert(MechConfig);
+                                tsProgBar.Value = tsProgBar.Value + 1;
                             }
                         }
 
-                        MessageBox.Show("MechConfigs Count: " + MechConfigs.Count().ToString());
+                        tsLabel.Text = "Configuration Complete.";
+
 
                     }
                 }
@@ -471,8 +549,11 @@ namespace DT_DRS_WinForm
         {
 
             int randomNumber1 = random1.Next(1, 7);
+            diceRollToolStripMenuItem.ShowDropDown();
+            d6ToolStripMenuItem.DropDownItems.Insert(0,d6ToolStripMenuItem.DropDownItems.Add("Roll 1D6: " + randomNumber1.ToString()));//  ToolStripDropDown();
+            d6ToolStripMenuItem.ShowDropDown();
 
-            MessageBox.Show("Roll 1D6:  " + randomNumber1.ToString());
+           // MessageBox.Show("Roll 1D6:  " + randomNumber1.ToString());
 
         }
 
@@ -480,8 +561,10 @@ namespace DT_DRS_WinForm
         {
             int randomNumber1 = random1.Next(1, 7);
             int randomNumber2 = random1.Next(1, 7);
-
-            MessageBox.Show("Roll 2D6:  " + randomNumber1.ToString() + " + " + randomNumber2.ToString() + " = " + (randomNumber1 + randomNumber2).ToString());
+            diceRollToolStripMenuItem.ShowDropDown();
+            d6ToolStripMenuItem1.DropDownItems.Insert(0, d6ToolStripMenuItem1.DropDownItems.Add("Roll 2D6:  " + randomNumber1.ToString() + " + " + randomNumber2.ToString() + " = " + (randomNumber1 + randomNumber2).ToString()));//  ToolStripDropDown();
+            d6ToolStripMenuItem1.ShowDropDown();
+            //MessageBox.Show("Roll 2D6:  " + randomNumber1.ToString() + " + " + randomNumber2.ToString() + " = " + (randomNumber1 + randomNumber2).ToString());
         }
 
         private void movementCostTableToolStripMenuItem_Click(object sender, EventArgs e)
@@ -592,6 +675,12 @@ namespace DT_DRS_WinForm
             Table = "Piloting Skill Roll Table";
             childForm.Text = "Piloting Skill Roll Table";
             childForm.Show();
+        }
+
+        private void clearRollsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            d6ToolStripMenuItem.DropDownItems.Clear();
+            d6ToolStripMenuItem1.DropDownItems.Clear();
         }
     }
 }

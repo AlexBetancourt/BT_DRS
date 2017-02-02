@@ -636,16 +636,29 @@ namespace DT_DRS_WinForm
                     //var Mechs = db.GetCollection<DS_BTDRSMechs>("Mechs");
 
                     MechConfigs.EnsureIndex(x => x.Tons);
-//                    MessageBox.Show(MechConfigs.Count().ToString());
+                    //                    MessageBox.Show(MechConfigs.Count().ToString());
 
-                    DS_BTDRSMechConfigs MechConfig = MechConfigs.FindOne(Query.EQ("Tons",txtTons.Text));
+                    //DS_BTDRSMechConfigs MechConfig = MechConfigs.FindOne(Query.EQ("Tons",txtTons.Text));
                     //DS_BTDRSMechs Mech = Mechs.FindOne(Query.EQ("Model", txtModel.Text));
 
-                    txtIH.Text = MechConfig.HeadHP.ToString();
-                    txtICT.Text = MechConfig.CTorsoHP.ToString();
-                    txtILT.Text = txtIRT.Text = MechConfig.LRTorsoHP.ToString();
-                    txtILA.Text = txtIRA.Text = MechConfig.LRArmsHP.ToString();
-                    txtILL.Text = txtIRL.Text = MechConfig.LRLegsHP.ToString();
+
+
+                    foreach (DS_BTDRSMechConfigs MechConfig in MechConfigs.FindAll())
+                    {
+                        if (int.Parse(nmTons.Value.ToString()) == int.Parse(MechConfig.Tons.ToString()))
+                        {
+                            txtIH.Text = MechConfig.HeadHP.ToString();
+                            txtICT.Text = MechConfig.CTorsoHP.ToString();
+                            txtILT.Text = txtIRT.Text = MechConfig.LRTorsoHP.ToString();
+                            txtILA.Text = txtIRA.Text = MechConfig.LRArmsHP.ToString();
+                            txtILL.Text = txtIRL.Text = MechConfig.LRLegsHP.ToString();
+                            return;
+                        }
+
+                    }
+
+
+
 
                 }
 

@@ -19,7 +19,7 @@ namespace DT_DRS_WinForm
         private void frmTables_Load(object sender, EventArgs e)
         {
             picTables.Image = Image.FromFile(Application.StartupPath + @"\Images\" + this.Text + ".png");
-            this.Size = picTables.Image.Size;
+            this.Size = new System.Drawing.Size(picTables.Image.Size.Width + 50,picTables.Image.Size.Height + 70);
         }
     }
 }
