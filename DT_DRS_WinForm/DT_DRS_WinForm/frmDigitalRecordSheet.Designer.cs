@@ -117,17 +117,6 @@
             this.txtWalk = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabHead = new System.Windows.Forms.TabPage();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.tabCenterTorso = new System.Windows.Forms.TabPage();
-            this.tabLeftTorso = new System.Windows.Forms.TabPage();
-            this.tabRightTorso = new System.Windows.Forms.TabPage();
-            this.tabLeftArm = new System.Windows.Forms.TabPage();
-            this.tabRightArm = new System.Windows.Forms.TabPage();
-            this.tabLeftLeg = new System.Windows.Forms.TabPage();
-            this.tabRightLeg = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label41 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
@@ -244,6 +233,24 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.txtHeat = new System.Windows.Forms.TextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabHead = new System.Windows.Forms.TabPage();
+            this.chklstHead = new System.Windows.Forms.CheckedListBox();
+            this.tabCenterTorso = new System.Windows.Forms.TabPage();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.tabLeftTorso = new System.Windows.Forms.TabPage();
+            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
+            this.tabRightTorso = new System.Windows.Forms.TabPage();
+            this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
+            this.tabLeftArm = new System.Windows.Forms.TabPage();
+            this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
+            this.tabRightArm = new System.Windows.Forms.TabPage();
+            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.tabLeftLeg = new System.Windows.Forms.TabPage();
+            this.checkedListBox7 = new System.Windows.Forms.CheckedListBox();
+            this.tabRightLeg = new System.Windows.Forms.TabPage();
+            this.checkedListBox6 = new System.Windows.Forms.CheckedListBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -252,13 +259,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabHead.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.mnuApplyDamage.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabHead.SuspendLayout();
+            this.tabCenterTorso.SuspendLayout();
+            this.tabLeftTorso.SuspendLayout();
+            this.tabRightTorso.SuspendLayout();
+            this.tabLeftArm.SuspendLayout();
+            this.tabRightArm.SuspendLayout();
+            this.tabLeftLeg.SuspendLayout();
+            this.tabRightLeg.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -1262,120 +1276,6 @@
             this.txtName.TabIndex = 2;
             this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.tabControl1);
-            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.groupBox6.Location = new System.Drawing.Point(12, 261);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(418, 429);
-            this.groupBox6.TabIndex = 5;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "CRITICAL HIT TABLE";
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons;
-            this.tabControl1.Controls.Add(this.tabHead);
-            this.tabControl1.Controls.Add(this.tabCenterTorso);
-            this.tabControl1.Controls.Add(this.tabLeftTorso);
-            this.tabControl1.Controls.Add(this.tabRightTorso);
-            this.tabControl1.Controls.Add(this.tabLeftArm);
-            this.tabControl1.Controls.Add(this.tabRightArm);
-            this.tabControl1.Controls.Add(this.tabLeftLeg);
-            this.tabControl1.Controls.Add(this.tabRightLeg);
-            this.tabControl1.Location = new System.Drawing.Point(9, 19);
-            this.tabControl1.Multiline = true;
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(403, 404);
-            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.tabControl1.TabIndex = 0;
-            // 
-            // tabHead
-            // 
-            this.tabHead.Controls.Add(this.checkedListBox1);
-            this.tabHead.Location = new System.Drawing.Point(4, 49);
-            this.tabHead.Name = "tabHead";
-            this.tabHead.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHead.Size = new System.Drawing.Size(395, 351);
-            this.tabHead.TabIndex = 0;
-            this.tabHead.Text = "Head";
-            this.tabHead.UseVisualStyleBackColor = true;
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(6, 17);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(383, 304);
-            this.checkedListBox1.TabIndex = 0;
-            // 
-            // tabCenterTorso
-            // 
-            this.tabCenterTorso.Location = new System.Drawing.Point(4, 49);
-            this.tabCenterTorso.Name = "tabCenterTorso";
-            this.tabCenterTorso.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCenterTorso.Size = new System.Drawing.Size(395, 351);
-            this.tabCenterTorso.TabIndex = 1;
-            this.tabCenterTorso.Text = "Center Torso";
-            this.tabCenterTorso.UseVisualStyleBackColor = true;
-            // 
-            // tabLeftTorso
-            // 
-            this.tabLeftTorso.Location = new System.Drawing.Point(4, 49);
-            this.tabLeftTorso.Name = "tabLeftTorso";
-            this.tabLeftTorso.Size = new System.Drawing.Size(395, 351);
-            this.tabLeftTorso.TabIndex = 2;
-            this.tabLeftTorso.Text = "LeftTorso";
-            this.tabLeftTorso.UseVisualStyleBackColor = true;
-            // 
-            // tabRightTorso
-            // 
-            this.tabRightTorso.Location = new System.Drawing.Point(4, 49);
-            this.tabRightTorso.Name = "tabRightTorso";
-            this.tabRightTorso.Size = new System.Drawing.Size(395, 351);
-            this.tabRightTorso.TabIndex = 3;
-            this.tabRightTorso.Text = "Right Torso";
-            this.tabRightTorso.UseVisualStyleBackColor = true;
-            // 
-            // tabLeftArm
-            // 
-            this.tabLeftArm.Location = new System.Drawing.Point(4, 49);
-            this.tabLeftArm.Name = "tabLeftArm";
-            this.tabLeftArm.Size = new System.Drawing.Size(395, 351);
-            this.tabLeftArm.TabIndex = 4;
-            this.tabLeftArm.Text = "Left Arm";
-            this.tabLeftArm.UseVisualStyleBackColor = true;
-            // 
-            // tabRightArm
-            // 
-            this.tabRightArm.Location = new System.Drawing.Point(4, 49);
-            this.tabRightArm.Name = "tabRightArm";
-            this.tabRightArm.Size = new System.Drawing.Size(395, 351);
-            this.tabRightArm.TabIndex = 5;
-            this.tabRightArm.Text = "Right Arm";
-            this.tabRightArm.UseVisualStyleBackColor = true;
-            // 
-            // tabLeftLeg
-            // 
-            this.tabLeftLeg.Location = new System.Drawing.Point(4, 49);
-            this.tabLeftLeg.Name = "tabLeftLeg";
-            this.tabLeftLeg.Size = new System.Drawing.Size(395, 351);
-            this.tabLeftLeg.TabIndex = 6;
-            this.tabLeftLeg.Text = "Left Leg";
-            this.tabLeftLeg.UseVisualStyleBackColor = true;
-            // 
-            // tabRightLeg
-            // 
-            this.tabRightLeg.Location = new System.Drawing.Point(4, 49);
-            this.tabRightLeg.Name = "tabRightLeg";
-            this.tabRightLeg.Size = new System.Drawing.Size(395, 351);
-            this.tabRightLeg.TabIndex = 7;
-            this.tabRightLeg.Text = "Right Leg";
-            this.tabRightLeg.UseVisualStyleBackColor = true;
-            // 
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.label41);
@@ -1704,13 +1604,13 @@
             // 
             this.applyDamageToolStripMenuItem.AutoToolTip = true;
             this.applyDamageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.aCToolStripMenuItem,
-            this.sRMToolStripMenuItem,
             this.smallLaserToolStripMenuItem,
             this.mediumLaserToolStripMenuItem,
             this.largeLaserToolStripMenuItem,
-            this.pPCToolStripMenuItem});
+            this.pPCToolStripMenuItem,
+            this.sRMToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.aCToolStripMenuItem});
             this.applyDamageToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.applyDamageToolStripMenuItem.Name = "applyDamageToolStripMenuItem";
             this.applyDamageToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
@@ -1926,7 +1826,7 @@
             this.aC20ToolStripMenuItem});
             this.aCToolStripMenuItem.Name = "aCToolStripMenuItem";
             this.aCToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.aCToolStripMenuItem.Text = "AC";
+            this.aCToolStripMenuItem.Text = "AutoCannon";
             // 
             // aC2ToolStripMenuItem
             // 
@@ -2450,7 +2350,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.ForeColor = System.Drawing.Color.Maroon;
-            this.label22.Location = new System.Drawing.Point(13, 16);
+            this.label22.Location = new System.Drawing.Point(13, 62);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(78, 13);
             this.label22.TabIndex = 52;
@@ -2475,7 +2375,7 @@
             // 
             this.label29.AutoSize = true;
             this.label29.ForeColor = System.Drawing.Color.Maroon;
-            this.label29.Location = new System.Drawing.Point(13, 97);
+            this.label29.Location = new System.Drawing.Point(13, 108);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(110, 13);
             this.label29.TabIndex = 55;
@@ -2485,7 +2385,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.ForeColor = System.Drawing.Color.Maroon;
-            this.label27.Location = new System.Drawing.Point(13, 67);
+            this.label27.Location = new System.Drawing.Point(13, 92);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(82, 13);
             this.label27.TabIndex = 54;
@@ -2495,7 +2395,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.ForeColor = System.Drawing.Color.Maroon;
-            this.label25.Location = new System.Drawing.Point(13, 41);
+            this.label25.Location = new System.Drawing.Point(13, 76);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(63, 13);
             this.label25.TabIndex = 53;
@@ -2521,11 +2421,243 @@
             this.txtHeat.Text = "0";
             this.txtHeat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.tabControl1);
+            this.groupBox6.Location = new System.Drawing.Point(11, 261);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(418, 423);
+            this.groupBox6.TabIndex = 56;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "CRITICAL HIT TABLE";
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons;
+            this.tabControl1.Controls.Add(this.tabHead);
+            this.tabControl1.Controls.Add(this.tabCenterTorso);
+            this.tabControl1.Controls.Add(this.tabLeftTorso);
+            this.tabControl1.Controls.Add(this.tabRightTorso);
+            this.tabControl1.Controls.Add(this.tabLeftArm);
+            this.tabControl1.Controls.Add(this.tabRightArm);
+            this.tabControl1.Controls.Add(this.tabLeftLeg);
+            this.tabControl1.Controls.Add(this.tabRightLeg);
+            this.tabControl1.Location = new System.Drawing.Point(9, 19);
+            this.tabControl1.Multiline = true;
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(403, 404);
+            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl1.TabIndex = 0;
+            // 
+            // tabHead
+            // 
+            this.tabHead.Controls.Add(this.chklstHead);
+            this.tabHead.Location = new System.Drawing.Point(4, 49);
+            this.tabHead.Name = "tabHead";
+            this.tabHead.Padding = new System.Windows.Forms.Padding(3);
+            this.tabHead.Size = new System.Drawing.Size(395, 351);
+            this.tabHead.TabIndex = 0;
+            this.tabHead.Text = "Head";
+            this.tabHead.UseVisualStyleBackColor = true;
+            // 
+            // chklstHead
+            // 
+            this.chklstHead.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chklstHead.FormattingEnabled = true;
+            this.chklstHead.Items.AddRange(new object[] {
+            "1 - Life support",
+            "2 - Sensors",
+            "3 - Cockpit",
+            "4 - Roll Again",
+            "5 - Sensors",
+            "6 - Life Support"});
+            this.chklstHead.Location = new System.Drawing.Point(7, 7);
+            this.chklstHead.Name = "chklstHead";
+            this.chklstHead.Size = new System.Drawing.Size(383, 329);
+            this.chklstHead.TabIndex = 0;
+            // 
+            // tabCenterTorso
+            // 
+            this.tabCenterTorso.Controls.Add(this.checkedListBox1);
+            this.tabCenterTorso.Location = new System.Drawing.Point(4, 49);
+            this.tabCenterTorso.Name = "tabCenterTorso";
+            this.tabCenterTorso.Padding = new System.Windows.Forms.Padding(3);
+            this.tabCenterTorso.Size = new System.Drawing.Size(395, 351);
+            this.tabCenterTorso.TabIndex = 1;
+            this.tabCenterTorso.Text = "Center Torso";
+            this.tabCenterTorso.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "1 - Fusion Engine",
+            "2 - Fusion Engine",
+            "3 - Fusion Engine",
+            "4 - Gyro",
+            "5 - Gyro",
+            "6 - Gyro",
+            "1 - Gyro",
+            "2 - Fusion Engine",
+            "3 - Fusion Engine",
+            "4 - Fusion Engine",
+            "5 - Roll Again",
+            "6 - Roll Again"});
+            this.checkedListBox1.Location = new System.Drawing.Point(7, 7);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(383, 329);
+            this.checkedListBox1.TabIndex = 5;
+            // 
+            // tabLeftTorso
+            // 
+            this.tabLeftTorso.Controls.Add(this.checkedListBox3);
+            this.tabLeftTorso.Location = new System.Drawing.Point(4, 49);
+            this.tabLeftTorso.Name = "tabLeftTorso";
+            this.tabLeftTorso.Size = new System.Drawing.Size(395, 351);
+            this.tabLeftTorso.TabIndex = 2;
+            this.tabLeftTorso.Text = "LeftTorso";
+            this.tabLeftTorso.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox3
+            // 
+            this.checkedListBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox3.FormattingEnabled = true;
+            this.checkedListBox3.Location = new System.Drawing.Point(7, 7);
+            this.checkedListBox3.Name = "checkedListBox3";
+            this.checkedListBox3.Size = new System.Drawing.Size(383, 329);
+            this.checkedListBox3.TabIndex = 5;
+            // 
+            // tabRightTorso
+            // 
+            this.tabRightTorso.Controls.Add(this.checkedListBox4);
+            this.tabRightTorso.Location = new System.Drawing.Point(4, 49);
+            this.tabRightTorso.Name = "tabRightTorso";
+            this.tabRightTorso.Size = new System.Drawing.Size(395, 351);
+            this.tabRightTorso.TabIndex = 3;
+            this.tabRightTorso.Text = "Right Torso";
+            this.tabRightTorso.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox4
+            // 
+            this.checkedListBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox4.FormattingEnabled = true;
+            this.checkedListBox4.Location = new System.Drawing.Point(7, 7);
+            this.checkedListBox4.Name = "checkedListBox4";
+            this.checkedListBox4.Size = new System.Drawing.Size(383, 329);
+            this.checkedListBox4.TabIndex = 5;
+            // 
+            // tabLeftArm
+            // 
+            this.tabLeftArm.Controls.Add(this.checkedListBox5);
+            this.tabLeftArm.Location = new System.Drawing.Point(4, 49);
+            this.tabLeftArm.Name = "tabLeftArm";
+            this.tabLeftArm.Size = new System.Drawing.Size(395, 351);
+            this.tabLeftArm.TabIndex = 4;
+            this.tabLeftArm.Text = "Left Arm";
+            this.tabLeftArm.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox5
+            // 
+            this.checkedListBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox5.FormattingEnabled = true;
+            this.checkedListBox5.Items.AddRange(new object[] {
+            "1 - Shoulder",
+            "2 - Apper Arm Actuator",
+            "3 - Lower Arm Actuator",
+            "4 - Hand Actuator",
+            "5 - Roll Again",
+            "6 - Roll Again"});
+            this.checkedListBox5.Location = new System.Drawing.Point(7, 7);
+            this.checkedListBox5.Name = "checkedListBox5";
+            this.checkedListBox5.Size = new System.Drawing.Size(383, 329);
+            this.checkedListBox5.TabIndex = 5;
+            // 
+            // tabRightArm
+            // 
+            this.tabRightArm.Controls.Add(this.checkedListBox2);
+            this.tabRightArm.Location = new System.Drawing.Point(4, 49);
+            this.tabRightArm.Name = "tabRightArm";
+            this.tabRightArm.Size = new System.Drawing.Size(395, 351);
+            this.tabRightArm.TabIndex = 5;
+            this.tabRightArm.Text = "Right Arm";
+            this.tabRightArm.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox2
+            // 
+            this.checkedListBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox2.FormattingEnabled = true;
+            this.checkedListBox2.Items.AddRange(new object[] {
+            "1 - Shoulder",
+            "2 - Apper Arm Actuator",
+            "3 - Lower Arm Actuator",
+            "4 - Hand Actuator",
+            "5 - Roll Again",
+            "6 - Roll Again"});
+            this.checkedListBox2.Location = new System.Drawing.Point(7, 7);
+            this.checkedListBox2.Name = "checkedListBox2";
+            this.checkedListBox2.Size = new System.Drawing.Size(383, 329);
+            this.checkedListBox2.TabIndex = 10;
+            // 
+            // tabLeftLeg
+            // 
+            this.tabLeftLeg.Controls.Add(this.checkedListBox7);
+            this.tabLeftLeg.Location = new System.Drawing.Point(4, 49);
+            this.tabLeftLeg.Name = "tabLeftLeg";
+            this.tabLeftLeg.Size = new System.Drawing.Size(395, 351);
+            this.tabLeftLeg.TabIndex = 6;
+            this.tabLeftLeg.Text = "Left Leg";
+            this.tabLeftLeg.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox7
+            // 
+            this.checkedListBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox7.FormattingEnabled = true;
+            this.checkedListBox7.Items.AddRange(new object[] {
+            "1 - Hip",
+            "2 - Upper Leg Actuator",
+            "3 - Lower Leg Actuator",
+            "4 - Foot Actuator",
+            "5 - Roll Again",
+            "6 - Roll Again"});
+            this.checkedListBox7.Location = new System.Drawing.Point(7, 7);
+            this.checkedListBox7.Name = "checkedListBox7";
+            this.checkedListBox7.Size = new System.Drawing.Size(383, 329);
+            this.checkedListBox7.TabIndex = 5;
+            // 
+            // tabRightLeg
+            // 
+            this.tabRightLeg.Controls.Add(this.checkedListBox6);
+            this.tabRightLeg.Location = new System.Drawing.Point(4, 49);
+            this.tabRightLeg.Name = "tabRightLeg";
+            this.tabRightLeg.Size = new System.Drawing.Size(395, 351);
+            this.tabRightLeg.TabIndex = 7;
+            this.tabRightLeg.Text = "Right Leg";
+            this.tabRightLeg.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox6
+            // 
+            this.checkedListBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox6.FormattingEnabled = true;
+            this.checkedListBox6.Items.AddRange(new object[] {
+            "1 - Hip",
+            "2 - Upper Leg Actuator",
+            "3 - Lower Leg Actuator",
+            "4 - Foot Actuator",
+            "5 - Roll Again",
+            "6 - Roll Again"});
+            this.checkedListBox6.Location = new System.Drawing.Point(7, 7);
+            this.checkedListBox6.Name = "checkedListBox6";
+            this.checkedListBox6.Size = new System.Drawing.Size(383, 329);
+            this.checkedListBox6.TabIndex = 10;
+            // 
             // frmDigitalRecordSheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(972, 724);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.txtHeat);
             this.Controls.Add(this.groupBox9);
@@ -2551,7 +2683,6 @@
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.mnuApplyDamage);
             this.Controls.Add(this.groupBox7);
-            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -2577,9 +2708,6 @@
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
-            this.tabHead.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.mnuApplyDamage.ResumeLayout(false);
@@ -2588,6 +2716,16 @@
             this.groupBox8.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabHead.ResumeLayout(false);
+            this.tabCenterTorso.ResumeLayout(false);
+            this.tabLeftTorso.ResumeLayout(false);
+            this.tabRightTorso.ResumeLayout(false);
+            this.tabLeftArm.ResumeLayout(false);
+            this.tabRightArm.ResumeLayout(false);
+            this.tabLeftLeg.ResumeLayout(false);
+            this.tabRightLeg.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2600,7 +2738,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
@@ -2733,16 +2870,6 @@
         private System.Windows.Forms.ToolStripMenuItem hitsToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem hitsToolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem hitsToolStripMenuItem5;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabHead;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.TabPage tabCenterTorso;
-        private System.Windows.Forms.TabPage tabLeftTorso;
-        private System.Windows.Forms.TabPage tabRightTorso;
-        private System.Windows.Forms.TabPage tabLeftArm;
-        private System.Windows.Forms.TabPage tabRightArm;
-        private System.Windows.Forms.TabPage tabLeftLeg;
-        private System.Windows.Forms.TabPage tabRightLeg;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtHeatSinks;
         private System.Windows.Forms.Label label6;
@@ -2811,5 +2938,23 @@
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox txtHeat;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabHead;
+        private System.Windows.Forms.CheckedListBox chklstHead;
+        private System.Windows.Forms.TabPage tabCenterTorso;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.TabPage tabLeftTorso;
+        private System.Windows.Forms.CheckedListBox checkedListBox3;
+        private System.Windows.Forms.TabPage tabRightTorso;
+        private System.Windows.Forms.CheckedListBox checkedListBox4;
+        private System.Windows.Forms.TabPage tabLeftArm;
+        private System.Windows.Forms.CheckedListBox checkedListBox5;
+        private System.Windows.Forms.TabPage tabRightArm;
+        private System.Windows.Forms.CheckedListBox checkedListBox2;
+        private System.Windows.Forms.TabPage tabLeftLeg;
+        private System.Windows.Forms.CheckedListBox checkedListBox7;
+        private System.Windows.Forms.TabPage tabRightLeg;
+        private System.Windows.Forms.CheckedListBox checkedListBox6;
     }
 }

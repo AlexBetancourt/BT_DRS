@@ -21,15 +21,25 @@ namespace DT_DRS_WinForm
         {
             try
             {
-                int cuenta = 0;
-                cuenta = chklstHead.Items.Count;
-                if (cuenta >= 6 && cuenta < 12)
-                    chklstHead.Items.Add((chklstHead.Items.Count - 6 + 1).ToString() + "-" + cmbInternalComponents.SelectedItem.ToString());
-                else if (cuenta < 6)
-                {
-                    chklstHead.Items.Add((chklstHead.Items.Count + 1).ToString() + "-" + cmbInternalComponents.SelectedItem.ToString());
-                }
+                string[] item = null;
+                item = cmbInternalComponentsH.SelectedItem.ToString().Split('(');
 
+                int Crits = 0;
+                Crits = int.Parse(item[1].Substring(0, 1));
+
+                for (int i = 0; i < Crits; i++)
+                {
+                    int cuenta = 0;
+                    cuenta = chklstHead.Items.Count;
+                    if (cuenta >= 6 && cuenta < 12)
+                    {
+                        chklstHead.Items.Add((chklstHead.Items.Count - 6 + 1).ToString() + " - " + item[0]);
+                    }
+                    else if (cuenta < 6)
+                    {
+                        chklstHead.Items.Add((chklstHead.Items.Count + 1).ToString() + " - " + cmbInternalComponentsH.SelectedItem.ToString());
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -240,7 +250,7 @@ namespace DT_DRS_WinForm
                         txtRun.Text = Mech.Run.ToString();
                         txtJump.Text = Mech.Jump.ToString();
                         txtHeatSinks.Text = Mech.Heatsinks.ToString();
-                       nmTons.Value = decimal.Parse(Mech.Tons.ToString());
+                        nmTons.Value = decimal.Parse(Mech.Tons.ToString());
                         txtName.Text = Mech.Name.ToString();
 
                         var MechLocations = db.GetCollection<DS_BTDRSMechLocation>("MechLocations");
@@ -371,15 +381,28 @@ namespace DT_DRS_WinForm
 
                     foreach (DS_BTDRSMechs Mech in Mechs.FindAll())
                     {
-                        lbMechs.Items.Add(Mech.Name + "(" + Mech.Model + ")");
+                        lbMechs.Items.Add(Mech.Name + " (" + Mech.Model + ")");
+
                     }
+
+                    var Weapons = db.GetCollection<DS_BTDRSWeapons>("Weapons");
+                    Weapons.EnsureIndex(x => x.WeaponID);
+
+                    foreach (DS_BTDRSWeapons Weapon in Weapons.FindAll())
+                    {
+                        cmbInternalComponentsH.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
+                    }
+
+
+
+
+
 
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-
             }
         }
 
