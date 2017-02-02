@@ -68,7 +68,7 @@ namespace DT_DRS_WinForm
                                 Run = int.Parse(txtRun.Text),
                                 Jump = int.Parse(txtJump.Text),
                                 Heatsinks = int.Parse(txtHeatSinks.Text),
-                                Tons = int.Parse(txtTons.Text)
+                                Tons = int.Parse(nmTons.Value.ToString())
                             };
                             Mechs.Insert(Mech);
 
@@ -240,7 +240,7 @@ namespace DT_DRS_WinForm
                         txtRun.Text = Mech.Run.ToString();
                         txtJump.Text = Mech.Jump.ToString();
                         txtHeatSinks.Text = Mech.Heatsinks.ToString();
-                        txtTons.Text = Mech.Tons.ToString();
+                       nmTons.Value = decimal.Parse(Mech.Tons.ToString());
                         txtName.Text = Mech.Name.ToString();
 
                         var MechLocations = db.GetCollection<DS_BTDRSMechLocation>("MechLocations");
@@ -429,7 +429,7 @@ namespace DT_DRS_WinForm
                         Mech.Run = int.Parse(txtRun.Text);
                         Mech.Jump = int.Parse(txtJump.Text);
                         Mech.Heatsinks = int.Parse(txtHeatSinks.Text);
-                        Mech.Tons = int.Parse(txtTons.Text);
+                        Mech.Tons = int.Parse(nmTons.Value.ToString());
                         Mech.Name = txtName.Text;
                         Mech.Model = txtModel.Text;
                         Mechs.Insert(Mech);

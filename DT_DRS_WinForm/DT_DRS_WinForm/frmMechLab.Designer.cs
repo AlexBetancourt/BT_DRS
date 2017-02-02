@@ -80,6 +80,7 @@
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.checkedListBox8 = new System.Windows.Forms.CheckedListBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.nmTons = new System.Windows.Forms.NumericUpDown();
             this.label21 = new System.Windows.Forms.Label();
             this.txtModel = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -138,7 +139,6 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cmdRefresh = new System.Windows.Forms.Button();
             this.cmdDelete = new System.Windows.Forms.Button();
-            this.nmTons = new System.Windows.Forms.NumericUpDown();
             this.groupBox6.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabHead.SuspendLayout();
@@ -150,6 +150,7 @@
             this.tabLeftLeg.SuspendLayout();
             this.tabRightLeg.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nmTons)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -157,7 +158,6 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nmTons)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox7
@@ -788,6 +788,29 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "MECH DATA";
             // 
+            // nmTons
+            // 
+            this.nmTons.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.nmTons.Location = new System.Drawing.Point(268, 71);
+            this.nmTons.Minimum = new decimal(new int[] {
+            25,
+            0,
+            0,
+            0});
+            this.nmTons.Name = "nmTons";
+            this.nmTons.Size = new System.Drawing.Size(61, 20);
+            this.nmTons.TabIndex = 19;
+            this.nmTons.Value = new decimal(new int[] {
+            25,
+            0,
+            0,
+            0});
+            this.nmTons.ValueChanged += new System.EventHandler(this.nmTons_ValueChanged);
+            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -818,12 +841,13 @@
             // 
             // txtTons
             // 
-            this.txtTons.Location = new System.Drawing.Point(268, 71);
+            this.txtTons.Location = new System.Drawing.Point(334, 97);
             this.txtTons.Name = "txtTons";
             this.txtTons.Size = new System.Drawing.Size(60, 20);
             this.txtTons.TabIndex = 15;
             this.txtTons.Text = "0";
             this.txtTons.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTons.Visible = false;
             // 
             // cmdUpdate
             // 
@@ -1370,29 +1394,6 @@
             this.cmdDelete.UseVisualStyleBackColor = true;
             this.cmdDelete.Click += new System.EventHandler(this.cmdDelete_Click);
             // 
-            // nmTons
-            // 
-            this.nmTons.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.nmTons.Location = new System.Drawing.Point(334, 71);
-            this.nmTons.Minimum = new decimal(new int[] {
-            25,
-            0,
-            0,
-            0});
-            this.nmTons.Name = "nmTons";
-            this.nmTons.Size = new System.Drawing.Size(53, 20);
-            this.nmTons.TabIndex = 19;
-            this.nmTons.Value = new decimal(new int[] {
-            25,
-            0,
-            0,
-            0});
-            this.nmTons.ValueChanged += new System.EventHandler(this.nmTons_ValueChanged);
-            // 
             // frmMechLab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1428,6 +1429,7 @@
             this.tabRightLeg.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nmTons)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -1438,7 +1440,6 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nmTons)).EndInit();
             this.ResumeLayout(false);
 
         }
