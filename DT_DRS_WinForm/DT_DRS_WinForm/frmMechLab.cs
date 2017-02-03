@@ -390,7 +390,8 @@ namespace DT_DRS_WinForm
 
                     foreach (DS_BTDRSWeapons Weapon in Weapons.FindAll())
                     {
-                        cmbInternalComponentsH.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
+                        chklstComponentsH.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
+                        chklstComponentsH.Sorted = true;
                     }
 
 
@@ -691,6 +692,207 @@ namespace DT_DRS_WinForm
                 MessageBox.Show(ex.Message);
 
             }
+
+        }
+
+        private void chklstComponentsH_DragDrop(object sender, DragEventArgs e)
+        {
+
+        }
+
+        private void chklstComponentsH_DragEnter(object sender, DragEventArgs e)
+        {
+            // This event will  never be triggered unless listBox1.AllowDrop == true
+            // Adding this event to listBox1's events allows the cursor to change
+            // to indicate to the user that a copy dragdrop operation is underway.
+            // Execution here signifies a DragDrop operation is running on this control
+            // In this demo, I really don't want to allow a drop into listBox1.
+            // Since I haven't written a listBox1_DragDrop event handler
+            // an insertion into listBox1's Items never occurs.
+
+        }
+
+        private void GiveInfoAboutDragDropEvent(DateTime eventTime, string dragDropEventName, object originalSender, System.Windows.Forms.DragEventArgs e)
+        {
+            //listBox3.SetSelected(listBox3.Items.Count, true);
+        }
+
+
+        private void chklstComponentsH_MouseDown(object sender, MouseEventArgs e)
+        {
+            // starts a DoDragDrop operation with allowed effect  "Copy"
+            DateTime date = DateTime.Now; // get time of event
+            int indexOfItem = chklstComponentsH.IndexFromPoint(e.X, e.Y);
+            if (indexOfItem >= 0 && indexOfItem < chklstComponentsH.Items.Count)  // check that an string is selected
+            {
+
+                // Set allowed DragDropEffect to Copy selected from DragDropEffects enumberation of None, Move, All etc.
+                chklstComponentsH.DoDragDrop(chklstComponentsH.Items[indexOfItem], DragDropEffects.Copy);
+            }
+        }
+        private Point screenOffset;
+        private void chklstComponentsH_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
+        {
+            // This event is fired when there is a change in the keyboard or mouse button state
+            // during a drag-and-drop operation.  This means that if the cursor is
+            // moved,  this event is fired.  If the keyboard is pressed or if a
+            // change to a mouse button occurs(press or release), this even is fired.
+            // In other words, this event is fired alot!
+            // For the purposes of the demo, if the mouse cursor  moves off Form1's boundaries
+            // during DoDragDrop operation initiated by the  listBox2 mousedown event
+            // the DoDragDrop operation initiated should be cancelled.
+
+            // ( from VS. .NET Combined Collection Control.DoDragDrop documentation)
+            // The screenOffset is used to account for any desktop bands
+            // that may be at the top or left side of the screen when
+            // determining when to cancel the drag drop operation.
+            screenOffset = SystemInformation.WorkingArea.Location;
+
+            ListBox lb = sender as ListBox;
+
+            if (lb != null)
+            {
+                Form f = lb.FindForm();
+                // Cancel the drag if the mouse moves off the form. The screenOffset
+                // takes into account any desktop bands that may be at the top or left
+                // side of the screen.
+                if (((Control.MousePosition.X - screenOffset.X) < f.DesktopBounds.Left) ||
+                    ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
+                    ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
+                    ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
+                {
+                    e.Action = DragAction.Cancel;
+                }
+            }
+
+
+        }
+
+        private void chklstHead_DragDrop(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.StringFormat))
+            {
+                if (indexOfItemUnderMouseToDrop >= 0 && indexOfItemUnderMouseToDrop < listBox2.Items.Count)
+                {
+                    listBox2.Items.Insert(indexOfItemUnderMouseToDrop, e.Data.GetData(DataFormats.Text));
+                }
+                else
+                {
+                    // add the selected string to bottom of list
+                    listBox2.Items.Add(e.Data.GetData(DataFormats.Text));
+                }
+
+
+            }
+            // fill info listBox
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragDrop", sender, e);
+            DateTime date = DateTime.Now;
+
+            label1.Text = "";  // Erase info label.
+        }
+
+        private void chklstHead_DragEnter(object sender, DragEventArgs e)
+        {
+            // fill the informational listBox3
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragEnter", sender, e);
+
+            // change the drag cursor to show that listbox2 is ready and set to accept data entry
+            // either to Copy or Move
+            // make sure we aren't inadvertently passing one of the other objects allow such as a bitmap!
+
+            if (e.Data.GetDataPresent(DataFormats.StringFormat) && (e.AllowedEffect == DragDropEffects.Copy))
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.Move;
+
+
+
+        }
+
+        private void chklstHead_DragOver(object sender, DragEventArgs e)
+        {
+            indexOfItemUnderMouseToDrop =
+    listBox2.IndexFromPoint(listBox2.PointToClient(new Point(e.X, e.Y)));
+
+            if (indexOfItemUnderMouseToDrop != ListBox.NoMatches)
+            {
+
+                // pass the location back to use in the dragDrop event method.
+                listBox2.SelectedIndex = indexOfItemUnderMouseToDrop;
+
+            }
+            else
+            {
+                // prompt the user where the drop will occur
+                label1.Text = "\'" + e.Data.GetData(DataFormats.Text) + "\'" + " will be added to the bottom of the listBox.";
+                // save the intended drop location as an index number into the listBox2 Item collection.
+                listBox2.SelectedIndex = indexOfItemUnderMouseToDrop;
+            }
+
+            // if  the MouseDown event set the DragDrop operation to be a move event
+            // immediately delete the item.  This has the desirable effect of
+            // deleting any duplicate strings that might have been moved into
+            // listBox2
+            if (e.Effect == DragDropEffects.Move)  // When moving an item within listBox2
+                listBox2.Items.Remove((string)e.Data.GetData(DataFormats.Text));
+
+            // fill the informational listBox3
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragOver", sender, e);
+        }
+
+        private void chklstHead_MouseDown(object sender, MouseEventArgs e)
+        {
+
+            int indexOfItem = listBox2.IndexFromPoint(e.X, e.Y);
+            DateTime date = DateTime.Now;
+              if (indexOfItem >= 0 && indexOfItem < listBox2.Items.Count)  // check we clicked down on a string
+            {
+
+                // Set allowed DragDropEffect to Move selected from DragDropEffects enumberation of None, Move, All etc.
+                // A mouse down in listBox2 in this demo implies either delete or rearrange
+                // is started, therefore the allowed DragDropEffect is always Move.
+                listBox2.DoDragDrop(listBox2.Items[indexOfItem], DragDropEffects.Move);
+
+            }
+        }
+
+        private void chklstHead_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
+        {
+            // This event is fired when there is a change in the keyboard or mouse button state
+            // during a drag-and-drop operation.  This means that if the cursor is
+            // moved,  this event is fired.  If the keyboard is pressed or if a
+            // change to a mouse button occurs(press or release), this even is fired.
+            // In other words,  this event is fired alot!
+            // For the purposes of the demo, if the mouse cursor  moves off Form1's boundaries
+            // during DoDragDrop operation initiated by the  listBox2 mousedown event
+            // the DoDragDrop operation initiated should be cancelled.
+
+            // ( from VS. .NET Combined Collection Control.DoDragDrop documentation)
+            // The screenOffset is used to account for any desktop bands
+            // that may be at the top or left side of the screen when
+            // determining when to cancel the drag drop operation.
+            screenOffset = SystemInformation.WorkingArea.Location;
+
+            ListBox lb = sender as ListBox;
+
+            if (lb != null)
+            {
+                Form f = lb.FindForm();
+                // Cancel the drag if the mouse moves off the form. The screenOffset
+                // takes into account any desktop bands that may be at the top or left
+                // side of the screen.
+                if (((Control.MousePosition.X - screenOffset.X) < f.DesktopBounds.Left) ||
+                    ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
+                    ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
+                    ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
+                {
+                    e.Action = DragAction.Cancel;
+                }
+            }
+
 
         }
     }
