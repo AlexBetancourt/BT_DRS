@@ -3,8 +3,8 @@ The following is a list of the features left to do before the first release:
     Add Internal components to Digital Record Sheet screen so you can keep track of critical damage.
     Add Ammo tracking.
     Add Save feature for the Battle session so you can load it on a later session.
-    Add Internal components to MechLab screen so you can customize the components location.
-OK    Modify the Apply Damage feature to correctly asign the LRM hit locations. 
+1/2    Add Internal components to MechLab screen so you can customize the components location.
+OK    Modify the Apply Damage feature to correctly asign the LRM hit locations.
 OK    Add Walk/Run/Jump into the Heat calculation.
 OK    Complete Damage Transfer (right now it only goes armor to internal).
 
