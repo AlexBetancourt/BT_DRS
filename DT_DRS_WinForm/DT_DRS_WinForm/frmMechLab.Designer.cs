@@ -32,53 +32,20 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHead = new System.Windows.Forms.TabPage();
-            this.cmdRemoveComponent = new System.Windows.Forms.Button();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmdAddComponent = new System.Windows.Forms.Button();
-            this.cmbInternalComponentsH = new System.Windows.Forms.ComboBox();
+            this.chklstComponentsH = new System.Windows.Forms.CheckedListBox();
+            this.cmdRemoveComponent = new System.Windows.Forms.Button();
             this.chklstHead = new System.Windows.Forms.CheckedListBox();
             this.tabCenterTorso = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.cmbInternalComponentsCT = new System.Windows.Forms.ComboBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.tabLeftTorso = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.cmbInternalComponentsLT = new System.Windows.Forms.ComboBox();
-            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
             this.tabRightTorso = new System.Windows.Forms.TabPage();
-            this.button7 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.cmbInternalComponentsRT = new System.Windows.Forms.ComboBox();
-            this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
             this.tabLeftArm = new System.Windows.Forms.TabPage();
-            this.button9 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
-            this.cmbInternalComponentsLA = new System.Windows.Forms.ComboBox();
-            this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
             this.tabRightArm = new System.Windows.Forms.TabPage();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.button11 = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.button12 = new System.Windows.Forms.Button();
-            this.cmbInternalComponentsRA = new System.Windows.Forms.ComboBox();
             this.tabLeftLeg = new System.Windows.Forms.TabPage();
-            this.button13 = new System.Windows.Forms.Button();
-            this.label19 = new System.Windows.Forms.Label();
-            this.button14 = new System.Windows.Forms.Button();
-            this.cmbInternalComponentsLL = new System.Windows.Forms.ComboBox();
-            this.checkedListBox7 = new System.Windows.Forms.CheckedListBox();
             this.tabRightLeg = new System.Windows.Forms.TabPage();
-            this.checkedListBox6 = new System.Windows.Forms.CheckedListBox();
-            this.button15 = new System.Windows.Forms.Button();
-            this.label20 = new System.Windows.Forms.Label();
-            this.button16 = new System.Windows.Forms.Button();
-            this.cmbInternalComponentsRL = new System.Windows.Forms.ComboBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.nmTons = new System.Windows.Forms.NumericUpDown();
             this.label21 = new System.Windows.Forms.Label();
@@ -139,7 +106,55 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cmdRefresh = new System.Windows.Forms.Button();
             this.cmdDelete = new System.Windows.Forms.Button();
-            this.chklstComponentsH = new System.Windows.Forms.CheckedListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.checkedListBox8 = new System.Windows.Forms.CheckedListBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.checkedListBox9 = new System.Windows.Forms.CheckedListBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.checkedListBox10 = new System.Windows.Forms.CheckedListBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.checkedListBox11 = new System.Windows.Forms.CheckedListBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.checkedListBox12 = new System.Windows.Forms.CheckedListBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.checkedListBox7 = new System.Windows.Forms.CheckedListBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.checkedListBox13 = new System.Windows.Forms.CheckedListBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.checkedListBox6 = new System.Windows.Forms.CheckedListBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.checkedListBox14 = new System.Windows.Forms.CheckedListBox();
             this.groupBox6.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabHead.SuspendLayout();
@@ -175,7 +190,7 @@
             this.groupBox6.Controls.Add(this.tabControl1);
             this.groupBox6.Location = new System.Drawing.Point(13, 141);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(418, 435);
+            this.groupBox6.Size = new System.Drawing.Size(418, 532);
             this.groupBox6.TabIndex = 11;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "CRITICAL HIT TABLE";
@@ -195,77 +210,107 @@
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(403, 404);
+            this.tabControl1.Size = new System.Drawing.Size(403, 507);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 0;
             // 
             // tabHead
             // 
+            this.tabHead.Controls.Add(this.label25);
+            this.tabHead.Controls.Add(this.label23);
+            this.tabHead.Controls.Add(this.label22);
+            this.tabHead.Controls.Add(this.label1);
             this.tabHead.Controls.Add(this.chklstComponentsH);
             this.tabHead.Controls.Add(this.cmdRemoveComponent);
-            this.tabHead.Controls.Add(this.label1);
-            this.tabHead.Controls.Add(this.cmdAddComponent);
-            this.tabHead.Controls.Add(this.cmbInternalComponentsH);
             this.tabHead.Controls.Add(this.chklstHead);
             this.tabHead.Location = new System.Drawing.Point(4, 49);
             this.tabHead.Name = "tabHead";
             this.tabHead.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHead.Size = new System.Drawing.Size(395, 351);
+            this.tabHead.Size = new System.Drawing.Size(395, 454);
             this.tabHead.TabIndex = 0;
             this.tabHead.Text = "Head";
             this.tabHead.UseVisualStyleBackColor = true;
             // 
-            // cmdRemoveComponent
+            // label25
             // 
-            this.cmdRemoveComponent.Location = new System.Drawing.Point(321, 15);
-            this.cmdRemoveComponent.Name = "cmdRemoveComponent";
-            this.cmdRemoveComponent.Size = new System.Drawing.Size(69, 23);
-            this.cmdRemoveComponent.TabIndex = 4;
-            this.cmdRemoveComponent.Text = "Remove";
-            this.cmdRemoveComponent.UseVisualStyleBackColor = true;
-            this.cmdRemoveComponent.Click += new System.EventHandler(this.button2_Click);
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(191, 160);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(24, 23);
+            this.label25.TabIndex = 15;
+            this.label25.Text = "<<";
+            // 
+            // label23
+            // 
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Maroon;
+            this.label23.Location = new System.Drawing.Point(226, 361);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(154, 38);
+            this.label23.TabIndex = 14;
+            this.label23.Text = "<<-- Drag and Drop to Install Component";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(5, 8);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(157, 16);
+            this.label22.TabIndex = 13;
+            this.label22.Text = "Installed Components";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 20);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(213, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Internal Component:";
+            this.label1.Size = new System.Drawing.Size(114, 16);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Component List";
             // 
-            // cmdAddComponent
+            // chklstComponentsH
             // 
-            this.cmdAddComponent.Location = new System.Drawing.Point(240, 15);
-            this.cmdAddComponent.Name = "cmdAddComponent";
-            this.cmdAddComponent.Size = new System.Drawing.Size(75, 23);
-            this.cmdAddComponent.TabIndex = 2;
-            this.cmdAddComponent.Text = "Add";
-            this.cmdAddComponent.UseVisualStyleBackColor = true;
-            this.cmdAddComponent.Click += new System.EventHandler(this.button1_Click);
+            this.chklstComponentsH.AllowDrop = true;
+            this.chklstComponentsH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chklstComponentsH.FormattingEnabled = true;
+            this.chklstComponentsH.HorizontalScrollbar = true;
+            this.chklstComponentsH.Location = new System.Drawing.Point(216, 27);
+            this.chklstComponentsH.Name = "chklstComponentsH";
+            this.chklstComponentsH.Size = new System.Drawing.Size(173, 327);
+            this.chklstComponentsH.TabIndex = 5;
+            this.chklstComponentsH.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstComponentsH_DragEnter);
+            this.chklstComponentsH.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.chklstComponentsH_QueryContinueDrag);
+            this.chklstComponentsH.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chklstComponentsH_MouseDown);
             // 
-            // cmbInternalComponentsH
+            // cmdRemoveComponent
             // 
-            this.cmbInternalComponentsH.Location = new System.Drawing.Point(113, 17);
-            this.cmbInternalComponentsH.Name = "cmbInternalComponentsH";
-            this.cmbInternalComponentsH.Size = new System.Drawing.Size(121, 21);
-            this.cmbInternalComponentsH.TabIndex = 1;
+            this.cmdRemoveComponent.Location = new System.Drawing.Point(6, 358);
+            this.cmdRemoveComponent.Name = "cmdRemoveComponent";
+            this.cmdRemoveComponent.Size = new System.Drawing.Size(184, 41);
+            this.cmdRemoveComponent.TabIndex = 4;
+            this.cmdRemoveComponent.Text = "Remove Selected Component";
+            this.cmdRemoveComponent.UseVisualStyleBackColor = true;
+            this.cmdRemoveComponent.Click += new System.EventHandler(this.button2_Click);
             // 
             // chklstHead
             // 
             this.chklstHead.AllowDrop = true;
-            this.chklstHead.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chklstHead.CheckOnClick = true;
+            this.chklstHead.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chklstHead.FormattingEnabled = true;
+            this.chklstHead.HorizontalScrollbar = true;
             this.chklstHead.Items.AddRange(new object[] {
-            "1 - Life support",
-            "2 - Sensors",
-            "3 - Cockpit",
-            "4 - Roll Again",
-            "5 - Sensors",
-            "6 - Life Support"});
-            this.chklstHead.Location = new System.Drawing.Point(7, 57);
+            "Life support",
+            "Sensors",
+            "Cockpit",
+            "Roll Again",
+            "Sensors",
+            "Life Support"});
+            this.chklstHead.Location = new System.Drawing.Point(8, 27);
             this.chklstHead.Name = "chklstHead";
-            this.chklstHead.Size = new System.Drawing.Size(173, 279);
+            this.chklstHead.Size = new System.Drawing.Size(182, 319);
             this.chklstHead.TabIndex = 0;
             this.chklstHead.DragDrop += new System.Windows.Forms.DragEventHandler(this.chklstHead_DragDrop);
             this.chklstHead.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstHead_DragEnter);
@@ -275,535 +320,116 @@
             // 
             // tabCenterTorso
             // 
-            this.tabCenterTorso.Controls.Add(this.button1);
             this.tabCenterTorso.Controls.Add(this.label2);
-            this.tabCenterTorso.Controls.Add(this.button2);
-            this.tabCenterTorso.Controls.Add(this.cmbInternalComponentsCT);
+            this.tabCenterTorso.Controls.Add(this.label27);
+            this.tabCenterTorso.Controls.Add(this.label29);
+            this.tabCenterTorso.Controls.Add(this.label30);
             this.tabCenterTorso.Controls.Add(this.checkedListBox1);
+            this.tabCenterTorso.Controls.Add(this.button1);
+            this.tabCenterTorso.Controls.Add(this.checkedListBox8);
             this.tabCenterTorso.Location = new System.Drawing.Point(4, 49);
             this.tabCenterTorso.Name = "tabCenterTorso";
             this.tabCenterTorso.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCenterTorso.Size = new System.Drawing.Size(395, 351);
+            this.tabCenterTorso.Size = new System.Drawing.Size(395, 454);
             this.tabCenterTorso.TabIndex = 1;
             this.tabCenterTorso.Text = "Center Torso";
             this.tabCenterTorso.UseVisualStyleBackColor = true;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(321, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(69, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Remove";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(5, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Internal Component:";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(240, 15);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // cmbInternalComponentsCT
-            // 
-            this.cmbInternalComponentsCT.FormattingEnabled = true;
-            this.cmbInternalComponentsCT.Items.AddRange(new object[] {
-            "Life Support",
-            "Sensors",
-            "Cockpit",
-            "Small Laser",
-            "Medium Laser",
-            "Small Laser",
-            "AC2",
-            "LRM5",
-            "SRM2",
-            "SRM4",
-            "Heat Sink"});
-            this.cmbInternalComponentsCT.Location = new System.Drawing.Point(113, 17);
-            this.cmbInternalComponentsCT.Name = "cmbInternalComponentsCT";
-            this.cmbInternalComponentsCT.Size = new System.Drawing.Size(121, 21);
-            this.cmbInternalComponentsCT.TabIndex = 6;
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "1 - Fusion Engine",
-            "2 - Fusion Engine",
-            "3 - Fusion Engine",
-            "4 - Gyro",
-            "5 - Gyro",
-            "6 - Gyro",
-            "1 - Gyro",
-            "2 - Fusion Engine",
-            "3 - Fusion Engine",
-            "4 - Fusion Engine",
-            "5 - Roll Again",
-            "6 - Roll Again"});
-            this.checkedListBox1.Location = new System.Drawing.Point(7, 57);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(383, 279);
-            this.checkedListBox1.TabIndex = 5;
-            // 
             // tabLeftTorso
             // 
-            this.tabLeftTorso.Controls.Add(this.button5);
             this.tabLeftTorso.Controls.Add(this.label3);
-            this.tabLeftTorso.Controls.Add(this.button6);
-            this.tabLeftTorso.Controls.Add(this.cmbInternalComponentsLT);
+            this.tabLeftTorso.Controls.Add(this.label31);
+            this.tabLeftTorso.Controls.Add(this.label32);
+            this.tabLeftTorso.Controls.Add(this.label33);
             this.tabLeftTorso.Controls.Add(this.checkedListBox3);
+            this.tabLeftTorso.Controls.Add(this.button2);
+            this.tabLeftTorso.Controls.Add(this.checkedListBox9);
             this.tabLeftTorso.Location = new System.Drawing.Point(4, 49);
             this.tabLeftTorso.Name = "tabLeftTorso";
-            this.tabLeftTorso.Size = new System.Drawing.Size(395, 351);
+            this.tabLeftTorso.Size = new System.Drawing.Size(395, 454);
             this.tabLeftTorso.TabIndex = 2;
             this.tabLeftTorso.Text = "LeftTorso";
             this.tabLeftTorso.UseVisualStyleBackColor = true;
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(321, 15);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(69, 23);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Remove";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(5, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Internal Component:";
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(240, 15);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Add";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // cmbInternalComponentsLT
-            // 
-            this.cmbInternalComponentsLT.FormattingEnabled = true;
-            this.cmbInternalComponentsLT.Items.AddRange(new object[] {
-            "Life Support",
-            "Sensors",
-            "Cockpit",
-            "Small Laser",
-            "Medium Laser",
-            "Small Laser",
-            "AC2",
-            "LRM5",
-            "SRM2",
-            "SRM4",
-            "Heat Sink"});
-            this.cmbInternalComponentsLT.Location = new System.Drawing.Point(113, 17);
-            this.cmbInternalComponentsLT.Name = "cmbInternalComponentsLT";
-            this.cmbInternalComponentsLT.Size = new System.Drawing.Size(121, 21);
-            this.cmbInternalComponentsLT.TabIndex = 6;
-            // 
-            // checkedListBox3
-            // 
-            this.checkedListBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox3.FormattingEnabled = true;
-            this.checkedListBox3.Location = new System.Drawing.Point(7, 57);
-            this.checkedListBox3.Name = "checkedListBox3";
-            this.checkedListBox3.Size = new System.Drawing.Size(383, 279);
-            this.checkedListBox3.TabIndex = 5;
-            // 
             // tabRightTorso
             // 
-            this.tabRightTorso.Controls.Add(this.button7);
             this.tabRightTorso.Controls.Add(this.label4);
-            this.tabRightTorso.Controls.Add(this.button8);
-            this.tabRightTorso.Controls.Add(this.cmbInternalComponentsRT);
+            this.tabRightTorso.Controls.Add(this.label34);
+            this.tabRightTorso.Controls.Add(this.label35);
+            this.tabRightTorso.Controls.Add(this.label36);
             this.tabRightTorso.Controls.Add(this.checkedListBox4);
+            this.tabRightTorso.Controls.Add(this.button3);
+            this.tabRightTorso.Controls.Add(this.checkedListBox10);
             this.tabRightTorso.Location = new System.Drawing.Point(4, 49);
             this.tabRightTorso.Name = "tabRightTorso";
-            this.tabRightTorso.Size = new System.Drawing.Size(395, 351);
+            this.tabRightTorso.Size = new System.Drawing.Size(395, 454);
             this.tabRightTorso.TabIndex = 3;
             this.tabRightTorso.Text = "Right Torso";
             this.tabRightTorso.UseVisualStyleBackColor = true;
             // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(321, 15);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(69, 23);
-            this.button7.TabIndex = 9;
-            this.button7.Text = "Remove";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 20);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Internal Component:";
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(240, 15);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Add";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // cmbInternalComponentsRT
-            // 
-            this.cmbInternalComponentsRT.FormattingEnabled = true;
-            this.cmbInternalComponentsRT.Items.AddRange(new object[] {
-            "Life Support",
-            "Sensors",
-            "Cockpit",
-            "Small Laser",
-            "Medium Laser",
-            "Small Laser",
-            "AC2",
-            "LRM5",
-            "SRM2",
-            "SRM4",
-            "Heat Sink"});
-            this.cmbInternalComponentsRT.Location = new System.Drawing.Point(113, 17);
-            this.cmbInternalComponentsRT.Name = "cmbInternalComponentsRT";
-            this.cmbInternalComponentsRT.Size = new System.Drawing.Size(121, 21);
-            this.cmbInternalComponentsRT.TabIndex = 6;
-            // 
-            // checkedListBox4
-            // 
-            this.checkedListBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox4.FormattingEnabled = true;
-            this.checkedListBox4.Location = new System.Drawing.Point(7, 57);
-            this.checkedListBox4.Name = "checkedListBox4";
-            this.checkedListBox4.Size = new System.Drawing.Size(383, 279);
-            this.checkedListBox4.TabIndex = 5;
-            // 
             // tabLeftArm
             // 
-            this.tabLeftArm.Controls.Add(this.button9);
             this.tabLeftArm.Controls.Add(this.label5);
-            this.tabLeftArm.Controls.Add(this.button10);
-            this.tabLeftArm.Controls.Add(this.cmbInternalComponentsLA);
+            this.tabLeftArm.Controls.Add(this.label41);
+            this.tabLeftArm.Controls.Add(this.label42);
+            this.tabLeftArm.Controls.Add(this.label43);
             this.tabLeftArm.Controls.Add(this.checkedListBox5);
+            this.tabLeftArm.Controls.Add(this.button4);
+            this.tabLeftArm.Controls.Add(this.checkedListBox11);
             this.tabLeftArm.Location = new System.Drawing.Point(4, 49);
             this.tabLeftArm.Name = "tabLeftArm";
-            this.tabLeftArm.Size = new System.Drawing.Size(395, 351);
+            this.tabLeftArm.Size = new System.Drawing.Size(395, 454);
             this.tabLeftArm.TabIndex = 4;
             this.tabLeftArm.Text = "Left Arm";
             this.tabLeftArm.UseVisualStyleBackColor = true;
             // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(321, 15);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(69, 23);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "Remove";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(5, 20);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Internal Component:";
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(240, 15);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 7;
-            this.button10.Text = "Add";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // cmbInternalComponentsLA
-            // 
-            this.cmbInternalComponentsLA.FormattingEnabled = true;
-            this.cmbInternalComponentsLA.Items.AddRange(new object[] {
-            "Life Support",
-            "Sensors",
-            "Cockpit",
-            "Small Laser",
-            "Medium Laser",
-            "Small Laser",
-            "AC2",
-            "LRM5",
-            "SRM2",
-            "SRM4",
-            "Heat Sink"});
-            this.cmbInternalComponentsLA.Location = new System.Drawing.Point(113, 17);
-            this.cmbInternalComponentsLA.Name = "cmbInternalComponentsLA";
-            this.cmbInternalComponentsLA.Size = new System.Drawing.Size(121, 21);
-            this.cmbInternalComponentsLA.TabIndex = 6;
-            // 
-            // checkedListBox5
-            // 
-            this.checkedListBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox5.FormattingEnabled = true;
-            this.checkedListBox5.Items.AddRange(new object[] {
-            "1 - Shoulder",
-            "2 - Apper Arm Actuator",
-            "3 - Lower Arm Actuator",
-            "4 - Hand Actuator",
-            "5 - Roll Again",
-            "6 - Roll Again"});
-            this.checkedListBox5.Location = new System.Drawing.Point(7, 57);
-            this.checkedListBox5.Name = "checkedListBox5";
-            this.checkedListBox5.Size = new System.Drawing.Size(383, 279);
-            this.checkedListBox5.TabIndex = 5;
-            // 
             // tabRightArm
             // 
-            this.tabRightArm.Controls.Add(this.checkedListBox2);
-            this.tabRightArm.Controls.Add(this.button11);
             this.tabRightArm.Controls.Add(this.label16);
-            this.tabRightArm.Controls.Add(this.button12);
-            this.tabRightArm.Controls.Add(this.cmbInternalComponentsRA);
+            this.tabRightArm.Controls.Add(this.label44);
+            this.tabRightArm.Controls.Add(this.label45);
+            this.tabRightArm.Controls.Add(this.label46);
+            this.tabRightArm.Controls.Add(this.checkedListBox2);
+            this.tabRightArm.Controls.Add(this.button5);
+            this.tabRightArm.Controls.Add(this.checkedListBox12);
             this.tabRightArm.Location = new System.Drawing.Point(4, 49);
             this.tabRightArm.Name = "tabRightArm";
-            this.tabRightArm.Size = new System.Drawing.Size(395, 351);
+            this.tabRightArm.Size = new System.Drawing.Size(395, 454);
             this.tabRightArm.TabIndex = 5;
             this.tabRightArm.Text = "Right Arm";
             this.tabRightArm.UseVisualStyleBackColor = true;
             // 
-            // checkedListBox2
-            // 
-            this.checkedListBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Items.AddRange(new object[] {
-            "1 - Shoulder",
-            "2 - Apper Arm Actuator",
-            "3 - Lower Arm Actuator",
-            "4 - Hand Actuator",
-            "5 - Roll Again",
-            "6 - Roll Again"});
-            this.checkedListBox2.Location = new System.Drawing.Point(7, 57);
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(383, 279);
-            this.checkedListBox2.TabIndex = 10;
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(321, 15);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(69, 23);
-            this.button11.TabIndex = 9;
-            this.button11.Text = "Remove";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(5, 20);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(102, 13);
-            this.label16.TabIndex = 8;
-            this.label16.Text = "Internal Component:";
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(240, 15);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 23);
-            this.button12.TabIndex = 7;
-            this.button12.Text = "Add";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // cmbInternalComponentsRA
-            // 
-            this.cmbInternalComponentsRA.FormattingEnabled = true;
-            this.cmbInternalComponentsRA.Items.AddRange(new object[] {
-            "Life Support",
-            "Sensors",
-            "Cockpit",
-            "Small Laser",
-            "Medium Laser",
-            "Small Laser",
-            "AC2",
-            "LRM5",
-            "SRM2",
-            "SRM4",
-            "Heat Sink"});
-            this.cmbInternalComponentsRA.Location = new System.Drawing.Point(113, 17);
-            this.cmbInternalComponentsRA.Name = "cmbInternalComponentsRA";
-            this.cmbInternalComponentsRA.Size = new System.Drawing.Size(121, 21);
-            this.cmbInternalComponentsRA.TabIndex = 6;
-            // 
             // tabLeftLeg
             // 
-            this.tabLeftLeg.Controls.Add(this.button13);
             this.tabLeftLeg.Controls.Add(this.label19);
-            this.tabLeftLeg.Controls.Add(this.button14);
-            this.tabLeftLeg.Controls.Add(this.cmbInternalComponentsLL);
+            this.tabLeftLeg.Controls.Add(this.label47);
+            this.tabLeftLeg.Controls.Add(this.label48);
+            this.tabLeftLeg.Controls.Add(this.label49);
             this.tabLeftLeg.Controls.Add(this.checkedListBox7);
+            this.tabLeftLeg.Controls.Add(this.button6);
+            this.tabLeftLeg.Controls.Add(this.checkedListBox13);
             this.tabLeftLeg.Location = new System.Drawing.Point(4, 49);
             this.tabLeftLeg.Name = "tabLeftLeg";
-            this.tabLeftLeg.Size = new System.Drawing.Size(395, 351);
+            this.tabLeftLeg.Size = new System.Drawing.Size(395, 454);
             this.tabLeftLeg.TabIndex = 6;
             this.tabLeftLeg.Text = "Left Leg";
             this.tabLeftLeg.UseVisualStyleBackColor = true;
             // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(321, 15);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(69, 23);
-            this.button13.TabIndex = 9;
-            this.button13.Text = "Remove";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(5, 20);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(102, 13);
-            this.label19.TabIndex = 8;
-            this.label19.Text = "Internal Component:";
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(240, 15);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 23);
-            this.button14.TabIndex = 7;
-            this.button14.Text = "Add";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // cmbInternalComponentsLL
-            // 
-            this.cmbInternalComponentsLL.FormattingEnabled = true;
-            this.cmbInternalComponentsLL.Items.AddRange(new object[] {
-            "Life Support",
-            "Sensors",
-            "Cockpit",
-            "Small Laser",
-            "Medium Laser",
-            "Small Laser",
-            "AC2",
-            "LRM5",
-            "SRM2",
-            "SRM4",
-            "Heat Sink"});
-            this.cmbInternalComponentsLL.Location = new System.Drawing.Point(113, 17);
-            this.cmbInternalComponentsLL.Name = "cmbInternalComponentsLL";
-            this.cmbInternalComponentsLL.Size = new System.Drawing.Size(121, 21);
-            this.cmbInternalComponentsLL.TabIndex = 6;
-            // 
-            // checkedListBox7
-            // 
-            this.checkedListBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox7.FormattingEnabled = true;
-            this.checkedListBox7.Items.AddRange(new object[] {
-            "1 - Hip",
-            "2 - Upper Leg Actuator",
-            "3 - Lower Leg Actuator",
-            "4 - Foot Actuator",
-            "5 - Roll Again",
-            "6 - Roll Again"});
-            this.checkedListBox7.Location = new System.Drawing.Point(7, 57);
-            this.checkedListBox7.Name = "checkedListBox7";
-            this.checkedListBox7.Size = new System.Drawing.Size(383, 279);
-            this.checkedListBox7.TabIndex = 5;
-            // 
             // tabRightLeg
             // 
-            this.tabRightLeg.Controls.Add(this.checkedListBox6);
-            this.tabRightLeg.Controls.Add(this.button15);
             this.tabRightLeg.Controls.Add(this.label20);
-            this.tabRightLeg.Controls.Add(this.button16);
-            this.tabRightLeg.Controls.Add(this.cmbInternalComponentsRL);
+            this.tabRightLeg.Controls.Add(this.label50);
+            this.tabRightLeg.Controls.Add(this.label51);
+            this.tabRightLeg.Controls.Add(this.label52);
+            this.tabRightLeg.Controls.Add(this.checkedListBox6);
+            this.tabRightLeg.Controls.Add(this.button7);
+            this.tabRightLeg.Controls.Add(this.checkedListBox14);
             this.tabRightLeg.Location = new System.Drawing.Point(4, 49);
             this.tabRightLeg.Name = "tabRightLeg";
-            this.tabRightLeg.Size = new System.Drawing.Size(395, 351);
+            this.tabRightLeg.Size = new System.Drawing.Size(395, 454);
             this.tabRightLeg.TabIndex = 7;
             this.tabRightLeg.Text = "Right Leg";
             this.tabRightLeg.UseVisualStyleBackColor = true;
-            // 
-            // checkedListBox6
-            // 
-            this.checkedListBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox6.FormattingEnabled = true;
-            this.checkedListBox6.Items.AddRange(new object[] {
-            "1 - Hip",
-            "2 - Upper Leg Actuator",
-            "3 - Lower Leg Actuator",
-            "4 - Foot Actuator",
-            "5 - Roll Again",
-            "6 - Roll Again"});
-            this.checkedListBox6.Location = new System.Drawing.Point(7, 57);
-            this.checkedListBox6.Name = "checkedListBox6";
-            this.checkedListBox6.Size = new System.Drawing.Size(383, 279);
-            this.checkedListBox6.TabIndex = 10;
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(321, 15);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(69, 23);
-            this.button15.TabIndex = 9;
-            this.button15.Text = "Remove";
-            this.button15.UseVisualStyleBackColor = true;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(5, 20);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(102, 13);
-            this.label20.TabIndex = 8;
-            this.label20.Text = "Internal Component:";
-            // 
-            // button16
-            // 
-            this.button16.Location = new System.Drawing.Point(240, 15);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(75, 23);
-            this.button16.TabIndex = 7;
-            this.button16.Text = "Add";
-            this.button16.UseVisualStyleBackColor = true;
-            // 
-            // cmbInternalComponentsRL
-            // 
-            this.cmbInternalComponentsRL.FormattingEnabled = true;
-            this.cmbInternalComponentsRL.Items.AddRange(new object[] {
-            "Life Support",
-            "Sensors",
-            "Cockpit",
-            "Small Laser",
-            "Medium Laser",
-            "Small Laser",
-            "AC2",
-            "LRM5",
-            "SRM2",
-            "SRM4",
-            "Heat Sink"});
-            this.cmbInternalComponentsRL.Location = new System.Drawing.Point(113, 17);
-            this.cmbInternalComponentsRL.Name = "cmbInternalComponentsRL";
-            this.cmbInternalComponentsRL.Size = new System.Drawing.Size(121, 21);
-            this.cmbInternalComponentsRL.TabIndex = 6;
             // 
             // groupBox5
             // 
@@ -1437,25 +1063,557 @@
             this.cmdDelete.UseVisualStyleBackColor = true;
             this.cmdDelete.Click += new System.EventHandler(this.cmdDelete_Click);
             // 
-            // chklstComponentsH
+            // label2
             // 
-            this.chklstComponentsH.AllowDrop = true;
-            this.chklstComponentsH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chklstComponentsH.FormattingEnabled = true;
-            this.chklstComponentsH.HorizontalScrollbar = true;
-            this.chklstComponentsH.Location = new System.Drawing.Point(216, 57);
-            this.chklstComponentsH.Name = "chklstComponentsH";
-            this.chklstComponentsH.Size = new System.Drawing.Size(173, 276);
-            this.chklstComponentsH.TabIndex = 5;
-            this.chklstComponentsH.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstComponentsH_DragEnter);
-            this.chklstComponentsH.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.chklstComponentsH_QueryContinueDrag);
-            this.chklstComponentsH.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chklstComponentsH_MouseDown);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(191, 160);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(24, 23);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "<<";
+            // 
+            // label27
+            // 
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Maroon;
+            this.label27.Location = new System.Drawing.Point(226, 361);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(154, 38);
+            this.label27.TabIndex = 21;
+            this.label27.Text = "<<-- Drag and Drop to Install Component";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(5, 8);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(157, 16);
+            this.label29.TabIndex = 20;
+            this.label29.Text = "Installed Components";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(213, 8);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(114, 16);
+            this.label30.TabIndex = 19;
+            this.label30.Text = "Component List";
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.AllowDrop = true;
+            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.HorizontalScrollbar = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(216, 27);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(173, 327);
+            this.checkedListBox1.TabIndex = 18;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 358);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(184, 41);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Remove Selected Component";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox8
+            // 
+            this.checkedListBox8.AllowDrop = true;
+            this.checkedListBox8.CheckOnClick = true;
+            this.checkedListBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox8.FormattingEnabled = true;
+            this.checkedListBox8.HorizontalScrollbar = true;
+            this.checkedListBox8.Items.AddRange(new object[] {
+            "Life support",
+            "Sensors",
+            "Cockpit",
+            "Roll Again",
+            "Sensors",
+            "Life Support"});
+            this.checkedListBox8.Location = new System.Drawing.Point(8, 27);
+            this.checkedListBox8.Name = "checkedListBox8";
+            this.checkedListBox8.Size = new System.Drawing.Size(182, 319);
+            this.checkedListBox8.TabIndex = 16;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(191, 160);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(24, 23);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "<<";
+            // 
+            // label31
+            // 
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.Maroon;
+            this.label31.Location = new System.Drawing.Point(226, 361);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(154, 38);
+            this.label31.TabIndex = 21;
+            this.label31.Text = "<<-- Drag and Drop to Install Component";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(5, 8);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(157, 16);
+            this.label32.TabIndex = 20;
+            this.label32.Text = "Installed Components";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(213, 8);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(114, 16);
+            this.label33.TabIndex = 19;
+            this.label33.Text = "Component List";
+            // 
+            // checkedListBox3
+            // 
+            this.checkedListBox3.AllowDrop = true;
+            this.checkedListBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox3.FormattingEnabled = true;
+            this.checkedListBox3.HorizontalScrollbar = true;
+            this.checkedListBox3.Location = new System.Drawing.Point(216, 27);
+            this.checkedListBox3.Name = "checkedListBox3";
+            this.checkedListBox3.Size = new System.Drawing.Size(173, 327);
+            this.checkedListBox3.TabIndex = 18;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(6, 358);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(184, 41);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Remove Selected Component";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox9
+            // 
+            this.checkedListBox9.AllowDrop = true;
+            this.checkedListBox9.CheckOnClick = true;
+            this.checkedListBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox9.FormattingEnabled = true;
+            this.checkedListBox9.HorizontalScrollbar = true;
+            this.checkedListBox9.Items.AddRange(new object[] {
+            "Life support",
+            "Sensors",
+            "Cockpit",
+            "Roll Again",
+            "Sensors",
+            "Life Support"});
+            this.checkedListBox9.Location = new System.Drawing.Point(8, 27);
+            this.checkedListBox9.Name = "checkedListBox9";
+            this.checkedListBox9.Size = new System.Drawing.Size(182, 319);
+            this.checkedListBox9.TabIndex = 16;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(191, 160);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(24, 23);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "<<";
+            // 
+            // label34
+            // 
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.Maroon;
+            this.label34.Location = new System.Drawing.Point(226, 361);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(154, 38);
+            this.label34.TabIndex = 21;
+            this.label34.Text = "<<-- Drag and Drop to Install Component";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(5, 8);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(157, 16);
+            this.label35.TabIndex = 20;
+            this.label35.Text = "Installed Components";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(213, 8);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(114, 16);
+            this.label36.TabIndex = 19;
+            this.label36.Text = "Component List";
+            // 
+            // checkedListBox4
+            // 
+            this.checkedListBox4.AllowDrop = true;
+            this.checkedListBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox4.FormattingEnabled = true;
+            this.checkedListBox4.HorizontalScrollbar = true;
+            this.checkedListBox4.Location = new System.Drawing.Point(216, 27);
+            this.checkedListBox4.Name = "checkedListBox4";
+            this.checkedListBox4.Size = new System.Drawing.Size(173, 327);
+            this.checkedListBox4.TabIndex = 18;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(6, 358);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(184, 41);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "Remove Selected Component";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox10
+            // 
+            this.checkedListBox10.AllowDrop = true;
+            this.checkedListBox10.CheckOnClick = true;
+            this.checkedListBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox10.FormattingEnabled = true;
+            this.checkedListBox10.HorizontalScrollbar = true;
+            this.checkedListBox10.Items.AddRange(new object[] {
+            "Life support",
+            "Sensors",
+            "Cockpit",
+            "Roll Again",
+            "Sensors",
+            "Life Support"});
+            this.checkedListBox10.Location = new System.Drawing.Point(8, 27);
+            this.checkedListBox10.Name = "checkedListBox10";
+            this.checkedListBox10.Size = new System.Drawing.Size(182, 319);
+            this.checkedListBox10.TabIndex = 16;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(191, 160);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(24, 23);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "<<";
+            // 
+            // label41
+            // 
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.Maroon;
+            this.label41.Location = new System.Drawing.Point(226, 361);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(154, 38);
+            this.label41.TabIndex = 21;
+            this.label41.Text = "<<-- Drag and Drop to Install Component";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(5, 8);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(157, 16);
+            this.label42.TabIndex = 20;
+            this.label42.Text = "Installed Components";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(213, 8);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(114, 16);
+            this.label43.TabIndex = 19;
+            this.label43.Text = "Component List";
+            // 
+            // checkedListBox5
+            // 
+            this.checkedListBox5.AllowDrop = true;
+            this.checkedListBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox5.FormattingEnabled = true;
+            this.checkedListBox5.HorizontalScrollbar = true;
+            this.checkedListBox5.Location = new System.Drawing.Point(216, 27);
+            this.checkedListBox5.Name = "checkedListBox5";
+            this.checkedListBox5.Size = new System.Drawing.Size(173, 327);
+            this.checkedListBox5.TabIndex = 18;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(6, 358);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(184, 41);
+            this.button4.TabIndex = 17;
+            this.button4.Text = "Remove Selected Component";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox11
+            // 
+            this.checkedListBox11.AllowDrop = true;
+            this.checkedListBox11.CheckOnClick = true;
+            this.checkedListBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox11.FormattingEnabled = true;
+            this.checkedListBox11.HorizontalScrollbar = true;
+            this.checkedListBox11.Items.AddRange(new object[] {
+            "Life support",
+            "Sensors",
+            "Cockpit",
+            "Roll Again",
+            "Sensors",
+            "Life Support"});
+            this.checkedListBox11.Location = new System.Drawing.Point(8, 27);
+            this.checkedListBox11.Name = "checkedListBox11";
+            this.checkedListBox11.Size = new System.Drawing.Size(182, 319);
+            this.checkedListBox11.TabIndex = 16;
+            // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(191, 160);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(24, 23);
+            this.label16.TabIndex = 22;
+            this.label16.Text = "<<";
+            // 
+            // label44
+            // 
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.Maroon;
+            this.label44.Location = new System.Drawing.Point(226, 361);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(154, 38);
+            this.label44.TabIndex = 21;
+            this.label44.Text = "<<-- Drag and Drop to Install Component";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(5, 8);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(157, 16);
+            this.label45.TabIndex = 20;
+            this.label45.Text = "Installed Components";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(213, 8);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(114, 16);
+            this.label46.TabIndex = 19;
+            this.label46.Text = "Component List";
+            // 
+            // checkedListBox2
+            // 
+            this.checkedListBox2.AllowDrop = true;
+            this.checkedListBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox2.FormattingEnabled = true;
+            this.checkedListBox2.HorizontalScrollbar = true;
+            this.checkedListBox2.Location = new System.Drawing.Point(216, 27);
+            this.checkedListBox2.Name = "checkedListBox2";
+            this.checkedListBox2.Size = new System.Drawing.Size(173, 327);
+            this.checkedListBox2.TabIndex = 18;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(6, 358);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(184, 41);
+            this.button5.TabIndex = 17;
+            this.button5.Text = "Remove Selected Component";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox12
+            // 
+            this.checkedListBox12.AllowDrop = true;
+            this.checkedListBox12.CheckOnClick = true;
+            this.checkedListBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox12.FormattingEnabled = true;
+            this.checkedListBox12.HorizontalScrollbar = true;
+            this.checkedListBox12.Items.AddRange(new object[] {
+            "Life support",
+            "Sensors",
+            "Cockpit",
+            "Roll Again",
+            "Sensors",
+            "Life Support"});
+            this.checkedListBox12.Location = new System.Drawing.Point(8, 27);
+            this.checkedListBox12.Name = "checkedListBox12";
+            this.checkedListBox12.Size = new System.Drawing.Size(182, 319);
+            this.checkedListBox12.TabIndex = 16;
+            // 
+            // label19
+            // 
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(191, 160);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(24, 23);
+            this.label19.TabIndex = 22;
+            this.label19.Text = "<<";
+            // 
+            // label47
+            // 
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.Maroon;
+            this.label47.Location = new System.Drawing.Point(226, 361);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(154, 38);
+            this.label47.TabIndex = 21;
+            this.label47.Text = "<<-- Drag and Drop to Install Component";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(5, 8);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(157, 16);
+            this.label48.TabIndex = 20;
+            this.label48.Text = "Installed Components";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(213, 8);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(114, 16);
+            this.label49.TabIndex = 19;
+            this.label49.Text = "Component List";
+            // 
+            // checkedListBox7
+            // 
+            this.checkedListBox7.AllowDrop = true;
+            this.checkedListBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox7.FormattingEnabled = true;
+            this.checkedListBox7.HorizontalScrollbar = true;
+            this.checkedListBox7.Location = new System.Drawing.Point(216, 27);
+            this.checkedListBox7.Name = "checkedListBox7";
+            this.checkedListBox7.Size = new System.Drawing.Size(173, 327);
+            this.checkedListBox7.TabIndex = 18;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(6, 358);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(184, 41);
+            this.button6.TabIndex = 17;
+            this.button6.Text = "Remove Selected Component";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox13
+            // 
+            this.checkedListBox13.AllowDrop = true;
+            this.checkedListBox13.CheckOnClick = true;
+            this.checkedListBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox13.FormattingEnabled = true;
+            this.checkedListBox13.HorizontalScrollbar = true;
+            this.checkedListBox13.Items.AddRange(new object[] {
+            "Life support",
+            "Sensors",
+            "Cockpit",
+            "Roll Again",
+            "Sensors",
+            "Life Support"});
+            this.checkedListBox13.Location = new System.Drawing.Point(8, 27);
+            this.checkedListBox13.Name = "checkedListBox13";
+            this.checkedListBox13.Size = new System.Drawing.Size(182, 319);
+            this.checkedListBox13.TabIndex = 16;
+            // 
+            // label20
+            // 
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(191, 160);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(24, 23);
+            this.label20.TabIndex = 22;
+            this.label20.Text = "<<";
+            // 
+            // label50
+            // 
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.Color.Maroon;
+            this.label50.Location = new System.Drawing.Point(226, 361);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(154, 38);
+            this.label50.TabIndex = 21;
+            this.label50.Text = "<<-- Drag and Drop to Install Component";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(5, 8);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(157, 16);
+            this.label51.TabIndex = 20;
+            this.label51.Text = "Installed Components";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(213, 8);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(114, 16);
+            this.label52.TabIndex = 19;
+            this.label52.Text = "Component List";
+            // 
+            // checkedListBox6
+            // 
+            this.checkedListBox6.AllowDrop = true;
+            this.checkedListBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox6.FormattingEnabled = true;
+            this.checkedListBox6.HorizontalScrollbar = true;
+            this.checkedListBox6.Location = new System.Drawing.Point(216, 27);
+            this.checkedListBox6.Name = "checkedListBox6";
+            this.checkedListBox6.Size = new System.Drawing.Size(173, 327);
+            this.checkedListBox6.TabIndex = 18;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(6, 358);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(184, 41);
+            this.button7.TabIndex = 17;
+            this.button7.Text = "Remove Selected Component";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox14
+            // 
+            this.checkedListBox14.AllowDrop = true;
+            this.checkedListBox14.CheckOnClick = true;
+            this.checkedListBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox14.FormattingEnabled = true;
+            this.checkedListBox14.HorizontalScrollbar = true;
+            this.checkedListBox14.Items.AddRange(new object[] {
+            "Life support",
+            "Sensors",
+            "Cockpit",
+            "Roll Again",
+            "Sensors",
+            "Life Support"});
+            this.checkedListBox14.Location = new System.Drawing.Point(8, 27);
+            this.checkedListBox14.Name = "checkedListBox14";
+            this.checkedListBox14.Size = new System.Drawing.Size(182, 319);
+            this.checkedListBox14.TabIndex = 16;
             // 
             // frmMechLab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1362, 698);
+            this.ClientSize = new System.Drawing.Size(1260, 698);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox6);
@@ -1568,38 +1726,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button cmdAddComponent;
-        private System.Windows.Forms.ComboBox cmbInternalComponentsH;
         private System.Windows.Forms.Button cmdRemoveComponent;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.ComboBox cmbInternalComponentsLT;
-        private System.Windows.Forms.CheckedListBox checkedListBox3;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.ComboBox cmbInternalComponentsRT;
-        private System.Windows.Forms.CheckedListBox checkedListBox4;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.ComboBox cmbInternalComponentsLA;
-        private System.Windows.Forms.CheckedListBox checkedListBox5;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.ComboBox cmbInternalComponentsRA;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.ComboBox cmbInternalComponentsLL;
-        private System.Windows.Forms.CheckedListBox checkedListBox7;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.ComboBox cmbInternalComponentsRL;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.ListBox lbMechs;
@@ -1607,13 +1734,59 @@
         private System.Windows.Forms.Button cmdDelete;
         private System.Windows.Forms.Button cmdRefresh;
         private System.Windows.Forms.NumericUpDown nmTons;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox cmbInternalComponentsCT;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.CheckedListBox checkedListBox2;
-        private System.Windows.Forms.CheckedListBox checkedListBox6;
         private System.Windows.Forms.CheckedListBox chklstComponentsH;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckedListBox checkedListBox8;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.CheckedListBox checkedListBox3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckedListBox checkedListBox9;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.CheckedListBox checkedListBox4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.CheckedListBox checkedListBox10;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.CheckedListBox checkedListBox5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.CheckedListBox checkedListBox11;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.CheckedListBox checkedListBox2;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.CheckedListBox checkedListBox12;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.CheckedListBox checkedListBox7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.CheckedListBox checkedListBox13;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.CheckedListBox checkedListBox6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.CheckedListBox checkedListBox14;
     }
 }

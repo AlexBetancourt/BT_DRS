@@ -19,33 +19,7 @@ namespace DT_DRS_WinForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string[] item = null;
-                item = cmbInternalComponentsH.SelectedItem.ToString().Split('(');
 
-                int Crits = 0;
-                Crits = int.Parse(item[1].Substring(0, 1));
-
-                for (int i = 0; i < Crits; i++)
-                {
-                    int cuenta = 0;
-                    cuenta = chklstHead.Items.Count;
-                    if (cuenta >= 6 && cuenta < 12)
-                    {
-                        chklstHead.Items.Add((chklstHead.Items.Count - 6 + 1).ToString() + " - " + item[0]);
-                    }
-                    else if (cuenta < 6)
-                    {
-                        chklstHead.Items.Add((chklstHead.Items.Count + 1).ToString() + " - " + cmbInternalComponentsH.SelectedItem.ToString());
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-
-            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -709,7 +683,7 @@ namespace DT_DRS_WinForm
             // In this demo, I really don't want to allow a drop into listBox1.
             // Since I haven't written a listBox1_DragDrop event handler
             // an insertion into listBox1's Items never occurs.
-
+            e.Effect = DragDropEffects.Copy;
         }
 
         private void GiveInfoAboutDragDropEvent(DateTime eventTime, string dragDropEventName, object originalSender, System.Windows.Forms.DragEventArgs e)
@@ -767,19 +741,21 @@ namespace DT_DRS_WinForm
 
 
         }
-
+        private int indexOfItemUnderMouseToDrop;
+        private int indexOfItemUnderMouseToDrag;
         private void chklstHead_DragDrop(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.StringFormat))
             {
-                if (indexOfItemUnderMouseToDrop >= 0 && indexOfItemUnderMouseToDrop < listBox2.Items.Count)
+                if (indexOfItemUnderMouseToDrop >= 0 && indexOfItemUnderMouseToDrop < chklstHead.Items.Count)
                 {
-                    listBox2.Items.Insert(indexOfItemUnderMouseToDrop, e.Data.GetData(DataFormats.Text));
+                    chklstHead.Items.Insert(indexOfItemUnderMouseToDrop, e.Data.GetData(DataFormats.Text));
+                    chklstHead.Items.RemoveAt(indexOfItemUnderMouseToDrop + 1);
                 }
                 else
                 {
                     // add the selected string to bottom of list
-                    listBox2.Items.Add(e.Data.GetData(DataFormats.Text));
+                    chklstHead.Items.Add(e.Data.GetData(DataFormats.Text));
                 }
 
 
@@ -810,25 +786,24 @@ namespace DT_DRS_WinForm
 
 
         }
-
+        private DateTime eventTime;
         private void chklstHead_DragOver(object sender, DragEventArgs e)
         {
             indexOfItemUnderMouseToDrop =
-    listBox2.IndexFromPoint(listBox2.PointToClient(new Point(e.X, e.Y)));
+    chklstHead.IndexFromPoint(chklstHead.PointToClient(new Point(e.X, e.Y)));
 
             if (indexOfItemUnderMouseToDrop != ListBox.NoMatches)
             {
 
                 // pass the location back to use in the dragDrop event method.
-                listBox2.SelectedIndex = indexOfItemUnderMouseToDrop;
+                chklstHead.SelectedIndex = indexOfItemUnderMouseToDrop;
 
             }
             else
             {
-                // prompt the user where the drop will occur
-                label1.Text = "\'" + e.Data.GetData(DataFormats.Text) + "\'" + " will be added to the bottom of the listBox.";
+
                 // save the intended drop location as an index number into the listBox2 Item collection.
-                listBox2.SelectedIndex = indexOfItemUnderMouseToDrop;
+                chklstHead.SelectedIndex = indexOfItemUnderMouseToDrop;
             }
 
             // if  the MouseDown event set the DragDrop operation to be a move event
@@ -836,7 +811,7 @@ namespace DT_DRS_WinForm
             // deleting any duplicate strings that might have been moved into
             // listBox2
             if (e.Effect == DragDropEffects.Move)  // When moving an item within listBox2
-                listBox2.Items.Remove((string)e.Data.GetData(DataFormats.Text));
+                chklstHead.Items.Remove((string)e.Data.GetData(DataFormats.Text));
 
             // fill the informational listBox3
             eventTime = DateTime.Now;
@@ -846,17 +821,17 @@ namespace DT_DRS_WinForm
         private void chklstHead_MouseDown(object sender, MouseEventArgs e)
         {
 
-            int indexOfItem = listBox2.IndexFromPoint(e.X, e.Y);
-            DateTime date = DateTime.Now;
-              if (indexOfItem >= 0 && indexOfItem < listBox2.Items.Count)  // check we clicked down on a string
-            {
+           // int indexOfItem = chklstHead.IndexFromPoint(e.X, e.Y);
+            //DateTime date = DateTime.Now;
+            //if (indexOfItem >= 0 && indexOfItem < chklstHead.Items.Count)  // check we clicked down on a string
+            //{
 
-                // Set allowed DragDropEffect to Move selected from DragDropEffects enumberation of None, Move, All etc.
-                // A mouse down in listBox2 in this demo implies either delete or rearrange
-                // is started, therefore the allowed DragDropEffect is always Move.
-                listBox2.DoDragDrop(listBox2.Items[indexOfItem], DragDropEffects.Move);
+            //    // Set allowed DragDropEffect to Move selected from DragDropEffects enumberation of None, Move, All etc.
+            //    // A mouse down in listBox2 in this demo implies either delete or rearrange
+            //    // is started, therefore the allowed DragDropEffect is always Move.
+               //chklstHead.DoDragDrop(chklstHead.Items[indexOfItem], DragDropEffects.Move);
 
-            }
+            //}
         }
 
         private void chklstHead_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
