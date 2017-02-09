@@ -1313,11 +1313,6 @@ namespace DT_DRS_WinForm
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtName_TextChanged(object sender, EventArgs e)
         {
 
@@ -1771,6 +1766,25 @@ namespace DT_DRS_WinForm
             else
                 pgbHeat.Value = Heat;
             HeatModifiers();
+        }
+
+        private void txtMWName_TextChanged(object sender, EventArgs e)
+        {
+            using (var db = new LiteDatabase(@"DRS.db"))
+            {
+                var Pilots = db.GetCollection<DS_BTDRSMechPilots>("Pilots");
+                Pilots.EnsureIndex(x => x.Callsign);
+
+                DS_BTDRSMechPilots Pilot = Pilots.FindOne(Query.EQ("Callsign", txtMWCallsign.Text));
+                if (Pilot != null)
+                {
+                    txtMWName.Text = Pilot.Name.ToString();
+                    txtPS.Text = Pilot.PilotingSkill.ToString();
+                    txtGS.Text = Pilot.GunnerySkill.ToString();
+                    txtHits.Text = Pilot.DamageTaken.ToString();
+                }
+
+            }
         }
     }
 }

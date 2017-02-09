@@ -394,6 +394,7 @@
             this.lsPilots.Name = "lsPilots";
             this.lsPilots.Size = new System.Drawing.Size(221, 303);
             this.lsPilots.TabIndex = 0;
+            this.lsPilots.SelectedValueChanged += new System.EventHandler(this.lsPilots_SelectedValueChanged);
             // 
             // frmBarracks
             // 

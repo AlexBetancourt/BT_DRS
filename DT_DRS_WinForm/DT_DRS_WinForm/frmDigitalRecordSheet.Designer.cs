@@ -92,11 +92,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtHits = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtGS = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPS = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMWCallsign = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.lblMModJump = new System.Windows.Forms.Label();
             this.lblMModRun = new System.Windows.Forms.Label();
@@ -145,6 +145,25 @@
             this.cmdSL = new System.Windows.Forms.Button();
             this.mnuApplyDamage = new System.Windows.Forms.MenuStrip();
             this.applyDamageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.smallLaserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mediumLaserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.largeLaserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pPCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sRMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sRM2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sRM4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.sRM6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hitsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.hitsToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.hitsToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.hitsToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.hitsToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.lRM5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -175,25 +194,6 @@
             this.aC5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aC10ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aC20ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sRMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sRM2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sRM4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-            this.sRM6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hitsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.hitsToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.hitsToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.hitsToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.hitsToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.smallLaserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mediumLaserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.largeLaserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pPCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -251,6 +251,8 @@
             this.checkedListBox7 = new System.Windows.Forms.CheckedListBox();
             this.tabRightLeg = new System.Windows.Forms.TabPage();
             this.checkedListBox6 = new System.Windows.Forms.CheckedListBox();
+            this.txtMWName = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -930,17 +932,19 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.label42);
+            this.groupBox4.Controls.Add(this.txtMWName);
             this.groupBox4.Controls.Add(this.lblDamage);
             this.groupBox4.Controls.Add(this.lblCons);
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.txtHits);
             this.groupBox4.Controls.Add(this.label3);
-            this.groupBox4.Controls.Add(this.textBox3);
+            this.groupBox4.Controls.Add(this.txtGS);
             this.groupBox4.Controls.Add(this.label2);
-            this.groupBox4.Controls.Add(this.textBox2);
+            this.groupBox4.Controls.Add(this.txtPS);
             this.groupBox4.Controls.Add(this.label1);
-            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Controls.Add(this.txtMWCallsign);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.groupBox4.Location = new System.Drawing.Point(12, 25);
             this.groupBox4.Name = "groupBox4";
@@ -1006,14 +1010,14 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Gunnery:";
             // 
-            // textBox3
+            // txtGS
             // 
-            this.textBox3.Location = new System.Drawing.Point(73, 70);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(60, 20);
-            this.textBox3.TabIndex = 4;
-            this.textBox3.Text = "5";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtGS.Location = new System.Drawing.Point(73, 70);
+            this.txtGS.Name = "txtGS";
+            this.txtGS.Size = new System.Drawing.Size(60, 20);
+            this.txtGS.TabIndex = 4;
+            this.txtGS.Text = "5";
+            this.txtGS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -1024,31 +1028,32 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Piloting:";
             // 
-            // textBox2
+            // txtPS
             // 
-            this.textBox2.Location = new System.Drawing.Point(73, 44);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(60, 20);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "4";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPS.Location = new System.Drawing.Point(73, 44);
+            this.txtPS.Name = "txtPS";
+            this.txtPS.Size = new System.Drawing.Size(60, 20);
+            this.txtPS.TabIndex = 2;
+            this.txtPS.Text = "4";
+            this.txtPS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Name:";
+            this.label1.Text = "Callsign:";
+            this.label1.TextChanged += new System.EventHandler(this.txtMWName_TextChanged);
             // 
-            // textBox1
+            // txtMWCallsign
             // 
-            this.textBox1.Location = new System.Drawing.Point(73, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(255, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtMWCallsign.Location = new System.Drawing.Point(73, 18);
+            this.txtMWCallsign.Name = "txtMWCallsign";
+            this.txtMWCallsign.Size = new System.Drawing.Size(74, 20);
+            this.txtMWCallsign.TabIndex = 0;
+            this.txtMWCallsign.TextChanged += new System.EventHandler(this.txtMWName_TextChanged);
             // 
             // groupBox5
             // 
@@ -1617,6 +1622,153 @@
             this.applyDamageToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
             this.applyDamageToolStripMenuItem.Text = "Apply Damage";
             // 
+            // smallLaserToolStripMenuItem
+            // 
+            this.smallLaserToolStripMenuItem.Name = "smallLaserToolStripMenuItem";
+            this.smallLaserToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.smallLaserToolStripMenuItem.Text = "Small Laser";
+            this.smallLaserToolStripMenuItem.Click += new System.EventHandler(this.smallLaserToolStripMenuItem_Click);
+            // 
+            // mediumLaserToolStripMenuItem
+            // 
+            this.mediumLaserToolStripMenuItem.Name = "mediumLaserToolStripMenuItem";
+            this.mediumLaserToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.mediumLaserToolStripMenuItem.Text = "Medium Laser";
+            this.mediumLaserToolStripMenuItem.Click += new System.EventHandler(this.mediumLaserToolStripMenuItem_Click);
+            // 
+            // largeLaserToolStripMenuItem
+            // 
+            this.largeLaserToolStripMenuItem.Name = "largeLaserToolStripMenuItem";
+            this.largeLaserToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.largeLaserToolStripMenuItem.Text = "Large Laser";
+            this.largeLaserToolStripMenuItem.Click += new System.EventHandler(this.largeLaserToolStripMenuItem_Click);
+            // 
+            // pPCToolStripMenuItem
+            // 
+            this.pPCToolStripMenuItem.Name = "pPCToolStripMenuItem";
+            this.pPCToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.pPCToolStripMenuItem.Text = "PPC";
+            this.pPCToolStripMenuItem.Click += new System.EventHandler(this.pPCToolStripMenuItem_Click);
+            // 
+            // sRMToolStripMenuItem
+            // 
+            this.sRMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sRM2ToolStripMenuItem,
+            this.sRM4ToolStripMenuItem,
+            this.sRM6ToolStripMenuItem});
+            this.sRMToolStripMenuItem.Name = "sRMToolStripMenuItem";
+            this.sRMToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.sRMToolStripMenuItem.Text = "SRM";
+            // 
+            // sRM2ToolStripMenuItem
+            // 
+            this.sRM2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hitToolStripMenuItem,
+            this.hitsToolStripMenuItem});
+            this.sRM2ToolStripMenuItem.Name = "sRM2ToolStripMenuItem";
+            this.sRM2ToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.sRM2ToolStripMenuItem.Text = "SRM2";
+            // 
+            // hitToolStripMenuItem
+            // 
+            this.hitToolStripMenuItem.Name = "hitToolStripMenuItem";
+            this.hitToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.hitToolStripMenuItem.Text = "1 Hit";
+            this.hitToolStripMenuItem.Click += new System.EventHandler(this.hitToolStripMenuItem_Click);
+            // 
+            // hitsToolStripMenuItem
+            // 
+            this.hitsToolStripMenuItem.Name = "hitsToolStripMenuItem";
+            this.hitsToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.hitsToolStripMenuItem.Text = "2 Hits";
+            this.hitsToolStripMenuItem.Click += new System.EventHandler(this.hitsToolStripMenuItem_Click);
+            // 
+            // sRM4ToolStripMenuItem
+            // 
+            this.sRM4ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem4,
+            this.toolStripMenuItem5,
+            this.toolStripMenuItem6,
+            this.toolStripMenuItem7});
+            this.sRM4ToolStripMenuItem.Name = "sRM4ToolStripMenuItem";
+            this.sRM4ToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.sRM4ToolStripMenuItem.Text = "SRM4";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(109, 22);
+            this.toolStripMenuItem4.Text = "1 Hit";
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(109, 22);
+            this.toolStripMenuItem5.Text = "2 Hits";
+            this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(109, 22);
+            this.toolStripMenuItem6.Text = "3 Hits";
+            this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(109, 22);
+            this.toolStripMenuItem7.Text = "4 Hits";
+            this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
+            // 
+            // sRM6ToolStripMenuItem
+            // 
+            this.sRM6ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hitsToolStripMenuItem1,
+            this.hitsToolStripMenuItem2,
+            this.hitsToolStripMenuItem3,
+            this.hitsToolStripMenuItem4,
+            this.hitsToolStripMenuItem5});
+            this.sRM6ToolStripMenuItem.Name = "sRM6ToolStripMenuItem";
+            this.sRM6ToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.sRM6ToolStripMenuItem.Text = "SRM6";
+            // 
+            // hitsToolStripMenuItem1
+            // 
+            this.hitsToolStripMenuItem1.Name = "hitsToolStripMenuItem1";
+            this.hitsToolStripMenuItem1.Size = new System.Drawing.Size(109, 22);
+            this.hitsToolStripMenuItem1.Text = "2 Hits";
+            this.hitsToolStripMenuItem1.Click += new System.EventHandler(this.hitsToolStripMenuItem1_Click);
+            // 
+            // hitsToolStripMenuItem2
+            // 
+            this.hitsToolStripMenuItem2.Name = "hitsToolStripMenuItem2";
+            this.hitsToolStripMenuItem2.Size = new System.Drawing.Size(109, 22);
+            this.hitsToolStripMenuItem2.Text = "3 Hits";
+            this.hitsToolStripMenuItem2.Click += new System.EventHandler(this.hitsToolStripMenuItem2_Click);
+            // 
+            // hitsToolStripMenuItem3
+            // 
+            this.hitsToolStripMenuItem3.Name = "hitsToolStripMenuItem3";
+            this.hitsToolStripMenuItem3.Size = new System.Drawing.Size(109, 22);
+            this.hitsToolStripMenuItem3.Text = "4 Hits";
+            this.hitsToolStripMenuItem3.Click += new System.EventHandler(this.hitsToolStripMenuItem3_Click);
+            // 
+            // hitsToolStripMenuItem4
+            // 
+            this.hitsToolStripMenuItem4.Name = "hitsToolStripMenuItem4";
+            this.hitsToolStripMenuItem4.Size = new System.Drawing.Size(109, 22);
+            this.hitsToolStripMenuItem4.Text = "5 Hits";
+            this.hitsToolStripMenuItem4.Click += new System.EventHandler(this.hitsToolStripMenuItem4_Click);
+            // 
+            // hitsToolStripMenuItem5
+            // 
+            this.hitsToolStripMenuItem5.Name = "hitsToolStripMenuItem5";
+            this.hitsToolStripMenuItem5.Size = new System.Drawing.Size(109, 22);
+            this.hitsToolStripMenuItem5.Text = "6 Hits";
+            this.hitsToolStripMenuItem5.Click += new System.EventHandler(this.hitsToolStripMenuItem5_Click);
+            // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1855,153 +2007,6 @@
             this.aC20ToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.aC20ToolStripMenuItem.Text = "AC20";
             this.aC20ToolStripMenuItem.Click += new System.EventHandler(this.aC20ToolStripMenuItem_Click);
-            // 
-            // sRMToolStripMenuItem
-            // 
-            this.sRMToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sRM2ToolStripMenuItem,
-            this.sRM4ToolStripMenuItem,
-            this.sRM6ToolStripMenuItem});
-            this.sRMToolStripMenuItem.Name = "sRMToolStripMenuItem";
-            this.sRMToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.sRMToolStripMenuItem.Text = "SRM";
-            // 
-            // sRM2ToolStripMenuItem
-            // 
-            this.sRM2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.hitToolStripMenuItem,
-            this.hitsToolStripMenuItem});
-            this.sRM2ToolStripMenuItem.Name = "sRM2ToolStripMenuItem";
-            this.sRM2ToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
-            this.sRM2ToolStripMenuItem.Text = "SRM2";
-            // 
-            // hitToolStripMenuItem
-            // 
-            this.hitToolStripMenuItem.Name = "hitToolStripMenuItem";
-            this.hitToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
-            this.hitToolStripMenuItem.Text = "1 Hit";
-            this.hitToolStripMenuItem.Click += new System.EventHandler(this.hitToolStripMenuItem_Click);
-            // 
-            // hitsToolStripMenuItem
-            // 
-            this.hitsToolStripMenuItem.Name = "hitsToolStripMenuItem";
-            this.hitsToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
-            this.hitsToolStripMenuItem.Text = "2 Hits";
-            this.hitsToolStripMenuItem.Click += new System.EventHandler(this.hitsToolStripMenuItem_Click);
-            // 
-            // sRM4ToolStripMenuItem
-            // 
-            this.sRM4ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem4,
-            this.toolStripMenuItem5,
-            this.toolStripMenuItem6,
-            this.toolStripMenuItem7});
-            this.sRM4ToolStripMenuItem.Name = "sRM4ToolStripMenuItem";
-            this.sRM4ToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
-            this.sRM4ToolStripMenuItem.Text = "SRM4";
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(109, 22);
-            this.toolStripMenuItem4.Text = "1 Hit";
-            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(109, 22);
-            this.toolStripMenuItem5.Text = "2 Hits";
-            this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
-            // 
-            // toolStripMenuItem6
-            // 
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(109, 22);
-            this.toolStripMenuItem6.Text = "3 Hits";
-            this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
-            // 
-            // toolStripMenuItem7
-            // 
-            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(109, 22);
-            this.toolStripMenuItem7.Text = "4 Hits";
-            this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
-            // 
-            // sRM6ToolStripMenuItem
-            // 
-            this.sRM6ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.hitsToolStripMenuItem1,
-            this.hitsToolStripMenuItem2,
-            this.hitsToolStripMenuItem3,
-            this.hitsToolStripMenuItem4,
-            this.hitsToolStripMenuItem5});
-            this.sRM6ToolStripMenuItem.Name = "sRM6ToolStripMenuItem";
-            this.sRM6ToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
-            this.sRM6ToolStripMenuItem.Text = "SRM6";
-            // 
-            // hitsToolStripMenuItem1
-            // 
-            this.hitsToolStripMenuItem1.Name = "hitsToolStripMenuItem1";
-            this.hitsToolStripMenuItem1.Size = new System.Drawing.Size(109, 22);
-            this.hitsToolStripMenuItem1.Text = "2 Hits";
-            this.hitsToolStripMenuItem1.Click += new System.EventHandler(this.hitsToolStripMenuItem1_Click);
-            // 
-            // hitsToolStripMenuItem2
-            // 
-            this.hitsToolStripMenuItem2.Name = "hitsToolStripMenuItem2";
-            this.hitsToolStripMenuItem2.Size = new System.Drawing.Size(109, 22);
-            this.hitsToolStripMenuItem2.Text = "3 Hits";
-            this.hitsToolStripMenuItem2.Click += new System.EventHandler(this.hitsToolStripMenuItem2_Click);
-            // 
-            // hitsToolStripMenuItem3
-            // 
-            this.hitsToolStripMenuItem3.Name = "hitsToolStripMenuItem3";
-            this.hitsToolStripMenuItem3.Size = new System.Drawing.Size(109, 22);
-            this.hitsToolStripMenuItem3.Text = "4 Hits";
-            this.hitsToolStripMenuItem3.Click += new System.EventHandler(this.hitsToolStripMenuItem3_Click);
-            // 
-            // hitsToolStripMenuItem4
-            // 
-            this.hitsToolStripMenuItem4.Name = "hitsToolStripMenuItem4";
-            this.hitsToolStripMenuItem4.Size = new System.Drawing.Size(109, 22);
-            this.hitsToolStripMenuItem4.Text = "5 Hits";
-            this.hitsToolStripMenuItem4.Click += new System.EventHandler(this.hitsToolStripMenuItem4_Click);
-            // 
-            // hitsToolStripMenuItem5
-            // 
-            this.hitsToolStripMenuItem5.Name = "hitsToolStripMenuItem5";
-            this.hitsToolStripMenuItem5.Size = new System.Drawing.Size(109, 22);
-            this.hitsToolStripMenuItem5.Text = "6 Hits";
-            this.hitsToolStripMenuItem5.Click += new System.EventHandler(this.hitsToolStripMenuItem5_Click);
-            // 
-            // smallLaserToolStripMenuItem
-            // 
-            this.smallLaserToolStripMenuItem.Name = "smallLaserToolStripMenuItem";
-            this.smallLaserToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.smallLaserToolStripMenuItem.Text = "Small Laser";
-            this.smallLaserToolStripMenuItem.Click += new System.EventHandler(this.smallLaserToolStripMenuItem_Click);
-            // 
-            // mediumLaserToolStripMenuItem
-            // 
-            this.mediumLaserToolStripMenuItem.Name = "mediumLaserToolStripMenuItem";
-            this.mediumLaserToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.mediumLaserToolStripMenuItem.Text = "Medium Laser";
-            this.mediumLaserToolStripMenuItem.Click += new System.EventHandler(this.mediumLaserToolStripMenuItem_Click);
-            // 
-            // largeLaserToolStripMenuItem
-            // 
-            this.largeLaserToolStripMenuItem.Name = "largeLaserToolStripMenuItem";
-            this.largeLaserToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.largeLaserToolStripMenuItem.Text = "Large Laser";
-            this.largeLaserToolStripMenuItem.Click += new System.EventHandler(this.largeLaserToolStripMenuItem_Click);
-            // 
-            // pPCToolStripMenuItem
-            // 
-            this.pPCToolStripMenuItem.Name = "pPCToolStripMenuItem";
-            this.pPCToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.pPCToolStripMenuItem.Text = "PPC";
-            this.pPCToolStripMenuItem.Click += new System.EventHandler(this.pPCToolStripMenuItem_Click);
             // 
             // groupBox8
             // 
@@ -2652,6 +2657,22 @@
             this.checkedListBox6.Size = new System.Drawing.Size(383, 329);
             this.checkedListBox6.TabIndex = 10;
             // 
+            // txtMWName
+            // 
+            this.txtMWName.Location = new System.Drawing.Point(204, 18);
+            this.txtMWName.Name = "txtMWName";
+            this.txtMWName.Size = new System.Drawing.Size(208, 20);
+            this.txtMWName.TabIndex = 11;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(170, 21);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(35, 13);
+            this.label42.TabIndex = 12;
+            this.label42.Text = "Name";
+            // 
             // frmDigitalRecordSheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2740,16 +2761,16 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMWCallsign;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblCons;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtHits;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtGS;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPS;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lblH;
@@ -2956,5 +2977,7 @@
         private System.Windows.Forms.CheckedListBox checkedListBox7;
         private System.Windows.Forms.TabPage tabRightLeg;
         private System.Windows.Forms.CheckedListBox checkedListBox6;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.TextBox txtMWName;
     }
 }

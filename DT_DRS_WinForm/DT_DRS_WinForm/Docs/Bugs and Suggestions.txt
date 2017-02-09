@@ -4,15 +4,10 @@ keep track of what weapons the 'Mech has on it.
 Restrict the armor based on the underlying internal structure.
 
 the critical hit tables don't seem to be working at the moment.
-This also applies to the Mech Lab where it seems you can only assign things to the Head crit table and nothing else.
-
-In the MechLab the “Load Mech” button doesn’t seem to do anything.
 
 option to change the sound effects that are used
 
 Requires admin privileges right now. Is there any way to avoid that?
-
-a way to import mechwarriors into record sheets.
 
 For heat modifiers, show the current penalty next to the abbreviations
 
@@ -21,6 +16,12 @@ Arm destroyed is significantly different than losing a torso.
 
 Consider adding a tracking of how much damage a mech has taken in a round for triggering piloting rolls.
 Then you can turn the Apply Heatsinks button into an End Turn button that applies heat sinks and resets the damage count.
+
+OK This also applies to the Mech Lab where it seems you can only assign things to the Head crit table and nothing else.
+
+REMOVED In the MechLab the “Load Mech” button doesn’t seem to do anything.
+
+DONE a way to import mechwarriors into record sheets.
 
 DONE Import Weapons and Equipment could be clearer. Consider a first time pop-up when the program opens with nothing in the catalogs asking if they want to import them.
 

@@ -98,5 +98,27 @@ namespace DT_DRS_WinForm
             }
 
         }
+
+        private void lsPilots_SelectedValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string[] MDL = new string[3];
+                MDL = lsPilots.SelectedItem.ToString().Split('"');
+                if (MDL.Length > 1)
+                {
+                    txtName.Text = MDL[0] + " " + MDL[2];
+                    txtCallSign.Text = MDL[1];
+                    //TODO:
+                        //SEARCH AND GET MECHWARRIOR DATA
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+        }
     }
 }

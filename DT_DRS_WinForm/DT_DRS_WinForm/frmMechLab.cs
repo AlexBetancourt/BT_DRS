@@ -570,6 +570,18 @@ namespace DT_DRS_WinForm
                         MechLocations.Insert(Mechlocation);
 
 
+                        //-----------------------------------------------
+                        //TODO: Insert code to save internal components
+                        //-----------------------------------------------
+
+
+
+                        //-----------------------------------------------
+
+
+
+
+
                     }
                 }
             }
