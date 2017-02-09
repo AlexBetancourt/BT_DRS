@@ -1428,6 +1428,7 @@ namespace DT_DRS_WinForm
         private void txtH_Click(object sender, EventArgs e)
         {
             ApplyDamageSub(txtH);
+            txtHits.Text = (int.Parse(txtHits.Text) + 1).ToString();
         }
 
         private void txtCT_TextChanged(object sender, EventArgs e)
@@ -1621,6 +1622,7 @@ namespace DT_DRS_WinForm
         private void txtIH_Click(object sender, EventArgs e)
         {
             ApplyDamageSub(txtIH);
+            txtHits.Text = (int.Parse(txtHits.Text) + 1).ToString();
         }
 
         private void txtILA_Click(object sender, EventArgs e)

@@ -24,7 +24,7 @@ namespace DT_DRS_WinForm
 
         private void button2_Click(object sender, EventArgs e)
         {
-            chklstHead.Items.RemoveAt(chklstHead.SelectedIndex);
+            chklstH.Items.RemoveAt(chklstH.SelectedIndex);
         }
 
         private void cmdSave_Click(object sender, EventArgs e)
@@ -366,6 +366,20 @@ namespace DT_DRS_WinForm
                     {
                         chklstComponentsH.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
                         chklstComponentsH.Sorted = true;
+                        chklstComponentsCT.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
+                        chklstComponentsCT.Sorted = true;
+                        chklstComponentsLT.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
+                        chklstComponentsLT.Sorted = true;
+                        chklstComponentsRT.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
+                        chklstComponentsRT.Sorted = true;
+                        chklstComponentsLA.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
+                        chklstComponentsLA.Sorted = true;
+                        chklstComponentsRA.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
+                        chklstComponentsRA.Sorted = true;
+                        chklstComponentsLL.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
+                        chklstComponentsLL.Sorted = true;
+                        chklstComponentsRL.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
+                        chklstComponentsRL.Sorted = true;
                     }
 
 
@@ -668,7 +682,13 @@ namespace DT_DRS_WinForm
             }
 
         }
+        private int indexOfItemUnderMouseToDrop;
+        private int indexOfItemUnderMouseToDrag;
+        private Point screenOffset;
+        private DateTime eventTime;
 
+
+        #region Head Internal Components
         private void chklstComponentsH_DragDrop(object sender, DragEventArgs e)
         {
 
@@ -676,50 +696,27 @@ namespace DT_DRS_WinForm
 
         private void chklstComponentsH_DragEnter(object sender, DragEventArgs e)
         {
-            // This event will  never be triggered unless listBox1.AllowDrop == true
-            // Adding this event to listBox1's events allows the cursor to change
-            // to indicate to the user that a copy dragdrop operation is underway.
-            // Execution here signifies a DragDrop operation is running on this control
-            // In this demo, I really don't want to allow a drop into listBox1.
-            // Since I haven't written a listBox1_DragDrop event handler
-            // an insertion into listBox1's Items never occurs.
             e.Effect = DragDropEffects.Copy;
         }
 
         private void GiveInfoAboutDragDropEvent(DateTime eventTime, string dragDropEventName, object originalSender, System.Windows.Forms.DragEventArgs e)
         {
-            //listBox3.SetSelected(listBox3.Items.Count, true);
-        }
 
+        }
 
         private void chklstComponentsH_MouseDown(object sender, MouseEventArgs e)
         {
-            // starts a DoDragDrop operation with allowed effect  "Copy"
             DateTime date = DateTime.Now; // get time of event
             int indexOfItem = chklstComponentsH.IndexFromPoint(e.X, e.Y);
             if (indexOfItem >= 0 && indexOfItem < chklstComponentsH.Items.Count)  // check that an string is selected
             {
 
-                // Set allowed DragDropEffect to Copy selected from DragDropEffects enumberation of None, Move, All etc.
                 chklstComponentsH.DoDragDrop(chklstComponentsH.Items[indexOfItem], DragDropEffects.Copy);
             }
         }
-        private Point screenOffset;
+
         private void chklstComponentsH_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
         {
-            // This event is fired when there is a change in the keyboard or mouse button state
-            // during a drag-and-drop operation.  This means that if the cursor is
-            // moved,  this event is fired.  If the keyboard is pressed or if a
-            // change to a mouse button occurs(press or release), this even is fired.
-            // In other words, this event is fired alot!
-            // For the purposes of the demo, if the mouse cursor  moves off Form1's boundaries
-            // during DoDragDrop operation initiated by the  listBox2 mousedown event
-            // the DoDragDrop operation initiated should be cancelled.
-
-            // ( from VS. .NET Combined Collection Control.DoDragDrop documentation)
-            // The screenOffset is used to account for any desktop bands
-            // that may be at the top or left side of the screen when
-            // determining when to cancel the drag drop operation.
             screenOffset = SystemInformation.WorkingArea.Location;
 
             ListBox lb = sender as ListBox;
@@ -727,13 +724,10 @@ namespace DT_DRS_WinForm
             if (lb != null)
             {
                 Form f = lb.FindForm();
-                // Cancel the drag if the mouse moves off the form. The screenOffset
-                // takes into account any desktop bands that may be at the top or left
-                // side of the screen.
                 if (((Control.MousePosition.X - screenOffset.X) < f.DesktopBounds.Left) ||
-                    ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
-                    ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
-                    ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
+                  ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
+                  ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
+                  ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
                 {
                     e.Action = DragAction.Cancel;
                 }
@@ -741,26 +735,26 @@ namespace DT_DRS_WinForm
 
 
         }
-        private int indexOfItemUnderMouseToDrop;
-        private int indexOfItemUnderMouseToDrag;
+
+
+
+
         private void chklstHead_DragDrop(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.StringFormat))
             {
-                if (indexOfItemUnderMouseToDrop >= 0 && indexOfItemUnderMouseToDrop < chklstHead.Items.Count)
+                if (indexOfItemUnderMouseToDrop >= 0 && indexOfItemUnderMouseToDrop < chklstH.Items.Count)
                 {
-                    chklstHead.Items.Insert(indexOfItemUnderMouseToDrop, e.Data.GetData(DataFormats.Text));
-                    chklstHead.Items.RemoveAt(indexOfItemUnderMouseToDrop + 1);
+                    chklstH.Items.Insert(indexOfItemUnderMouseToDrop, e.Data.GetData(DataFormats.Text));
+                    chklstH.Items.RemoveAt(indexOfItemUnderMouseToDrop + 1);
                 }
                 else
                 {
-                    // add the selected string to bottom of list
-                    chklstHead.Items.Add(e.Data.GetData(DataFormats.Text));
+                    chklstH.Items.Add(e.Data.GetData(DataFormats.Text));
                 }
 
 
             }
-            // fill info listBox
             eventTime = DateTime.Now;
             GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragDrop", sender, e);
             DateTime date = DateTime.Now;
@@ -770,13 +764,8 @@ namespace DT_DRS_WinForm
 
         private void chklstHead_DragEnter(object sender, DragEventArgs e)
         {
-            // fill the informational listBox3
             eventTime = DateTime.Now;
             GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragEnter", sender, e);
-
-            // change the drag cursor to show that listbox2 is ready and set to accept data entry
-            // either to Copy or Move
-            // make sure we aren't inadvertently passing one of the other objects allow such as a bitmap!
 
             if (e.Data.GetDataPresent(DataFormats.StringFormat) && (e.AllowedEffect == DragDropEffects.Copy))
                 e.Effect = DragDropEffects.Copy;
@@ -786,34 +775,26 @@ namespace DT_DRS_WinForm
 
 
         }
-        private DateTime eventTime;
+
         private void chklstHead_DragOver(object sender, DragEventArgs e)
         {
-            indexOfItemUnderMouseToDrop =
-    chklstHead.IndexFromPoint(chklstHead.PointToClient(new Point(e.X, e.Y)));
+            indexOfItemUnderMouseToDrop = chklstH.IndexFromPoint(chklstH.PointToClient(new Point(e.X, e.Y)));
 
             if (indexOfItemUnderMouseToDrop != ListBox.NoMatches)
             {
-
-                // pass the location back to use in the dragDrop event method.
-                chklstHead.SelectedIndex = indexOfItemUnderMouseToDrop;
+                chklstH.SelectedIndex = indexOfItemUnderMouseToDrop;
 
             }
             else
             {
 
-                // save the intended drop location as an index number into the listBox2 Item collection.
-                chklstHead.SelectedIndex = indexOfItemUnderMouseToDrop;
+                chklstH.SelectedIndex = indexOfItemUnderMouseToDrop;
             }
 
-            // if  the MouseDown event set the DragDrop operation to be a move event
-            // immediately delete the item.  This has the desirable effect of
-            // deleting any duplicate strings that might have been moved into
-            // listBox2
             if (e.Effect == DragDropEffects.Move)  // When moving an item within listBox2
-                chklstHead.Items.Remove((string)e.Data.GetData(DataFormats.Text));
+                chklstH.Items.Remove((string)e.Data.GetData(DataFormats.Text));
 
-            // fill the informational listBox3
+
             eventTime = DateTime.Now;
             GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragOver", sender, e);
         }
@@ -821,34 +802,11 @@ namespace DT_DRS_WinForm
         private void chklstHead_MouseDown(object sender, MouseEventArgs e)
         {
 
-           // int indexOfItem = chklstHead.IndexFromPoint(e.X, e.Y);
-            //DateTime date = DateTime.Now;
-            //if (indexOfItem >= 0 && indexOfItem < chklstHead.Items.Count)  // check we clicked down on a string
-            //{
 
-            //    // Set allowed DragDropEffect to Move selected from DragDropEffects enumberation of None, Move, All etc.
-            //    // A mouse down in listBox2 in this demo implies either delete or rearrange
-            //    // is started, therefore the allowed DragDropEffect is always Move.
-               //chklstHead.DoDragDrop(chklstHead.Items[indexOfItem], DragDropEffects.Move);
-
-            //}
         }
 
         private void chklstHead_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
         {
-            // This event is fired when there is a change in the keyboard or mouse button state
-            // during a drag-and-drop operation.  This means that if the cursor is
-            // moved,  this event is fired.  If the keyboard is pressed or if a
-            // change to a mouse button occurs(press or release), this even is fired.
-            // In other words,  this event is fired alot!
-            // For the purposes of the demo, if the mouse cursor  moves off Form1's boundaries
-            // during DoDragDrop operation initiated by the  listBox2 mousedown event
-            // the DoDragDrop operation initiated should be cancelled.
-
-            // ( from VS. .NET Combined Collection Control.DoDragDrop documentation)
-            // The screenOffset is used to account for any desktop bands
-            // that may be at the top or left side of the screen when
-            // determining when to cancel the drag drop operation.
             screenOffset = SystemInformation.WorkingArea.Location;
 
             ListBox lb = sender as ListBox;
@@ -856,13 +814,10 @@ namespace DT_DRS_WinForm
             if (lb != null)
             {
                 Form f = lb.FindForm();
-                // Cancel the drag if the mouse moves off the form. The screenOffset
-                // takes into account any desktop bands that may be at the top or left
-                // side of the screen.
                 if (((Control.MousePosition.X - screenOffset.X) < f.DesktopBounds.Left) ||
-                    ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
-                    ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
-                    ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
+                     ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
+                     ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
+                     ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
                 {
                     e.Action = DragAction.Cancel;
                 }
@@ -870,5 +825,836 @@ namespace DT_DRS_WinForm
 
 
         }
+        #endregion
+
+        #region Center Torso Internal Components
+        private void chklstComponentsCT_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
+        {
+            screenOffset = SystemInformation.WorkingArea.Location;
+
+            ListBox lb = sender as ListBox;
+
+            if (lb != null)
+            {
+                Form f = lb.FindForm();
+                if (((Control.MousePosition.X - screenOffset.X) < f.DesktopBounds.Left) ||
+                  ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
+                  ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
+                  ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
+                {
+                    e.Action = DragAction.Cancel;
+                }
+            }
+        }
+
+        private void chklstComponentsCT_MouseDown(object sender, MouseEventArgs e)
+        {
+            DateTime date = DateTime.Now; // get time of event
+            int indexOfItem = chklstComponentsCT.IndexFromPoint(e.X, e.Y);
+            if (indexOfItem >= 0 && indexOfItem < chklstComponentsCT.Items.Count)  // check that an string is selected
+            {
+
+                chklstComponentsCT.DoDragDrop(chklstComponentsCT.Items[indexOfItem], DragDropEffects.Copy);
+            }
+        }
+
+        private void chklstComponentsCT_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+
+        private void chklstCT_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
+        {
+            screenOffset = SystemInformation.WorkingArea.Location;
+
+            ListBox lb = sender as ListBox;
+
+            if (lb != null)
+            {
+                Form f = lb.FindForm();
+                if (((Control.MousePosition.X - screenOffset.X) < f.DesktopBounds.Left) ||
+                     ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
+                     ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
+                     ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
+                {
+                    e.Action = DragAction.Cancel;
+                }
+            }
+        }
+
+        private void chklstCT_DragOver(object sender, DragEventArgs e)
+        {
+            indexOfItemUnderMouseToDrop = chklstCT.IndexFromPoint(chklstCT.PointToClient(new Point(e.X, e.Y)));
+
+            if (indexOfItemUnderMouseToDrop != ListBox.NoMatches)
+            {
+                chklstCT.SelectedIndex = indexOfItemUnderMouseToDrop;
+
+            }
+            else
+            {
+
+                chklstCT.SelectedIndex = indexOfItemUnderMouseToDrop;
+            }
+
+            if (e.Effect == DragDropEffects.Move)  // When moving an item within listBox2
+                chklstCT.Items.Remove((string)e.Data.GetData(DataFormats.Text));
+
+
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragOver", sender, e);
+        }
+
+        private void chklstCT_DragEnter(object sender, DragEventArgs e)
+        {
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragEnter", sender, e);
+
+            if (e.Data.GetDataPresent(DataFormats.StringFormat) && (e.AllowedEffect == DragDropEffects.Copy))
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.Move;
+
+
+        }
+
+        private void chklstCT_DragDrop(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.StringFormat))
+            {
+                if (indexOfItemUnderMouseToDrop >= 0 && indexOfItemUnderMouseToDrop < chklstCT.Items.Count)
+                {
+                    chklstCT.Items.Insert(indexOfItemUnderMouseToDrop, e.Data.GetData(DataFormats.Text));
+                    chklstCT.Items.RemoveAt(indexOfItemUnderMouseToDrop + 1);
+                }
+                else
+                {
+                    chklstCT.Items.Add(e.Data.GetData(DataFormats.Text));
+                }
+
+
+            }
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragDrop", sender, e);
+            DateTime date = DateTime.Now;
+
+            label1.Text = "";  // Erase info label.
+        }
+
+        private void cmdRemoveComponentCT_Click(object sender, EventArgs e)
+        {
+            chklstCT.Items.RemoveAt(chklstCT.SelectedIndex);
+        }
+
+
+        #endregion
+
+        #region Left Torso Internal Components
+
+        private void chklstComponentsLT_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
+        {
+            screenOffset = SystemInformation.WorkingArea.Location;
+
+            ListBox lb = sender as ListBox;
+
+            if (lb != null)
+            {
+                Form f = lb.FindForm();
+                if (((Control.MousePosition.X - screenOffset.X) < f.DesktopBounds.Left) ||
+                  ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
+                  ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
+                  ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
+                {
+                    e.Action = DragAction.Cancel;
+                }
+            }
+        }
+
+        private void chklstComponentsLT_MouseDown(object sender, MouseEventArgs e)
+        {
+            DateTime date = DateTime.Now; // get time of event
+            int indexOfItem = chklstComponentsLT.IndexFromPoint(e.X, e.Y);
+            if (indexOfItem >= 0 && indexOfItem < chklstComponentsLT.Items.Count)  // check that an string is selected
+            {
+
+                chklstComponentsLT.DoDragDrop(chklstComponentsLT.Items[indexOfItem], DragDropEffects.Copy);
+            }
+        }
+
+        private void chklstComponentsLT_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+
+        private void chklstLT_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
+        {
+            screenOffset = SystemInformation.WorkingArea.Location;
+
+            ListBox lb = sender as ListBox;
+
+            if (lb != null)
+            {
+                Form f = lb.FindForm();
+                if (((Control.MousePosition.X - screenOffset.X) < f.DesktopBounds.Left) ||
+                     ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
+                     ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
+                     ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
+                {
+                    e.Action = DragAction.Cancel;
+                }
+            }
+        }
+
+        private void chklstLT_DragOver(object sender, DragEventArgs e)
+        {
+            indexOfItemUnderMouseToDrop = chklstLT.IndexFromPoint(chklstLT.PointToClient(new Point(e.X, e.Y)));
+
+            if (indexOfItemUnderMouseToDrop != ListBox.NoMatches)
+            {
+                chklstLT.SelectedIndex = indexOfItemUnderMouseToDrop;
+
+            }
+            else
+            {
+
+                chklstLT.SelectedIndex = indexOfItemUnderMouseToDrop;
+            }
+
+            if (e.Effect == DragDropEffects.Move)  // When moving an item within listBox2
+                chklstLT.Items.Remove((string)e.Data.GetData(DataFormats.Text));
+
+
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragOver", sender, e);
+        }
+
+        private void chklstLT_DragEnter(object sender, DragEventArgs e)
+        {
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragEnter", sender, e);
+
+            if (e.Data.GetDataPresent(DataFormats.StringFormat) && (e.AllowedEffect == DragDropEffects.Copy))
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.Move;
+
+
+        }
+
+        private void chklstLT_DragDrop(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.StringFormat))
+            {
+                if (indexOfItemUnderMouseToDrop >= 0 && indexOfItemUnderMouseToDrop < chklstLT.Items.Count)
+                {
+                    chklstLT.Items.Insert(indexOfItemUnderMouseToDrop, e.Data.GetData(DataFormats.Text));
+                    chklstLT.Items.RemoveAt(indexOfItemUnderMouseToDrop + 1);
+                }
+                else
+                {
+                    chklstLT.Items.Add(e.Data.GetData(DataFormats.Text));
+                }
+
+
+            }
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragDrop", sender, e);
+            DateTime date = DateTime.Now;
+
+            label1.Text = "";  // Erase info label.
+        }
+
+        private void cmdRemoveComponentLT_Click(object sender, EventArgs e)
+        {
+            chklstLT.Items.RemoveAt(chklstLT.SelectedIndex);
+        }
+        #endregion
+
+        #region Right Torso Internal Components
+        private void chklstComponentsRT_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
+        {
+
+        }
+
+        private void chklstComponentsRT_MouseDown(object sender, MouseEventArgs e)
+        {
+            DateTime date = DateTime.Now; // get time of event
+            int indexOfItem = chklstComponentsRT.IndexFromPoint(e.X, e.Y);
+            if (indexOfItem >= 0 && indexOfItem < chklstComponentsRT.Items.Count)  // check that an string is selected
+            {
+
+                chklstComponentsRT.DoDragDrop(chklstComponentsRT.Items[indexOfItem], DragDropEffects.Copy);
+            }
+        }
+
+        private void chklstComponentsRT_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+
+        private void chklstRT_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
+        {
+            screenOffset = SystemInformation.WorkingArea.Location;
+
+            ListBox lb = sender as ListBox;
+
+            if (lb != null)
+            {
+                Form f = lb.FindForm();
+                if (((Control.MousePosition.X - screenOffset.X) < f.DesktopBounds.Left) ||
+                     ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
+                     ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
+                     ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
+                {
+                    e.Action = DragAction.Cancel;
+                }
+            }
+        }
+
+        private void chklstRT_DragOver(object sender, DragEventArgs e)
+        {
+            indexOfItemUnderMouseToDrop = chklstRT.IndexFromPoint(chklstRT.PointToClient(new Point(e.X, e.Y)));
+
+            if (indexOfItemUnderMouseToDrop != ListBox.NoMatches)
+            {
+                chklstRT.SelectedIndex = indexOfItemUnderMouseToDrop;
+
+            }
+            else
+            {
+
+                chklstRT.SelectedIndex = indexOfItemUnderMouseToDrop;
+            }
+
+            if (e.Effect == DragDropEffects.Move)  // When moving an item within listBox2
+                chklstRT.Items.Remove((string)e.Data.GetData(DataFormats.Text));
+
+
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragOver", sender, e);
+        }
+
+        private void chklstRT_DragEnter(object sender, DragEventArgs e)
+        {
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragEnter", sender, e);
+
+            if (e.Data.GetDataPresent(DataFormats.StringFormat) && (e.AllowedEffect == DragDropEffects.Copy))
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.Move;
+
+
+        }
+
+        private void chklstRT_DragDrop(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.StringFormat))
+            {
+                if (indexOfItemUnderMouseToDrop >= 0 && indexOfItemUnderMouseToDrop < chklstRT.Items.Count)
+                {
+                    chklstRT.Items.Insert(indexOfItemUnderMouseToDrop, e.Data.GetData(DataFormats.Text));
+                    chklstRT.Items.RemoveAt(indexOfItemUnderMouseToDrop + 1);
+                }
+                else
+                {
+                    chklstRT.Items.Add(e.Data.GetData(DataFormats.Text));
+                }
+
+
+            }
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragDrop", sender, e);
+            DateTime date = DateTime.Now;
+
+            label1.Text = "";  // Erase info label.
+        }
+
+        private void cmdRemoveComponentRT_Click(object sender, EventArgs e)
+        {
+            chklstRT.Items.RemoveAt(chklstRT.SelectedIndex);
+        }
+        #endregion
+
+        #region Left Arm Internal Components
+        private void chklstComponentsLA_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
+        {
+            screenOffset = SystemInformation.WorkingArea.Location;
+
+            ListBox lb = sender as ListBox;
+
+            if (lb != null)
+            {
+                Form f = lb.FindForm();
+                if (((Control.MousePosition.X - screenOffset.X) < f.DesktopBounds.Left) ||
+                  ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
+                  ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
+                  ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
+                {
+                    e.Action = DragAction.Cancel;
+                }
+            }
+        }
+
+        private void chklstComponentsLA_MouseDown(object sender, MouseEventArgs e)
+        {
+            DateTime date = DateTime.Now; // get time of event
+            int indexOfItem = chklstComponentsLA.IndexFromPoint(e.X, e.Y);
+            if (indexOfItem >= 0 && indexOfItem < chklstComponentsLA.Items.Count)  // check that an string is selected
+            {
+
+                chklstComponentsLA.DoDragDrop(chklstComponentsLA.Items[indexOfItem], DragDropEffects.Copy);
+            }
+        }
+
+        private void chklstComponentsLA_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+
+        private void chklstLA_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
+        {
+            screenOffset = SystemInformation.WorkingArea.Location;
+
+            ListBox lb = sender as ListBox;
+
+            if (lb != null)
+            {
+                Form f = lb.FindForm();
+                if (((Control.MousePosition.X - screenOffset.X) < f.DesktopBounds.Left) ||
+                     ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
+                     ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
+                     ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
+                {
+                    e.Action = DragAction.Cancel;
+                }
+            }
+        }
+
+        private void chklstLA_DragOver(object sender, DragEventArgs e)
+        {
+            indexOfItemUnderMouseToDrop = chklstLA.IndexFromPoint(chklstLA.PointToClient(new Point(e.X, e.Y)));
+
+            if (indexOfItemUnderMouseToDrop != ListBox.NoMatches)
+            {
+                chklstLA.SelectedIndex = indexOfItemUnderMouseToDrop;
+
+            }
+            else
+            {
+
+                chklstLA.SelectedIndex = indexOfItemUnderMouseToDrop;
+            }
+
+            if (e.Effect == DragDropEffects.Move)  // When moving an item within listBox2
+                chklstLA.Items.Remove((string)e.Data.GetData(DataFormats.Text));
+
+
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragOver", sender, e);
+        }
+
+        private void chklstLA_DragEnter(object sender, DragEventArgs e)
+        {
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragEnter", sender, e);
+
+            if (e.Data.GetDataPresent(DataFormats.StringFormat) && (e.AllowedEffect == DragDropEffects.Copy))
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.Move;
+
+
+        }
+
+        private void chklstLA_DragDrop(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.StringFormat))
+            {
+                if (indexOfItemUnderMouseToDrop >= 0 && indexOfItemUnderMouseToDrop < chklstLA.Items.Count)
+                {
+                    chklstLA.Items.Insert(indexOfItemUnderMouseToDrop, e.Data.GetData(DataFormats.Text));
+                    chklstLA.Items.RemoveAt(indexOfItemUnderMouseToDrop + 1);
+                }
+                else
+                {
+                    chklstLA.Items.Add(e.Data.GetData(DataFormats.Text));
+                }
+
+
+            }
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragDrop", sender, e);
+            DateTime date = DateTime.Now;
+
+            label1.Text = "";  // Erase info label.
+        }
+
+        private void cmdRemoveComponentLA_Click(object sender, EventArgs e)
+        {
+            chklstLA.Items.RemoveAt(chklstLA.SelectedIndex);
+        }
+        #endregion
+
+        #region Right Arm Internal Components
+        private void chklstComponentsRA_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
+        {
+            screenOffset = SystemInformation.WorkingArea.Location;
+
+            ListBox lb = sender as ListBox;
+
+            if (lb != null)
+            {
+                Form f = lb.FindForm();
+                if (((Control.MousePosition.X - screenOffset.X) < f.DesktopBounds.Left) ||
+                  ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
+                  ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
+                  ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
+                {
+                    e.Action = DragAction.Cancel;
+                }
+            }
+        }
+
+        private void chklstComponentsRA_MouseDown(object sender, MouseEventArgs e)
+        {
+            DateTime date = DateTime.Now; // get time of event
+            int indexOfItem = chklstComponentsRA.IndexFromPoint(e.X, e.Y);
+            if (indexOfItem >= 0 && indexOfItem < chklstComponentsRA.Items.Count)  // check that an string is selected
+            {
+
+                chklstComponentsRA.DoDragDrop(chklstComponentsRA.Items[indexOfItem], DragDropEffects.Copy);
+            }
+        }
+
+        private void chklstComponentsRA_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+
+        private void chklstRA_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
+        {
+            screenOffset = SystemInformation.WorkingArea.Location;
+
+            ListBox lb = sender as ListBox;
+
+            if (lb != null)
+            {
+                Form f = lb.FindForm();
+                if (((Control.MousePosition.X - screenOffset.X) < f.DesktopBounds.Left) ||
+                     ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
+                     ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
+                     ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
+                {
+                    e.Action = DragAction.Cancel;
+                }
+            }
+        }
+
+        private void chklstRA_DragOver(object sender, DragEventArgs e)
+        {
+            indexOfItemUnderMouseToDrop = chklstRA.IndexFromPoint(chklstRA.PointToClient(new Point(e.X, e.Y)));
+
+            if (indexOfItemUnderMouseToDrop != ListBox.NoMatches)
+            {
+                chklstRA.SelectedIndex = indexOfItemUnderMouseToDrop;
+
+            }
+            else
+            {
+
+                chklstRA.SelectedIndex = indexOfItemUnderMouseToDrop;
+            }
+
+            if (e.Effect == DragDropEffects.Move)  // When moving an item within listBox2
+                chklstRA.Items.Remove((string)e.Data.GetData(DataFormats.Text));
+
+
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragOver", sender, e);
+        }
+
+        private void chklstRA_DragEnter(object sender, DragEventArgs e)
+        {
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragEnter", sender, e);
+
+            if (e.Data.GetDataPresent(DataFormats.StringFormat) && (e.AllowedEffect == DragDropEffects.Copy))
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.Move;
+
+
+        }
+
+        private void chklstRA_DragDrop(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.StringFormat))
+            {
+                if (indexOfItemUnderMouseToDrop >= 0 && indexOfItemUnderMouseToDrop < chklstRA.Items.Count)
+                {
+                    chklstRA.Items.Insert(indexOfItemUnderMouseToDrop, e.Data.GetData(DataFormats.Text));
+                    chklstRA.Items.RemoveAt(indexOfItemUnderMouseToDrop + 1);
+                }
+                else
+                {
+                    chklstRA.Items.Add(e.Data.GetData(DataFormats.Text));
+                }
+
+
+            }
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragDrop", sender, e);
+            DateTime date = DateTime.Now;
+
+            label1.Text = "";  // Erase info label.
+        }
+
+        private void cmdRemoveComponentRA_Click(object sender, EventArgs e)
+        {
+            chklstRA.Items.RemoveAt(chklstRA.SelectedIndex);
+        }
+        #endregion
+
+        #region Left Leg Internal Components
+        private void chklstComponentsLL_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
+        {
+            screenOffset = SystemInformation.WorkingArea.Location;
+
+            ListBox lb = sender as ListBox;
+
+            if (lb != null)
+            {
+                Form f = lb.FindForm();
+                if (((Control.MousePosition.X - screenOffset.X) < f.DesktopBounds.Left) ||
+                  ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
+                  ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
+                  ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
+                {
+                    e.Action = DragAction.Cancel;
+                }
+            }
+        }
+
+        private void chklstComponentsLL_MouseDown(object sender, MouseEventArgs e)
+        {
+            DateTime date = DateTime.Now; // get time of event
+            int indexOfItem = chklstComponentsLL.IndexFromPoint(e.X, e.Y);
+            if (indexOfItem >= 0 && indexOfItem < chklstComponentsLL.Items.Count)  // check that an string is selected
+            {
+
+                chklstComponentsLL.DoDragDrop(chklstComponentsLL.Items[indexOfItem], DragDropEffects.Copy);
+            }
+        }
+
+        private void chklstComponentsLL_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+
+        private void chklstLL_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
+        {
+            screenOffset = SystemInformation.WorkingArea.Location;
+
+            ListBox lb = sender as ListBox;
+
+            if (lb != null)
+            {
+                Form f = lb.FindForm();
+                if (((Control.MousePosition.X - screenOffset.X) < f.DesktopBounds.Left) ||
+                     ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
+                     ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
+                     ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
+                {
+                    e.Action = DragAction.Cancel;
+                }
+            }
+        }
+
+        private void chklstLL_DragOver(object sender, DragEventArgs e)
+        {
+            indexOfItemUnderMouseToDrop = chklstLL.IndexFromPoint(chklstLL.PointToClient(new Point(e.X, e.Y)));
+
+            if (indexOfItemUnderMouseToDrop != ListBox.NoMatches)
+            {
+                chklstLL.SelectedIndex = indexOfItemUnderMouseToDrop;
+
+            }
+            else
+            {
+
+                chklstLL.SelectedIndex = indexOfItemUnderMouseToDrop;
+            }
+
+            if (e.Effect == DragDropEffects.Move)  // When moving an item within listBox2
+                chklstLL.Items.Remove((string)e.Data.GetData(DataFormats.Text));
+
+
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragOver", sender, e);
+        }
+
+        private void chklstLL_DragEnter(object sender, DragEventArgs e)
+        {
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragEnter", sender, e);
+
+            if (e.Data.GetDataPresent(DataFormats.StringFormat) && (e.AllowedEffect == DragDropEffects.Copy))
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.Move;
+
+
+        }
+
+        private void chklstLL_DragDrop(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.StringFormat))
+            {
+                if (indexOfItemUnderMouseToDrop >= 0 && indexOfItemUnderMouseToDrop < chklstLL.Items.Count)
+                {
+                    chklstLL.Items.Insert(indexOfItemUnderMouseToDrop, e.Data.GetData(DataFormats.Text));
+                    chklstLL.Items.RemoveAt(indexOfItemUnderMouseToDrop + 1);
+                }
+                else
+                {
+                    chklstLL.Items.Add(e.Data.GetData(DataFormats.Text));
+                }
+
+
+            }
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragDrop", sender, e);
+            DateTime date = DateTime.Now;
+
+            label1.Text = "";  // Erase info label.
+        }
+
+        private void cmdRemoveComponentLL_Click(object sender, EventArgs e)
+        {
+            chklstLL.Items.RemoveAt(chklstLL.SelectedIndex);
+        }
+        #endregion
+
+        #region Right Leg Internal Components
+        private void chklstComponentsRL_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
+        {
+            screenOffset = SystemInformation.WorkingArea.Location;
+
+            ListBox lb = sender as ListBox;
+
+            if (lb != null)
+            {
+                Form f = lb.FindForm();
+                if (((Control.MousePosition.X - screenOffset.X) < f.DesktopBounds.Left) ||
+                  ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
+                  ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
+                  ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
+                {
+                    e.Action = DragAction.Cancel;
+                }
+            }
+        }
+
+        private void chklstComponentsRL_MouseDown(object sender, MouseEventArgs e)
+        {
+            DateTime date = DateTime.Now; // get time of event
+            int indexOfItem = chklstComponentsRL.IndexFromPoint(e.X, e.Y);
+            if (indexOfItem >= 0 && indexOfItem < chklstComponentsRL.Items.Count)  // check that an string is selected
+            {
+
+                chklstComponentsRL.DoDragDrop(chklstComponentsRL.Items[indexOfItem], DragDropEffects.Copy);
+            }
+        }
+
+        private void chklstComponentsRL_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+
+        private void chklstRL_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
+        {
+            screenOffset = SystemInformation.WorkingArea.Location;
+
+            ListBox lb = sender as ListBox;
+
+            if (lb != null)
+            {
+                Form f = lb.FindForm();
+                if (((Control.MousePosition.X - screenOffset.X) < f.DesktopBounds.Left) ||
+                     ((Control.MousePosition.X - screenOffset.X) > f.DesktopBounds.Right) ||
+                     ((Control.MousePosition.Y - screenOffset.Y) < f.DesktopBounds.Top) ||
+                     ((Control.MousePosition.Y - screenOffset.Y) > f.DesktopBounds.Bottom))
+                {
+                    e.Action = DragAction.Cancel;
+                }
+            }
+        }
+
+        private void chklstRL_DragOver(object sender, DragEventArgs e)
+        {
+            indexOfItemUnderMouseToDrop = chklstRL.IndexFromPoint(chklstRL.PointToClient(new Point(e.X, e.Y)));
+
+            if (indexOfItemUnderMouseToDrop != ListBox.NoMatches)
+            {
+                chklstRL.SelectedIndex = indexOfItemUnderMouseToDrop;
+
+            }
+            else
+            {
+
+                chklstRL.SelectedIndex = indexOfItemUnderMouseToDrop;
+            }
+
+            if (e.Effect == DragDropEffects.Move)  // When moving an item within listBox2
+                chklstRL.Items.Remove((string)e.Data.GetData(DataFormats.Text));
+
+
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragOver", sender, e);
+        }
+
+        private void chklstRL_DragEnter(object sender, DragEventArgs e)
+        {
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragEnter", sender, e);
+
+            if (e.Data.GetDataPresent(DataFormats.StringFormat) && (e.AllowedEffect == DragDropEffects.Copy))
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.Move;
+
+
+        }
+
+        private void chklstRL_DragDrop(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.StringFormat))
+            {
+                if (indexOfItemUnderMouseToDrop >= 0 && indexOfItemUnderMouseToDrop < chklstRL.Items.Count)
+                {
+                    chklstRL.Items.Insert(indexOfItemUnderMouseToDrop, e.Data.GetData(DataFormats.Text));
+                    chklstRL.Items.RemoveAt(indexOfItemUnderMouseToDrop + 1);
+                }
+                else
+                {
+                    chklstRL.Items.Add(e.Data.GetData(DataFormats.Text));
+                }
+
+
+            }
+            eventTime = DateTime.Now;
+            GiveInfoAboutDragDropEvent(eventTime, "listBox2_DragDrop", sender, e);
+            DateTime date = DateTime.Now;
+
+            label1.Text = "";  // Erase info label.
+        }
+
+        private void cmdRemoveComponentRL_Click(object sender, EventArgs e)
+        {
+            chklstRL.Items.RemoveAt(chklstRL.SelectedIndex);
+        }
+
+        #endregion
     }
 }

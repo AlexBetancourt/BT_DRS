@@ -1,14 +1,17 @@
+
 keep track of what weapons the 'Mech has on it.
+
+Restrict the armor based on the underlying internal structure.
+
 the critical hit tables don't seem to be working at the moment.
 This also applies to the Mech Lab where it seems you can only assign things to the Head crit table and nothing else.
+
+In the MechLab the “Load Mech” button doesn’t seem to do anything.
 
 option to change the sound effects that are used
 
 Requires admin privileges right now. Is there any way to avoid that?
 
-Import Weapons and Equipment could be clearer. Consider a first time pop-up when the program opens with nothing in the catalogs asking if they want to import them.
-
-OK Dice roll as a small window with buttons that displays the result immediately rather than as a separate pop-up
 a way to import mechwarriors into record sheets.
 
 For heat modifiers, show the current penalty next to the abbreviations
@@ -16,28 +19,29 @@ For heat modifiers, show the current penalty next to the abbreviations
 The “Destroyed” alert that plays when a part is destroyed should probably specify what type of part was destroyed.
 Arm destroyed is significantly different than losing a torso.
 
-OK Make arms no longer selectable for damage after the associated torso has been destroyed.
-
 Consider adding a tracking of how much damage a mech has taken in a round for triggering piloting rolls.
-
 Then you can turn the Apply Heatsinks button into an End Turn button that applies heat sinks and resets the damage count.
 
-Add a pilot hit when the heat is hit and add some kind of reminder that a consciousness check is needed.
+DONE Import Weapons and Equipment could be clearer. Consider a first time pop-up when the program opens with nothing in the catalogs asking if they want to import them.
 
-In the MechLab the “Load Mech” button doesn’t seem to do anything.
+DONE Dice roll as a small window with buttons that displays the result immediately rather than as a separate pop-up
 
-OK I think the internal structure is based on the tonnage on the tonnage of the mech.
-OK When designing a mech in the MechLab consider setting the internal structure values when you set the tonnage and prevent the
+DONE Make arms no longer selectable for damage after the associated torso has been destroyed.
+
+DONE Add a pilot hit when the head is hit and add some kind of reminder that a consciousness check is needed.
+
+DONE I think the internal structure is based on the tonnage on the tonnage of the mech.
+
+DONE When designing a mech in the MechLab consider setting the internal structure values when you set the tonnage and prevent the
 		player from altering them. I would need to check the construction rules to be sure.
 
-OK	The “Update” button on the MechLab doesn’t seem to work. It returned the following error when I tried to use
+DONE	The “Update” button on the MechLab doesn’t seem to work. It returned the following error when I tried to use
 		it: “Invalid BSON data type ‘Null’ on field ‘_id’”
 
-OK	I assume the “Update” button should update the values recorded in the excel sheet. Consider combining it with the “Save Mech” button.
-OK	Pressing the “Save Mech” button creates a new entry even if you already have a mech with the same Variant value.
+DONE	I assume the “Update” button should update the values recorded in the excel sheet. Consider combining it with the “Save Mech” button.
+DONE	Pressing the “Save Mech” button creates a new entry even if you already have a mech with the same Variant value.
 
-OK	Consider adding a “Remove” option on the MechLab. I currently have two Test Mechs in the excel file.
+DONE Consider adding a “Remove” option on the MechLab. I currently have two Test Mechs in the excel file.
 
-OK	Restrict the tonnage to a multiple of 5.
+DONE	Restrict the tonnage to a multiple of 5.
 
-Restrict the armor based on the underlying internal structure.
