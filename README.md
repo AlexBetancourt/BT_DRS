@@ -1,4 +1,8 @@
-## Welcome to GitHub Pages
+## Welcome to BT_DRS (Battletech Digital Record Sheets)
+
+This project is an attempt to make a program that replaces the physical paper sheets and by that save some space on our table.
+
+
 
 You can use the [editor on GitHub](https://github.com/AlexBetancourt/BT_DRS/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
