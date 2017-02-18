@@ -1670,7 +1670,6 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmMechLab";
-            this.Text = "Mech Lab";
             this.Load += new System.EventHandler(this.frmMechLab_Load);
             this.groupBox6.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
