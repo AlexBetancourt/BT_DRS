@@ -364,25 +364,47 @@ namespace DT_DRS_WinForm
 
                     foreach (DS_BTDRSWeapons Weapon in Weapons.FindAll())
                     {
-                        chklstComponentsH.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
+                        chklstComponentsH.Items.Add(Weapon.Name + " (Weapon " + Weapon.Crits + " Crits)");
                         chklstComponentsH.Sorted = true;
-                        chklstComponentsCT.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
+                        chklstComponentsCT.Items.Add(Weapon.Name + " (Weapon " + Weapon.Crits + " Crits)");
                         chklstComponentsCT.Sorted = true;
-                        chklstComponentsLT.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
+                        chklstComponentsLT.Items.Add(Weapon.Name + " (Weapon " + Weapon.Crits + " Crits)");
                         chklstComponentsLT.Sorted = true;
-                        chklstComponentsRT.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
+                        chklstComponentsRT.Items.Add(Weapon.Name + " (Weapon " + Weapon.Crits + " Crits)");
                         chklstComponentsRT.Sorted = true;
-                        chklstComponentsLA.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
+                        chklstComponentsLA.Items.Add(Weapon.Name + " (Weapon " + Weapon.Crits + " Crits)");
                         chklstComponentsLA.Sorted = true;
-                        chklstComponentsRA.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
+                        chklstComponentsRA.Items.Add(Weapon.Name + "(Weapon " + Weapon.Crits + " Crits)");
                         chklstComponentsRA.Sorted = true;
-                        chklstComponentsLL.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
+                        chklstComponentsLL.Items.Add(Weapon.Name + " (Weapon " + Weapon.Crits + " Crits)");
                         chklstComponentsLL.Sorted = true;
-                        chklstComponentsRL.Items.Add(Weapon.Name + " (" + Weapon.Crits + " Crits)");
+                        chklstComponentsRL.Items.Add(Weapon.Name + " (Weapon " + Weapon.Crits + " Crits)");
                         chklstComponentsRL.Sorted = true;
                     }
 
-
+                    var Ammos = db.GetCollection<DS_BTDRSAmmo>("Ammos");
+                    Ammos.EnsureIndex(x => x.AmmoID);
+                    {
+                        foreach (DS_BTDRSAmmo Ammo in Ammos.FindAll())
+                        {
+                            chklstComponentsH.Items.Add(Ammo.AmmoName + " (Ammo " + Ammo.Ammo + " Shots)");
+                            chklstComponentsH.Sorted = true;
+                            chklstComponentsCT.Items.Add(Ammo.AmmoName + " (Ammo " + Ammo.Ammo + " Shots)");
+                            chklstComponentsCT.Sorted = true;
+                            chklstComponentsLT.Items.Add(Ammo.AmmoName + " (Ammo " + Ammo.Ammo + " Shots)");
+                            chklstComponentsLT.Sorted = true;
+                            chklstComponentsRT.Items.Add(Ammo.AmmoName + " (Ammo " + Ammo.Ammo + " Shots)");
+                            chklstComponentsRT.Sorted = true;
+                            chklstComponentsLA.Items.Add(Ammo.AmmoName + " (Ammo " + Ammo.Ammo + " Shots)");
+                            chklstComponentsLA.Sorted = true;
+                            chklstComponentsRA.Items.Add(Ammo.AmmoName + " (Ammo " + Ammo.Ammo + " Shots)");
+                            chklstComponentsRA.Sorted = true;
+                            chklstComponentsLL.Items.Add(Ammo.AmmoName + " (Ammo " + Ammo.Ammo + " Shots)");
+                            chklstComponentsLL.Sorted = true;
+                            chklstComponentsRL.Items.Add(Ammo.AmmoName + " (Ammo " + Ammo.Ammo + " Shots)");
+                            chklstComponentsRL.Sorted = true;
+                        }
+                    }
 
 
 
@@ -757,6 +779,7 @@ namespace DT_DRS_WinForm
             {
                 if (indexOfItemUnderMouseToDrop >= 0 && indexOfItemUnderMouseToDrop < chklstH.Items.Count)
                 {
+
                     chklstH.Items.Insert(indexOfItemUnderMouseToDrop, e.Data.GetData(DataFormats.Text));
                     chklstH.Items.RemoveAt(indexOfItemUnderMouseToDrop + 1);
                 }

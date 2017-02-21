@@ -178,7 +178,7 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Location = new System.Drawing.Point(701, 358);
+            this.groupBox7.Location = new System.Drawing.Point(811, 358);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(244, 291);
             this.groupBox7.TabIndex = 12;
@@ -190,7 +190,7 @@
             this.groupBox6.Controls.Add(this.tabControl1);
             this.groupBox6.Location = new System.Drawing.Point(13, 141);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(418, 532);
+            this.groupBox6.Size = new System.Drawing.Size(528, 532);
             this.groupBox6.TabIndex = 11;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "CRITICAL HIT TABLE";
@@ -210,7 +210,7 @@
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(403, 507);
+            this.tabControl1.Size = new System.Drawing.Size(513, 507);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 0;
             // 
@@ -226,7 +226,7 @@
             this.tabHead.Location = new System.Drawing.Point(4, 49);
             this.tabHead.Name = "tabHead";
             this.tabHead.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHead.Size = new System.Drawing.Size(395, 454);
+            this.tabHead.Size = new System.Drawing.Size(505, 454);
             this.tabHead.TabIndex = 0;
             this.tabHead.Text = "Head";
             this.tabHead.UseVisualStyleBackColor = true;
@@ -234,7 +234,7 @@
             // label25
             // 
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(191, 160);
+            this.label25.Location = new System.Drawing.Point(226, 160);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(24, 23);
             this.label25.TabIndex = 15;
@@ -264,7 +264,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(213, 8);
+            this.label1.Location = new System.Drawing.Point(251, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 16);
             this.label1.TabIndex = 12;
@@ -276,9 +276,9 @@
             this.chklstComponentsH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chklstComponentsH.FormattingEnabled = true;
             this.chklstComponentsH.HorizontalScrollbar = true;
-            this.chklstComponentsH.Location = new System.Drawing.Point(216, 27);
+            this.chklstComponentsH.Location = new System.Drawing.Point(254, 27);
             this.chklstComponentsH.Name = "chklstComponentsH";
-            this.chklstComponentsH.Size = new System.Drawing.Size(173, 327);
+            this.chklstComponentsH.Size = new System.Drawing.Size(245, 327);
             this.chklstComponentsH.TabIndex = 5;
             this.chklstComponentsH.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstComponentsH_DragEnter);
             this.chklstComponentsH.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.chklstComponentsH_QueryContinueDrag);
@@ -310,7 +310,7 @@
             "Life Support"});
             this.chklstH.Location = new System.Drawing.Point(8, 27);
             this.chklstH.Name = "chklstH";
-            this.chklstH.Size = new System.Drawing.Size(182, 319);
+            this.chklstH.Size = new System.Drawing.Size(213, 319);
             this.chklstH.TabIndex = 0;
             this.chklstH.DragDrop += new System.Windows.Forms.DragEventHandler(this.chklstHead_DragDrop);
             this.chklstH.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstHead_DragEnter);
@@ -330,7 +330,7 @@
             this.tabCenterTorso.Location = new System.Drawing.Point(4, 49);
             this.tabCenterTorso.Name = "tabCenterTorso";
             this.tabCenterTorso.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCenterTorso.Size = new System.Drawing.Size(395, 454);
+            this.tabCenterTorso.Size = new System.Drawing.Size(505, 454);
             this.tabCenterTorso.TabIndex = 1;
             this.tabCenterTorso.Text = "Center Torso";
             this.tabCenterTorso.UseVisualStyleBackColor = true;
@@ -338,7 +338,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(191, 160);
+            this.label2.Location = new System.Drawing.Point(225, 160);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(24, 23);
             this.label2.TabIndex = 22;
@@ -368,7 +368,7 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(213, 8);
+            this.label30.Location = new System.Drawing.Point(251, 8);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(114, 16);
             this.label30.TabIndex = 19;
@@ -380,9 +380,9 @@
             this.chklstComponentsCT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chklstComponentsCT.FormattingEnabled = true;
             this.chklstComponentsCT.HorizontalScrollbar = true;
-            this.chklstComponentsCT.Location = new System.Drawing.Point(216, 27);
+            this.chklstComponentsCT.Location = new System.Drawing.Point(254, 27);
             this.chklstComponentsCT.Name = "chklstComponentsCT";
-            this.chklstComponentsCT.Size = new System.Drawing.Size(173, 327);
+            this.chklstComponentsCT.Size = new System.Drawing.Size(245, 327);
             this.chklstComponentsCT.TabIndex = 18;
             this.chklstComponentsCT.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstComponentsCT_DragEnter);
             this.chklstComponentsCT.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.chklstComponentsCT_QueryContinueDrag);
@@ -420,7 +420,7 @@
             "Roll Again"});
             this.chklstCT.Location = new System.Drawing.Point(8, 27);
             this.chklstCT.Name = "chklstCT";
-            this.chklstCT.Size = new System.Drawing.Size(182, 319);
+            this.chklstCT.Size = new System.Drawing.Size(213, 319);
             this.chklstCT.TabIndex = 16;
             this.chklstCT.DragDrop += new System.Windows.Forms.DragEventHandler(this.chklstCT_DragDrop);
             this.chklstCT.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstCT_DragEnter);
@@ -438,7 +438,7 @@
             this.tabLeftTorso.Controls.Add(this.chklstLT);
             this.tabLeftTorso.Location = new System.Drawing.Point(4, 49);
             this.tabLeftTorso.Name = "tabLeftTorso";
-            this.tabLeftTorso.Size = new System.Drawing.Size(395, 454);
+            this.tabLeftTorso.Size = new System.Drawing.Size(505, 454);
             this.tabLeftTorso.TabIndex = 2;
             this.tabLeftTorso.Text = "LeftTorso";
             this.tabLeftTorso.UseVisualStyleBackColor = true;
@@ -446,7 +446,7 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(191, 160);
+            this.label3.Location = new System.Drawing.Point(226, 160);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(24, 23);
             this.label3.TabIndex = 22;
@@ -476,7 +476,7 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(213, 8);
+            this.label33.Location = new System.Drawing.Point(251, 8);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(114, 16);
             this.label33.TabIndex = 19;
@@ -488,9 +488,9 @@
             this.chklstComponentsLT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chklstComponentsLT.FormattingEnabled = true;
             this.chklstComponentsLT.HorizontalScrollbar = true;
-            this.chklstComponentsLT.Location = new System.Drawing.Point(216, 27);
+            this.chklstComponentsLT.Location = new System.Drawing.Point(254, 27);
             this.chklstComponentsLT.Name = "chklstComponentsLT";
-            this.chklstComponentsLT.Size = new System.Drawing.Size(173, 327);
+            this.chklstComponentsLT.Size = new System.Drawing.Size(248, 327);
             this.chklstComponentsLT.TabIndex = 18;
             this.chklstComponentsLT.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstComponentsLT_DragEnter);
             this.chklstComponentsLT.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.chklstComponentsLT_QueryContinueDrag);
@@ -515,7 +515,7 @@
             this.chklstLT.HorizontalScrollbar = true;
             this.chklstLT.Location = new System.Drawing.Point(8, 27);
             this.chklstLT.Name = "chklstLT";
-            this.chklstLT.Size = new System.Drawing.Size(182, 319);
+            this.chklstLT.Size = new System.Drawing.Size(213, 319);
             this.chklstLT.TabIndex = 16;
             this.chklstLT.DragDrop += new System.Windows.Forms.DragEventHandler(this.chklstLT_DragDrop);
             this.chklstLT.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstLT_DragEnter);
@@ -533,7 +533,7 @@
             this.tabRightTorso.Controls.Add(this.chklstRT);
             this.tabRightTorso.Location = new System.Drawing.Point(4, 49);
             this.tabRightTorso.Name = "tabRightTorso";
-            this.tabRightTorso.Size = new System.Drawing.Size(395, 454);
+            this.tabRightTorso.Size = new System.Drawing.Size(505, 454);
             this.tabRightTorso.TabIndex = 3;
             this.tabRightTorso.Text = "Right Torso";
             this.tabRightTorso.UseVisualStyleBackColor = true;
@@ -541,7 +541,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(191, 160);
+            this.label4.Location = new System.Drawing.Point(230, 160);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(24, 23);
             this.label4.TabIndex = 22;
@@ -571,7 +571,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(213, 8);
+            this.label36.Location = new System.Drawing.Point(251, 8);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(114, 16);
             this.label36.TabIndex = 19;
@@ -583,9 +583,9 @@
             this.chklstComponentsRT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chklstComponentsRT.FormattingEnabled = true;
             this.chklstComponentsRT.HorizontalScrollbar = true;
-            this.chklstComponentsRT.Location = new System.Drawing.Point(216, 27);
+            this.chklstComponentsRT.Location = new System.Drawing.Point(254, 27);
             this.chklstComponentsRT.Name = "chklstComponentsRT";
-            this.chklstComponentsRT.Size = new System.Drawing.Size(173, 327);
+            this.chklstComponentsRT.Size = new System.Drawing.Size(248, 327);
             this.chklstComponentsRT.TabIndex = 18;
             this.chklstComponentsRT.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstComponentsRT_DragEnter);
             this.chklstComponentsRT.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.chklstComponentsRT_QueryContinueDrag);
@@ -610,7 +610,7 @@
             this.chklstRT.HorizontalScrollbar = true;
             this.chklstRT.Location = new System.Drawing.Point(8, 27);
             this.chklstRT.Name = "chklstRT";
-            this.chklstRT.Size = new System.Drawing.Size(182, 319);
+            this.chklstRT.Size = new System.Drawing.Size(216, 319);
             this.chklstRT.TabIndex = 16;
             this.chklstRT.DragDrop += new System.Windows.Forms.DragEventHandler(this.chklstRT_DragDrop);
             this.chklstRT.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstRT_DragEnter);
@@ -628,7 +628,7 @@
             this.tabLeftArm.Controls.Add(this.chklstLA);
             this.tabLeftArm.Location = new System.Drawing.Point(4, 49);
             this.tabLeftArm.Name = "tabLeftArm";
-            this.tabLeftArm.Size = new System.Drawing.Size(395, 454);
+            this.tabLeftArm.Size = new System.Drawing.Size(505, 454);
             this.tabLeftArm.TabIndex = 4;
             this.tabLeftArm.Text = "Left Arm";
             this.tabLeftArm.UseVisualStyleBackColor = true;
@@ -636,7 +636,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(191, 160);
+            this.label5.Location = new System.Drawing.Point(224, 160);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(24, 23);
             this.label5.TabIndex = 22;
@@ -666,7 +666,7 @@
             // 
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(213, 8);
+            this.label43.Location = new System.Drawing.Point(251, 8);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(114, 16);
             this.label43.TabIndex = 19;
@@ -678,9 +678,9 @@
             this.chklstComponentsLA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chklstComponentsLA.FormattingEnabled = true;
             this.chklstComponentsLA.HorizontalScrollbar = true;
-            this.chklstComponentsLA.Location = new System.Drawing.Point(216, 27);
+            this.chklstComponentsLA.Location = new System.Drawing.Point(254, 27);
             this.chklstComponentsLA.Name = "chklstComponentsLA";
-            this.chklstComponentsLA.Size = new System.Drawing.Size(173, 327);
+            this.chklstComponentsLA.Size = new System.Drawing.Size(248, 327);
             this.chklstComponentsLA.TabIndex = 18;
             this.chklstComponentsLA.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstComponentsLA_DragEnter);
             this.chklstComponentsLA.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.chklstComponentsLA_QueryContinueDrag);
@@ -712,7 +712,7 @@
             "Roll Again"});
             this.chklstLA.Location = new System.Drawing.Point(8, 27);
             this.chklstLA.Name = "chklstLA";
-            this.chklstLA.Size = new System.Drawing.Size(182, 319);
+            this.chklstLA.Size = new System.Drawing.Size(213, 319);
             this.chklstLA.TabIndex = 16;
             this.chklstLA.DragDrop += new System.Windows.Forms.DragEventHandler(this.chklstLA_DragDrop);
             this.chklstLA.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstLA_DragEnter);
@@ -730,7 +730,7 @@
             this.tabRightArm.Controls.Add(this.chklstRA);
             this.tabRightArm.Location = new System.Drawing.Point(4, 49);
             this.tabRightArm.Name = "tabRightArm";
-            this.tabRightArm.Size = new System.Drawing.Size(395, 454);
+            this.tabRightArm.Size = new System.Drawing.Size(505, 454);
             this.tabRightArm.TabIndex = 5;
             this.tabRightArm.Text = "Right Arm";
             this.tabRightArm.UseVisualStyleBackColor = true;
@@ -738,7 +738,7 @@
             // label16
             // 
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(191, 160);
+            this.label16.Location = new System.Drawing.Point(228, 160);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(24, 23);
             this.label16.TabIndex = 22;
@@ -768,7 +768,7 @@
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(213, 8);
+            this.label46.Location = new System.Drawing.Point(251, 8);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(114, 16);
             this.label46.TabIndex = 19;
@@ -780,9 +780,9 @@
             this.chklstComponentsRA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chklstComponentsRA.FormattingEnabled = true;
             this.chklstComponentsRA.HorizontalScrollbar = true;
-            this.chklstComponentsRA.Location = new System.Drawing.Point(216, 27);
+            this.chklstComponentsRA.Location = new System.Drawing.Point(254, 27);
             this.chklstComponentsRA.Name = "chklstComponentsRA";
-            this.chklstComponentsRA.Size = new System.Drawing.Size(173, 327);
+            this.chklstComponentsRA.Size = new System.Drawing.Size(248, 327);
             this.chklstComponentsRA.TabIndex = 18;
             this.chklstComponentsRA.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstComponentsRA_DragEnter);
             this.chklstComponentsRA.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.chklstComponentsRA_QueryContinueDrag);
@@ -814,7 +814,7 @@
             "Roll Again"});
             this.chklstRA.Location = new System.Drawing.Point(8, 27);
             this.chklstRA.Name = "chklstRA";
-            this.chklstRA.Size = new System.Drawing.Size(182, 319);
+            this.chklstRA.Size = new System.Drawing.Size(214, 319);
             this.chklstRA.TabIndex = 16;
             this.chklstRA.DragDrop += new System.Windows.Forms.DragEventHandler(this.chklstRA_DragDrop);
             this.chklstRA.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstRA_DragEnter);
@@ -832,7 +832,7 @@
             this.tabLeftLeg.Controls.Add(this.chklstLL);
             this.tabLeftLeg.Location = new System.Drawing.Point(4, 49);
             this.tabLeftLeg.Name = "tabLeftLeg";
-            this.tabLeftLeg.Size = new System.Drawing.Size(395, 454);
+            this.tabLeftLeg.Size = new System.Drawing.Size(505, 454);
             this.tabLeftLeg.TabIndex = 6;
             this.tabLeftLeg.Text = "Left Leg";
             this.tabLeftLeg.UseVisualStyleBackColor = true;
@@ -840,7 +840,7 @@
             // label19
             // 
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(191, 160);
+            this.label19.Location = new System.Drawing.Point(230, 160);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(24, 23);
             this.label19.TabIndex = 22;
@@ -870,7 +870,7 @@
             // 
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(213, 8);
+            this.label49.Location = new System.Drawing.Point(251, 8);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(114, 16);
             this.label49.TabIndex = 19;
@@ -882,9 +882,9 @@
             this.chklstComponentsLL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chklstComponentsLL.FormattingEnabled = true;
             this.chklstComponentsLL.HorizontalScrollbar = true;
-            this.chklstComponentsLL.Location = new System.Drawing.Point(216, 27);
+            this.chklstComponentsLL.Location = new System.Drawing.Point(254, 27);
             this.chklstComponentsLL.Name = "chklstComponentsLL";
-            this.chklstComponentsLL.Size = new System.Drawing.Size(173, 327);
+            this.chklstComponentsLL.Size = new System.Drawing.Size(248, 327);
             this.chklstComponentsLL.TabIndex = 18;
             this.chklstComponentsLL.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstComponentsLL_DragEnter);
             this.chklstComponentsLL.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.chklstComponentsLL_QueryContinueDrag);
@@ -916,7 +916,7 @@
             "Roll Again"});
             this.chklstLL.Location = new System.Drawing.Point(8, 27);
             this.chklstLL.Name = "chklstLL";
-            this.chklstLL.Size = new System.Drawing.Size(182, 319);
+            this.chklstLL.Size = new System.Drawing.Size(216, 319);
             this.chklstLL.TabIndex = 16;
             this.chklstLL.DragDrop += new System.Windows.Forms.DragEventHandler(this.chklstLL_DragDrop);
             this.chklstLL.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstLL_DragEnter);
@@ -934,7 +934,7 @@
             this.tabRightLeg.Controls.Add(this.chklstRL);
             this.tabRightLeg.Location = new System.Drawing.Point(4, 49);
             this.tabRightLeg.Name = "tabRightLeg";
-            this.tabRightLeg.Size = new System.Drawing.Size(395, 454);
+            this.tabRightLeg.Size = new System.Drawing.Size(505, 454);
             this.tabRightLeg.TabIndex = 7;
             this.tabRightLeg.Text = "Right Leg";
             this.tabRightLeg.UseVisualStyleBackColor = true;
@@ -942,7 +942,7 @@
             // label20
             // 
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(191, 160);
+            this.label20.Location = new System.Drawing.Point(231, 160);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(24, 23);
             this.label20.TabIndex = 22;
@@ -972,7 +972,7 @@
             // 
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(213, 8);
+            this.label52.Location = new System.Drawing.Point(251, 8);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(114, 16);
             this.label52.TabIndex = 19;
@@ -984,9 +984,9 @@
             this.chklstComponentsRL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chklstComponentsRL.FormattingEnabled = true;
             this.chklstComponentsRL.HorizontalScrollbar = true;
-            this.chklstComponentsRL.Location = new System.Drawing.Point(216, 27);
+            this.chklstComponentsRL.Location = new System.Drawing.Point(254, 27);
             this.chklstComponentsRL.Name = "chklstComponentsRL";
-            this.chklstComponentsRL.Size = new System.Drawing.Size(173, 327);
+            this.chklstComponentsRL.Size = new System.Drawing.Size(248, 327);
             this.chklstComponentsRL.TabIndex = 18;
             this.chklstComponentsRL.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstComponentsRL_DragEnter);
             this.chklstComponentsRL.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.chklstComponentsRL_QueryContinueDrag);
@@ -1018,7 +1018,7 @@
             "Roll Again"});
             this.chklstRL.Location = new System.Drawing.Point(8, 27);
             this.chklstRL.Name = "chklstRL";
-            this.chklstRL.Size = new System.Drawing.Size(182, 319);
+            this.chklstRL.Size = new System.Drawing.Size(217, 319);
             this.chklstRL.TabIndex = 16;
             this.chklstRL.DragDrop += new System.Windows.Forms.DragEventHandler(this.chklstRL_DragDrop);
             this.chklstRL.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstRL_DragEnter);
@@ -1232,7 +1232,7 @@
             this.groupBox3.Controls.Add(this.txtLTR);
             this.groupBox3.Controls.Add(this.label24);
             this.groupBox3.Controls.Add(this.pictureBox2);
-            this.groupBox3.Location = new System.Drawing.Point(707, 8);
+            this.groupBox3.Location = new System.Drawing.Point(817, 8);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(239, 139);
             this.groupBox3.TabIndex = 9;
@@ -1315,7 +1315,7 @@
             this.groupBox2.Controls.Add(this.txtICT);
             this.groupBox2.Controls.Add(this.txtIH);
             this.groupBox2.Controls.Add(this.pictureBox3);
-            this.groupBox2.Location = new System.Drawing.Point(437, 339);
+            this.groupBox2.Location = new System.Drawing.Point(547, 339);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(258, 334);
             this.groupBox2.TabIndex = 8;
@@ -1431,7 +1431,7 @@
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Location = new System.Drawing.Point(437, 8);
+            this.groupBox1.Location = new System.Drawing.Point(547, 8);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(262, 331);
             this.groupBox1.TabIndex = 7;
@@ -1619,9 +1619,9 @@
             // lbMechs
             // 
             this.lbMechs.FormattingEnabled = true;
-            this.lbMechs.Location = new System.Drawing.Point(6, 24);
+            this.lbMechs.Location = new System.Drawing.Point(6, 21);
             this.lbMechs.Name = "lbMechs";
-            this.lbMechs.Size = new System.Drawing.Size(272, 602);
+            this.lbMechs.Size = new System.Drawing.Size(165, 602);
             this.lbMechs.TabIndex = 13;
             this.lbMechs.SelectedValueChanged += new System.EventHandler(this.lbMechs_SelectedValueChanged);
             // 
@@ -1630,9 +1630,9 @@
             this.groupBox4.Controls.Add(this.cmdRefresh);
             this.groupBox4.Controls.Add(this.cmdDelete);
             this.groupBox4.Controls.Add(this.lbMechs);
-            this.groupBox4.Location = new System.Drawing.Point(964, 12);
+            this.groupBox4.Location = new System.Drawing.Point(1065, 12);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(284, 674);
+            this.groupBox4.Size = new System.Drawing.Size(183, 674);
             this.groupBox4.TabIndex = 13;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "MECHS";
