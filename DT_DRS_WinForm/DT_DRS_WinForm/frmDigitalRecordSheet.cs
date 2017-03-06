@@ -1208,16 +1208,7 @@ namespace DT_DRS_WinForm
         }
         private void cmdResetHeat_Click(object sender, EventArgs e)
         {
-            pgbHeat.Value = 0;
-            if (checkBox1.Checked)
-            {
-                pgbHeat.Value = pgbHeat.Value + 5;
-            }
-            if (checkBox2.Checked)
-            {
-                pgbHeat.Value = pgbHeat.Value + 5;
-            }
-            HeatModifiers();
+
         }
 
         private void cmdHeatSinks_Click(object sender, EventArgs e)
@@ -1725,24 +1716,60 @@ namespace DT_DRS_WinForm
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            //if (checkBox1.Checked)
-            //{
-            //    pgbHeat.Value = pgbHeat.Value + 5;
-            //    HeatModifiers();
-            //    //checkBox1.Enabled = false;
-            //    txtHeat.Text = pgbHeat.Value.ToString();
-            //}
-            //else
-            //{
-            //    pgbHeat.Value = pgbHeat.Value + 5;
-            //    HeatModifiers();
-            //    //checkBox1.Enabled = false;
-            //    txtHeat.Text = pgbHeat.Value.ToString();
-            //}
+            if (checkBox1.Checked)
+            {
+                lblEngineHits.Text = "+5 Heat per Turn";
+
+                //    pgbHeat.Value = pgbHeat.Value + 5;
+                //    HeatModifiers();
+                checkBox2.Enabled = true;
+                checkBox3.Enabled = false;
+                //    txtHeat.Text = pgbHeat.Value.ToString();
+            }
+            else
+            {
+                lblEngineHits.Text = "";
+
+                //    pgbHeat.Value = pgbHeat.Value + 5;
+                //    HeatModifiers();
+                checkBox2.Enabled = false;
+                checkBox3.Enabled = false;
+                //    txtHeat.Text = pgbHeat.Value.ToString();
+            }
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox2.Checked)
+            {
+                lblEngineHits.Text = "+10 Heat per Turn";
+                checkBox3.Enabled = true;
+                //    pgbHeat.Value = pgbHeat.Value + 5;
+                //    HeatModifiers();
+                //    //checkBox1.Enabled = false;
+                //    txtHeat.Text = pgbHeat.Value.ToString();
+            }
+            else
+            {
+                if (checkBox2.Checked == true)
+                {
+                    lblEngineHits.Text = "+5 Heat per Turn";
+
+                    //    pgbHeat.Value = pgbHeat.Value + 5;
+                    //    HeatModifiers();
+                    checkBox2.Enabled = true;
+                    checkBox3.Enabled = false;
+                }
+                else
+                {
+                    lblEngineHits.Text = "";
+                    checkBox3.Enabled = false;
+                }//    pgbHeat.Value = pgbHeat.Value + 5;
+                 //    HeatModifiers();
+                 //    //checkBox1.Enabled = false;
+                 //    txtHeat.Text = pgbHeat.Value.ToString();
+            }
+
             //if (checkBox2.Checked) {
             //    pgbHeat.Value = pgbHeat.Value + 5;
             //    HeatModifiers();
@@ -1785,6 +1812,22 @@ namespace DT_DRS_WinForm
                 }
 
             }
+        }
+
+        private void heatResetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            pgbHeat.Value = 0;
+            if (checkBox1.Checked)
+            {
+                pgbHeat.Value = pgbHeat.Value + 5;
+            }
+            if (checkBox2.Checked)
+            {
+                pgbHeat.Value = pgbHeat.Value + 5;
+            }
+            txtHeat.Text = "0";
+            HeatModifiers();
         }
     }
 }

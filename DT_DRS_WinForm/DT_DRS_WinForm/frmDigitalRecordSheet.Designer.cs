@@ -86,6 +86,8 @@
             this.label24 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.txtMWName = new System.Windows.Forms.TextBox();
             this.lblDamage = new System.Windows.Forms.Label();
             this.lblCons = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -194,6 +196,7 @@
             this.aC5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aC10ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aC20ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.heatResetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -251,8 +254,10 @@
             this.checkedListBox7 = new System.Windows.Forms.CheckedListBox();
             this.tabRightLeg = new System.Windows.Forms.TabPage();
             this.checkedListBox6 = new System.Windows.Forms.CheckedListBox();
-            this.txtMWName = new System.Windows.Forms.TextBox();
-            this.label42 = new System.Windows.Forms.Label();
+            this.lblEngineHits = new System.Windows.Forms.Label();
+            this.lblGyroHits = new System.Windows.Forms.Label();
+            this.lblSensorHits = new System.Windows.Forms.Label();
+            this.lblLifeSupportHits = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -953,6 +958,22 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "PILOT DATA";
             // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(170, 21);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(35, 13);
+            this.label42.TabIndex = 12;
+            this.label42.Text = "Name";
+            // 
+            // txtMWName
+            // 
+            this.txtMWName.Location = new System.Drawing.Point(204, 18);
+            this.txtMWName.Name = "txtMWName";
+            this.txtMWName.Size = new System.Drawing.Size(208, 20);
+            this.txtMWName.TabIndex = 11;
+            // 
             // lblDamage
             // 
             this.lblDamage.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -1597,10 +1618,11 @@
             this.mnuApplyDamage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.mnuApplyDamage.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.mnuApplyDamage.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.applyDamageToolStripMenuItem});
+            this.applyDamageToolStripMenuItem,
+            this.heatResetToolStripMenuItem});
             this.mnuApplyDamage.Location = new System.Drawing.Point(0, 0);
             this.mnuApplyDamage.Name = "mnuApplyDamage";
-            this.mnuApplyDamage.Size = new System.Drawing.Size(972, 24);
+            this.mnuApplyDamage.Size = new System.Drawing.Size(983, 24);
             this.mnuApplyDamage.TabIndex = 8;
             this.mnuApplyDamage.Text = "menuStrip1";
             this.mnuApplyDamage.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.mnuApplyDamage_ItemClicked);
@@ -2008,8 +2030,19 @@
             this.aC20ToolStripMenuItem.Text = "AC20";
             this.aC20ToolStripMenuItem.Click += new System.EventHandler(this.aC20ToolStripMenuItem_Click);
             // 
+            // heatResetToolStripMenuItem
+            // 
+            this.heatResetToolStripMenuItem.Name = "heatResetToolStripMenuItem";
+            this.heatResetToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
+            this.heatResetToolStripMenuItem.Text = "Heat Reset";
+            this.heatResetToolStripMenuItem.Click += new System.EventHandler(this.heatResetToolStripMenuItem_Click);
+            // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.lblLifeSupportHits);
+            this.groupBox8.Controls.Add(this.lblSensorHits);
+            this.groupBox8.Controls.Add(this.lblGyroHits);
+            this.groupBox8.Controls.Add(this.lblEngineHits);
             this.groupBox8.Controls.Add(this.checkBox10);
             this.groupBox8.Controls.Add(this.label21);
             this.groupBox8.Controls.Add(this.checkBox8);
@@ -2025,7 +2058,7 @@
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.groupBox8.Location = new System.Drawing.Point(712, 176);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(239, 139);
+            this.groupBox8.Size = new System.Drawing.Size(260, 139);
             this.groupBox8.TabIndex = 32;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "CRITICAL HITS";
@@ -2156,7 +2189,7 @@
             // cmdResetHeat
             // 
             this.cmdResetHeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.cmdResetHeat.Location = new System.Drawing.Point(935, 546);
+            this.cmdResetHeat.Location = new System.Drawing.Point(935, 694);
             this.cmdResetHeat.Name = "cmdResetHeat";
             this.cmdResetHeat.Size = new System.Drawing.Size(32, 23);
             this.cmdResetHeat.TabIndex = 7;
@@ -2657,27 +2690,51 @@
             this.checkedListBox6.Size = new System.Drawing.Size(383, 329);
             this.checkedListBox6.TabIndex = 10;
             // 
-            // txtMWName
+            // lblEngineHits
             // 
-            this.txtMWName.Location = new System.Drawing.Point(204, 18);
-            this.txtMWName.Name = "txtMWName";
-            this.txtMWName.Size = new System.Drawing.Size(208, 20);
-            this.txtMWName.TabIndex = 11;
+            this.lblEngineHits.AutoSize = true;
+            this.lblEngineHits.ForeColor = System.Drawing.Color.Red;
+            this.lblEngineHits.Location = new System.Drawing.Point(188, 33);
+            this.lblEngineHits.Name = "lblEngineHits";
+            this.lblEngineHits.Size = new System.Drawing.Size(45, 13);
+            this.lblEngineHits.TabIndex = 34;
+            this.lblEngineHits.Text = "+1 Heat";
             // 
-            // label42
+            // lblGyroHits
             // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(170, 21);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(35, 13);
-            this.label42.TabIndex = 12;
-            this.label42.Text = "Name";
+            this.lblGyroHits.AutoSize = true;
+            this.lblGyroHits.ForeColor = System.Drawing.Color.Red;
+            this.lblGyroHits.Location = new System.Drawing.Point(188, 54);
+            this.lblGyroHits.Name = "lblGyroHits";
+            this.lblGyroHits.Size = new System.Drawing.Size(45, 13);
+            this.lblGyroHits.TabIndex = 35;
+            this.lblGyroHits.Text = "+1 Heat";
+            // 
+            // lblSensorHits
+            // 
+            this.lblSensorHits.AutoSize = true;
+            this.lblSensorHits.ForeColor = System.Drawing.Color.Red;
+            this.lblSensorHits.Location = new System.Drawing.Point(188, 80);
+            this.lblSensorHits.Name = "lblSensorHits";
+            this.lblSensorHits.Size = new System.Drawing.Size(45, 13);
+            this.lblSensorHits.TabIndex = 36;
+            this.lblSensorHits.Text = "+1 Heat";
+            // 
+            // lblLifeSupportHits
+            // 
+            this.lblLifeSupportHits.AutoSize = true;
+            this.lblLifeSupportHits.ForeColor = System.Drawing.Color.Red;
+            this.lblLifeSupportHits.Location = new System.Drawing.Point(188, 104);
+            this.lblLifeSupportHits.Name = "lblLifeSupportHits";
+            this.lblLifeSupportHits.Size = new System.Drawing.Size(45, 13);
+            this.lblLifeSupportHits.TabIndex = 37;
+            this.lblLifeSupportHits.Text = "+1 Heat";
             // 
             // frmDigitalRecordSheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 724);
+            this.ClientSize = new System.Drawing.Size(983, 724);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.txtHeat);
@@ -2979,5 +3036,10 @@
         private System.Windows.Forms.CheckedListBox checkedListBox6;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.TextBox txtMWName;
+        private System.Windows.Forms.ToolStripMenuItem heatResetToolStripMenuItem;
+        private System.Windows.Forms.Label lblLifeSupportHits;
+        private System.Windows.Forms.Label lblSensorHits;
+        private System.Windows.Forms.Label lblGyroHits;
+        private System.Windows.Forms.Label lblEngineHits;
     }
 }
