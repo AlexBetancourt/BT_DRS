@@ -1719,22 +1719,14 @@ namespace DT_DRS_WinForm
             if (checkBox1.Checked)
             {
                 lblEngineHits.Text = "+5 Heat per Turn";
-
-                //    pgbHeat.Value = pgbHeat.Value + 5;
-                //    HeatModifiers();
                 checkBox2.Enabled = true;
                 checkBox3.Enabled = false;
-                //    txtHeat.Text = pgbHeat.Value.ToString();
             }
             else
             {
                 lblEngineHits.Text = "";
-
-                //    pgbHeat.Value = pgbHeat.Value + 5;
-                //    HeatModifiers();
                 checkBox2.Enabled = false;
                 checkBox3.Enabled = false;
-                //    txtHeat.Text = pgbHeat.Value.ToString();
             }
         }
 
@@ -1744,19 +1736,12 @@ namespace DT_DRS_WinForm
             {
                 lblEngineHits.Text = "+10 Heat per Turn";
                 checkBox3.Enabled = true;
-                //    pgbHeat.Value = pgbHeat.Value + 5;
-                //    HeatModifiers();
-                //    //checkBox1.Enabled = false;
-                //    txtHeat.Text = pgbHeat.Value.ToString();
             }
             else
             {
                 if (checkBox2.Checked == true)
                 {
                     lblEngineHits.Text = "+5 Heat per Turn";
-
-                    //    pgbHeat.Value = pgbHeat.Value + 5;
-                    //    HeatModifiers();
                     checkBox2.Enabled = true;
                     checkBox3.Enabled = false;
                 }
@@ -1764,25 +1749,8 @@ namespace DT_DRS_WinForm
                 {
                     lblEngineHits.Text = "";
                     checkBox3.Enabled = false;
-                }//    pgbHeat.Value = pgbHeat.Value + 5;
-                 //    HeatModifiers();
-                 //    //checkBox1.Enabled = false;
-                 //    txtHeat.Text = pgbHeat.Value.ToString();
+                }
             }
-
-            //if (checkBox2.Checked) {
-            //    pgbHeat.Value = pgbHeat.Value + 5;
-            //    HeatModifiers();
-            //    //checkBox2.Enabled = false;
-            //    txtHeat.Text = pgbHeat.Value.ToString();
-            //}
-            //else
-            //{
-            //    pgbHeat.Value = pgbHeat.Value + 5;
-            //    HeatModifiers();
-            //    //checkBox1.Enabled = false;
-            //    txtHeat.Text = pgbHeat.Value.ToString();
-            //}
         }
 
         private void txtRun_Click(object sender, EventArgs e)
@@ -1810,7 +1778,6 @@ namespace DT_DRS_WinForm
                     txtGS.Text = Pilot.GunnerySkill.ToString();
                     txtHits.Text = Pilot.DamageTaken.ToString();
                 }
-
             }
         }
 
@@ -1828,6 +1795,40 @@ namespace DT_DRS_WinForm
             }
             txtHeat.Text = "0";
             HeatModifiers();
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox3.Checked)
+            {
+                lblEngineHits.Text = "Mech Disabled!";
+                checkBox3.Enabled = true;
+                checkBox2.Enabled = false;
+                checkBox1.Enabled = false;
+            }
+            else
+            {
+                if (checkBox2.Checked)
+                {
+                    lblEngineHits.Text = "+10 Heat per Turn";
+                    checkBox3.Enabled = true;
+                }
+                else
+                {
+                    if (checkBox2.Checked == true)
+                    {
+                        lblEngineHits.Text = "+5 Heat per Turn";
+                        checkBox2.Enabled = true;
+                        checkBox3.Enabled = false;
+                    }
+                    else
+                    {
+                        lblEngineHits.Text = "";
+                        checkBox3.Enabled = false;
+                    }
+
+                }
+            }
         }
     }
 }

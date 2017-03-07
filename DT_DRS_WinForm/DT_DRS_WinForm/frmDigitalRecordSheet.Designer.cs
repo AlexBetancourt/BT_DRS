@@ -198,6 +198,10 @@
             this.aC20ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.heatResetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.lblLifeSupportHits = new System.Windows.Forms.Label();
+            this.lblSensorHits = new System.Windows.Forms.Label();
+            this.lblGyroHits = new System.Windows.Forms.Label();
+            this.lblEngineHits = new System.Windows.Forms.Label();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.label21 = new System.Windows.Forms.Label();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
@@ -254,10 +258,6 @@
             this.checkedListBox7 = new System.Windows.Forms.CheckedListBox();
             this.tabRightLeg = new System.Windows.Forms.TabPage();
             this.checkedListBox6 = new System.Windows.Forms.CheckedListBox();
-            this.lblEngineHits = new System.Windows.Forms.Label();
-            this.lblGyroHits = new System.Windows.Forms.Label();
-            this.lblSensorHits = new System.Windows.Forms.Label();
-            this.lblLifeSupportHits = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -2063,6 +2063,46 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "CRITICAL HITS";
             // 
+            // lblLifeSupportHits
+            // 
+            this.lblLifeSupportHits.AutoSize = true;
+            this.lblLifeSupportHits.ForeColor = System.Drawing.Color.Red;
+            this.lblLifeSupportHits.Location = new System.Drawing.Point(188, 104);
+            this.lblLifeSupportHits.Name = "lblLifeSupportHits";
+            this.lblLifeSupportHits.Size = new System.Drawing.Size(45, 13);
+            this.lblLifeSupportHits.TabIndex = 37;
+            this.lblLifeSupportHits.Text = "+1 Heat";
+            // 
+            // lblSensorHits
+            // 
+            this.lblSensorHits.AutoSize = true;
+            this.lblSensorHits.ForeColor = System.Drawing.Color.Red;
+            this.lblSensorHits.Location = new System.Drawing.Point(188, 80);
+            this.lblSensorHits.Name = "lblSensorHits";
+            this.lblSensorHits.Size = new System.Drawing.Size(45, 13);
+            this.lblSensorHits.TabIndex = 36;
+            this.lblSensorHits.Text = "+1 Heat";
+            // 
+            // lblGyroHits
+            // 
+            this.lblGyroHits.AutoSize = true;
+            this.lblGyroHits.ForeColor = System.Drawing.Color.Red;
+            this.lblGyroHits.Location = new System.Drawing.Point(188, 54);
+            this.lblGyroHits.Name = "lblGyroHits";
+            this.lblGyroHits.Size = new System.Drawing.Size(45, 13);
+            this.lblGyroHits.TabIndex = 35;
+            this.lblGyroHits.Text = "+1 Heat";
+            // 
+            // lblEngineHits
+            // 
+            this.lblEngineHits.AutoSize = true;
+            this.lblEngineHits.ForeColor = System.Drawing.Color.Red;
+            this.lblEngineHits.Location = new System.Drawing.Point(188, 33);
+            this.lblEngineHits.Name = "lblEngineHits";
+            this.lblEngineHits.Size = new System.Drawing.Size(45, 13);
+            this.lblEngineHits.TabIndex = 34;
+            this.lblEngineHits.Text = "+1 Heat";
+            // 
             // checkBox10
             // 
             this.checkBox10.AutoSize = true;
@@ -2146,6 +2186,7 @@
             this.checkBox3.Size = new System.Drawing.Size(15, 14);
             this.checkBox3.TabIndex = 3;
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -2689,46 +2730,6 @@
             this.checkedListBox6.Name = "checkedListBox6";
             this.checkedListBox6.Size = new System.Drawing.Size(383, 329);
             this.checkedListBox6.TabIndex = 10;
-            // 
-            // lblEngineHits
-            // 
-            this.lblEngineHits.AutoSize = true;
-            this.lblEngineHits.ForeColor = System.Drawing.Color.Red;
-            this.lblEngineHits.Location = new System.Drawing.Point(188, 33);
-            this.lblEngineHits.Name = "lblEngineHits";
-            this.lblEngineHits.Size = new System.Drawing.Size(45, 13);
-            this.lblEngineHits.TabIndex = 34;
-            this.lblEngineHits.Text = "+1 Heat";
-            // 
-            // lblGyroHits
-            // 
-            this.lblGyroHits.AutoSize = true;
-            this.lblGyroHits.ForeColor = System.Drawing.Color.Red;
-            this.lblGyroHits.Location = new System.Drawing.Point(188, 54);
-            this.lblGyroHits.Name = "lblGyroHits";
-            this.lblGyroHits.Size = new System.Drawing.Size(45, 13);
-            this.lblGyroHits.TabIndex = 35;
-            this.lblGyroHits.Text = "+1 Heat";
-            // 
-            // lblSensorHits
-            // 
-            this.lblSensorHits.AutoSize = true;
-            this.lblSensorHits.ForeColor = System.Drawing.Color.Red;
-            this.lblSensorHits.Location = new System.Drawing.Point(188, 80);
-            this.lblSensorHits.Name = "lblSensorHits";
-            this.lblSensorHits.Size = new System.Drawing.Size(45, 13);
-            this.lblSensorHits.TabIndex = 36;
-            this.lblSensorHits.Text = "+1 Heat";
-            // 
-            // lblLifeSupportHits
-            // 
-            this.lblLifeSupportHits.AutoSize = true;
-            this.lblLifeSupportHits.ForeColor = System.Drawing.Color.Red;
-            this.lblLifeSupportHits.Location = new System.Drawing.Point(188, 104);
-            this.lblLifeSupportHits.Name = "lblLifeSupportHits";
-            this.lblLifeSupportHits.Size = new System.Drawing.Size(45, 13);
-            this.lblLifeSupportHits.TabIndex = 37;
-            this.lblLifeSupportHits.Text = "+1 Heat";
             // 
             // frmDigitalRecordSheet
             // 

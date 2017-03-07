@@ -124,7 +124,7 @@ namespace DT_DRS_WinForm
                 using (var db = new LiteDatabase(@"DRS.db"))
                 {
                     var Pilots = db.GetCollection<DS_BTDRSMechPilots>("Pilots");
-                    if (MessageBox.Show("Do you really want to delete ALL MechWarriors??? (cannot be undone!)", "Deleting MechWarriors", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    if (MessageBox.Show("Do you really want to delete ALL MechWarriors??? (this action cannot be undone!)", "Deleting MechWarriors", MessageBoxButtons.YesNo) == DialogResult.Yes)
                     {
                         Pilots.Delete(Query.All());
                     }
@@ -204,7 +204,7 @@ namespace DT_DRS_WinForm
                 DS_BTDRSMechPilots Pilot = Pilots.FindOne(Query.EQ("Callsign", txtCallSign.Text));
                 if (Pilot != null)
                 {
-                    if (MessageBox.Show("Do you really want to delete this MechWarrior??? (cannot be undone!)", "Deleting MechWarrior", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    if (MessageBox.Show("Do you really want to delete this MechWarrior??? (this action cannot be undone!)", "Deleting MechWarrior", MessageBoxButtons.YesNo) == DialogResult.Yes)
                     {
                         Pilots.Delete(Query.EQ("Callsign", Pilot.Callsign));
                     }
