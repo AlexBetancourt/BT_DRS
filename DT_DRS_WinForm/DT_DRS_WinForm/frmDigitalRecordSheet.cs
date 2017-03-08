@@ -1268,7 +1268,10 @@ namespace DT_DRS_WinForm
             txtWalk.ReadOnly = true;
             txtRun.ReadOnly = true;
             txtJump.ReadOnly = true;
-
+            lblEngineHits.Text = "";
+            lblGyroHits.Text = "";
+            lblLifeSupportHits.Text = "";
+            lblSensorHits.Text = "";
         }
 
         private void label40_Click(object sender, EventArgs e)

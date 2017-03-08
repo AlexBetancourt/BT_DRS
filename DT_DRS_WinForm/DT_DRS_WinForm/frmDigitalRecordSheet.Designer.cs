@@ -258,6 +258,8 @@
             this.checkedListBox7 = new System.Windows.Forms.CheckedListBox();
             this.tabRightLeg = new System.Windows.Forms.TabPage();
             this.checkedListBox6 = new System.Windows.Forms.CheckedListBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -1622,7 +1624,7 @@
             this.heatResetToolStripMenuItem});
             this.mnuApplyDamage.Location = new System.Drawing.Point(0, 0);
             this.mnuApplyDamage.Name = "mnuApplyDamage";
-            this.mnuApplyDamage.Size = new System.Drawing.Size(983, 24);
+            this.mnuApplyDamage.Size = new System.Drawing.Size(1178, 24);
             this.mnuApplyDamage.TabIndex = 8;
             this.mnuApplyDamage.Text = "menuStrip1";
             this.mnuApplyDamage.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.mnuApplyDamage_ItemClicked);
@@ -2731,11 +2733,30 @@
             this.checkedListBox6.Size = new System.Drawing.Size(383, 329);
             this.checkedListBox6.TabIndex = 10;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(985, 41);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(181, 678);
+            this.textBox1.TabIndex = 57;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(982, 25);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(47, 13);
+            this.label43.TabIndex = 58;
+            this.label43.Text = "NOTES:";
+            // 
             // frmDigitalRecordSheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(983, 724);
+            this.ClientSize = new System.Drawing.Size(1178, 724);
+            this.Controls.Add(this.label43);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.txtHeat);
@@ -3042,5 +3063,7 @@
         private System.Windows.Forms.Label lblSensorHits;
         private System.Windows.Forms.Label lblGyroHits;
         private System.Windows.Forms.Label lblEngineHits;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label43;
     }
 }
