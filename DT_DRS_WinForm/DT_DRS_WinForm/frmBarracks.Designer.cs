@@ -1,4 +1,4 @@
-﻿namespace DT_DRS_WinForm
+﻿namespace BT_DRS_WinForm
 {
     partial class frmBarracks
     {
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.txtName = new System.Windows.Forms.TextBox();
             this.MechPilotsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dS_BTDRS1 = new DT_DRS_WinForm.DS_BTDRS();
+            this.dS_BTDRS1 = new BT_DRS_WinForm.DS_BTDRS();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();

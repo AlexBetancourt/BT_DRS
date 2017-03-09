@@ -1,4 +1,4 @@
-﻿namespace DT_DRS_WinForm
+﻿namespace BT_DRS_WinForm
 {
     partial class frmMechBay
     {

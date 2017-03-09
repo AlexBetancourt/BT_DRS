@@ -1,4 +1,4 @@
-﻿namespace DT_DRS_WinForm
+﻿namespace BT_DRS_WinForm
 {
     partial class frmDigitalRecordSheet
     {
@@ -585,7 +585,7 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::DT_DRS_WinForm.Properties.Resources.BlankArmor;
+            this.pictureBox1.Image = global::BT_DRS_WinForm.Properties.Resources.BlankArmor;
             this.pictureBox1.Location = new System.Drawing.Point(6, 19);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(247, 306);
@@ -809,7 +809,7 @@
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.Image = global::DT_DRS_WinForm.Properties.Resources.InternalBlank;
+            this.pictureBox3.Image = global::BT_DRS_WinForm.Properties.Resources.InternalBlank;
             this.pictureBox3.Location = new System.Drawing.Point(6, 19);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(243, 309);
@@ -929,7 +929,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::DT_DRS_WinForm.Properties.Resources.RearBlankArmor;
+            this.pictureBox2.Image = global::BT_DRS_WinForm.Properties.Resources.RearBlankArmor;
             this.pictureBox2.Location = new System.Drawing.Point(6, 19);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(227, 114);

@@ -1,4 +1,4 @@
-﻿namespace DT_DRS_WinForm
+﻿namespace BT_DRS_WinForm
 {
     partial class frmMechMini
     {
@@ -36,7 +36,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = global::DT_DRS_WinForm.Properties.Resources.BlankArmor;
+            this.pictureBox1.Image = global::BT_DRS_WinForm.Properties.Resources.BlankArmor;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(184, 134);

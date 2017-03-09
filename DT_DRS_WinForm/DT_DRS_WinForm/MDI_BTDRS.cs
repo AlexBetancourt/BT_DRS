@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Globalization;
 
-namespace DT_DRS_WinForm
+namespace BT_DRS_WinForm
 {
 
     public partial class MDI_BTDRS : Form

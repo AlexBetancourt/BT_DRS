@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using LiteDB;
 
-namespace DT_DRS_WinForm
+namespace BT_DRS_WinForm
 {
     public partial class frmBarracks : Form
     {

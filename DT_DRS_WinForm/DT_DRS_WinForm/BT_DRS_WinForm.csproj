@@ -7,8 +7,8 @@
     <ProjectGuid>{402F560E-6D55-4A05-9BA4-C30A2AFF9F0C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DT_DRS_WinForm</RootNamespace>
-    <AssemblyName>DT_DRS_WinForm</AssemblyName>
+    <RootNamespace>BT_DRS_WinForm</RootNamespace>
+    <AssemblyName>BT_DRS_WinForm</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>

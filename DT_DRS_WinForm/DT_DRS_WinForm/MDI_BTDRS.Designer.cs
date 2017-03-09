@@ -1,4 +1,4 @@
-﻿namespace DT_DRS_WinForm
+﻿namespace BT_DRS_WinForm
 {
     partial class MDI_BTDRS
     {
@@ -316,7 +316,7 @@
             // 
             // d6ToolStripMenuItem
             // 
-            this.d6ToolStripMenuItem.Image = global::DT_DRS_WinForm.Properties.Resources.índice;
+            this.d6ToolStripMenuItem.Image = global::BT_DRS_WinForm.Properties.Resources.índice;
             this.d6ToolStripMenuItem.Name = "d6ToolStripMenuItem";
             this.d6ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.d6ToolStripMenuItem.Text = "&1D6";
@@ -324,7 +324,7 @@
             // 
             // d6ToolStripMenuItem1
             // 
-            this.d6ToolStripMenuItem1.Image = global::DT_DRS_WinForm.Properties.Resources.TwoDice;
+            this.d6ToolStripMenuItem1.Image = global::BT_DRS_WinForm.Properties.Resources.TwoDice;
             this.d6ToolStripMenuItem1.Name = "d6ToolStripMenuItem1";
             this.d6ToolStripMenuItem1.Size = new System.Drawing.Size(152, 26);
             this.d6ToolStripMenuItem1.Text = "&2D6";

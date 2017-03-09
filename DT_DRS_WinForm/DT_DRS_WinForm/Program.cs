@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace DT_DRS_WinForm
+namespace BT_DRS_WinForm
 {
     static class Program
     {

@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using System.Threading;
 using LiteDB;
 
-namespace DT_DRS_WinForm
+namespace BT_DRS_WinForm
 {
     public partial class frmDigitalRecordSheet : Form
     {

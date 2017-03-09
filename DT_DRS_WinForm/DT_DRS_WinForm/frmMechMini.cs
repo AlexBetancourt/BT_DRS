@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace DT_DRS_WinForm
+namespace BT_DRS_WinForm
 {
     public partial class frmMechMini : Form
     {
