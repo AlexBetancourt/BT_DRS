@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="13.7" version="13.7" Modules="professional" RootPath="." Language="en" Id="{FAF43D47-FDF2-46FF-BE3D-406F3A56FA2A}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXAppDetailsComponent;AppXCapabilitiesComponent;AppXDependenciesComponent;AppXProductDetailsComponent;AppXVisualAssetsComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_CF_FrameBottomLeft" Value="frame_bottom_left.bmp" Type="1"/>
+    <ROW Property="AI_CF_FrameBottomLeftInactive" Value="frame_bottom_left_inactive.bmp" Type="1"/>
+    <ROW Property="AI_CF_FrameBottomMid" Value="frame_bottom_mid.bmp" Type="1"/>
+    <ROW Property="AI_CF_FrameBottomMidInactive" Value="frame_bottom_mid_inactive.bmp" Type="1"/>
+    <ROW Property="AI_CF_FrameBottomRight" Value="frame_bottom_right.bmp" Type="1"/>
+    <ROW Property="AI_CF_FrameBottomRightInactive" Value="frame_bottom_right_inactive.bmp" Type="1"/>
+    <ROW Property="AI_CF_FrameCaption" Value="frame_caption.bmp" Type="1"/>
+    <ROW Property="AI_CF_FrameCaptionInactive" Value="frame_caption_inactive.bmp" Type="1"/>
+    <ROW Property="AI_CF_FrameLeft" Value="frame_left.bmp" Type="1"/>
+    <ROW Property="AI_CF_FrameLeftInactive" Value="frame_left_inactive.bmp" Type="1"/>
+    <ROW Property="AI_CF_FrameRight" Value="frame_right.bmp" Type="1"/>
+    <ROW Property="AI_CF_FrameRightInactive" Value="frame_right_inactive.bmp" Type="1"/>
+    <ROW Property="AI_CF_FrameTopLeft" Value="frame_top_left.bmp" Type="1"/>
+    <ROW Property="AI_CF_FrameTopLeftInactive" Value="frame_top_left_inactive.bmp" Type="1"/>
+    <ROW Property="AI_CF_FrameTopMid" Value="frame_top_mid.bmp" Type="1"/>
+    <ROW Property="AI_CF_FrameTopMidInactive" Value="frame_top_mid_inactive.bmp" Type="1"/>
+    <ROW Property="AI_CF_FrameTopRight" Value="frame_top_right.bmp" Type="1"/>
+    <ROW Property="AI_CF_FrameTopRightInactive" Value="frame_top_right_inactive.bmp" Type="1"/>
+    <ROW Property="AI_CF_SysCloseDown" Value="sys_close_down.bmp" Type="1"/>
+    <ROW Property="AI_CF_SysCloseHot" Value="sys_close_hot.bmp" Type="1"/>
+    <ROW Property="AI_CF_SysCloseInactive" Value="sys_close_inactive.bmp" Type="1"/>
+    <ROW Property="AI_CF_SysCloseNormal" Value="sys_close_normal.bmp" Type="1"/>
+    <ROW Property="AI_CF_SysMinDown" Value="sys_min_down.bmp" Type="1"/>
+    <ROW Property="AI_CF_SysMinHot" Value="sys_min_hot.bmp" Type="1"/>
+    <ROW Property="AI_CF_SysMinInactive" Value="sys_min_inactive.bmp" Type="1"/>
+    <ROW Property="AI_CF_SysMinNormal" Value="sys_min_normal.bmp" Type="1"/>
+    <ROW Property="AI_CF_TYPE" Value="0" MultiBuildValue="DefaultBuild:1" Type="4"/>
+    <ROW Property="AI_FrameBtns" Value="default" MultiBuildValue="DefaultBuild:red" MsiKey="AI_FrameBtns"/>
+    <ROW Property="AI_FrameColor" Value="lightslategray" MultiBuildValue="DefaultBuild:chrome" MsiKey="AI_FrameColor"/>
+    <ROW Property="AI_ImagesColor" Value="powderblue" MultiBuildValue="DefaultBuild:chrome" MsiKey="AI_ImagesColor"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_AllAtacksModifiers.png" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Ammo.csv" Value="..\DT_DRS_WinForm\bin\Debug\Catalogs"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_BT_DRS_WinForm.exe" Value="..\DT_DRS_WinForm\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_BlankArmor.png" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ClusterHitsTable.png" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CriticalHitsTable.png" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_FacingAfterFall.png" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_HeatPointTable.png" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_HitLocationTable.png" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_InternalBlank.png" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_KickLocationTable.png" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_LiteDB.dll" Value="..\packages\LiteDB.2.0.4\lib\net35"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Locations.csv" Value="..\DT_DRS_WinForm\bin\Debug\Catalogs"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW2BettyCriticalHit.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW2BettyDestroyed.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW2BettyShuttingDown.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW2BettyStartupReactorOnline....wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3BettyAmmoCritical.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3BettyAmmoDepleted.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3BettyAmmoExplosion.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3BettyAutoShutdown.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3BettyDamaged.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3BettyDestroyed.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3BettyLowAmmo.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3Explosion2.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3Explosion3.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3Explosion4.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3Explosion5.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3WEAPONACImpact.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3WEAPONLRM10.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3WEAPONLRM15.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3WEAPONLRM20.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3WEAPONLRM5.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3WEAPONLRMImpact.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3WEAPONLaserImpact.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3WEAPONMachineGun.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3WEAPONPulseLaser.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3WEAPONSRM2.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3WEAPONSRM4.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW3WEAPONSRM6.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4ExplosionMech1.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4ExplosionMech2.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4MBettyDamageCritical.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4MBettyHeadDamaged.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4MBettyKillAwarded.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4MBettyShuttingDown.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettyArmourBreached.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettyDamageCritical.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettyEjecting.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettyEnemyDetected.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettyEnemyMechDestroyed.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettyHEATApproachingCriticalHeatLevel.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettyHEATHeatCritical.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettyHEATHeatExceedingRecommendedLevel.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettyHEATHeatLevelCriticalShutdownImminent.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettyHEATHeatModerate.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettyHEATHeatNominal.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettyJumpJetFailure.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettyMULTIPLAYERYouHaveBeenDefeated.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettyMULTIPLAYERYouHaveWon.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettyPowerRestoredSystemsOnline.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettySTARTUPAllFunctioningSystemsNominal.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettySTARTUPReactorOnline.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettySTARTUPSensorsOnline.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettySTARTUPWeaponsSystemsOnline.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettyShuttingDown.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettyTargetDestroyed.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4VBettyWeaponDestroyed.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4WEAPONAC10.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4WEAPONAC2.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4WEAPONAC20.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4WEAPONAC5.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4WEAPONFlamerReload.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4WEAPONLaserLarge.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4WEAPONLaserMedium.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4WEAPONLaserSmall.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MW4WEAPONPPC.wav" Value="..\DT_DRS_WinForm\bin\Debug\Sounds"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MechConfigs.csv" Value="..\DT_DRS_WinForm\bin\Debug\Catalogs"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Mechs.csv" Value="..\DT_DRS_WinForm\bin\Debug\Catalogs"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.VisualBasic.dll" Value="..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MovementCostsTable.png" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_OutworldsAlliance.ico" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_PhysicalAttackModifiers.png" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_PhysicalAttacksModifiers.png" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_PilotingSkillRollTable.png" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_PunchLocationTable.png" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_RearBlankArmor.png" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_TwoDice.jpg" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_WeaponAttackModifiers.png" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_WeaponsNEquipment.csv" Value="..\DT_DRS_WinForm\bin\Debug\Catalogs"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ndice.jpg" Value="..\DT_DRS_WinForm\bin\Debug\Images"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_AllAtacksModifiers.png" Value="All Atacks Modifiers.png"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Ammo.csv" Value="Ammo.csv"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_BT_DRS_WinForm.exe" Value="BT_DRS_WinForm.exe"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_BlankArmor.png" Value="BlankArmor.png"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ClusterHitsTable.png" Value="Cluster Hits Table.png"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CriticalHitsTable.png" Value="Critical Hits Table.png"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_FacingAfterFall.png" Value="Facing After Fall.png"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_HeatPointTable.png" Value="Heat Point Table.png"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_HitLocationTable.png" Value="Hit Location Table.png"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_InternalBlank.png" Value="InternalBlank.png"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_KickLocationTable.png" Value="Kick Location Table.png"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LiteDB.dll" Value="LiteDB.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Locations.csv" Value="Locations.csv"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW2BettyCriticalHit.wav" Value="MW2 Betty - Critical Hit.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW2BettyDestroyed.wav" Value="MW2 Betty - Destroyed.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW2BettyShuttingDown.wav" Value="MW2 Betty - Shutting Down.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW2BettyStartupReactorOnline....wav" Value="MW2 Betty - Startup (Reactor Online...).wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3BettyAmmoCritical.wav" Value="MW3 Betty - Ammo Critical.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3BettyAmmoDepleted.wav" Value="MW3 Betty - Ammo Depleted.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3BettyAmmoExplosion.wav" Value="MW3 Betty - Ammo Explosion.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3BettyAutoShutdown.wav" Value="MW3 Betty - Auto Shutdown.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3BettyDamaged.wav" Value="MW3 Betty - Damaged.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3BettyDestroyed.wav" Value="MW3 Betty - Destroyed.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3BettyLowAmmo.wav" Value="MW3 Betty - Low Ammo.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3Explosion2.wav" Value="MW3 - Explosion 2.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3Explosion3.wav" Value="MW3 - Explosion 3.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3Explosion4.wav" Value="MW3 - Explosion 4.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3Explosion5.wav" Value="MW3 - Explosion 5.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONACImpact.wav" Value="MW3 - WEAPON AC Impact.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONLRM10.wav" Value="MW3 - WEAPON LRM10.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONLRM15.wav" Value="MW3 - WEAPON LRM15.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONLRM20.wav" Value="MW3 - WEAPON LRM20.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONLRM5.wav" Value="MW3 - WEAPON LRM5.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONLRMImpact.wav" Value="MW3 - WEAPON LRM Impact.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONLaserImpact.wav" Value="MW3 - WEAPON Laser Impact.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONMachineGun.wav" Value="MW3 - WEAPON Machine Gun.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONPulseLaser.wav" Value="MW3 - WEAPON Pulse Laser.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONSRM2.wav" Value="MW3 - WEAPON SRM2.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONSRM4.wav" Value="MW3 - WEAPON SRM4.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONSRM6.wav" Value="MW3 - WEAPON SRM6.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4ExplosionMech1.wav" Value="MW4 - Explosion Mech 1.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4ExplosionMech2.wav" Value="MW4 - Explosion Mech 2.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4MBettyDamageCritical.wav" Value="MW4 M Betty - Damage Critical.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4MBettyHeadDamaged.wav" Value="MW4 M Betty - Head Damaged.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4MBettyKillAwarded.wav" Value="MW4 M Betty - Kill Awarded.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4MBettyShuttingDown.wav" Value="MW4 M Betty - Shutting Down.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyArmourBreached.wav" Value="MW4 V Betty - Armour Breached.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyDamageCritical.wav" Value="MW4 V Betty - Damage Critical.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyEjecting.wav" Value="MW4 V Betty - Ejecting.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyEnemyDetected.wav" Value="MW4 V Betty - Enemy Detected.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyEnemyMechDestroyed.wav" Value="MW4 V Betty - Enemy Mech Destroyed.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyHEATApproachingCriticalHeatLevel.wav" Value="MW4 V Betty - HEAT Approaching Critical Heat Level.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyHEATHeatCritical.wav" Value="MW4 V Betty - HEAT Heat Critical.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyHEATHeatExceedingRecommendedLevel.wav" Value="MW4 V Betty - HEAT Heat Exceeding Recommended Level.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyHEATHeatLevelCriticalShutdownImminent.wav" Value="MW4 V Betty - HEAT Heat Level Critical, Shutdown Imminent.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyHEATHeatModerate.wav" Value="MW4 V Betty - HEAT Heat Moderate.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyHEATHeatNominal.wav" Value="MW4 V Betty - HEAT Heat Nominal.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyJumpJetFailure.wav" Value="MW4 V Betty - JumpJet Failure.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyMULTIPLAYERYouHaveBeenDefeated.wav" Value="MW4 V Betty - MULTIPLAYER You Have Been Defeated.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyMULTIPLAYERYouHaveWon.wav" Value="MW4 V Betty - MULTIPLAYER You Have Won.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyPowerRestoredSystemsOnline.wav" Value="MW4 V Betty - Power Restored, Systems Online.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettySTARTUPAllFunctioningSystemsNominal.wav" Value="MW4 V Betty - STARTUP All Functioning Systems Nominal.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettySTARTUPReactorOnline.wav" Value="MW4 V Betty - STARTUP Reactor Online.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettySTARTUPSensorsOnline.wav" Value="MW4 V Betty - STARTUP Sensors Online.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettySTARTUPWeaponsSystemsOnline.wav" Value="MW4 V Betty - STARTUP Weapons Systems Online.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyShuttingDown.wav" Value="MW4 V Betty - Shutting Down.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyTargetDestroyed.wav" Value="MW4 V Betty - Target Destroyed.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyWeaponDestroyed.wav" Value="MW4 V Betty - Weapon Destroyed.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONAC10.wav" Value="MW4 - WEAPON AC10.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONAC2.wav" Value="MW4 - WEAPON AC2.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONAC20.wav" Value="MW4 - WEAPON AC20.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONAC5.wav" Value="MW4 - WEAPON AC5.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONFlamerReload.wav" Value="MW4 - WEAPON Flamer Reload.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONLaserLarge.wav" Value="MW4 - WEAPON Laser Large.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONLaserMedium.wav" Value="MW4 - WEAPON Laser Medium.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONLaserSmall.wav" Value="MW4 - WEAPON Laser Small.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONPPC.wav" Value="MW4 - WEAPON PPC.wav"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MechConfigs.csv" Value="MechConfigs.csv"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Mechs.csv" Value="Mechs.csv"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.VisualBasic.dll" Value="Microsoft.VisualBasic.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MovementCostsTable.png" Value="Movement Costs Table.png"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_OutworldsAlliance.ico" Value="Outworlds Alliance.ico"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_PhysicalAttackModifiers.png" Value="Physical Attack Modifiers.png"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_PhysicalAttacksModifiers.png" Value="Physical Attacks Modifiers.png"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_PilotingSkillRollTable.png" Value="Piloting Skill Roll Table.png"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_PunchLocationTable.png" Value="Punch Location Table.png"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_RearBlankArmor.png" Value="RearBlankArmor.png"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_TwoDice.jpg" Value="TwoDice.jpg"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_WeaponAttackModifiers.png" Value="Weapon Attack Modifiers.png"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_WeaponsNEquipment.csv" Value="WeaponsNEquipment.csv"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ndice.jpg" Value="índice.jpg"/>
+    <ROW Property="AI_SLIDESHOW_BACKGROUND_COLOR" Value="0"/>
+    <ROW Property="AI_SecondColor" Value="default" MultiBuildValue="DefaultBuild:red" MsiKey="AI_SecondColor"/>
+    <ROW Property="AI_ThemeSteps" Value="radio" MsiKey="AI_ThemeSteps"/>
+    <ROW Property="AI_ThemeStyle" Value="default" MultiBuildValue="DefaultBuild:red-waves" MsiKey="AI_ThemeStyle"/>
+    <ROW Property="ALLUSERS" Value="1" MultiBuildValue="DefaultBuild:"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPCONTACT" Value="feuer_frei81@hotmail.com"/>
+    <ROW Property="ARPPRODUCTICON" Value="MagistrateofCanopus.exe" Type="8"/>
+    <ROW Property="Manufacturer" Value="BetaDevelopments"/>
+    <ROW Property="ProductCode" Value="1033:{FA572EC8-B236-41B9-900F-9136E9486132} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="BT Digital Record Sheets"/>
+    <ROW Property="ProductVersion" Value="0.1.9" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{617B753A-B24F-4095-8B7E-4EA301464144}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Assets" Directory_Parent="TARGETDIR" DefaultDir="Assets" IsPseudoRoot="1"/>
+    <ROW Directory="BT_DRS_WinForm_Dir" Directory_Parent="APPDIR" DefaultDir="BT_DRS~1|BT_DRS_WinForm"/>
+    <ROW Directory="Catalogs_Dir" Directory_Parent="BT_DRS_WinForm_Dir" DefaultDir="Catalogs"/>
+    <ROW Directory="Images_Dir" Directory_Parent="BT_DRS_WinForm_Dir" DefaultDir="Images"/>
+    <ROW Directory="Sounds_Dir" Directory_Parent="BT_DRS_WinForm_Dir" DefaultDir="Sounds"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="BT_DRS_WinForm_PrimaryOutput" ComponentId="{40E4FCB6-1BF7-42E5-8AA0-01494539AD1C}" Directory_="BT_DRS_WinForm_Dir" Attributes="0" KeyPath="BT_DRS_WinForm.exe"/>
+    <ROW Component="BT_DRS_WinForm_References" ComponentId="{63354767-77E6-4982-A1D9-27A64007CB36}" Directory_="BT_DRS_WinForm_Dir" Attributes="0" KeyPath="Microsoft.VisualBasic.dll"/>
+    <ROW Component="Locations.csv" ComponentId="{EF8925BE-0255-4BCF-AE5E-BE62A6929E29}" Directory_="Catalogs_Dir" Attributes="0" KeyPath="Locations.csv" Type="0"/>
+    <ROW Component="MW2BettyCriticalHit.wav" ComponentId="{67F7B1AB-F35A-403A-8EB5-C1CAB0C96D3F}" Directory_="Sounds_Dir" Attributes="0" KeyPath="MW2BettyCriticalHit.wav" Type="0"/>
+    <ROW Component="OutworldsAlliance.ico" ComponentId="{A31AF55C-5652-46D2-9D1F-9FF3F79CB183}" Directory_="Images_Dir" Attributes="0" KeyPath="OutworldsAlliance.ico" Type="0"/>
+    <ROW Component="ProductInformation" ComponentId="{8F9A6084-CB5D-48D9-8594-8C6ADDBA650E}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="Square50x50Logo.scale100.png" ComponentId="{F9471AEF-2B6F-42F4-AF38-5B3750E4A3E6}" Directory_="Assets" Attributes="0" KeyPath="BTDigitalRecordSheetsSquare44x44Logo.scale100.png" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="AiAppXAssets" Title="AiAppXAssets" Description="Description" Display="3" Level="0" Directory_="APPDIR" Attributes="0" Components="Square50x50Logo.scale100.png"/>
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="BT_DRS_WinForm_PrimaryOutput BT_DRS_WinForm_References Locations.csv MW2BettyCriticalHit.wav OutworldsAlliance.ico ProductInformation"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="AllAtacksModifiers.png" Component_="OutworldsAlliance.ico" FileName="ALLATA~2.PNG|[|AI_PROPPATH_FILENAME_PERBUILD_AllAtacksModifiers.png]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_AllAtacksModifiers.png&gt;" SelfReg="false" NextFile="WeaponAttackModifiers.png"/>
+    <ROW File="Ammo.csv" Component_="Locations.csv" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_Ammo.csv]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Ammo.csv&gt;" SelfReg="false" NextFile="Mechs.csv"/>
+    <ROW File="BTDigitalRecordSheetsSquare150x150Logo.scale100.png" Component_="Square50x50Logo.scale100.png" FileName="BTDIGI~2.PNG|BTDigitalRecordSheetsSquare150x150Logo.scale-100.png" Attributes="0" SourcePath="..\DT_DRS_WinForm\Images\BlankArmor.png" SelfReg="false" NextFile="BTDigitalRecordSheetsSquare150x150Logo.scale125.png"/>
+    <ROW File="BTDigitalRecordSheetsSquare150x150Logo.scale125.png" Component_="Square50x50Logo.scale100.png" FileName="BTDIGI~3.PNG|BTDigitalRecordSheetsSquare150x150Logo.scale-125.png" Attributes="0" SourcePath="..\DT_DRS_WinForm\Images\BlankArmor.png" SelfReg="false" NextFile="BTDigitalRecordSheetsSquare150x150Logo.scale150.png"/>
+    <ROW File="BTDigitalRecordSheetsSquare150x150Logo.scale150.png" Component_="Square50x50Logo.scale100.png" FileName="BTDIGI~4.PNG|BTDigitalRecordSheetsSquare150x150Logo.scale-150.png" Attributes="0" SourcePath="..\DT_DRS_WinForm\Images\BlankArmor.png" SelfReg="false" NextFile="BTDigitalRecordSheetsSquare150x150Logo.scale200.png"/>
+    <ROW File="BTDigitalRecordSheetsSquare150x150Logo.scale200.png" Component_="Square50x50Logo.scale100.png" FileName="BTDIGI~5.PNG|BTDigitalRecordSheetsSquare150x150Logo.scale-200.png" Attributes="0" SourcePath="..\DT_DRS_WinForm\Images\BlankArmor.png" SelfReg="false" NextFile="BTDigitalRecordSheetsSquare150x150Logo.scale400.png"/>
+    <ROW File="BTDigitalRecordSheetsSquare150x150Logo.scale400.png" Component_="Square50x50Logo.scale100.png" FileName="BTDIGI~6.PNG|BTDigitalRecordSheetsSquare150x150Logo.scale-400.png" Attributes="0" SourcePath="..\DT_DRS_WinForm\Images\BlankArmor.png" SelfReg="false"/>
+    <ROW File="BTDigitalRecordSheetsSquare44x44Logo.scale100.png" Component_="Square50x50Logo.scale100.png" FileName="BTDIGI~1.PNG|BTDigitalRecordSheetsSquare44x44Logo.scale-100.png" Attributes="0" SourcePath="&lt;AI_RES&gt;appx\SmallLogo10.png" SelfReg="false" NextFile="BTDigitalRecordSheetsSquare150x150Logo.scale100.png"/>
+    <ROW File="BT_DRS_WinForm.exe" Component_="BT_DRS_WinForm_PrimaryOutput" FileName="BT_DRS~2.EXE|[|AI_PROPPATH_FILENAME_PERBUILD_BT_DRS_WinForm.exe]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_BT_DRS_WinForm.exe&gt;" SelfReg="false" NextFile="Locations.csv" DigSign="true"/>
+    <ROW File="BlankArmor.png" Component_="OutworldsAlliance.ico" FileName="BLANKA~2.PNG|[|AI_PROPPATH_FILENAME_PERBUILD_BlankArmor.png]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_BlankArmor.png&gt;" SelfReg="false" NextFile="LiteDB.dll"/>
+    <ROW File="ClusterHitsTable.png" Component_="OutworldsAlliance.ico" FileName="CLUSTE~2.PNG|[|AI_PROPPATH_FILENAME_PERBUILD_ClusterHitsTable.png]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ClusterHitsTable.png&gt;" SelfReg="false" NextFile="KickLocationTable.png"/>
+    <ROW File="CriticalHitsTable.png" Component_="OutworldsAlliance.ico" FileName="CRITIC~2.PNG|[|AI_PROPPATH_FILENAME_PERBUILD_CriticalHitsTable.png]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CriticalHitsTable.png&gt;" SelfReg="false" NextFile="PunchLocationTable.png"/>
+    <ROW File="FacingAfterFall.png" Component_="OutworldsAlliance.ico" FileName="FACING~2.PNG|[|AI_PROPPATH_FILENAME_PERBUILD_FacingAfterFall.png]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_FacingAfterFall.png&gt;" SelfReg="false" NextFile="ClusterHitsTable.png"/>
+    <ROW File="HeatPointTable.png" Component_="OutworldsAlliance.ico" FileName="HEATPO~2.PNG|[|AI_PROPPATH_FILENAME_PERBUILD_HeatPointTable.png]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_HeatPointTable.png&gt;" SelfReg="false" NextFile="PhysicalAttackModifiers.png"/>
+    <ROW File="HitLocationTable.png" Component_="OutworldsAlliance.ico" FileName="HITLOC~2.PNG|[|AI_PROPPATH_FILENAME_PERBUILD_HitLocationTable.png]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_HitLocationTable.png&gt;" SelfReg="false" NextFile="HeatPointTable.png"/>
+    <ROW File="InternalBlank.png" Component_="OutworldsAlliance.ico" FileName="INTERN~2.PNG|[|AI_PROPPATH_FILENAME_PERBUILD_InternalBlank.png]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_InternalBlank.png&gt;" SelfReg="false" NextFile="RearBlankArmor.png"/>
+    <ROW File="KickLocationTable.png" Component_="OutworldsAlliance.ico" FileName="KICKLO~2.PNG|[|AI_PROPPATH_FILENAME_PERBUILD_KickLocationTable.png]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_KickLocationTable.png&gt;" SelfReg="false" NextFile="HitLocationTable.png"/>
+    <ROW File="LiteDB.dll" Component_="BT_DRS_WinForm_References" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_LiteDB.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_LiteDB.dll&gt;" SelfReg="false" NextFile="Microsoft.VisualBasic.dll"/>
+    <ROW File="Locations.csv" Component_="Locations.csv" FileName="LOCATI~2.CSV|[|AI_PROPPATH_FILENAME_PERBUILD_Locations.csv]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Locations.csv&gt;" SelfReg="false" NextFile="Ammo.csv"/>
+    <ROW File="MW2BettyCriticalHit.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW2BET~2.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW2BettyCriticalHit.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW2BettyCriticalHit.wav&gt;" SelfReg="false" NextFile="MW2BettyDestroyed.wav"/>
+    <ROW File="MW2BettyDestroyed.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW2BET~3.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW2BettyDestroyed.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW2BettyDestroyed.wav&gt;" SelfReg="false" NextFile="MW2BettyShuttingDown.wav"/>
+    <ROW File="MW2BettyShuttingDown.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW2BET~4.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW2BettyShuttingDown.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW2BettyShuttingDown.wav&gt;" SelfReg="false" NextFile="MW2BettyStartupReactorOnline....wav"/>
+    <ROW File="MW2BettyStartupReactorOnline....wav" Component_="MW2BettyCriticalHit.wav" FileName="MW2BET~5.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW2BettyStartupReactorOnline....wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW2BettyStartupReactorOnline....wav&gt;" SelfReg="false" NextFile="MW3Explosion2.wav"/>
+    <ROW File="MW3BettyAmmoCritical.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3BET~2.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3BettyAmmoCritical.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3BettyAmmoCritical.wav&gt;" SelfReg="false" NextFile="MW3BettyAmmoDepleted.wav"/>
+    <ROW File="MW3BettyAmmoDepleted.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3BET~3.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3BettyAmmoDepleted.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3BettyAmmoDepleted.wav&gt;" SelfReg="false" NextFile="MW3BettyAmmoExplosion.wav"/>
+    <ROW File="MW3BettyAmmoExplosion.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3BET~4.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3BettyAmmoExplosion.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3BettyAmmoExplosion.wav&gt;" SelfReg="false" NextFile="MW3BettyAutoShutdown.wav"/>
+    <ROW File="MW3BettyAutoShutdown.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3BET~5.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3BettyAutoShutdown.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3BettyAutoShutdown.wav&gt;" SelfReg="false" NextFile="MW3BettyDamaged.wav"/>
+    <ROW File="MW3BettyDamaged.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3BET~6.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3BettyDamaged.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3BettyDamaged.wav&gt;" SelfReg="false" NextFile="MW3BettyDestroyed.wav"/>
+    <ROW File="MW3BettyDestroyed.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3BET~7.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3BettyDestroyed.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3BettyDestroyed.wav&gt;" SelfReg="false" NextFile="MW3BettyLowAmmo.wav"/>
+    <ROW File="MW3BettyLowAmmo.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3BET~8.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3BettyLowAmmo.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3BettyLowAmmo.wav&gt;" SelfReg="false" NextFile="MW4ExplosionMech1.wav"/>
+    <ROW File="MW3Explosion2.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3-EX~2.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3Explosion2.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3Explosion2.wav&gt;" SelfReg="false" NextFile="MW3Explosion3.wav"/>
+    <ROW File="MW3Explosion3.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3-EX~3.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3Explosion3.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3Explosion3.wav&gt;" SelfReg="false" NextFile="MW3Explosion4.wav"/>
+    <ROW File="MW3Explosion4.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3-EX~4.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3Explosion4.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3Explosion4.wav&gt;" SelfReg="false" NextFile="MW3Explosion5.wav"/>
+    <ROW File="MW3Explosion5.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3-EX~5.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3Explosion5.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3Explosion5.wav&gt;" SelfReg="false" NextFile="MW3WEAPONACImpact.wav"/>
+    <ROW File="MW3WEAPONACImpact.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3-WE~2.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONACImpact.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3WEAPONACImpact.wav&gt;" SelfReg="false" NextFile="MW3WEAPONLaserImpact.wav"/>
+    <ROW File="MW3WEAPONLRM10.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3-WE~5.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONLRM10.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3WEAPONLRM10.wav&gt;" SelfReg="false" NextFile="MW3WEAPONLRM15.wav"/>
+    <ROW File="MW3WEAPONLRM15.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3-WE~6.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONLRM15.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3WEAPONLRM15.wav&gt;" SelfReg="false" NextFile="MW3WEAPONLRM20.wav"/>
+    <ROW File="MW3WEAPONLRM20.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3-WE~7.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONLRM20.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3WEAPONLRM20.wav&gt;" SelfReg="false" NextFile="MW3WEAPONLRM5.wav"/>
+    <ROW File="MW3WEAPONLRM5.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3-WE~8.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONLRM5.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3WEAPONLRM5.wav&gt;" SelfReg="false" NextFile="MW3WEAPONMachineGun.wav"/>
+    <ROW File="MW3WEAPONLRMImpact.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3-WE~4.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONLRMImpact.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3WEAPONLRMImpact.wav&gt;" SelfReg="false" NextFile="MW3WEAPONLRM10.wav"/>
+    <ROW File="MW3WEAPONLaserImpact.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3-WE~3.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONLaserImpact.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3WEAPONLaserImpact.wav&gt;" SelfReg="false" NextFile="MW3WEAPONLRMImpact.wav"/>
+    <ROW File="MW3WEAPONMachineGun.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3-WE~9.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONMachineGun.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3WEAPONMachineGun.wav&gt;" SelfReg="false" NextFile="MW3WEAPONPulseLaser.wav"/>
+    <ROW File="MW3WEAPONPulseLaser.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3-W~10.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONPulseLaser.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3WEAPONPulseLaser.wav&gt;" SelfReg="false" NextFile="MW3WEAPONSRM2.wav"/>
+    <ROW File="MW3WEAPONSRM2.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3-W~11.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONSRM2.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3WEAPONSRM2.wav&gt;" SelfReg="false" NextFile="MW3WEAPONSRM4.wav"/>
+    <ROW File="MW3WEAPONSRM4.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3-W~12.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONSRM4.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3WEAPONSRM4.wav&gt;" SelfReg="false" NextFile="MW3WEAPONSRM6.wav"/>
+    <ROW File="MW3WEAPONSRM6.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW3-W~13.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONSRM6.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW3WEAPONSRM6.wav&gt;" SelfReg="false" NextFile="MW3BettyAmmoCritical.wav"/>
+    <ROW File="MW4ExplosionMech1.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4-EX~2.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4ExplosionMech1.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4ExplosionMech1.wav&gt;" SelfReg="false" NextFile="MW4ExplosionMech2.wav"/>
+    <ROW File="MW4ExplosionMech2.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4-EX~3.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4ExplosionMech2.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4ExplosionMech2.wav&gt;" SelfReg="false" NextFile="MW4WEAPONAC10.wav"/>
+    <ROW File="MW4MBettyDamageCritical.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4MBE~2.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4MBettyDamageCritical.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4MBettyDamageCritical.wav&gt;" SelfReg="false" NextFile="MW4MBettyHeadDamaged.wav"/>
+    <ROW File="MW4MBettyHeadDamaged.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4MBE~3.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4MBettyHeadDamaged.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4MBettyHeadDamaged.wav&gt;" SelfReg="false" NextFile="MW4MBettyKillAwarded.wav"/>
+    <ROW File="MW4MBettyKillAwarded.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4MBE~4.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4MBettyKillAwarded.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4MBettyKillAwarded.wav&gt;" SelfReg="false" NextFile="MW4MBettyShuttingDown.wav"/>
+    <ROW File="MW4MBettyShuttingDown.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4MBE~5.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4MBettyShuttingDown.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4MBettyShuttingDown.wav&gt;" SelfReg="false" NextFile="MW4VBettyArmourBreached.wav"/>
+    <ROW File="MW4VBettyArmourBreached.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VBE~2.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyArmourBreached.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettyArmourBreached.wav&gt;" SelfReg="false" NextFile="MW4VBettyDamageCritical.wav"/>
+    <ROW File="MW4VBettyDamageCritical.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VBE~3.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyDamageCritical.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettyDamageCritical.wav&gt;" SelfReg="false" NextFile="MW4VBettyEjecting.wav"/>
+    <ROW File="MW4VBettyEjecting.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VBE~4.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyEjecting.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettyEjecting.wav&gt;" SelfReg="false" NextFile="MW4VBettyEnemyDetected.wav"/>
+    <ROW File="MW4VBettyEnemyDetected.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VBE~5.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyEnemyDetected.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettyEnemyDetected.wav&gt;" SelfReg="false" NextFile="MW4VBettyEnemyMechDestroyed.wav"/>
+    <ROW File="MW4VBettyEnemyMechDestroyed.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VBE~6.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyEnemyMechDestroyed.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettyEnemyMechDestroyed.wav&gt;" SelfReg="false" NextFile="MW4VBettyHEATApproachingCriticalHeatLevel.wav"/>
+    <ROW File="MW4VBettyHEATApproachingCriticalHeatLevel.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VBE~7.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyHEATApproachingCriticalHeatLevel.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettyHEATApproachingCriticalHeatLevel.wav&gt;" SelfReg="false" NextFile="MW4VBettyHEATHeatCritical.wav"/>
+    <ROW File="MW4VBettyHEATHeatCritical.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VBE~8.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyHEATHeatCritical.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettyHEATHeatCritical.wav&gt;" SelfReg="false" NextFile="MW4VBettyHEATHeatExceedingRecommendedLevel.wav"/>
+    <ROW File="MW4VBettyHEATHeatExceedingRecommendedLevel.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VBE~9.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyHEATHeatExceedingRecommendedLevel.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettyHEATHeatExceedingRecommendedLevel.wav&gt;" SelfReg="false" NextFile="MW4VBettyHEATHeatLevelCriticalShutdownImminent.wav"/>
+    <ROW File="MW4VBettyHEATHeatLevelCriticalShutdownImminent.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VB~10.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyHEATHeatLevelCriticalShutdownImminent.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettyHEATHeatLevelCriticalShutdownImminent.wav&gt;" SelfReg="false" NextFile="MW4VBettyHEATHeatModerate.wav"/>
+    <ROW File="MW4VBettyHEATHeatModerate.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VB~11.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyHEATHeatModerate.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettyHEATHeatModerate.wav&gt;" SelfReg="false" NextFile="MW4VBettyHEATHeatNominal.wav"/>
+    <ROW File="MW4VBettyHEATHeatNominal.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VB~12.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyHEATHeatNominal.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettyHEATHeatNominal.wav&gt;" SelfReg="false" NextFile="MW4VBettyJumpJetFailure.wav"/>
+    <ROW File="MW4VBettyJumpJetFailure.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VB~13.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyJumpJetFailure.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettyJumpJetFailure.wav&gt;" SelfReg="false" NextFile="MW4VBettyMULTIPLAYERYouHaveBeenDefeated.wav"/>
+    <ROW File="MW4VBettyMULTIPLAYERYouHaveBeenDefeated.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VB~14.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyMULTIPLAYERYouHaveBeenDefeated.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettyMULTIPLAYERYouHaveBeenDefeated.wav&gt;" SelfReg="false" NextFile="MW4VBettyMULTIPLAYERYouHaveWon.wav"/>
+    <ROW File="MW4VBettyMULTIPLAYERYouHaveWon.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VB~15.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyMULTIPLAYERYouHaveWon.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettyMULTIPLAYERYouHaveWon.wav&gt;" SelfReg="false" NextFile="MW4VBettyPowerRestoredSystemsOnline.wav"/>
+    <ROW File="MW4VBettyPowerRestoredSystemsOnline.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VB~16.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyPowerRestoredSystemsOnline.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettyPowerRestoredSystemsOnline.wav&gt;" SelfReg="false" NextFile="MW4VBettyShuttingDown.wav"/>
+    <ROW File="MW4VBettySTARTUPAllFunctioningSystemsNominal.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VB~18.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettySTARTUPAllFunctioningSystemsNominal.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettySTARTUPAllFunctioningSystemsNominal.wav&gt;" SelfReg="false" NextFile="MW4VBettySTARTUPReactorOnline.wav"/>
+    <ROW File="MW4VBettySTARTUPReactorOnline.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VB~19.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettySTARTUPReactorOnline.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettySTARTUPReactorOnline.wav&gt;" SelfReg="false" NextFile="MW4VBettySTARTUPSensorsOnline.wav"/>
+    <ROW File="MW4VBettySTARTUPSensorsOnline.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VB~20.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettySTARTUPSensorsOnline.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettySTARTUPSensorsOnline.wav&gt;" SelfReg="false" NextFile="MW4VBettySTARTUPWeaponsSystemsOnline.wav"/>
+    <ROW File="MW4VBettySTARTUPWeaponsSystemsOnline.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VB~21.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettySTARTUPWeaponsSystemsOnline.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettySTARTUPWeaponsSystemsOnline.wav&gt;" SelfReg="false" NextFile="MW4VBettyTargetDestroyed.wav"/>
+    <ROW File="MW4VBettyShuttingDown.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VB~17.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyShuttingDown.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettyShuttingDown.wav&gt;" SelfReg="false" NextFile="MW4VBettySTARTUPAllFunctioningSystemsNominal.wav"/>
+    <ROW File="MW4VBettyTargetDestroyed.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VB~22.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyTargetDestroyed.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettyTargetDestroyed.wav&gt;" SelfReg="false" NextFile="MW4VBettyWeaponDestroyed.wav"/>
+    <ROW File="MW4VBettyWeaponDestroyed.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4VB~23.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyWeaponDestroyed.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4VBettyWeaponDestroyed.wav&gt;" SelfReg="false" NextFile="InternalBlank.png"/>
+    <ROW File="MW4WEAPONAC10.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4-WE~2.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONAC10.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4WEAPONAC10.wav&gt;" SelfReg="false" NextFile="MW4WEAPONAC2.wav"/>
+    <ROW File="MW4WEAPONAC2.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4-WE~3.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONAC2.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4WEAPONAC2.wav&gt;" SelfReg="false" NextFile="MW4WEAPONAC20.wav"/>
+    <ROW File="MW4WEAPONAC20.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4-WE~4.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONAC20.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4WEAPONAC20.wav&gt;" SelfReg="false" NextFile="MW4WEAPONAC5.wav"/>
+    <ROW File="MW4WEAPONAC5.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4-WE~5.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONAC5.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4WEAPONAC5.wav&gt;" SelfReg="false" NextFile="MW4WEAPONFlamerReload.wav"/>
+    <ROW File="MW4WEAPONFlamerReload.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4-WE~6.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONFlamerReload.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4WEAPONFlamerReload.wav&gt;" SelfReg="false" NextFile="MW4WEAPONLaserLarge.wav"/>
+    <ROW File="MW4WEAPONLaserLarge.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4-WE~7.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONLaserLarge.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4WEAPONLaserLarge.wav&gt;" SelfReg="false" NextFile="MW4WEAPONLaserMedium.wav"/>
+    <ROW File="MW4WEAPONLaserMedium.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4-WE~8.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONLaserMedium.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4WEAPONLaserMedium.wav&gt;" SelfReg="false" NextFile="MW4WEAPONLaserSmall.wav"/>
+    <ROW File="MW4WEAPONLaserSmall.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4-WE~9.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONLaserSmall.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4WEAPONLaserSmall.wav&gt;" SelfReg="false" NextFile="MW4WEAPONPPC.wav"/>
+    <ROW File="MW4WEAPONPPC.wav" Component_="MW2BettyCriticalHit.wav" FileName="MW4-W~10.WAV|[|AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONPPC.wav]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MW4WEAPONPPC.wav&gt;" SelfReg="false" NextFile="MW4MBettyDamageCritical.wav"/>
+    <ROW File="MechConfigs.csv" Component_="Locations.csv" FileName="MECHCO~2.CSV|[|AI_PROPPATH_FILENAME_PERBUILD_MechConfigs.csv]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MechConfigs.csv&gt;" SelfReg="false" NextFile="WeaponsNEquipment.csv"/>
+    <ROW File="Mechs.csv" Component_="Locations.csv" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_Mechs.csv]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Mechs.csv&gt;" SelfReg="false" NextFile="MechConfigs.csv"/>
+    <ROW File="Microsoft.VisualBasic.dll" Component_="BT_DRS_WinForm_References" FileName="MICROS~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.VisualBasic.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.VisualBasic.dll&gt;" SelfReg="false" NextFile="BTDigitalRecordSheetsSquare44x44Logo.scale100.png"/>
+    <ROW File="MovementCostsTable.png" Component_="OutworldsAlliance.ico" FileName="MOVEME~2.PNG|[|AI_PROPPATH_FILENAME_PERBUILD_MovementCostsTable.png]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MovementCostsTable.png&gt;" SelfReg="false" NextFile="FacingAfterFall.png"/>
+    <ROW File="OutworldsAlliance.ico" Component_="OutworldsAlliance.ico" FileName="OUTWOR~2.ICO|[|AI_PROPPATH_FILENAME_PERBUILD_OutworldsAlliance.ico]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_OutworldsAlliance.ico&gt;" SelfReg="false" NextFile="PhysicalAttacksModifiers.png"/>
+    <ROW File="PhysicalAttackModifiers.png" Component_="OutworldsAlliance.ico" FileName="PHYSIC~3.PNG|[|AI_PROPPATH_FILENAME_PERBUILD_PhysicalAttackModifiers.png]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_PhysicalAttackModifiers.png&gt;" SelfReg="false" NextFile="CriticalHitsTable.png"/>
+    <ROW File="PhysicalAttacksModifiers.png" Component_="OutworldsAlliance.ico" FileName="PHYSIC~2.PNG|[|AI_PROPPATH_FILENAME_PERBUILD_PhysicalAttacksModifiers.png]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_PhysicalAttacksModifiers.png&gt;" SelfReg="false" NextFile="MovementCostsTable.png"/>
+    <ROW File="PilotingSkillRollTable.png" Component_="OutworldsAlliance.ico" FileName="PILOTI~2.PNG|[|AI_PROPPATH_FILENAME_PERBUILD_PilotingSkillRollTable.png]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_PilotingSkillRollTable.png&gt;" SelfReg="false" NextFile="AllAtacksModifiers.png"/>
+    <ROW File="PunchLocationTable.png" Component_="OutworldsAlliance.ico" FileName="PUNCHL~2.PNG|[|AI_PROPPATH_FILENAME_PERBUILD_PunchLocationTable.png]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_PunchLocationTable.png&gt;" SelfReg="false" NextFile="PilotingSkillRollTable.png"/>
+    <ROW File="RearBlankArmor.png" Component_="OutworldsAlliance.ico" FileName="REARBL~2.PNG|[|AI_PROPPATH_FILENAME_PERBUILD_RearBlankArmor.png]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_RearBlankArmor.png&gt;" SelfReg="false" NextFile="BlankArmor.png"/>
+    <ROW File="TwoDice.jpg" Component_="OutworldsAlliance.ico" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_TwoDice.jpg]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_TwoDice.jpg&gt;" SelfReg="false" NextFile="ndice.jpg"/>
+    <ROW File="WeaponAttackModifiers.png" Component_="OutworldsAlliance.ico" FileName="WEAPON~2.PNG|[|AI_PROPPATH_FILENAME_PERBUILD_WeaponAttackModifiers.png]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_WeaponAttackModifiers.png&gt;" SelfReg="false" NextFile="TwoDice.jpg"/>
+    <ROW File="WeaponsNEquipment.csv" Component_="Locations.csv" FileName="WEAPON~2.CSV|[|AI_PROPPATH_FILENAME_PERBUILD_WeaponsNEquipment.csv]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_WeaponsNEquipment.csv&gt;" SelfReg="false" NextFile="OutworldsAlliance.ico"/>
+    <ROW File="ndice.jpg" Component_="OutworldsAlliance.ico" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_ndice.jpg]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ndice.jpg&gt;" SelfReg="false" NextFile="MW2BettyCriticalHit.wav"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AppPathsComponent">
+    <ROW Name="AI_APPPATH_PERBUILD_AllAtacksModifiers.png" Path="[|AI_PROPPATH_DIR_PERBUILD_AllAtacksModifiers.png]\[|AI_PROPPATH_FILENAME_PERBUILD_AllAtacksModifiers.png]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Ammo.csv" Path="[|AI_PROPPATH_DIR_PERBUILD_Ammo.csv]\[|AI_PROPPATH_FILENAME_PERBUILD_Ammo.csv]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_BT_DRS_WinForm.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_BT_DRS_WinForm.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_BT_DRS_WinForm.exe]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_BlankArmor.png" Path="[|AI_PROPPATH_DIR_PERBUILD_BlankArmor.png]\[|AI_PROPPATH_FILENAME_PERBUILD_BlankArmor.png]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ClusterHitsTable.png" Path="[|AI_PROPPATH_DIR_PERBUILD_ClusterHitsTable.png]\[|AI_PROPPATH_FILENAME_PERBUILD_ClusterHitsTable.png]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CriticalHitsTable.png" Path="[|AI_PROPPATH_DIR_PERBUILD_CriticalHitsTable.png]\[|AI_PROPPATH_FILENAME_PERBUILD_CriticalHitsTable.png]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_FacingAfterFall.png" Path="[|AI_PROPPATH_DIR_PERBUILD_FacingAfterFall.png]\[|AI_PROPPATH_FILENAME_PERBUILD_FacingAfterFall.png]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_HeatPointTable.png" Path="[|AI_PROPPATH_DIR_PERBUILD_HeatPointTable.png]\[|AI_PROPPATH_FILENAME_PERBUILD_HeatPointTable.png]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_HitLocationTable.png" Path="[|AI_PROPPATH_DIR_PERBUILD_HitLocationTable.png]\[|AI_PROPPATH_FILENAME_PERBUILD_HitLocationTable.png]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_InternalBlank.png" Path="[|AI_PROPPATH_DIR_PERBUILD_InternalBlank.png]\[|AI_PROPPATH_FILENAME_PERBUILD_InternalBlank.png]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_KickLocationTable.png" Path="[|AI_PROPPATH_DIR_PERBUILD_KickLocationTable.png]\[|AI_PROPPATH_FILENAME_PERBUILD_KickLocationTable.png]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_LiteDB.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_LiteDB.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_LiteDB.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Locations.csv" Path="[|AI_PROPPATH_DIR_PERBUILD_Locations.csv]\[|AI_PROPPATH_FILENAME_PERBUILD_Locations.csv]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW2BettyCriticalHit.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW2BettyCriticalHit.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW2BettyCriticalHit.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW2BettyDestroyed.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW2BettyDestroyed.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW2BettyDestroyed.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW2BettyShuttingDown.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW2BettyShuttingDown.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW2BettyShuttingDown.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW2BettyStartupReactorOnline....wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW2BettyStartupReactorOnline....wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW2BettyStartupReactorOnline....wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3BettyAmmoCritical.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3BettyAmmoCritical.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3BettyAmmoCritical.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3BettyAmmoDepleted.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3BettyAmmoDepleted.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3BettyAmmoDepleted.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3BettyAmmoExplosion.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3BettyAmmoExplosion.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3BettyAmmoExplosion.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3BettyAutoShutdown.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3BettyAutoShutdown.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3BettyAutoShutdown.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3BettyDamaged.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3BettyDamaged.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3BettyDamaged.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3BettyDestroyed.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3BettyDestroyed.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3BettyDestroyed.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3BettyLowAmmo.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3BettyLowAmmo.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3BettyLowAmmo.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3Explosion2.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3Explosion2.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3Explosion2.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3Explosion3.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3Explosion3.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3Explosion3.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3Explosion4.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3Explosion4.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3Explosion4.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3Explosion5.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3Explosion5.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3Explosion5.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3WEAPONACImpact.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3WEAPONACImpact.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONACImpact.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3WEAPONLRM10.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3WEAPONLRM10.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONLRM10.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3WEAPONLRM15.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3WEAPONLRM15.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONLRM15.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3WEAPONLRM20.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3WEAPONLRM20.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONLRM20.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3WEAPONLRM5.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3WEAPONLRM5.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONLRM5.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3WEAPONLRMImpact.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3WEAPONLRMImpact.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONLRMImpact.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3WEAPONLaserImpact.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3WEAPONLaserImpact.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONLaserImpact.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3WEAPONMachineGun.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3WEAPONMachineGun.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONMachineGun.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3WEAPONPulseLaser.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3WEAPONPulseLaser.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONPulseLaser.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3WEAPONSRM2.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3WEAPONSRM2.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONSRM2.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3WEAPONSRM4.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3WEAPONSRM4.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONSRM4.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW3WEAPONSRM6.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW3WEAPONSRM6.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW3WEAPONSRM6.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4ExplosionMech1.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4ExplosionMech1.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4ExplosionMech1.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4ExplosionMech2.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4ExplosionMech2.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4ExplosionMech2.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4MBettyDamageCritical.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4MBettyDamageCritical.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4MBettyDamageCritical.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4MBettyHeadDamaged.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4MBettyHeadDamaged.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4MBettyHeadDamaged.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4MBettyKillAwarded.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4MBettyKillAwarded.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4MBettyKillAwarded.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4MBettyShuttingDown.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4MBettyShuttingDown.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4MBettyShuttingDown.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettyArmourBreached.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettyArmourBreached.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyArmourBreached.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettyDamageCritical.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettyDamageCritical.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyDamageCritical.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettyEjecting.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettyEjecting.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyEjecting.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettyEnemyDetected.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettyEnemyDetected.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyEnemyDetected.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettyEnemyMechDestroyed.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettyEnemyMechDestroyed.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyEnemyMechDestroyed.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettyHEATApproachingCriticalHeatLevel.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettyHEATApproachingCriticalHeatLevel.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyHEATApproachingCriticalHeatLevel.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettyHEATHeatCritical.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettyHEATHeatCritical.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyHEATHeatCritical.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettyHEATHeatExceedingRecommendedLevel.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettyHEATHeatExceedingRecommendedLevel.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyHEATHeatExceedingRecommendedLevel.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettyHEATHeatLevelCriticalShutdownImminent.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettyHEATHeatLevelCriticalShutdownImminent.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyHEATHeatLevelCriticalShutdownImminent.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettyHEATHeatModerate.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettyHEATHeatModerate.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyHEATHeatModerate.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettyHEATHeatNominal.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettyHEATHeatNominal.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyHEATHeatNominal.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettyJumpJetFailure.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettyJumpJetFailure.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyJumpJetFailure.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettyMULTIPLAYERYouHaveBeenDefeated.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettyMULTIPLAYERYouHaveBeenDefeated.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyMULTIPLAYERYouHaveBeenDefeated.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettyMULTIPLAYERYouHaveWon.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettyMULTIPLAYERYouHaveWon.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyMULTIPLAYERYouHaveWon.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettyPowerRestoredSystemsOnline.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettyPowerRestoredSystemsOnline.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyPowerRestoredSystemsOnline.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettySTARTUPAllFunctioningSystemsNominal.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettySTARTUPAllFunctioningSystemsNominal.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettySTARTUPAllFunctioningSystemsNominal.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettySTARTUPReactorOnline.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettySTARTUPReactorOnline.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettySTARTUPReactorOnline.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettySTARTUPSensorsOnline.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettySTARTUPSensorsOnline.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettySTARTUPSensorsOnline.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettySTARTUPWeaponsSystemsOnline.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettySTARTUPWeaponsSystemsOnline.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettySTARTUPWeaponsSystemsOnline.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettyShuttingDown.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettyShuttingDown.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyShuttingDown.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettyTargetDestroyed.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettyTargetDestroyed.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyTargetDestroyed.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4VBettyWeaponDestroyed.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4VBettyWeaponDestroyed.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4VBettyWeaponDestroyed.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4WEAPONAC10.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4WEAPONAC10.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONAC10.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4WEAPONAC2.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4WEAPONAC2.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONAC2.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4WEAPONAC20.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4WEAPONAC20.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONAC20.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4WEAPONAC5.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4WEAPONAC5.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONAC5.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4WEAPONFlamerReload.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4WEAPONFlamerReload.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONFlamerReload.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4WEAPONLaserLarge.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4WEAPONLaserLarge.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONLaserLarge.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4WEAPONLaserMedium.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4WEAPONLaserMedium.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONLaserMedium.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4WEAPONLaserSmall.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4WEAPONLaserSmall.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONLaserSmall.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MW4WEAPONPPC.wav" Path="[|AI_PROPPATH_DIR_PERBUILD_MW4WEAPONPPC.wav]\[|AI_PROPPATH_FILENAME_PERBUILD_MW4WEAPONPPC.wav]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MechConfigs.csv" Path="[|AI_PROPPATH_DIR_PERBUILD_MechConfigs.csv]\[|AI_PROPPATH_FILENAME_PERBUILD_MechConfigs.csv]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Mechs.csv" Path="[|AI_PROPPATH_DIR_PERBUILD_Mechs.csv]\[|AI_PROPPATH_FILENAME_PERBUILD_Mechs.csv]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.VisualBasic.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.VisualBasic.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.VisualBasic.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MovementCostsTable.png" Path="[|AI_PROPPATH_DIR_PERBUILD_MovementCostsTable.png]\[|AI_PROPPATH_FILENAME_PERBUILD_MovementCostsTable.png]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_OutworldsAlliance.ico" Path="[|AI_PROPPATH_DIR_PERBUILD_OutworldsAlliance.ico]\[|AI_PROPPATH_FILENAME_PERBUILD_OutworldsAlliance.ico]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_PhysicalAttackModifiers.png" Path="[|AI_PROPPATH_DIR_PERBUILD_PhysicalAttackModifiers.png]\[|AI_PROPPATH_FILENAME_PERBUILD_PhysicalAttackModifiers.png]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_PhysicalAttacksModifiers.png" Path="[|AI_PROPPATH_DIR_PERBUILD_PhysicalAttacksModifiers.png]\[|AI_PROPPATH_FILENAME_PERBUILD_PhysicalAttacksModifiers.png]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_PilotingSkillRollTable.png" Path="[|AI_PROPPATH_DIR_PERBUILD_PilotingSkillRollTable.png]\[|AI_PROPPATH_FILENAME_PERBUILD_PilotingSkillRollTable.png]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_PunchLocationTable.png" Path="[|AI_PROPPATH_DIR_PERBUILD_PunchLocationTable.png]\[|AI_PROPPATH_FILENAME_PERBUILD_PunchLocationTable.png]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_RearBlankArmor.png" Path="[|AI_PROPPATH_DIR_PERBUILD_RearBlankArmor.png]\[|AI_PROPPATH_FILENAME_PERBUILD_RearBlankArmor.png]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_TwoDice.jpg" Path="[|AI_PROPPATH_DIR_PERBUILD_TwoDice.jpg]\[|AI_PROPPATH_FILENAME_PERBUILD_TwoDice.jpg]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_WeaponAttackModifiers.png" Path="[|AI_PROPPATH_DIR_PERBUILD_WeaponAttackModifiers.png]\[|AI_PROPPATH_FILENAME_PERBUILD_WeaponAttackModifiers.png]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_WeaponsNEquipment.csv" Path="[|AI_PROPPATH_DIR_PERBUILD_WeaponsNEquipment.csv]\[|AI_PROPPATH_FILENAME_PERBUILD_WeaponsNEquipment.csv]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ndice.jpg" Path="[|AI_PROPPATH_DIR_PERBUILD_ndice.jpg]\[|AI_PROPPATH_FILENAME_PERBUILD_ndice.jpg]" Type="2" Content="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BackgroundImagesComponent">
+    <ROW Name="img_AllAtacksModifiers.png" Data="..\DT_DRS_WinForm\Images\All Atacks Modifiers.png" Sequence="0" DisplayTime="5"/>
+    <ROW Name="img_ClusterHitsTable.png" Data="..\DT_DRS_WinForm\Images\Cluster Hits Table.png" Sequence="1" DisplayTime="5"/>
+    <ROW Name="img_CriticalHitsTable.png" Data="..\DT_DRS_WinForm\Images\Critical Hits Table.png" Sequence="2" DisplayTime="5"/>
+    <ROW Name="img_FacingAfterFall.png" Data="..\DT_DRS_WinForm\Images\Facing After Fall.png" Sequence="3" DisplayTime="5"/>
+    <ROW Name="img_HeatPointTable.png" Data="..\DT_DRS_WinForm\Images\Heat Point Table.png" Sequence="4" DisplayTime="5"/>
+    <ROW Name="img_HitLocationTable.png" Data="..\DT_DRS_WinForm\Images\Hit Location Table.png" Sequence="5" DisplayTime="5"/>
+    <ROW Name="img_KickLocationTable.png" Data="..\DT_DRS_WinForm\Images\Kick Location Table.png" Sequence="6" DisplayTime="5"/>
+    <ROW Name="img_MovementCostsTable.png" Data="..\DT_DRS_WinForm\Images\Movement Costs Table.png" Sequence="8" DisplayTime="5"/>
+    <ROW Name="img_MovementCostsTableCopy.png" Data="..\DT_DRS_WinForm\Images\Movement Costs Table - Copy.png" Sequence="7" DisplayTime="5"/>
+    <ROW Name="img_PhysicalAttackModifiers.png" Data="..\DT_DRS_WinForm\Images\Physical Attack Modifiers.png" Sequence="9" DisplayTime="5"/>
+    <ROW Name="img_PhysicalAttacksModifiers.png" Data="..\DT_DRS_WinForm\Images\Physical Attacks Modifiers.png" Sequence="10" DisplayTime="5"/>
+    <ROW Name="img_PilotingSkillRollTable.png" Data="..\DT_DRS_WinForm\Images\Piloting Skill Roll Table.png" Sequence="11" DisplayTime="5"/>
+    <ROW Name="img_PunchLocationTable.png" Data="..\DT_DRS_WinForm\Images\Punch Location Table.png" Sequence="12" DisplayTime="5"/>
+    <ROW Name="img_RandomExperienceRatingTable.png" Data="..\DT_DRS_WinForm\Images\Random Experience Rating Table.png" Sequence="13" DisplayTime="5"/>
+    <ROW Name="img_RandomScenarioTable.png" Data="..\DT_DRS_WinForm\Images\Random Scenario Table.png" Sequence="14" DisplayTime="5"/>
+    <ROW Name="img_RandomWeightTables.png" Data="..\DT_DRS_WinForm\Images\Random Weight Tables.png" Sequence="15" DisplayTime="5"/>
+    <ROW Name="img_WeaponAttackModifiers.png" Data="..\DT_DRS_WinForm\Images\Weapon Attack Modifiers.png" Sequence="16" DisplayTime="5"/>
+    <ATTRIBUTE name="StartOption" value="0"/>
+    <ATTRIBUTE name="StopOption" value="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="Installer" Languages="en" InstallationType="2" CabsLocation="1" CompressCabs="false" PackageType="1" ExeIconPath="..\DT_DRS_WinForm\Images\Magistrate of Canopus.ico" ExtUI="true" UseLargeSchema="true" UACExecutionLevel="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="PreparePrereqDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\PreparePrereqDlg.aip"/>
+    <ROW Fragment="PrerequisitesDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\PrerequisitesDlg.aip"/>
+    <ROW Fragment="ProgressPrereqDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\ProgressPrereqDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\WelcomeDlg.aip"/>
+    <ROW Fragment="WelcomePrereqDlg.aip" Path="&lt;AI_THEMES&gt;graphite\fragments\WelcomePrereqDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="ShowBackgroundImages.dll" SourcePath="&lt;AI_CUSTACTS&gt;ShowBackgroundImages.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="frame_bottom_left.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;frame_bottom_left.bmp"/>
+    <ROW Name="frame_bottom_left_inactive.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;frame_bottom_left_inactive.bmp"/>
+    <ROW Name="frame_bottom_mid.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;frame_bottom_mid.bmp"/>
+    <ROW Name="frame_bottom_mid_inactive.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;frame_bottom_mid_inactive.bmp"/>
+    <ROW Name="frame_bottom_right.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;frame_bottom_right.bmp"/>
+    <ROW Name="frame_bottom_right_inactive.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;frame_bottom_right_inactive.bmp"/>
+    <ROW Name="frame_caption.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;frame_caption.bmp"/>
+    <ROW Name="frame_caption_inactive.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;frame_caption_inactive.bmp"/>
+    <ROW Name="frame_left.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;frame_left.bmp"/>
+    <ROW Name="frame_left_inactive.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;frame_left_inactive.bmp"/>
+    <ROW Name="frame_right.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;frame_right.bmp"/>
+    <ROW Name="frame_right_inactive.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;frame_right_inactive.bmp"/>
+    <ROW Name="frame_top_left.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;frame_top_left.bmp"/>
+    <ROW Name="frame_top_left_inactive.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;frame_top_left_inactive.bmp"/>
+    <ROW Name="frame_top_mid.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;frame_top_mid.bmp"/>
+    <ROW Name="frame_top_mid_inactive.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;frame_top_mid_inactive.bmp"/>
+    <ROW Name="frame_top_right.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;frame_top_right.bmp"/>
+    <ROW Name="frame_top_right_inactive.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;frame_top_right_inactive.bmp"/>
+    <ROW Name="sys_close_down.bmp" SourcePath="&lt;AI_FRAME_BTNS&gt;sys_close_down.bmp"/>
+    <ROW Name="sys_close_hot.bmp" SourcePath="&lt;AI_FRAME_BTNS&gt;sys_close_hot.bmp"/>
+    <ROW Name="sys_close_inactive.bmp" SourcePath="&lt;AI_FRAME_BTNS&gt;sys_close_inactive.bmp"/>
+    <ROW Name="sys_close_normal.bmp" SourcePath="&lt;AI_FRAME_BTNS&gt;sys_close_normal.bmp"/>
+    <ROW Name="sys_min_down.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;sys_min_down.bmp"/>
+    <ROW Name="sys_min_hot.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;sys_min_hot.bmp"/>
+    <ROW Name="sys_min_inactive.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;sys_min_inactive.bmp"/>
+    <ROW Name="sys_min_normal.bmp" SourcePath="&lt;AI_FRAME_COLOR&gt;sys_min_normal.bmp"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="WelcomePrereqDlg" Control="Description" Type="Text" X="175" Y="89" Width="323" Height="220" Attributes="196611" Text="The setup has determined that some of the prerequisites needed to run [ProductName] are missing. This wizard will assist you in getting and installing those prerequisites. Click &quot;[Text_Next]&quot; to continue or &quot;[ButtonText_Cancel]&quot; to exit the [Wizard]." Order="800" TextLocId="Control.Text.WelcomePrereqDlg#Description" MsiKey="WelcomePrereqDlg#Description"/>
+    <ROW Dialog_="WelcomePrereqDlg" Control="PreparingLabel" Type="Text" X="35" Y="114" Width="104" Height="11" Attributes="196611" Text="Preparing installation" TextStyle="Labels" Order="900" TextLocId="Graphite.Control.Text.Dlg#PreparingLabel" MsiKey="WelcomePrereqDlg#PreparingLabel"/>
+    <ROW Dialog_="WelcomePrereqDlg" Control="InstallingLabel" Type="Text" X="35" Y="138" Width="104" Height="11" Attributes="196611" Text="Installing" TextStyle="Labels" Order="1000" TextLocId="Graphite.Control.Text.Dlg#InstallingLabel" MsiKey="WelcomePrereqDlg#InstallingLabel"/>
+    <ROW Dialog_="WelcomePrereqDlg" Control="FinalizingLabel" Type="Text" X="35" Y="162" Width="104" Height="11" Attributes="196611" Text="Finalizing installation" TextStyle="Labels" Order="1100" TextLocId="Graphite.Control.Text.Dlg#FinalizingLabel" MsiKey="WelcomePrereqDlg#FinalizingLabel"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomePrereqDlg" Control_="Next" Event="NewDialog" Argument="PrerequisitesDlg" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+    <ROW Dialog_="PrerequisitesDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+    <ROW Dialog_="PrerequisitesDlg" Control_="Back" Event="NewDialog" Argument="WelcomePrereqDlg" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Next" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="1401"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Next" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND MaintenanceTypeOption=&quot;Remove&quot;" Ordering="1403"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND MaintenanceTypeOption=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Next" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND MaintenanceTypeOption=&quot;Repair&quot;" Ordering="1402"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND MaintenanceTypeOption=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND MaintenanceTypeOption=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND MaintenanceTypeOption=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="ExitDialog" Control_="Finish" Event="DoAction" Argument="AI_StopImageSlideshow" Condition="(VersionNT &gt;= 500)" Ordering="301"/>
+    <ROW Dialog_="UserExit" Control_="Finish" Event="DoAction" Argument="AI_StopImageSlideshow" Condition="(VersionNT &gt;= 500)" Ordering="101"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_StopImageSlideshow" Condition="(VersionNT &gt;= 500)" Ordering="102"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_StartImageSlideshow" Type="193" Source="ShowBackgroundImages.dll" Target="StartImageSlideshow"/>
+    <ROW Action="AI_StopImageSlideshow" Type="1" Source="ShowBackgroundImages.dll" Target="StopImageSlideshow"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[AppDataFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="MagistrateofCanopus.exe" SourcePath="..\DT_DRS_WinForm\Images\Magistrate of Canopus.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="748"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="748"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_AppSearchEx" Sequence="102"/>
+    <ROW Action="AI_StartImageSlideshow" Condition="(VersionNT &gt;= 500) AND (Not Installed) AND (UILevel = 5)" Sequence="76"/>
+    <ROW Action="AI_StopImageSlideshow" Condition="(VersionNT &gt;= 500)" Sequence="1301"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT64 OR ((VersionNT &lt;&gt; 501) OR (ServicePackLevel = 3))) AND ((VersionNT &lt;&gt; 502) OR (ServicePackLevel = 2))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="SETUPEXEDIR OR (REMOVE=&quot;ALL&quot;)" Description="This package can only be run from a bootstrapper." DescriptionLocId="AI.LaunchCondition.RequireBootstrapper" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="graphite"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="C673FE9433B49AFAC9592AB26B8F8E4" DisplayName=".NET Framework 4.0" SetupFileUrl="http://download.microsoft.com/download/9/5/A/95A9616B-7A37-4AF6-BC36-D6EA96C8DAAE/dotNetFx40_Full_x86_x64.exe" Location="1" ExactSize="50449456" WinNTVersions="Windows 8 x86, Windows 8.1 x86, Windows 10 x86" WinNT64Versions="Windows 8 x64, Windows Server 2012 x64, Windows 8.1 x64, Windows Server 2012 R2 x64, Windows 10 x64, Windows Server 2016 x64" Operator="1" NoUiComLine="/q /norestart" Options="xy" MD5="251743dfd3fda414570524bac9e55381" TargetName=".NET Framework 4.0"/>
+    <ATTRIBUTE name="PrereqsOrder" value="C673FE9433B49AFAC9592AB26B8F8E4"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="C673FE9433B49AFAC9592AB26B8F8E4Install" Prereq="C673FE9433B49AFAC9592AB26B8F8E4" SearchType="9" SearchString="HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\Install" RefContent="M1" Order="1" Property="PreReqSearch_C673FE9433B49AFAC9592AB26B8F8E4"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.VsProjectComponent">
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="BT_DRS_WinForm.exe"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="Locations.csv"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="Ammo.csv"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="Mechs.csv"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MechConfigs.csv"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="WeaponsNEquipment.csv"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="OutworldsAlliance.ico"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="PhysicalAttacksModifiers.png"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MovementCostsTable.png"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="FacingAfterFall.png"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="ClusterHitsTable.png"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="KickLocationTable.png"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="HitLocationTable.png"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="HeatPointTable.png"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="PhysicalAttackModifiers.png"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="CriticalHitsTable.png"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="PunchLocationTable.png"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="PilotingSkillRollTable.png"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="AllAtacksModifiers.png"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="WeaponAttackModifiers.png"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="TwoDice.jpg"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="ndice.jpg"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW2BettyCriticalHit.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW2BettyDestroyed.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW2BettyShuttingDown.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW2BettyStartupReactorOnline....wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3Explosion2.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3Explosion3.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3Explosion4.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3Explosion5.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3WEAPONACImpact.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3WEAPONLaserImpact.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3WEAPONLRMImpact.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3WEAPONLRM10.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3WEAPONLRM15.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3WEAPONLRM20.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3WEAPONLRM5.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3WEAPONMachineGun.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3WEAPONPulseLaser.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3WEAPONSRM2.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3WEAPONSRM4.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3WEAPONSRM6.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3BettyAmmoCritical.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3BettyAmmoDepleted.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3BettyAmmoExplosion.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3BettyAutoShutdown.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3BettyDamaged.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3BettyDestroyed.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW3BettyLowAmmo.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4ExplosionMech1.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4ExplosionMech2.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4WEAPONAC10.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4WEAPONAC2.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4WEAPONAC20.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4WEAPONAC5.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4WEAPONFlamerReload.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4WEAPONLaserLarge.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4WEAPONLaserMedium.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4WEAPONLaserSmall.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4WEAPONPPC.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4MBettyDamageCritical.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4MBettyHeadDamaged.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4MBettyKillAwarded.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4MBettyShuttingDown.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettyArmourBreached.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettyDamageCritical.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettyEjecting.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettyEnemyDetected.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettyEnemyMechDestroyed.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettyHEATApproachingCriticalHeatLevel.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettyHEATHeatCritical.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettyHEATHeatExceedingRecommendedLevel.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettyHEATHeatLevelCriticalShutdownImminent.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettyHEATHeatModerate.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettyHEATHeatNominal.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettyJumpJetFailure.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettyMULTIPLAYERYouHaveBeenDefeated.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettyMULTIPLAYERYouHaveWon.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettyPowerRestoredSystemsOnline.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettyShuttingDown.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettySTARTUPAllFunctioningSystemsNominal.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettySTARTUPReactorOnline.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettySTARTUPSensorsOnline.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettySTARTUPWeaponsSystemsOnline.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettyTargetDestroyed.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="MW4VBettyWeaponDestroyed.wav"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="InternalBlank.png"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="RearBlankArmor.png"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="PrimaryOutput" OutputFile="BlankArmor.png"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="References" OutputFile="LiteDB.dll"/>
+    <ROW ProjectId="{402f560e-6d55-4a05-9ba4-c30a2aff9f0c}" ProjectName="BT_DRS_WinForm" OutputGroup="References" OutputFile="Microsoft.VisualBasic.dll"/>
+  </COMPONENT>
+</DOCUMENT>

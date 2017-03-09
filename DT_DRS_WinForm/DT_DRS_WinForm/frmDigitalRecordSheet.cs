@@ -799,6 +799,17 @@ namespace BT_DRS_WinForm
             AlertColor();
         }
 
+        private void tonsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ApplyDamage = 20/10;
+            DamageLocations = 1;
+            DamageLocationsApplied = 0;
+            AppliedDamage = 0;
+            DamageFactor = 20/10;
+            lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AlertColor();
+        }
+
         #endregion
 
         #region "FUNCTIONS"
@@ -1238,6 +1249,7 @@ namespace BT_DRS_WinForm
             {
                 validateInternalDamage(int.Parse(lblICT.Text), int.Parse(lblICT.Text), txtICT);
             }
+
             if (Heat >= int.Parse(txtHeatSinks.Text))
             {
                 Heat = Heat - int.Parse(txtHeatSinks.Text);
@@ -1245,12 +1257,29 @@ namespace BT_DRS_WinForm
                     pgbHeat.Value = 30;
                 else
                     pgbHeat.Value = Heat;
-
-
             }
             else
                 pgbHeat.Value = 0;
+
             HeatModifiers();
+
+            int PilotDmg = 0;
+            if (checkBox10.Checked && Heat > 25)
+            {
+                PilotDmg = int.Parse(txtHits.Text) + 2;
+                txtHits.Text = PilotDmg.ToString();
+            }
+            else if (checkBox10.Checked && Heat > 15)
+            {
+                PilotDmg = int.Parse(txtHits.Text) + 1;
+                txtHits.Text = PilotDmg.ToString();
+            }
+            if (int.Parse(txtHits.Text) >= 6)
+            {
+                validateInternalDamage(int.Parse(lblICT.Text), int.Parse(lblICT.Text), txtICT);
+            }
+
+
         }
         private void frmDataRecordSheet_Load(object sender, EventArgs e)
         {
@@ -1271,6 +1300,7 @@ namespace BT_DRS_WinForm
             lblEngineHits.Text = "";
             lblGyroHits.Text = "";
             lblLifeSupportHits.Text = "";
+            lblLifeSupportHits2.Text = "";
             lblSensorHits.Text = "";
         }
 
@@ -1721,13 +1751,15 @@ namespace BT_DRS_WinForm
         {
             if (checkBox1.Checked)
             {
-                lblEngineHits.Text = "+5 Heat per Turn";
+                lblEngineHits.Text = "+5  Heat/Turn";
                 checkBox2.Enabled = true;
                 checkBox3.Enabled = false;
+                checkBox1.Enabled = true;
             }
             else
             {
                 lblEngineHits.Text = "";
+                checkBox1.Enabled = true;
                 checkBox2.Enabled = false;
                 checkBox3.Enabled = false;
             }
@@ -1737,20 +1769,25 @@ namespace BT_DRS_WinForm
         {
             if (checkBox2.Checked)
             {
-                lblEngineHits.Text = "+10 Heat per Turn";
+                lblEngineHits.Text = "+10  Heat/Turn";
                 checkBox3.Enabled = true;
+                checkBox1.Enabled = false;
+                checkBox2.Enabled = true ;
             }
             else
             {
-                if (checkBox2.Checked == true)
+                if (checkBox1.Checked == true)
                 {
-                    lblEngineHits.Text = "+5 Heat per Turn";
+                    lblEngineHits.Text = "+5  Heat/Turn";
                     checkBox2.Enabled = true;
                     checkBox3.Enabled = false;
+                    checkBox1.Enabled = true;
                 }
                 else
                 {
                     lblEngineHits.Text = "";
+                    checkBox1.Enabled = true;
+                    checkBox2.Enabled = false;
                     checkBox3.Enabled = false;
                 }
             }
@@ -1813,25 +1850,133 @@ namespace BT_DRS_WinForm
             {
                 if (checkBox2.Checked)
                 {
-                    lblEngineHits.Text = "+10 Heat per Turn";
+                    lblEngineHits.Text = "+10  Heat/Turn";
                     checkBox3.Enabled = true;
+                    checkBox2.Enabled = true;
+                    checkBox1.Enabled = false;
                 }
                 else
                 {
-                    if (checkBox2.Checked == true)
+                    if (checkBox1.Checked == true)
                     {
-                        lblEngineHits.Text = "+5 Heat per Turn";
-                        checkBox2.Enabled = true;
+                        lblEngineHits.Text = "+5 Heat/Turn";
+                        checkBox2.Enabled =true;
+                        checkBox1.Enabled = true;
                         checkBox3.Enabled = false;
                     }
                     else
                     {
                         lblEngineHits.Text = "";
                         checkBox3.Enabled = false;
+                        checkBox2.Enabled = false;
+                        checkBox1.Enabled = true;
                     }
 
                 }
             }
+        }
+
+        private void checkBox6_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox6.Checked)
+            {
+                lblGyroHits.Text = "+3 PSR";
+                checkBox5.Enabled = true;
+                checkBox6.Enabled = true;
+            }
+            else
+            {
+                lblGyroHits.Text = "";
+                checkBox6.Enabled = true;
+                checkBox5.Enabled = false;
+            }
+        }
+
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox5.Checked)
+            {
+                lblGyroHits.Text = "(Fall)+6 PSR";
+                checkBox5.Enabled = true;
+                checkBox6.Enabled = false;
+            }
+            else
+            {
+                if (checkBox6.Checked)
+                {
+                    lblGyroHits.Text = "+3 PSR";
+                    checkBox5.Enabled = true;
+                    checkBox6.Enabled = true;
+                }
+                else
+                {
+                    lblGyroHits.Text = "";
+                    checkBox6.Enabled = true;
+                    checkBox5.Enabled = false;
+                }
+            }
+        }
+
+        private void checkBox9_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox9.Checked)
+            {
+                lblSensorHits.Text = "+2 TH";
+                checkBox8.Enabled = true;
+                checkBox9.Enabled = true;
+            }
+            else
+            {
+                lblSensorHits.Text = "";
+                checkBox9.Enabled = true;
+                checkBox8.Enabled = false;
+            }
+        }
+
+        private void checkBox8_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox8.Checked)
+            {
+                lblSensorHits.Text = "+4 TH";
+                checkBox8.Enabled = true;
+                checkBox9.Enabled = false;
+            }
+            else
+            {
+                if (checkBox9.Checked)
+                {
+                    lblSensorHits.Text = "+2 TH";
+                    checkBox8.Enabled = true;
+                    checkBox9.Enabled = true;
+                }
+                else
+                {
+                    lblSensorHits.Text = "";
+                    checkBox9.Enabled = true;
+                    checkBox8.Enabled = false;
+                }
+            }
+
+        }
+
+        private void checkBox10_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox10.Checked)
+            {
+                lblLifeSupportHits.Text = "+1 Pilot Dmg on H>15";
+                lblLifeSupportHits2.Text = "+2 Pilot Dmg on H>25";
+
+            }
+            else
+            {
+                lblLifeSupportHits.Text = "";
+                lblLifeSupportHits2.Text = "";
+            }
+        }
+
+        private void attackerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
