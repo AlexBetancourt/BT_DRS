@@ -181,6 +181,7 @@
     <Content Include="Catalogs\MechConfigs.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="DRS.db" />
     <None Include="DS_BTDRS.xsc">
       <DependentUpon>DS_BTDRS.xsd</DependentUpon>
     </None>

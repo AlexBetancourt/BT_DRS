@@ -86,3 +86,16 @@ WeaponID|Name|Heat|Damage|Minimum|Short|Medium|Long|Tons|Crits|Ammo|Cost|BV|Weap
 85|Spot Welder|2|5|0|0|0|0|2|1|9999|75000|0|Industrial
 86|Wrecking Ball|0|8|0|0|0|0|4|5|9999|80000|0|Industrial
 87|Heat Sink|0|0|0|0|0|0|1|1|0|0|0|Equipment
+88|Life Support|0|0|0|0|0|0|1|1|0|0|0|Equipment
+89|Sensors|0|0|0|0|0|0|1|1|0|0|0|Equipment
+90|Engine|0|0|0|0|0|0|1|1|0|0|0|Equipment
+91|Gyro|0|0|0|0|0|0|1|1|0|0|0|Equipment
+92|Shoulder|0|0|0|0|0|0|1|1|0|0|0|Equipment
+93|Upper Arm Actuator|0|0|0|0|0|0|1|1|0|0|0|Equipment
+94|Lower Arm Actuator|0|0|0|0|0|0|1|1|0|0|0|Equipment
+95|Hand Actuator|0|0|0|0|0|0|1|1|0|0|0|Equipment
+96|Hip|0|0|0|0|0|0|1|1|0|0|0|Equipment
+97|Upper Leg Actuator|0|0|0|0|0|0|1|1|0|0|0|Equipment
+98|Lower Leg Actuator|0|0|0|0|0|0|1|1|0|0|0|Equipment
+99|Foot Actuator|0|0|0|0|0|0|1|1|0|0|0|Equipment
+100|Roll Again|0|0|0|0|0|0|1|1|0|0|0|Equipment

@@ -329,10 +329,14 @@ namespace BT_DRS_WinForm
                                     WeaponLocationsH.EnsureIndex(x => x.MechID);
                                     var WLocationsH = WeaponLocationsH.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
 
-                                    if (WLocationsH.Count()>0)
+                                    if (WLocationsH.Count() > 0)
                                     {
                                         chklstH.Items.Clear();
                                     }
+                                    else
+                                        button1_Click_1(null,null);
+
+
 
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsH)
                                     {
@@ -348,6 +352,8 @@ namespace BT_DRS_WinForm
                                     {
                                         chklstCT.Items.Clear();
                                     }
+                                    else
+                                        button2_Click_1(null, null);
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsCT)
                                     {
                                         chklstCT.Items.Add(WLoc.WeaponNameID);
@@ -362,6 +368,8 @@ namespace BT_DRS_WinForm
                                     {
                                         chklstLT.Items.Clear();
                                     }
+                                    else
+                                        button8_Click(null, null);
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsLT)
                                     {
                                         chklstLT.Items.Add(WLoc.WeaponNameID);
@@ -377,6 +385,8 @@ namespace BT_DRS_WinForm
                                     {
                                         chklstRT.Items.Clear();
                                     }
+                                    else
+                                        button9_Click(null, null);
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsRT)
                                     {
                                         chklstRT.Items.Add(WLoc.WeaponNameID);
@@ -392,6 +402,8 @@ namespace BT_DRS_WinForm
                                     {
                                         chklstLA.Items.Clear();
                                     }
+                                    else
+                                        button10_Click(null, null);
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsLA)
                                     {
                                         chklstLA.Items.Add(WLoc.WeaponNameID);
@@ -406,6 +418,8 @@ namespace BT_DRS_WinForm
                                     {
                                         chklstRA.Items.Clear();
                                     }
+                                    else
+                                        button11_Click(null, null);
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsRA)
                                     {
                                         chklstRA.Items.Add(WLoc.WeaponNameID);
@@ -420,6 +434,8 @@ namespace BT_DRS_WinForm
                                     {
                                         chklstLL.Items.Clear();
                                     }
+                                    else
+                                        button12_Click(null, null);
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsLL)
                                     {
                                         chklstLL.Items.Add(WLoc.WeaponNameID);
@@ -434,6 +450,8 @@ namespace BT_DRS_WinForm
                                     {
                                         chklstRL.Items.Clear();
                                     }
+                                    else
+                                        button13_Click(null, null);
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsRL)
                                     {
                                         chklstRL.Items.Add(WLoc.WeaponNameID);
@@ -947,12 +965,10 @@ namespace BT_DRS_WinForm
                     //var Mechs = db.GetCollection<DS_BTDRSMechs>("Mechs");
 
                     MechConfigs.EnsureIndex(x => x.Tons);
-                    //                    MessageBox.Show(MechConfigs.Count().ToString());
+                    //MessageBox.Show(MechConfigs.Count().ToString());
 
                     //DS_BTDRSMechConfigs MechConfig = MechConfigs.FindOne(Query.EQ("Tons",txtTons.Text));
                     //DS_BTDRSMechs Mech = Mechs.FindOne(Query.EQ("Model", txtModel.Text));
-
-
 
                     foreach (DS_BTDRSMechConfigs MechConfig in MechConfigs.FindAll())
                     {
@@ -982,7 +998,7 @@ namespace BT_DRS_WinForm
 
         }
         private int indexOfItemUnderMouseToDrop;
-        private int indexOfItemUnderMouseToDrag;
+        //private int indexOfItemUnderMouseToDrag;
         private Point screenOffset;
         private DateTime eventTime;
 

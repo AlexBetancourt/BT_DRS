@@ -457,11 +457,16 @@ namespace BT_DRS_WinForm
                                 MechLocation.LocationID = 19;
                                 MechLocation.HitPoints = int.Parse(values[26]);
                                 MechLocations.Insert(MechLocation);
+
+
+
                             }
                            
                         }
 
-
+                        //WEAPON LOCATIONS
+                        var WeaponLocations = Database.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
+                        WeaponLocations.Delete(Query.All());
 
                         //AMMO
                         var MechConfigsRowsCount = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\MechConfigs.csv"));
