@@ -474,13 +474,19 @@ public partial class DS_BTDRSMechWeaponLocation
 
     private int mechLocationIDField;
 
-    private int weaponIDField;
+    private int mechIDField;
 
-    private int ammoSpentField;
+    private string weaponNameField;
+
+    private int locationIDField;
 
     private bool ammoSpentFieldSpecified;
 
-    private string statusField;
+    private int ammoQtyField;
+
+    private bool ammoQtyFieldSpecified;
+
+    private string ammoTypeField;
 
     /// <comentarios/>
     public int MechWeaponLocationID
@@ -509,30 +515,56 @@ public partial class DS_BTDRSMechWeaponLocation
     }
 
     /// <comentarios/>
-    public int WeaponID
+    public int MechID
     {
         get
         {
-            return this.weaponIDField;
+            return this.mechIDField;
         }
         set
         {
-            this.weaponIDField = value;
+            this.mechIDField = value;
+        }
+    }
+    /// <comentarios/>
+    public string WeaponNameID
+    {
+        get
+        {
+            return this.weaponNameField;
+        }
+        set
+        {
+            this.weaponNameField = value;
         }
     }
 
     /// <comentarios/>
-    public int AmmoSpent
+    public int LocationID
     {
         get
         {
-            return this.ammoSpentField;
+            return this.locationIDField;
         }
         set
         {
-            this.ammoSpentField = value;
+            this.locationIDField = value;
         }
     }
+
+    /// <comentarios/>
+    public int AmmoQty
+    {
+        get
+        {
+            return this.ammoQtyField;
+        }
+        set
+        {
+            this.ammoQtyField = value;
+        }
+    }
+
 
     /// <comentarios/>
     [System.Xml.Serialization.XmlIgnoreAttribute()]
@@ -549,15 +581,29 @@ public partial class DS_BTDRSMechWeaponLocation
     }
 
     /// <comentarios/>
-    public string Status
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool AmmoQtySpecified
     {
         get
         {
-            return this.statusField;
+            return this.ammoQtyFieldSpecified;
         }
         set
         {
-            this.statusField = value;
+            this.ammoQtyFieldSpecified = value;
+        }
+    }
+
+    /// <comentarios/>
+    public string AmmoType
+    {
+        get
+        {
+            return this.ammoTypeField;
+        }
+        set
+        {
+            this.ammoTypeField = value;
         }
     }
 }
@@ -862,8 +908,6 @@ public partial class DS_BTDRSMechConfigs
     }
 
 }
-
-
 
 public partial class DS_BTDRSWeapons
 {

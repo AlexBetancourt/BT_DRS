@@ -67,11 +67,34 @@ namespace BT_DRS_WinForm
                             };
                             MechLocations.Insert(Mechlocation);
 
+                            var WeaponLocations = DataBase.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
+                            var WeaponLocation = new DS_BTDRSMechWeaponLocation { };
+
+                            foreach (var item in chklstH.Items)
+                            {
+                                WeaponLocation.MechID = Mech.MechID;
+                                WeaponLocation.MechLocationID = Mechlocation.MechLocationID;
+                                WeaponLocation.MechWeaponLocationID = WeaponLocations.Count() + 1;
+                                WeaponLocation.WeaponNameID = item.ToString();
+                                WeaponLocation.LocationID = Mechlocation.LocationID;
+                                WeaponLocations.Insert(WeaponLocation);
+                            }
+
                             Mechlocation.MechLocationID = MechLocations.Count() + 1;
                             Mechlocation.MechID = Mech.MechID;
                             Mechlocation.LocationID = 2;
                             Mechlocation.HitPoints = int.Parse(txtCT.Text);
                             MechLocations.Insert(Mechlocation);
+
+                            foreach (var item in chklstCT.Items)
+                            {
+                                WeaponLocation.MechID = Mech.MechID;
+                                WeaponLocation.MechLocationID = Mechlocation.MechLocationID;
+                                WeaponLocation.MechWeaponLocationID = WeaponLocations.Count() + 1;
+                                WeaponLocation.LocationID = Mechlocation.LocationID;
+                                WeaponLocation.WeaponNameID = item.ToString();
+                                WeaponLocations.Insert(WeaponLocation);
+                            }
 
                             Mechlocation.MechLocationID = MechLocations.Count() + 1;
                             Mechlocation.MechID = Mech.MechID;
@@ -79,11 +102,31 @@ namespace BT_DRS_WinForm
                             Mechlocation.HitPoints = int.Parse(txtLT.Text);
                             MechLocations.Insert(Mechlocation);
 
+                            foreach (var item in chklstLT.Items)
+                            {
+                                WeaponLocation.MechID = Mech.MechID;
+                                WeaponLocation.MechLocationID = Mechlocation.MechLocationID;
+                                WeaponLocation.MechWeaponLocationID = WeaponLocations.Count() + 1;
+                                WeaponLocation.LocationID = Mechlocation.LocationID;
+                                WeaponLocation.WeaponNameID = item.ToString();
+                                WeaponLocations.Insert(WeaponLocation);
+                            }
+
                             Mechlocation.MechLocationID = MechLocations.Count() + 1;
                             Mechlocation.MechID = Mech.MechID;
                             Mechlocation.LocationID = 4;
                             Mechlocation.HitPoints = int.Parse(txtRT.Text);
                             MechLocations.Insert(Mechlocation);
+
+                            foreach (var item in chklstRT.Items)
+                            {
+                                WeaponLocation.MechID = Mech.MechID;
+                                WeaponLocation.MechLocationID = Mechlocation.MechLocationID;
+                                WeaponLocation.MechWeaponLocationID = WeaponLocations.Count() + 1;
+                                WeaponLocation.LocationID = Mechlocation.LocationID;
+                                WeaponLocation.WeaponNameID = item.ToString();
+                                WeaponLocations.Insert(WeaponLocation);
+                            }
 
                             Mechlocation.MechLocationID = MechLocations.Count() + 1;
                             Mechlocation.MechID = Mech.MechID;
@@ -91,11 +134,31 @@ namespace BT_DRS_WinForm
                             Mechlocation.HitPoints = int.Parse(txtLA.Text);
                             MechLocations.Insert(Mechlocation);
 
+                            foreach (var item in chklstLA.Items)
+                            {
+                                WeaponLocation.MechID = Mech.MechID;
+                                WeaponLocation.MechLocationID = Mechlocation.MechLocationID;
+                                WeaponLocation.MechWeaponLocationID = WeaponLocations.Count() + 1;
+                                WeaponLocation.LocationID = Mechlocation.LocationID;
+                                WeaponLocation.WeaponNameID = item.ToString();
+                                WeaponLocations.Insert(WeaponLocation);
+                            }
+
                             Mechlocation.MechLocationID = MechLocations.Count() + 1;
                             Mechlocation.MechID = Mech.MechID;
                             Mechlocation.LocationID = 6;
                             Mechlocation.HitPoints = int.Parse(txtRA.Text);
                             MechLocations.Insert(Mechlocation);
+
+                            foreach (var item in chklstRA.Items)
+                            {
+                                WeaponLocation.MechID = Mech.MechID;
+                                WeaponLocation.MechLocationID = Mechlocation.MechLocationID;
+                                WeaponLocation.MechWeaponLocationID = WeaponLocations.Count() + 1;
+                                WeaponLocation.LocationID = Mechlocation.LocationID;
+                                WeaponLocation.WeaponNameID = item.ToString();
+                                WeaponLocations.Insert(WeaponLocation);
+                            }
 
                             Mechlocation.MechLocationID = MechLocations.Count() + 1;
                             Mechlocation.MechID = Mech.MechID;
@@ -103,11 +166,31 @@ namespace BT_DRS_WinForm
                             Mechlocation.HitPoints = int.Parse(txtLL.Text);
                             MechLocations.Insert(Mechlocation);
 
+                            foreach (var item in chklstLL.Items)
+                            {
+                                WeaponLocation.MechID = Mech.MechID;
+                                WeaponLocation.MechLocationID = Mechlocation.MechLocationID;
+                                WeaponLocation.MechWeaponLocationID = WeaponLocations.Count() + 1;
+                                WeaponLocation.LocationID = Mechlocation.LocationID;
+                                WeaponLocation.WeaponNameID = item.ToString();
+                                WeaponLocations.Insert(WeaponLocation);
+                            }
+
                             Mechlocation.MechLocationID = MechLocations.Count() + 1;
                             Mechlocation.MechID = Mech.MechID;
                             Mechlocation.LocationID = 8;
                             Mechlocation.HitPoints = int.Parse(txtRL.Text);
                             MechLocations.Insert(Mechlocation);
+
+                            foreach (var item in chklstRL.Items)
+                            {
+                                WeaponLocation.MechID = Mech.MechID;
+                                WeaponLocation.MechLocationID = Mechlocation.MechLocationID;
+                                WeaponLocation.MechWeaponLocationID = WeaponLocations.Count() + 1;
+                                WeaponLocation.LocationID = Mechlocation.LocationID;
+                                WeaponLocation.WeaponNameID = item.ToString();
+                                WeaponLocations.Insert(WeaponLocation);
+                            }
 
                             Mechlocation.MechLocationID = MechLocations.Count() + 1;
                             Mechlocation.MechID = Mech.MechID;
@@ -177,6 +260,7 @@ namespace BT_DRS_WinForm
 
                             MessageBox.Show("Mech Count: " + Mechs.Count().ToString());
                             MessageBox.Show("Mech Locations Count: " + MechLocations.Count().ToString());
+                            MessageBox.Show("Mech Weapon Locations Count: " + WeaponLocations.Count().ToString());
                         }
                         else
                         {
@@ -237,27 +321,85 @@ namespace BT_DRS_WinForm
                             {
                                 case 1:
                                     txtH.Text = MechLoc.HitPoints.ToString();
+                                    var WeaponLocationsH = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
+                                    WeaponLocationsH.EnsureIndex(x => x.MechID);
+                                    var WLocationsH = WeaponLocationsH.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
+                                    foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsH)
+                                    {
+                                        chklstH.Items.Add(WLoc);
+                                    }
                                     break;
                                 case 2:
                                     txtCT.Text = MechLoc.HitPoints.ToString();
+                                    var WeaponLocationsCT = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
+                                    WeaponLocationsCT.EnsureIndex(x => x.MechID);
+                                    var WLocationsCT = WeaponLocationsCT.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
+                                    foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsCT)
+                                    {
+                                        chklstH.Items.Add(WLoc);
+                                    }
                                     break;
                                 case 3:
                                     txtLT.Text = MechLoc.HitPoints.ToString();
+                                    var WeaponLocationsLT = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
+                                    WeaponLocationsLT.EnsureIndex(x => x.MechID);
+                                    var WLocationsLT = WeaponLocationsLT.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
+                                    foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsLT)
+                                    {
+                                        chklstH.Items.Add(WLoc);
+                                    }
+
                                     break;
                                 case 4:
                                     txtRT.Text = MechLoc.HitPoints.ToString();
+                                    var WeaponLocationsRT = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
+                                    WeaponLocationsRT.EnsureIndex(x => x.MechID);
+                                    var WLocationsRT = WeaponLocationsRT.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
+                                    foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsRT)
+                                    {
+                                        chklstH.Items.Add(WLoc);
+                                    }
+
                                     break;
                                 case 5:
                                     txtLA.Text = MechLoc.HitPoints.ToString();
+                                    var WeaponLocationsLA = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
+                                    WeaponLocationsLA.EnsureIndex(x => x.MechID);
+                                    var WLocationsLA = WeaponLocationsLA.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
+                                    foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsLA)
+                                    {
+                                        chklstH.Items.Add(WLoc);
+                                    }
                                     break;
                                 case 6:
                                     txtRA.Text = MechLoc.HitPoints.ToString();
+                                    var WeaponLocationsRA = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
+                                    WeaponLocationsRA.EnsureIndex(x => x.MechID);
+                                    var WLocationsRA = WeaponLocationsRA.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
+                                    foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsRA)
+                                    {
+                                        chklstH.Items.Add(WLoc);
+                                    }
                                     break;
                                 case 7:
                                     txtLL.Text = MechLoc.HitPoints.ToString();
+                                    var WeaponLocationsLL = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
+                                    WeaponLocationsLL.EnsureIndex(x => x.MechID);
+                                    var WLocationsLL = WeaponLocationsLL.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
+                                    foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsLL)
+                                    {
+                                        chklstH.Items.Add(WLoc);
+                                    }
                                     break;
                                 case 8:
                                     txtRL.Text = MechLoc.HitPoints.ToString();
+                                    var WeaponLocationsRL = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
+                                    WeaponLocationsRL.EnsureIndex(x => x.MechID);
+                                    var WLocationsRL = WeaponLocationsRL.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
+                                    foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsRL)
+                                    {
+                                        chklstH.Items.Add(WLoc);
+                                    }
                                     break;
                                 case 9:
                                     txtCTR.Text = MechLoc.HitPoints.ToString();
@@ -473,6 +615,11 @@ namespace BT_DRS_WinForm
 
                         MechLocations.Delete(Query.EQ("MechID", Mech.MechID));
 
+                        var WeaponLocations = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
+                        var WeaponLocation = new DS_BTDRSMechWeaponLocation { };
+
+                        WeaponLocations.Delete(Query.EQ("MechID",Mech.MechID));
+
                         var Mechlocation = new DS_BTDRSMechLocation
                         {
                             MechLocationID = MechLocations.Count() + 1,
@@ -483,11 +630,31 @@ namespace BT_DRS_WinForm
                         };
                         MechLocations.Insert(Mechlocation);
 
+                        foreach (var item in chklstH.Items)
+                        {
+                            WeaponLocation.MechID = Mech.MechID;
+                            WeaponLocation.MechLocationID = Mechlocation.MechLocationID;
+                            WeaponLocation.MechWeaponLocationID = WeaponLocations.Count() + 1;
+                            WeaponLocation.WeaponNameID = item.ToString();
+                            WeaponLocation.LocationID = Mechlocation.LocationID;
+                            WeaponLocations.Insert(WeaponLocation);
+                        }
+
                         Mechlocation.MechLocationID = MechLocations.Count() + 1;
                         Mechlocation.MechID = Mech.MechID;
                         Mechlocation.LocationID = 2;
                         Mechlocation.HitPoints = int.Parse(txtCT.Text);
                         MechLocations.Insert(Mechlocation);
+
+                        foreach (var item in chklstCT.Items)
+                        {
+                            WeaponLocation.MechID = Mech.MechID;
+                            WeaponLocation.MechLocationID = Mechlocation.MechLocationID;
+                            WeaponLocation.MechWeaponLocationID = WeaponLocations.Count() + 1;
+                            WeaponLocation.WeaponNameID = item.ToString();
+                            WeaponLocation.LocationID = Mechlocation.LocationID;
+                            WeaponLocations.Insert(WeaponLocation);
+                        }
 
                         Mechlocation.MechLocationID = MechLocations.Count() + 1;
                         Mechlocation.MechID = Mech.MechID;
@@ -495,11 +662,31 @@ namespace BT_DRS_WinForm
                         Mechlocation.HitPoints = int.Parse(txtLT.Text);
                         MechLocations.Insert(Mechlocation);
 
+                        foreach (var item in chklstLT.Items)
+                        {
+                            WeaponLocation.MechID = Mech.MechID;
+                            WeaponLocation.MechLocationID = Mechlocation.MechLocationID;
+                            WeaponLocation.MechWeaponLocationID = WeaponLocations.Count() + 1;
+                            WeaponLocation.WeaponNameID = item.ToString();
+                            WeaponLocation.LocationID = Mechlocation.LocationID;
+                            WeaponLocations.Insert(WeaponLocation);
+                        }
+
                         Mechlocation.MechLocationID = MechLocations.Count() + 1;
                         Mechlocation.MechID = Mech.MechID;
                         Mechlocation.LocationID = 4;
                         Mechlocation.HitPoints = int.Parse(txtRT.Text);
                         MechLocations.Insert(Mechlocation);
+
+                        foreach (var item in chklstRT.Items)
+                        {
+                            WeaponLocation.MechID = Mech.MechID;
+                            WeaponLocation.MechLocationID = Mechlocation.MechLocationID;
+                            WeaponLocation.MechWeaponLocationID = WeaponLocations.Count() + 1;
+                            WeaponLocation.WeaponNameID = item.ToString();
+                            WeaponLocation.LocationID = Mechlocation.LocationID;
+                            WeaponLocations.Insert(WeaponLocation);
+                        }
 
                         Mechlocation.MechLocationID = MechLocations.Count() + 1;
                         Mechlocation.MechID = Mech.MechID;
@@ -507,11 +694,31 @@ namespace BT_DRS_WinForm
                         Mechlocation.HitPoints = int.Parse(txtLA.Text);
                         MechLocations.Insert(Mechlocation);
 
+                        foreach (var item in chklstLA.Items)
+                        {
+                            WeaponLocation.MechID = Mech.MechID;
+                            WeaponLocation.MechLocationID = Mechlocation.MechLocationID;
+                            WeaponLocation.MechWeaponLocationID = WeaponLocations.Count() + 1;
+                            WeaponLocation.WeaponNameID = item.ToString();
+                            WeaponLocation.LocationID = Mechlocation.LocationID;
+                            WeaponLocations.Insert(WeaponLocation);
+                        }
+
                         Mechlocation.MechLocationID = MechLocations.Count() + 1;
                         Mechlocation.MechID = Mech.MechID;
                         Mechlocation.LocationID = 6;
                         Mechlocation.HitPoints = int.Parse(txtRA.Text);
                         MechLocations.Insert(Mechlocation);
+
+                        foreach (var item in chklstRA.Items)
+                        {
+                            WeaponLocation.MechID = Mech.MechID;
+                            WeaponLocation.MechLocationID = Mechlocation.MechLocationID;
+                            WeaponLocation.MechWeaponLocationID = WeaponLocations.Count() + 1;
+                            WeaponLocation.WeaponNameID = item.ToString();
+                            WeaponLocation.LocationID = Mechlocation.LocationID;
+                            WeaponLocations.Insert(WeaponLocation);
+                        }
 
                         Mechlocation.MechLocationID = MechLocations.Count() + 1;
                         Mechlocation.MechID = Mech.MechID;
@@ -519,11 +726,31 @@ namespace BT_DRS_WinForm
                         Mechlocation.HitPoints = int.Parse(txtLL.Text);
                         MechLocations.Insert(Mechlocation);
 
+                        foreach (var item in chklstLL.Items)
+                        {
+                            WeaponLocation.MechID = Mech.MechID;
+                            WeaponLocation.MechLocationID = Mechlocation.MechLocationID;
+                            WeaponLocation.MechWeaponLocationID = WeaponLocations.Count() + 1;
+                            WeaponLocation.WeaponNameID = item.ToString();
+                            WeaponLocation.LocationID = Mechlocation.LocationID;
+                            WeaponLocations.Insert(WeaponLocation);
+                        }
+
                         Mechlocation.MechLocationID = MechLocations.Count() + 1;
                         Mechlocation.MechID = Mech.MechID;
                         Mechlocation.LocationID = 8;
                         Mechlocation.HitPoints = int.Parse(txtRL.Text);
                         MechLocations.Insert(Mechlocation);
+
+                        foreach (var item in chklstRL.Items)
+                        {
+                            WeaponLocation.MechID = Mech.MechID;
+                            WeaponLocation.MechLocationID = Mechlocation.MechLocationID;
+                            WeaponLocation.MechWeaponLocationID = WeaponLocations.Count() + 1;
+                            WeaponLocation.WeaponNameID = item.ToString();
+                            WeaponLocation.LocationID = Mechlocation.LocationID;
+                            WeaponLocations.Insert(WeaponLocation);
+                        }
 
                         Mechlocation.MechLocationID = MechLocations.Count() + 1;
                         Mechlocation.MechID = Mech.MechID;
