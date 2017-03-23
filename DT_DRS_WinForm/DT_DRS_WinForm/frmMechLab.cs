@@ -328,6 +328,12 @@ namespace BT_DRS_WinForm
                                     var WeaponLocationsH = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
                                     WeaponLocationsH.EnsureIndex(x => x.MechID);
                                     var WLocationsH = WeaponLocationsH.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
+
+                                    if (WLocationsH.Count()>0)
+                                    {
+                                        chklstH.Items.Clear();
+                                    }
+
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsH)
                                     {
                                         chklstH.Items.Add(WLoc.WeaponNameID);
@@ -338,6 +344,10 @@ namespace BT_DRS_WinForm
                                     var WeaponLocationsCT = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
                                     WeaponLocationsCT.EnsureIndex(x => x.MechID);
                                     var WLocationsCT = WeaponLocationsCT.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
+                                    if (WLocationsCT.Count() > 0)
+                                    {
+                                        chklstCT.Items.Clear();
+                                    }
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsCT)
                                     {
                                         chklstCT.Items.Add(WLoc.WeaponNameID);
@@ -348,6 +358,10 @@ namespace BT_DRS_WinForm
                                     var WeaponLocationsLT = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
                                     WeaponLocationsLT.EnsureIndex(x => x.MechID);
                                     var WLocationsLT = WeaponLocationsLT.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
+                                    if (WLocationsLT.Count() > 0)
+                                    {
+                                        chklstLT.Items.Clear();
+                                    }
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsLT)
                                     {
                                         chklstLT.Items.Add(WLoc.WeaponNameID);
@@ -359,6 +373,10 @@ namespace BT_DRS_WinForm
                                     var WeaponLocationsRT = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
                                     WeaponLocationsRT.EnsureIndex(x => x.MechID);
                                     var WLocationsRT = WeaponLocationsRT.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
+                                    if (WLocationsRT.Count() > 0)
+                                    {
+                                        chklstRT.Items.Clear();
+                                    }
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsRT)
                                     {
                                         chklstRT.Items.Add(WLoc.WeaponNameID);
@@ -370,6 +388,10 @@ namespace BT_DRS_WinForm
                                     var WeaponLocationsLA = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
                                     WeaponLocationsLA.EnsureIndex(x => x.MechID);
                                     var WLocationsLA = WeaponLocationsLA.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
+                                    if (WLocationsLA.Count() > 0)
+                                    {
+                                        chklstLA.Items.Clear();
+                                    }
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsLA)
                                     {
                                         chklstLA.Items.Add(WLoc.WeaponNameID);
@@ -380,6 +402,10 @@ namespace BT_DRS_WinForm
                                     var WeaponLocationsRA = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
                                     WeaponLocationsRA.EnsureIndex(x => x.MechID);
                                     var WLocationsRA = WeaponLocationsRA.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
+                                    if (WLocationsRA.Count() > 0)
+                                    {
+                                        chklstRA.Items.Clear();
+                                    }
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsRA)
                                     {
                                         chklstRA.Items.Add(WLoc.WeaponNameID);
@@ -390,9 +416,13 @@ namespace BT_DRS_WinForm
                                     var WeaponLocationsLL = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
                                     WeaponLocationsLL.EnsureIndex(x => x.MechID);
                                     var WLocationsLL = WeaponLocationsLL.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
+                                    if (WLocationsLL.Count() > 0)
+                                    {
+                                        chklstLL.Items.Clear();
+                                    }
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsLL)
                                     {
-                                        chklstH.Items.Add(WLoc.WeaponNameID);
+                                        chklstLL.Items.Add(WLoc.WeaponNameID);
                                     }
                                     break;
                                 case 8:
@@ -400,9 +430,13 @@ namespace BT_DRS_WinForm
                                     var WeaponLocationsRL = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
                                     WeaponLocationsRL.EnsureIndex(x => x.MechID);
                                     var WLocationsRL = WeaponLocationsRL.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
+                                    if (WLocationsRL.Count() > 0)
+                                    {
+                                        chklstRL.Items.Clear();
+                                    }
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsRL)
                                     {
-                                        chklstH.Items.Add(WLoc.WeaponNameID);
+                                        chklstRL.Items.Add(WLoc.WeaponNameID);
                                     }
                                     break;
                                 case 9:
@@ -1016,7 +1050,10 @@ namespace BT_DRS_WinForm
                 }
                 else
                 {
-                    chklstH.Items.Add(e.Data.GetData(DataFormats.Text));
+                    if (chklstH.Items.Count < 6)
+                        chklstH.Items.Add(e.Data.GetData(DataFormats.Text));
+                    else
+                        MessageBox.Show("Can't add any more components to this location!", "INVALID!", MessageBoxButtons.OK);
                 }
 
 
@@ -1195,7 +1232,10 @@ namespace BT_DRS_WinForm
                 }
                 else
                 {
-                    chklstCT.Items.Add(e.Data.GetData(DataFormats.Text));
+                    if (chklstCT.Items.Count < 12)
+                        chklstCT.Items.Add(e.Data.GetData(DataFormats.Text));
+                    else
+                        MessageBox.Show("Can't add any more components to this location!", "INVALID!", MessageBoxButtons.OK);
                 }
 
 
@@ -1318,7 +1358,10 @@ namespace BT_DRS_WinForm
                 }
                 else
                 {
-                    chklstLT.Items.Add(e.Data.GetData(DataFormats.Text));
+                    if (chklstLT.Items.Count < 12)
+                        chklstLT.Items.Add(e.Data.GetData(DataFormats.Text));
+                    else
+                        MessageBox.Show("Can't add any more components to this location!", "INVALID!", MessageBoxButtons.OK);
                 }
 
 
@@ -1424,7 +1467,10 @@ namespace BT_DRS_WinForm
                 }
                 else
                 {
-                    chklstRT.Items.Add(e.Data.GetData(DataFormats.Text));
+                    if (chklstRT.Items.Count < 12)
+                        chklstRT.Items.Add(e.Data.GetData(DataFormats.Text));
+                    else
+                        MessageBox.Show("Can't add any more components to this location!", "INVALID!", MessageBoxButtons.OK);
                 }
 
 
@@ -1544,7 +1590,10 @@ namespace BT_DRS_WinForm
                 }
                 else
                 {
-                    chklstLA.Items.Add(e.Data.GetData(DataFormats.Text));
+                    if (chklstLA.Items.Count < 6)
+                        chklstLA.Items.Add(e.Data.GetData(DataFormats.Text));
+                    else
+                        MessageBox.Show("Can't add any more components to this location!", "INVALID!", MessageBoxButtons.OK);
                 }
 
 
@@ -1664,7 +1713,10 @@ namespace BT_DRS_WinForm
                 }
                 else
                 {
-                    chklstRA.Items.Add(e.Data.GetData(DataFormats.Text));
+                    if (chklstRA.Items.Count < 6)
+                        chklstRA.Items.Add(e.Data.GetData(DataFormats.Text));
+                    else
+                        MessageBox.Show("Can't add any more components to this location!", "INVALID!", MessageBoxButtons.OK);
                 }
 
 
@@ -1784,7 +1836,10 @@ namespace BT_DRS_WinForm
                 }
                 else
                 {
-                    chklstLL.Items.Add(e.Data.GetData(DataFormats.Text));
+                    if (chklstLL.Items.Count < 6)
+                        chklstLL.Items.Add(e.Data.GetData(DataFormats.Text));
+                    else
+                        MessageBox.Show("Can't add any more components to this location!", "INVALID!", MessageBoxButtons.OK);
                 }
 
 
@@ -1904,7 +1959,10 @@ namespace BT_DRS_WinForm
                 }
                 else
                 {
-                    chklstRL.Items.Add(e.Data.GetData(DataFormats.Text));
+                    if (chklstRL.Items.Count < 6)
+                        chklstRL.Items.Add(e.Data.GetData(DataFormats.Text));
+                    else
+                        MessageBox.Show("Can't add any more components to this location!", "INVALID!", MessageBoxButtons.OK);
                 }
 
 
@@ -1922,5 +1980,112 @@ namespace BT_DRS_WinForm
         }
 
         #endregion
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            chklstRL.Items.Clear();
+            chklstRL.Items.Add("Hip");
+            chklstRL.Items.Add("Upper Leg Actuator");
+            chklstRL.Items.Add("Lower Leg Actuator");
+            chklstRL.Items.Add("Foot Actuator");
+            chklstRL.Items.Add("Roll Again");
+            chklstRL.Items.Add("Roll Again");
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            chklstLL.Items.Clear();
+            chklstLL.Items.Add("Hip");
+            chklstLL.Items.Add("Upper Leg Actuator");
+            chklstLL.Items.Add("Lower Leg Actuator");
+            chklstLL.Items.Add("Foot Actuator");
+            chklstLL.Items.Add("Roll Again");
+            chklstLL.Items.Add("Roll Again");
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            chklstRA.Items.Clear();
+            chklstRA.Items.Add("Shoulder");
+            chklstRA.Items.Add("Upper Arm Actuator");
+            chklstRA.Items.Add("Lower Arm Actuator");
+            chklstRA.Items.Add("Hand Actuator");
+            chklstRA.Items.Add("Roll Again");
+            chklstRA.Items.Add("Roll Again");
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            chklstLA.Items.Clear();
+            chklstLA.Items.Add("Shoulder");
+            chklstLA.Items.Add("Upper Arm Actuator");
+            chklstLA.Items.Add("Lower Arm Actuator");
+            chklstLA.Items.Add("Hand Actuator");
+            chklstLA.Items.Add("Roll Again");
+            chklstLA.Items.Add("Roll Again");
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            chklstRT.Items.Clear();
+            chklstRT.Items.Add("Roll Again");
+            chklstRT.Items.Add("Roll Again");
+            chklstRT.Items.Add("Roll Again");
+            chklstRT.Items.Add("Roll Again");
+            chklstRT.Items.Add("Roll Again");
+            chklstRT.Items.Add("Roll Again");
+            chklstRT.Items.Add("Roll Again");
+            chklstRT.Items.Add("Roll Again");
+            chklstRT.Items.Add("Roll Again");
+            chklstRT.Items.Add("Roll Again");
+            chklstRT.Items.Add("Roll Again");
+            chklstRT.Items.Add("Roll Again");
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            chklstLT.Items.Clear();
+            chklstLT.Items.Add("Roll Again");
+            chklstLT.Items.Add("Roll Again");
+            chklstLT.Items.Add("Roll Again");
+            chklstLT.Items.Add("Roll Again");
+            chklstLT.Items.Add("Roll Again");
+            chklstLT.Items.Add("Roll Again");
+            chklstLT.Items.Add("Roll Again");
+            chklstLT.Items.Add("Roll Again");
+            chklstLT.Items.Add("Roll Again");
+            chklstLT.Items.Add("Roll Again");
+            chklstLT.Items.Add("Roll Again");
+            chklstLT.Items.Add("Roll Again");
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            chklstCT.Items.Clear();
+            chklstCT.Items.Add("Engine");
+            chklstCT.Items.Add("Engine");
+            chklstCT.Items.Add("Engine");
+            chklstCT.Items.Add("Gyro");
+            chklstCT.Items.Add("Gyro");
+            chklstCT.Items.Add("Gyro");
+            chklstCT.Items.Add("Gyro");
+            chklstCT.Items.Add("Engine");
+            chklstCT.Items.Add("Engine");
+            chklstCT.Items.Add("Engine");
+            chklstCT.Items.Add("Roll Again");
+            chklstCT.Items.Add("Roll Again");
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            chklstH.Items.Clear();
+            chklstH.Items.Add("Life Support");
+            chklstH.Items.Add("Sensors");
+            chklstH.Items.Add("Cockpit");
+            chklstH.Items.Add("Roll Again");
+            chklstH.Items.Add("Sensors");
+            chklstH.Items.Add("Life Support");
+        }
     }
 }

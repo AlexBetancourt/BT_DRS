@@ -155,6 +155,14 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cmdRefresh = new System.Windows.Forms.Button();
             this.cmdDelete = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
             this.groupBox6.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabHead.SuspendLayout();
@@ -216,6 +224,7 @@
             // 
             // tabHead
             // 
+            this.tabHead.Controls.Add(this.button1);
             this.tabHead.Controls.Add(this.label25);
             this.tabHead.Controls.Add(this.label23);
             this.tabHead.Controls.Add(this.label22);
@@ -320,6 +329,7 @@
             // 
             // tabCenterTorso
             // 
+            this.tabCenterTorso.Controls.Add(this.button2);
             this.tabCenterTorso.Controls.Add(this.label2);
             this.tabCenterTorso.Controls.Add(this.label27);
             this.tabCenterTorso.Controls.Add(this.label29);
@@ -429,6 +439,7 @@
             // 
             // tabLeftTorso
             // 
+            this.tabLeftTorso.Controls.Add(this.button8);
             this.tabLeftTorso.Controls.Add(this.label3);
             this.tabLeftTorso.Controls.Add(this.label31);
             this.tabLeftTorso.Controls.Add(this.label32);
@@ -513,6 +524,19 @@
             this.chklstLT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chklstLT.FormattingEnabled = true;
             this.chklstLT.HorizontalScrollbar = true;
+            this.chklstLT.Items.AddRange(new object[] {
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again"});
             this.chklstLT.Location = new System.Drawing.Point(8, 27);
             this.chklstLT.Name = "chklstLT";
             this.chklstLT.Size = new System.Drawing.Size(213, 319);
@@ -524,6 +548,7 @@
             // 
             // tabRightTorso
             // 
+            this.tabRightTorso.Controls.Add(this.button9);
             this.tabRightTorso.Controls.Add(this.label4);
             this.tabRightTorso.Controls.Add(this.label34);
             this.tabRightTorso.Controls.Add(this.label35);
@@ -608,6 +633,19 @@
             this.chklstRT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chklstRT.FormattingEnabled = true;
             this.chklstRT.HorizontalScrollbar = true;
+            this.chklstRT.Items.AddRange(new object[] {
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again"});
             this.chklstRT.Location = new System.Drawing.Point(8, 27);
             this.chklstRT.Name = "chklstRT";
             this.chklstRT.Size = new System.Drawing.Size(216, 319);
@@ -619,6 +657,7 @@
             // 
             // tabLeftArm
             // 
+            this.tabLeftArm.Controls.Add(this.button10);
             this.tabLeftArm.Controls.Add(this.label5);
             this.tabLeftArm.Controls.Add(this.label41);
             this.tabLeftArm.Controls.Add(this.label42);
@@ -721,6 +760,7 @@
             // 
             // tabRightArm
             // 
+            this.tabRightArm.Controls.Add(this.button11);
             this.tabRightArm.Controls.Add(this.label16);
             this.tabRightArm.Controls.Add(this.label44);
             this.tabRightArm.Controls.Add(this.label45);
@@ -823,6 +863,7 @@
             // 
             // tabLeftLeg
             // 
+            this.tabLeftLeg.Controls.Add(this.button12);
             this.tabLeftLeg.Controls.Add(this.label19);
             this.tabLeftLeg.Controls.Add(this.label47);
             this.tabLeftLeg.Controls.Add(this.label48);
@@ -925,6 +966,7 @@
             // 
             // tabRightLeg
             // 
+            this.tabRightLeg.Controls.Add(this.button13);
             this.tabRightLeg.Controls.Add(this.label20);
             this.tabRightLeg.Controls.Add(this.label50);
             this.tabRightLeg.Controls.Add(this.label51);
@@ -942,7 +984,7 @@
             // label20
             // 
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(231, 160);
+            this.label20.Location = new System.Drawing.Point(229, 160);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(24, 23);
             this.label20.TabIndex = 22;
@@ -1657,6 +1699,86 @@
             this.cmdDelete.UseVisualStyleBackColor = true;
             this.cmdDelete.Click += new System.EventHandler(this.cmdDelete_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 405);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(184, 41);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Reset Location Components";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(6, 405);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(184, 41);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "Reset Location Components";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(6, 405);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(184, 41);
+            this.button8.TabIndex = 23;
+            this.button8.Text = "Reset Location Components";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(6, 405);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(184, 41);
+            this.button9.TabIndex = 23;
+            this.button9.Text = "Reset Location Components";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(6, 405);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(184, 41);
+            this.button10.TabIndex = 23;
+            this.button10.Text = "Reset Location Components";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(6, 405);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(184, 41);
+            this.button11.TabIndex = 23;
+            this.button11.Text = "Reset Location Components";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(6, 405);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(184, 41);
+            this.button12.TabIndex = 23;
+            this.button12.Text = "Reset Location Components";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(6, 405);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(184, 41);
+            this.button13.TabIndex = 23;
+            this.button13.Text = "Reset Location Components";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
             // frmMechLab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1835,5 +1957,13 @@
         private System.Windows.Forms.CheckedListBox chklstComponentsRL;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.CheckedListBox chklstRL;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
     }
 }
