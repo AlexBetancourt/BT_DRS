@@ -1374,84 +1374,92 @@ namespace BT_DRS_WinForm
                         {
                             case 1:
                                 lblH.Text = MechLoc.HitPoints.ToString();
+                                chklstH.Items.Clear();
                                 var WeaponLocationsH = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
                                 WeaponLocationsH.EnsureIndex(x => x.MechID);
                                 var WLocationsH = WeaponLocationsH.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
                                 foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsH)
                                 {
-                                    chklstH.Items.Add(WLoc);
+                                    chklstH.Items.Add(WLoc.WeaponNameID);
                                 }
                                 break;
                             case 2:
                                 lblCT.Text = MechLoc.HitPoints.ToString();
+                                chklstCT.Items.Clear();
                                 var WeaponLocationsCT = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
                                 WeaponLocationsCT.EnsureIndex(x => x.MechID);
                                 var WLocationsCT = WeaponLocationsCT.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
                                 foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsCT)
                                 {
-                                    chklstH.Items.Add(WLoc);
+                                    chklstCT.Items.Add(WLoc.WeaponNameID);
                                 }
                                 break;
                             case 3:
                                 lblLT.Text = MechLoc.HitPoints.ToString();
+                                chklstLT.Items.Clear();
                                 var WeaponLocationsLT = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
                                 WeaponLocationsLT.EnsureIndex(x => x.MechID);
                                 var WLocationsLT = WeaponLocationsLT.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
                                 foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsLT)
                                 {
-                                    chklstH.Items.Add(WLoc);
+                                    chklstLT.Items.Add(WLoc.WeaponNameID);
                                 }
 
                                 break;
                             case 4:
                                 lblRT.Text = MechLoc.HitPoints.ToString();
+                                chklstRT.Items.Clear();
                                 var WeaponLocationsRT = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
                                 WeaponLocationsRT.EnsureIndex(x => x.MechID);
                                 var WLocationsRT = WeaponLocationsRT.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
                                 foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsRT)
                                 {
-                                    chklstH.Items.Add(WLoc);
+                                    chklstRT.Items.Add(WLoc.WeaponNameID);
                                 }
 
                                 break;
                             case 5:
                                 lblLA.Text = MechLoc.HitPoints.ToString();
+                                chklstLA.Items.Clear();
                                 var WeaponLocationsLA = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
                                 WeaponLocationsLA.EnsureIndex(x => x.MechID);
                                 var WLocationsLA = WeaponLocationsLA.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
                                 foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsLA)
                                 {
-                                    chklstH.Items.Add(WLoc);
+                                    chklstLA.Items.Add(WLoc.WeaponNameID);
                                 }
                                 break;
                             case 6:
                                 lblRA.Text = MechLoc.HitPoints.ToString();
+                                chklstRA.Items.Clear();
                                 var WeaponLocationsRA = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
                                 WeaponLocationsRA.EnsureIndex(x => x.MechID);
                                 var WLocationsRA = WeaponLocationsRA.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
                                 foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsRA)
                                 {
-                                    chklstH.Items.Add(WLoc);
+                                    chklstRA.Items.Add(WLoc.WeaponNameID);
                                 }
                                 break;
                             case 7:
                                 lblLL.Text = MechLoc.HitPoints.ToString();
+                                chklstLL.Items.Clear();
                                 var WeaponLocationsLL = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
                                 WeaponLocationsLL.EnsureIndex(x => x.MechID);
                                 var WLocationsLL = WeaponLocationsLL.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
                                 foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsLL)
                                 {
-                                    chklstH.Items.Add(WLoc);
+                                    chklstLL.Items.Add(WLoc.WeaponNameID);
                                 }
                                 break;
                             case 8:
                                 lblRL.Text = MechLoc.HitPoints.ToString();
+                                chklstRL.Items.Clear();
                                 var WeaponLocationsRL = db.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
                                 WeaponLocationsRL.EnsureIndex(x => x.MechID);
                                 var WLocationsRL = WeaponLocationsRL.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
                                 foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsRL)
                                 {
-                                    chklstH.Items.Add(WLoc);
+                                    chklstRL.Items.Add(WLoc.WeaponNameID);
                                 }
                                 break;
                             case 9:

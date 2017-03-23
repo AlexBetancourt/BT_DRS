@@ -311,6 +311,10 @@ namespace BT_DRS_WinForm
                         nmTons.Value = decimal.Parse(Mech.Tons.ToString());
                         txtName.Text = Mech.Name.ToString();
 
+                        
+
+
+
                         var MechLocations = db.GetCollection<DS_BTDRSMechLocation>("MechLocations");
                         MechLocations.EnsureIndex(x => x.MechID);
 
@@ -326,7 +330,7 @@ namespace BT_DRS_WinForm
                                     var WLocationsH = WeaponLocationsH.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsH)
                                     {
-                                        chklstH.Items.Add(WLoc);
+                                        chklstH.Items.Add(WLoc.WeaponNameID);
                                     }
                                     break;
                                 case 2:
@@ -336,7 +340,7 @@ namespace BT_DRS_WinForm
                                     var WLocationsCT = WeaponLocationsCT.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsCT)
                                     {
-                                        chklstH.Items.Add(WLoc);
+                                        chklstCT.Items.Add(WLoc.WeaponNameID);
                                     }
                                     break;
                                 case 3:
@@ -346,7 +350,7 @@ namespace BT_DRS_WinForm
                                     var WLocationsLT = WeaponLocationsLT.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsLT)
                                     {
-                                        chklstH.Items.Add(WLoc);
+                                        chklstLT.Items.Add(WLoc.WeaponNameID);
                                     }
 
                                     break;
@@ -357,7 +361,7 @@ namespace BT_DRS_WinForm
                                     var WLocationsRT = WeaponLocationsRT.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsRT)
                                     {
-                                        chklstH.Items.Add(WLoc);
+                                        chklstRT.Items.Add(WLoc.WeaponNameID);
                                     }
 
                                     break;
@@ -368,7 +372,7 @@ namespace BT_DRS_WinForm
                                     var WLocationsLA = WeaponLocationsLA.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsLA)
                                     {
-                                        chklstH.Items.Add(WLoc);
+                                        chklstLA.Items.Add(WLoc.WeaponNameID);
                                     }
                                     break;
                                 case 6:
@@ -378,7 +382,7 @@ namespace BT_DRS_WinForm
                                     var WLocationsRA = WeaponLocationsRA.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsRA)
                                     {
-                                        chklstH.Items.Add(WLoc);
+                                        chklstRA.Items.Add(WLoc.WeaponNameID);
                                     }
                                     break;
                                 case 7:
@@ -388,7 +392,7 @@ namespace BT_DRS_WinForm
                                     var WLocationsLL = WeaponLocationsLL.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsLL)
                                     {
-                                        chklstH.Items.Add(WLoc);
+                                        chklstH.Items.Add(WLoc.WeaponNameID);
                                     }
                                     break;
                                 case 8:
@@ -398,7 +402,7 @@ namespace BT_DRS_WinForm
                                     var WLocationsRL = WeaponLocationsRL.Find(Query.And(Query.EQ("MechID", Mech.MechID), Query.EQ("LocationID", MechLoc.LocationID)));
                                     foreach (DS_BTDRSMechWeaponLocation WLoc in WLocationsRL)
                                     {
-                                        chklstH.Items.Add(WLoc);
+                                        chklstH.Items.Add(WLoc.WeaponNameID);
                                     }
                                     break;
                                 case 9:
