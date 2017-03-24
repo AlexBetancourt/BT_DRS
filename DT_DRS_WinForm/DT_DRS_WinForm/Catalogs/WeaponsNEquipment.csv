@@ -98,4 +98,5 @@ WeaponID|Name|Heat|Damage|Minimum|Short|Medium|Long|Tons|Crits|Ammo|Cost|BV|Weap
 97|Upper Leg Actuator|0|0|0|0|0|0|1|1|0|0|0|Equipment
 98|Lower Leg Actuator|0|0|0|0|0|0|1|1|0|0|0|Equipment
 99|Foot Actuator|0|0|0|0|0|0|1|1|0|0|0|Equipment
-100|Roll Again|0|0|0|0|0|0|1|1|0|0|0|Equipment
+100|Jump Jet|0|0|0|0|0|0|1|1|0|0|0|Equipment
+101|Roll Again|0|0|0|0|0|0|1|1|0|0|0|Equipment

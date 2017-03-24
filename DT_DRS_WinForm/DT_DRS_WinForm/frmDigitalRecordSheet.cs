@@ -318,13 +318,14 @@ namespace BT_DRS_WinForm
         private void toolStripMenuItem6_Click(object sender, EventArgs e)
         {
 
-            ApplyDamage = 2;
+
             ApplyDamage = 6;
             DamageLocations = 3;
             DamageLocationsApplied = 0;
             DamageFactor = 2;
             AppliedDamage = 0;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -341,6 +342,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 2;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -357,6 +359,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 2;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -369,6 +372,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 8;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -381,6 +385,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 10;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -393,8 +398,16 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 5;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
+
         }
+        int TotalDamage = 0;
+        private void AccumulatedDamage(int damage)
+        {
+            TotalDamage = TotalDamage + damage;
+        }
+
 
         private void smallLaserToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -405,6 +418,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 3;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -417,6 +431,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 2;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -429,6 +444,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 5;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -441,6 +457,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 10;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -453,6 +470,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 20;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -465,6 +483,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 1;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -477,6 +496,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 2;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -489,6 +509,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 3;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -501,6 +522,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 4;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -513,6 +535,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 5;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -525,6 +548,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 3;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -537,6 +561,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 4;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -549,6 +574,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 5;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
 
         }
@@ -563,6 +589,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 5;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -575,6 +602,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 5;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -587,6 +615,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 5;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -599,6 +628,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 5;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -611,6 +641,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 5;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -623,6 +654,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 5;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -635,6 +667,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 5;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -647,6 +680,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 5;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -659,6 +693,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 5;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -671,6 +706,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 5;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -683,6 +719,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 5;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -695,6 +732,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 5;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -707,6 +745,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 2;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
 
         }
@@ -720,6 +759,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 2;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -732,6 +772,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 2;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
 
         }
@@ -745,6 +786,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 2;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
 
         }
@@ -758,6 +800,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 2;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
 
         }
@@ -771,6 +814,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 2;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
 
         }
@@ -784,6 +828,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 2;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -796,6 +841,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 2;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -807,6 +853,7 @@ namespace BT_DRS_WinForm
             AppliedDamage = 0;
             DamageFactor = 20 / 10;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
@@ -1190,6 +1237,12 @@ namespace BT_DRS_WinForm
                     DamageFactor = 0;
                     lblDamage.Text = "";
                     lblDamage.BackColor = Color.WhiteSmoke;
+                    if (TotalDamage >= 20)
+                    {
+                        
+                        lblDamage.Text =  TotalDamage + " Total Damage, Roll a PSR! ";
+                        lblDamage.BackColor = Color.Yellow;
+                    }
                 }
                 else
                 {
@@ -1201,6 +1254,13 @@ namespace BT_DRS_WinForm
                     {
                         lblDamage.Text = "Select " + (DamageLocations - DamageLocationsApplied).ToString() + " Locations";
                     }
+                    else if (TotalDamage >= 20)
+                    {
+
+                        lblDamage.Text = TotalDamage + " Total Damage, Roll a PSR! ";
+                        lblDamage.BackColor = Color.Yellow;
+                    }
+
                 }
             }
             catch (Exception ex)
@@ -1278,6 +1338,8 @@ namespace BT_DRS_WinForm
             {
                 validateInternalDamage(int.Parse(lblICT.Text), int.Parse(lblICT.Text), txtICT);
             }
+            TotalDamage = 0;
+            lblDamage.Text = "";
 
 
         }
@@ -1803,12 +1865,20 @@ namespace BT_DRS_WinForm
 
         private void txtJump_Click(object sender, EventArgs e)
         {
-            Heat = Heat + 3;
-            if (Heat > 30)
-                pgbHeat.Value = 30;
+            int Jumped = int.Parse(Microsoft.VisualBasic.Interaction.InputBox("Distance Jumped?", "Jumping"));
+            if (Jumped > int.Parse(txtJump.Text))
+                MessageBox.Show("This Mech can't jump that far!","Invalid Jumping Distance",MessageBoxButtons.OK);
             else
-                pgbHeat.Value = Heat;
-            HeatModifiers();
+            {
+                if (Jumped < 3)
+                    Jumped = 3;
+                Heat = Heat + Jumped;
+                if (Heat > 30)
+                    pgbHeat.Value = 30;
+                else
+                    pgbHeat.Value = Heat;
+                HeatModifiers();
+            }
         }
 
         #endregion

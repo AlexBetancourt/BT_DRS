@@ -1079,7 +1079,7 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(170, 21);
+            this.label42.Location = new System.Drawing.Point(165, 21);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(35, 13);
             this.label42.TabIndex = 12;
@@ -3567,9 +3567,9 @@
             // tabRightTorso
             // 
             this.tabRightTorso.Controls.Add(this.chklstRT);
-            this.tabRightTorso.Location = new System.Drawing.Point(4, 25);
+            this.tabRightTorso.Location = new System.Drawing.Point(4, 49);
             this.tabRightTorso.Name = "tabRightTorso";
-            this.tabRightTorso.Size = new System.Drawing.Size(395, 375);
+            this.tabRightTorso.Size = new System.Drawing.Size(395, 351);
             this.tabRightTorso.TabIndex = 3;
             this.tabRightTorso.Text = "Right Torso";
             this.tabRightTorso.UseVisualStyleBackColor = true;
