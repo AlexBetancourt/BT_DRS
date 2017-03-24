@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT_DRS_WinForm", "DT_DRS_WinForm\BT_DRS_WinForm.csproj", "{402F560E-6D55-4A05-9BA4-C30A2AFF9F0C}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BTDRS_Install", "BTDRS_Install\BTDRS_Install.vdproj", "{90080457-2B05-4EDC-ACB2-CA95297EBDB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,8 @@ Global
 		{402F560E-6D55-4A05-9BA4-C30A2AFF9F0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{402F560E-6D55-4A05-9BA4-C30A2AFF9F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{402F560E-6D55-4A05-9BA4-C30A2AFF9F0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90080457-2B05-4EDC-ACB2-CA95297EBDB2}.Debug|Any CPU.ActiveCfg = Debug
+		{90080457-2B05-4EDC-ACB2-CA95297EBDB2}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
