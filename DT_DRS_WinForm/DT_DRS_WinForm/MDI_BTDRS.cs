@@ -687,5 +687,14 @@ namespace BT_DRS_WinForm
             d6ToolStripMenuItem.DropDownItems.Clear();
             d6ToolStripMenuItem1.DropDownItems.Clear();
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form childForm = new AboutBox1();
+            childForm.MdiParent = this;
+            Table = "About";
+            childForm.Text = "About";
+            childForm.Show();
+        }
     }
 }

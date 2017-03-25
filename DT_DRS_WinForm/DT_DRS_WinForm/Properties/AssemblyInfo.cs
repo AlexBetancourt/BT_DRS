@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BT_DRS")]
-[assembly: AssemblyDescription("BT- Digital Record Sheets")]
+[assembly: AssemblyTitle("BT Digital Record Sheets")]
+[assembly: AssemblyDescription("Special Thanks To: JadeRook for his comments and suggestions, Prussian Havoc for his support and ideas, EnvoyEnd for his comments and suggestions, Stöckert András for his help in coding and ideas. This is a software made to help with Battletech's tabletop gaming experience. From a fan that loves the game to all this great community.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BT_DRS")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCompany("Alex Betancourt (facebook.com/alexbeta81)")]
+[assembly: AssemblyProduct("BT Digital Record Sheets")]
+[assembly: AssemblyCopyright("Copyright © 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.1")]
-[assembly: AssemblyFileVersion("1.0.0.1")]
+[assembly: AssemblyVersion("0.9.1.1")]
+[assembly: AssemblyFileVersion("0.9.1.1")]

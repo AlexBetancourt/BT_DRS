@@ -847,19 +847,643 @@ namespace BT_DRS_WinForm
 
         private void tonsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ApplyDamage = 20 / 10;
+            ApplyDamagePunch(20);
+        }
+
+
+        private void tonsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ApplyDamagePunch(25);
+        }
+
+        private void tonsToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tonsToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            ApplyDamagePunch(30);
+        }
+
+        private void tonsToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            ApplyDamagePunch(35);
+        }
+
+        private void tonsToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            ApplyDamagePunch(40);
+        }
+
+        private void tonsToolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            ApplyDamagePunch(45);
+        }
+
+        private void tonsToolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            ApplyDamagePunch(50);
+        }
+
+        private void tonsToolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            ApplyDamagePunch(55);
+        }
+
+        private void tonsToolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            ApplyDamagePunch(60);
+        }
+
+        private void tonsToolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            ApplyDamagePunch(65);
+        }
+
+        private void tonsToolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            ApplyDamagePunch(70);
+        }
+
+        private void tonsToolStripMenuItem12_Click(object sender, EventArgs e)
+        {
+            ApplyDamagePunch(75);
+        }
+
+        private void tonsToolStripMenuItem13_Click(object sender, EventArgs e)
+        {
+            ApplyDamagePunch(80);
+        }
+
+        private void tonsToolStripMenuItem14_Click(object sender, EventArgs e)
+        {
+            ApplyDamagePunch(85);
+        }
+
+        private void tonsToolStripMenuItem15_Click(object sender, EventArgs e)
+        {
+            ApplyDamagePunch(90);
+        }
+
+        private void tonsToolStripMenuItem16_Click(object sender, EventArgs e)
+        {
+            ApplyDamagePunch(95);
+        }
+
+        private void tonsToolStripMenuItem17_Click(object sender, EventArgs e)
+        {
+            ApplyDamagePunch(100);
+        }
+
+        private void tonsToolStripMenuItem18_Click(object sender, EventArgs e)
+        {
+            ApplyDamageKick(20);
+        }
+
+        private void tonsToolStripMenuItem19_Click(object sender, EventArgs e)
+        {
+            ApplyDamageKick(25);
+        }
+
+        private void tonsToolStripMenuItem20_Click(object sender, EventArgs e)
+        {
+            ApplyDamageKick(30);
+        }
+
+        private void tonsToolStripMenuItem21_Click(object sender, EventArgs e)
+        {
+            ApplyDamageKick(35);
+        }
+
+        private void tonsToolStripMenuItem22_Click(object sender, EventArgs e)
+        {
+            ApplyDamageKick(40);
+        }
+
+        private void tonsToolStripMenuItem23_Click(object sender, EventArgs e)
+        {
+            ApplyDamageKick(45);
+        }
+
+        private void tonsToolStripMenuItem24_Click(object sender, EventArgs e)
+        {
+            ApplyDamageKick(50);
+        }
+
+        private void tonsToolStripMenuItem25_Click(object sender, EventArgs e)
+        {
+            ApplyDamageKick(55);
+        }
+
+        private void tonsToolStripMenuItem26_Click(object sender, EventArgs e)
+        {
+            ApplyDamageKick(60);
+        }
+
+        private void tonsToolStripMenuItem27_Click(object sender, EventArgs e)
+        {
+            ApplyDamageKick(65);
+        }
+
+        private void tonsToolStripMenuItem28_Click(object sender, EventArgs e)
+        {
+            ApplyDamageKick(70);
+        }
+
+        private void tonsToolStripMenuItem29_Click(object sender, EventArgs e)
+        {
+            ApplyDamageKick(75);
+        }
+
+        private void tonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ApplyDamageKick(80);
+        }
+
+        private void tonsToolStripMenuItem30_Click(object sender, EventArgs e)
+        {
+            ApplyDamageKick(85);
+        }
+
+        private void tonsToolStripMenuItem31_Click(object sender, EventArgs e)
+        {
+            ApplyDamageKick(90);
+        }
+
+        private void tonsToolStripMenuItem32_Click(object sender, EventArgs e)
+        {
+            ApplyDamageKick(95);
+        }
+
+        private void tonsToolStripMenuItem33_Click(object sender, EventArgs e)
+        {
+            ApplyDamageKick(100);
+        }
+
+        private void tonsToolStripMenuItem51_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeDefender(20);
+        }
+
+        private void tonsToolStripMenuItem52_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeDefender(25);
+        }
+
+        private void tonsToolStripMenuItem53_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeDefender(30);
+        }
+
+        private void tonsToolStripMenuItem54_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeDefender(35);
+        }
+
+        private void tonsToolStripMenuItem55_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeDefender(40);
+        }
+
+        private void tonsToolStripMenuItem56_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeDefender(45);
+        }
+
+        private void tonsToolStripMenuItem57_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeDefender(50);
+        }
+
+        private void tonsToolStripMenuItem58_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeDefender(55);
+        }
+
+        private void tonsToolStripMenuItem59_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeDefender(60);
+        }
+
+        private void tonsToolStripMenuItem60_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeDefender(65);
+        }
+
+        private void tonsToolStripMenuItem61_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeDefender(70);
+        }
+
+        private void tonsToolStripMenuItem62_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeDefender(75);
+        }
+
+        private void tonsToolStripMenuItem63_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeDefender(80);
+        }
+
+        private void tonsToolStripMenuItem64_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeDefender(85);
+        }
+
+        private void tonsToolStripMenuItem65_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeDefender(90);
+        }
+
+        private void tonsToolStripMenuItem66_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeDefender(95);
+        }
+
+        private void tonsToolStripMenuItem67_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeDefender(100);
+        }
+
+        private void tonsToolStripMenuItem34_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeAttacker(20);
+        }
+
+        private void tonsToolStripMenuItem35_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeAttacker(25);
+        }
+
+        private void tonsToolStripMenuItem36_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeAttacker(30);
+        }
+
+        private void tonsToolStripMenuItem37_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeAttacker(35);
+        }
+
+        private void tonsToolStripMenuItem38_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeAttacker(40);
+        }
+
+        private void tonsToolStripMenuItem39_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeAttacker(45);
+        }
+
+        private void tonsToolStripMenuItem40_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeAttacker(50);
+        }
+
+        private void tonsToolStripMenuItem41_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeAttacker(55);
+        }
+
+        private void tonsToolStripMenuItem42_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeAttacker(60);
+        }
+
+        private void tonsToolStripMenuItem43_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeAttacker(65);
+        }
+
+        private void tonsToolStripMenuItem44_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeAttacker(70);
+        }
+
+        private void tonsToolStripMenuItem45_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeAttacker(75);
+        }
+
+        private void tonsToolStripMenuItem46_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeAttacker(80);
+        }
+
+        private void tonsToolStripMenuItem47_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeAttacker(85);
+        }
+
+        private void tonsToolStripMenuItem48_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeAttacker(90);
+        }
+
+        private void tonsToolStripMenuItem49_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeAttacker(95);
+        }
+
+        private void tonsToolStripMenuItem50_Click(object sender, EventArgs e)
+        {
+            ApplyDamageChargeAttacker(100);
+        }
+
+        private void tonsToolStripMenuItem68_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFAAttacker(20);
+        }
+
+        private void tonsToolStripMenuItem69_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFAAttacker(25);
+        }
+
+        private void tonsToolStripMenuItem70_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFAAttacker(30);
+        }
+
+        private void tonsToolStripMenuItem71_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFAAttacker(35);
+        }
+
+        private void tonsToolStripMenuItem72_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFAAttacker(40);
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFAAttacker(45);
+        }
+
+        private void tonsToolStripMenuItem73_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFAAttacker(50);
+        }
+
+        private void tonsToolStripMenuItem74_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFAAttacker(55);
+        }
+
+        private void tonsToolStripMenuItem75_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFAAttacker(60);
+        }
+
+        private void tonsToolStripMenuItem76_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFAAttacker(65);
+        }
+
+        private void tonsToolStripMenuItem77_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFAAttacker(70);
+        }
+
+        private void tonsToolStripMenuItem78_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFAAttacker(75);
+        }
+
+        private void tonsToolStripMenuItem79_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFAAttacker(80);
+        }
+
+        private void tonsToolStripMenuItem80_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFAAttacker(85);
+        }
+
+        private void tonsToolStripMenuItem81_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFAAttacker(90);
+        }
+
+        private void tonsToolStripMenuItem82_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFAAttacker(95);
+        }
+
+        private void tonsToolStripMenuItem83_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFAAttacker(100);
+        }
+
+        private void tonsToolStripMenuItem84_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFADefender(20);
+        }
+
+        private void tonsToolStripMenuItem85_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFADefender(25);
+        }
+
+        private void tonsToolStripMenuItem86_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFADefender(30);
+        }
+
+        private void tonsToolStripMenuItem87_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFADefender(35);
+        }
+
+        private void tonsToolStripMenuItem88_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFADefender(40);
+        }
+
+        private void tonsToolStripMenuItem89_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFADefender(45);
+        }
+
+        private void tonsToolStripMenuItem90_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFADefender(50);
+        }
+
+        private void tonsToolStripMenuItem91_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFADefender(55);
+        }
+
+        private void tonsToolStripMenuItem92_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFADefender(60);
+        }
+
+        private void tonsToolStripMenuItem93_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFADefender(65);
+        }
+
+        private void tonsToolStripMenuItem94_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFADefender(70);
+        }
+
+        private void tonsToolStripMenuItem95_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFADefender(75);
+        }
+
+        private void tonsToolStripMenuItem96_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFADefender(80);
+        }
+
+        private void tonsToolStripMenuItem97_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFADefender(85);
+        }
+
+        private void tonsToolStripMenuItem98_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFADefender(90);
+        }
+
+        private void tonsToolStripMenuItem99_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFADefender(95);
+        }
+
+        private void tonsToolStripMenuItem100_Click(object sender, EventArgs e)
+        {
+            ApplyDamageDFADefender(100);
+        }
+
+
+
+        #endregion
+
+        #region "FUNCTIONS"
+
+        public void ApplyDamagePunch(int Tons)
+        {
+            decimal DecimalDamage;
+            DecimalDamage = decimal.Parse(Tons.ToString()) / 10;
+            ApplyDamage = int.Parse(Math.Ceiling(DecimalDamage).ToString());
             DamageLocations = 1;
             DamageLocationsApplied = 0;
             AppliedDamage = 0;
-            DamageFactor = 20 / 10;
+            DamageFactor = ApplyDamage;
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
             AccumulatedDamage(ApplyDamage);
             AlertColor();
         }
 
-        #endregion
+        public void ApplyDamageKick(int Tons)
+        {
+            decimal DecimalDamage;
+            DecimalDamage = decimal.Parse(Tons.ToString()) / 5;
 
-        #region "FUNCTIONS"
+            ApplyDamage = int.Parse(Math.Ceiling(DecimalDamage).ToString());
+            DamageLocations = 1;
+            DamageLocationsApplied = 0;
+            AppliedDamage = 0;
+            DamageFactor = ApplyDamage;
+            lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
+            AlertColor();
+        }
+
+        public void ApplyDamageChargeDefender(int Tons)
+        {
+            decimal DecimalDamage;
+            DecimalDamage = decimal.Parse(Tons.ToString()) / 10;
+            int Charge;
+            Charge = int.Parse(Microsoft.VisualBasic.Interaction.InputBox("Hex Distance?", "Charge"));
+            DecimalDamage = DecimalDamage * Charge;
+            ApplyDamage = int.Parse(Math.Ceiling(DecimalDamage).ToString());
+
+            decimal DecimalLocations;
+            DecimalLocations = decimal.Parse(ApplyDamage.ToString()) / 5;
+            int Locations;
+            Locations = int.Parse(Math.Ceiling(DecimalLocations).ToString());
+
+            DamageLocations = Locations;
+            DamageLocationsApplied = 0;
+            AppliedDamage = 0;
+            DamageFactor = 5;
+            lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
+            AlertColor();
+        }
+
+        public void ApplyDamageChargeAttacker(int Tons)
+        {
+            decimal DecimalDamage;
+            DecimalDamage = decimal.Parse(Tons.ToString()) / 10;
+            
+            ApplyDamage = int.Parse(Math.Ceiling(DecimalDamage).ToString());
+
+            decimal DecimalLocations;
+            DecimalLocations = decimal.Parse(ApplyDamage.ToString()) / 5;
+            int Locations;
+            Locations = int.Parse(Math.Ceiling(DecimalLocations).ToString());
+
+            DamageLocations = Locations;
+            DamageLocationsApplied = 0;
+            AppliedDamage = 0;
+            DamageFactor = 5;
+            lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
+            AlertColor();
+        }
+
+
+        public void ApplyDamageDFADefender(int Tons)
+        {
+            decimal DecimalDamage;
+            DecimalDamage = decimal.Parse(Tons.ToString()) / 10;
+
+            DecimalDamage = DecimalDamage * 3;
+            ApplyDamage = int.Parse(Math.Ceiling(DecimalDamage).ToString());
+
+            decimal DecimalLocations;
+            DecimalLocations = decimal.Parse(ApplyDamage.ToString()) / 5;
+            int Locations;
+            Locations = int.Parse(Math.Ceiling(DecimalLocations).ToString());
+
+            DamageLocations = Locations;
+            DamageLocationsApplied = 0;
+            AppliedDamage = 0;
+            DamageFactor = 5;
+            lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
+            AlertColor();
+        }
+
+        public void ApplyDamageDFAAttacker(int Tons)
+        {
+            decimal DecimalDamage;
+            DecimalDamage = decimal.Parse(Tons.ToString()) / 5;
+
+            ApplyDamage = int.Parse(Math.Ceiling(DecimalDamage).ToString());
+
+            decimal DecimalLocations;
+            DecimalLocations = decimal.Parse(ApplyDamage.ToString()) / 5;
+            int Locations;
+            Locations = int.Parse(Math.Ceiling(DecimalLocations).ToString());
+
+            DamageLocations = Locations;
+            DamageLocationsApplied = 0;
+            AppliedDamage = 0;
+            DamageFactor = 5;
+            lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
+            AlertColor();
+        }
+
         public void DRS_DB()
         {
             using (var DataBase = new LiteDatabase(@"DRS.db"))
@@ -1239,8 +1863,8 @@ namespace BT_DRS_WinForm
                     lblDamage.BackColor = Color.WhiteSmoke;
                     if (TotalDamage >= 20)
                     {
-                        
-                        lblDamage.Text =  TotalDamage + " Total Damage, Roll a PSR! ";
+
+                        lblDamage.Text = TotalDamage + " Total Damage, Roll a PSR! ";
                         lblDamage.BackColor = Color.Yellow;
                     }
                 }
@@ -1340,6 +1964,7 @@ namespace BT_DRS_WinForm
             }
             TotalDamage = 0;
             lblDamage.Text = "";
+            lblDamage.BackColor = Color.WhiteSmoke;
 
 
         }
@@ -1867,7 +2492,7 @@ namespace BT_DRS_WinForm
         {
             int Jumped = int.Parse(Microsoft.VisualBasic.Interaction.InputBox("Distance Jumped?", "Jumping"));
             if (Jumped > int.Parse(txtJump.Text))
-                MessageBox.Show("This Mech can't jump that far!","Invalid Jumping Distance",MessageBoxButtons.OK);
+                MessageBox.Show("This Mech can't jump that far!", "Invalid Jumping Distance", MessageBoxButtons.OK);
             else
             {
                 if (Jumped < 3)
@@ -1961,6 +2586,7 @@ namespace BT_DRS_WinForm
         {
 
             pgbHeat.Value = 0;
+            Heat = 0;
             if (checkBox1.Checked)
             {
                 pgbHeat.Value = pgbHeat.Value + 5;
@@ -2113,6 +2739,18 @@ namespace BT_DRS_WinForm
         private void attackerToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ApplyDamage = 2;
+            DamageLocations = 1;
+            DamageLocationsApplied = 0;
+            AppliedDamage = 0;
+            DamageFactor = 2;
+            lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
+            AlertColor();
         }
     }
 }

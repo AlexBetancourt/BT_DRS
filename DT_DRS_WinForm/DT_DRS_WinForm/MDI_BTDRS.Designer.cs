@@ -54,9 +54,6 @@
             this.barracksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mechLabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mechBayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.diceRollToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.d6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.d6ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.initializeWeaponsEquipmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -78,13 +75,17 @@
             this.criticalHitsTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pilotingSkillRollTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.diceRollToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.d6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.d6ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            this.clearRollsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.tsProgBar = new System.Windows.Forms.ToolStripProgressBar();
             this.tsLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.clearRollsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -302,48 +303,20 @@
             this.mechBayToolStripMenuItem.Text = "Mech Bay";
             this.mechBayToolStripMenuItem.Click += new System.EventHandler(this.mechBayToolStripMenuItem_Click);
             // 
-            // diceRollToolStripMenuItem
-            // 
-            this.diceRollToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.d6ToolStripMenuItem,
-            this.d6ToolStripMenuItem1,
-            this.toolStripSeparator8,
-            this.clearRollsToolStripMenuItem});
-            this.diceRollToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.diceRollToolStripMenuItem.Name = "diceRollToolStripMenuItem";
-            this.diceRollToolStripMenuItem.Size = new System.Drawing.Size(83, 25);
-            this.diceRollToolStripMenuItem.Text = "&Dice Roll";
-            // 
-            // d6ToolStripMenuItem
-            // 
-            this.d6ToolStripMenuItem.Image = global::BT_DRS_WinForm.Properties.Resources.índice;
-            this.d6ToolStripMenuItem.Name = "d6ToolStripMenuItem";
-            this.d6ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
-            this.d6ToolStripMenuItem.Text = "&1D6";
-            this.d6ToolStripMenuItem.Click += new System.EventHandler(this.d6ToolStripMenuItem_Click);
-            // 
-            // d6ToolStripMenuItem1
-            // 
-            this.d6ToolStripMenuItem1.Image = global::BT_DRS_WinForm.Properties.Resources.TwoDice;
-            this.d6ToolStripMenuItem1.Name = "d6ToolStripMenuItem1";
-            this.d6ToolStripMenuItem1.Size = new System.Drawing.Size(152, 26);
-            this.d6ToolStripMenuItem1.Text = "&2D6";
-            this.d6ToolStripMenuItem1.Click += new System.EventHandler(this.d6ToolStripMenuItem1_Click);
-            // 
             // toolsMenu
             // 
             this.toolsMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.optionsToolStripMenuItem,
             this.initializeWeaponsEquipmentToolStripMenuItem});
             this.toolsMenu.Name = "toolsMenu";
-            this.toolsMenu.Size = new System.Drawing.Size(48, 25);
+            this.toolsMenu.Size = new System.Drawing.Size(47, 25);
             this.toolsMenu.Text = "&Tools";
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Enabled = false;
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.optionsToolStripMenuItem.Text = "&Options";
             this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
             // 
@@ -373,7 +346,8 @@
             this.heatPointTableToolStripMenuItem,
             this.criticalHitsTableToolStripMenuItem,
             this.pilotingSkillRollTableToolStripMenuItem,
-            this.toolStripSeparator7});
+            this.toolStripSeparator7,
+            this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 25);
             this.helpToolStripMenuItem.Text = "Help";
@@ -489,6 +463,53 @@
             this.toolStripSeparator7.Name = "toolStripSeparator7";
             this.toolStripSeparator7.Size = new System.Drawing.Size(257, 6);
             // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // diceRollToolStripMenuItem
+            // 
+            this.diceRollToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.d6ToolStripMenuItem,
+            this.d6ToolStripMenuItem1,
+            this.toolStripSeparator8,
+            this.clearRollsToolStripMenuItem});
+            this.diceRollToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diceRollToolStripMenuItem.Name = "diceRollToolStripMenuItem";
+            this.diceRollToolStripMenuItem.Size = new System.Drawing.Size(83, 25);
+            this.diceRollToolStripMenuItem.Text = "&Dice Roll";
+            // 
+            // d6ToolStripMenuItem
+            // 
+            this.d6ToolStripMenuItem.Image = global::BT_DRS_WinForm.Properties.Resources.índice;
+            this.d6ToolStripMenuItem.Name = "d6ToolStripMenuItem";
+            this.d6ToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
+            this.d6ToolStripMenuItem.Text = "&1D6";
+            this.d6ToolStripMenuItem.Click += new System.EventHandler(this.d6ToolStripMenuItem_Click);
+            // 
+            // d6ToolStripMenuItem1
+            // 
+            this.d6ToolStripMenuItem1.Image = global::BT_DRS_WinForm.Properties.Resources.TwoDice;
+            this.d6ToolStripMenuItem1.Name = "d6ToolStripMenuItem1";
+            this.d6ToolStripMenuItem1.Size = new System.Drawing.Size(188, 26);
+            this.d6ToolStripMenuItem1.Text = "&2D6";
+            this.d6ToolStripMenuItem1.Click += new System.EventHandler(this.d6ToolStripMenuItem1_Click);
+            // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(185, 6);
+            // 
+            // clearRollsToolStripMenuItem
+            // 
+            this.clearRollsToolStripMenuItem.Name = "clearRollsToolStripMenuItem";
+            this.clearRollsToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
+            this.clearRollsToolStripMenuItem.Text = "Clear Dice Rolls";
+            this.clearRollsToolStripMenuItem.Click += new System.EventHandler(this.clearRollsToolStripMenuItem_Click);
+            // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
@@ -520,18 +541,6 @@
             this.tsLabel.Size = new System.Drawing.Size(116, 17);
             this.tsLabel.Text = "Configuration Status";
             // 
-            // clearRollsToolStripMenuItem
-            // 
-            this.clearRollsToolStripMenuItem.Name = "clearRollsToolStripMenuItem";
-            this.clearRollsToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
-            this.clearRollsToolStripMenuItem.Text = "Clear Dice Rolls";
-            this.clearRollsToolStripMenuItem.Click += new System.EventHandler(this.clearRollsToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator8
-            // 
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(185, 6);
-            // 
             // MDI_BTDRS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -544,7 +553,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "MDI_BTDRS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MDI_BTDRS";
+            this.Text = "BT Digital Record Sheets";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MDI_BTDRS_Load);
             this.menuStrip.ResumeLayout(false);
@@ -613,6 +622,7 @@
         private System.Windows.Forms.ToolStripProgressBar tsProgBar;
         private System.Windows.Forms.ToolStripMenuItem clearRollsToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 

@@ -42,7 +42,35 @@ DONE	The “Update” button on the MechLab doesn’t seem to work. It returned the fo
 DONE	I assume the “Update” button should update the values recorded in the excel sheet. Consider combining it with the “Save Mech” button.
 DONE	Pressing the “Save Mech” button creates a new entry even if you already have a mech with the same Variant value.
 
-DONE Consider adding a “Remove” option on the MechLab. I currently have two Test Mechs in the excel file.
+DONE	Consider adding a “Remove” option on the MechLab. I currently have two Test Mechs in the excel file.
 
 DONE	Restrict the tonnage to a multiple of 5.
+
+DONE	Highlighting for 20+ damage didn’t go away after using the apply heatsinks button
+
+DONE	The apply damage option for physicals don’t seem to be coded yet
+
+DONE	Damage from a charge is also dependent on how far you move as well as your tonnage
+
+DONE	Heat Reset removes the modifers and alerts, but doesn’t actually change the heat. If you fire a weapon after hitting heat reset the status will go straight back to where it was, plus whatever you fired. Only the Apply HS button on the mech actually reduces the heat.
+
+I tried destroying a mech with a head hit and it marked all of the sections in black. I initially thought it had removed all of the damage amounts, but it just made them really hard to read. Maybe just put a “Mech Destroyed” watermark over the armor and structure diagrams instead of blacking out everything?
+
+Also, after taking the head off, I tried applying more damage, but couldn’t. It isn’t unusual for there to be extra fire coming in on the same turn that a mech gets cored or the head gets shot off and if you are playing a campaign the extra damage could affect salvage.
+
+Consider adding a way to cancel applying damage if you select the wrong option. May just put a “Cancel” button right under the “Select Locations” alert. Have it only be visible when applying damage.
+
+DONE	One design consideration, consider putting the Apply Damage options on the mech sheets rather than just on the toolbar. When I first opened it, I didn’t realize which mech I had active, so when I went to apply damage it showed up on the wrong mech. Maybe you could have a toggle on the Weapons Equipment Inventory. One option is apply heat from weapons you fire. Press a button and it switches to the Apply Damage options. One of those options could be “Physicals” which bring up another dialogue box asking what type of physical it was and what weight of mech is involved.
+
+You don’t have a Fall Damage option. I find the falls from 20+ damage happen regularly and they do damage your mech. Falls from 2+ height do extra damage, but those don’t come up very often. There is also a piloting check for having fallen to avoid pilot damage, maybe have a reminder of that.
+
+DONE	No machine guns option for Apply Damage? I can understand why they don’t need to be in the Equipment Inventory yet, they don’t produce heat, but they should probably be on Apply Damage. SRMs can be used as a stand in, but it would be nice for them to have their own option.
+
+Once you start tracking equipment and criticals actually on the mechs, you should have some kind of ammo indicator and pressing the button to fire the weapon should reduce the ammo count (this would be the point where Machine Guns need to be in the Equipment Inventory).
+
+Aside from the name in the top left, there is nothing to distinguish Red Army mechs from Blue Army mechs. Maybe add some coloring to help tell them apart? I wouldn’t consider that a priority though.
+
+Another minor thing, consider different sounds for the different sizes of AC, SRM, and LRM. Also is there an SRM sound that is different from the LRMs? An actually different sound rather than just being shorter?
+
+DONE	One more thing, consider adding an About option in the Help menu so you can take credit for this awesome program and list what version it is currently using.
 
