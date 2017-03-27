@@ -51,6 +51,18 @@ namespace BT_DRS_WinForm
         {
             try
             {
+                if (txtName.Text == "")
+                {
+                    MessageBox.Show("Enter Pilot's Name", "Invalid Name", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+
+                if (txtCallSign.Text == "")
+                {
+                    MessageBox.Show("Enter Pilot's Callsign", "Invalid Callsign", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+
                 using (var db = new LiteDatabase(@"DRS.db"))
                 {
                     var Pilots = db.GetCollection<DS_BTDRSMechPilots>("Pilots");
@@ -124,7 +136,7 @@ namespace BT_DRS_WinForm
                 using (var db = new LiteDatabase(@"DRS.db"))
                 {
                     var Pilots = db.GetCollection<DS_BTDRSMechPilots>("Pilots");
-                    if (MessageBox.Show("Do you really want to delete ALL MechWarriors??? (this action cannot be undone!)", "Deleting MechWarriors", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    if (MessageBox.Show("Do you really want to delete ALL MechPilots??? (this action cannot be undone!)", "Deleting MechPilots", MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation) == DialogResult.Yes)
                     {
                         Pilots.Delete(Query.All());
                     }
@@ -144,14 +156,16 @@ namespace BT_DRS_WinForm
         {
             try
             {
-                string[] MDL = new string[3];
-                MDL = lsPilots.SelectedItem.ToString().Split('(');
-                if (MDL.Length > 1)
+                if (lsPilots.SelectedItems.Count > 1)
                 {
-                    txtName.Text = MDL[0];
-                    txtCallSign.Text = MDL[1].Substring(0, MDL[1].Length - 1);
+                    string[] MDL = new string[3];
+                    MDL = lsPilots.SelectedItem.ToString().Split('(');
+                    if (MDL.Length > 1)
+                    {
+                        txtName.Text = MDL[0];
+                        txtCallSign.Text = MDL[1].Substring(0, MDL[1].Length - 1);
+                    }
                 }
-
             }
             catch (Exception ex)
             {
@@ -204,7 +218,7 @@ namespace BT_DRS_WinForm
                 DS_BTDRSMechPilots Pilot = Pilots.FindOne(Query.EQ("Callsign", txtCallSign.Text));
                 if (Pilot != null)
                 {
-                    if (MessageBox.Show("Do you really want to delete this MechWarrior??? (this action cannot be undone!)", "Deleting MechWarrior", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    if (MessageBox.Show("Do you really want to delete this MechPilot??? (this action cannot be undone!)", "Deleting MechPilot", MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation) == DialogResult.Yes)
                     {
                         Pilots.Delete(Query.EQ("Callsign", Pilot.Callsign));
                     }

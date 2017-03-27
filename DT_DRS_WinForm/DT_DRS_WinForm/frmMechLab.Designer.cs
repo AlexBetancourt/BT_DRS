@@ -803,6 +803,12 @@
             "Lower Arm Actuator",
             "Hand Actuator",
             "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
             "Roll Again"});
             this.chklstLA.Location = new System.Drawing.Point(8, 27);
             this.chklstLA.Name = "chklstLA";
@@ -916,6 +922,12 @@
             "Upper Arm Actuator",
             "Lower Arm Actuator",
             "Hand Actuator",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
+            "Roll Again",
             "Roll Again",
             "Roll Again"});
             this.chklstRA.Location = new System.Drawing.Point(8, 27);
@@ -1752,6 +1764,7 @@
             this.lbMechs.Location = new System.Drawing.Point(6, 21);
             this.lbMechs.Name = "lbMechs";
             this.lbMechs.Size = new System.Drawing.Size(165, 602);
+            this.lbMechs.Sorted = true;
             this.lbMechs.TabIndex = 13;
             this.lbMechs.SelectedValueChanged += new System.EventHandler(this.lbMechs_SelectedValueChanged);
             // 

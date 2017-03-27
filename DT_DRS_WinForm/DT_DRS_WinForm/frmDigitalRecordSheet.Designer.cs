@@ -310,7 +310,6 @@
             this.tonsToolStripMenuItem99 = new System.Windows.Forms.ToolStripMenuItem();
             this.tonsToolStripMenuItem100 = new System.Windows.Forms.ToolStripMenuItem();
             this.heatResetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsTeam = new System.Windows.Forms.ToolStripTextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.lblLifeSupportHits2 = new System.Windows.Forms.Label();
             this.lblLifeSupportHits = new System.Windows.Forms.Label();
@@ -378,6 +377,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.fallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cancelDamageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -1741,12 +1741,12 @@
             this.mnuApplyDamage.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.applyDamageToolStripMenuItem,
             this.heatResetToolStripMenuItem,
-            this.tsTeam});
+            this.cancelDamageToolStripMenuItem});
             this.mnuApplyDamage.Location = new System.Drawing.Point(0, 0);
             this.mnuApplyDamage.Name = "mnuApplyDamage";
-            this.mnuApplyDamage.Size = new System.Drawing.Size(1178, 27);
+            this.mnuApplyDamage.Size = new System.Drawing.Size(1178, 24);
             this.mnuApplyDamage.TabIndex = 8;
-            this.mnuApplyDamage.Text = "menuStrip1";
+            this.mnuApplyDamage.Text = "mnuCancelDMG";
             this.mnuApplyDamage.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.mnuApplyDamage_ItemClicked);
             // 
             // applyDamageToolStripMenuItem
@@ -3061,11 +3061,6 @@
             this.heatResetToolStripMenuItem.Text = "Heat Reset";
             this.heatResetToolStripMenuItem.Click += new System.EventHandler(this.heatResetToolStripMenuItem_Click);
             // 
-            // tsTeam
-            // 
-            this.tsTeam.Name = "tsTeam";
-            this.tsTeam.Size = new System.Drawing.Size(100, 23);
-            // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.lblLifeSupportHits2);
@@ -3823,6 +3818,13 @@
             this.fallToolStripMenuItem.Text = "Fall";
             this.fallToolStripMenuItem.Click += new System.EventHandler(this.fallToolStripMenuItem_Click);
             // 
+            // cancelDamageToolStripMenuItem
+            // 
+            this.cancelDamageToolStripMenuItem.Name = "cancelDamageToolStripMenuItem";
+            this.cancelDamageToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
+            this.cancelDamageToolStripMenuItem.Text = "Cancel Damage";
+            this.cancelDamageToolStripMenuItem.Click += new System.EventHandler(this.cancelDamageToolStripMenuItem_Click);
+            // 
             // frmDigitalRecordSheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4253,8 +4255,8 @@
         private System.Windows.Forms.ToolStripMenuItem tonsToolStripMenuItem98;
         private System.Windows.Forms.ToolStripMenuItem tonsToolStripMenuItem99;
         private System.Windows.Forms.ToolStripMenuItem tonsToolStripMenuItem100;
-        private System.Windows.Forms.ToolStripTextBox tsTeam;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem fallToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cancelDamageToolStripMenuItem;
     }
 }

@@ -1,20 +1,14 @@
 
-keep track of what weapons the 'Mech has on it.
-
 DONE Restrict the armor based on the underlying internal structure.
 
 DONE the critical hit tables don't seem to be working at the moment.
 
-option to change the sound effects that are used
-
-Requires admin privileges right now. Is there any way to avoid that?
+DONE	Requires admin privileges right now. Is there any way to avoid that?
 
 DONE For heat modifiers, show the current penalty next to the abbreviations
 
-The “Destroyed” alert that plays when a part is destroyed should probably specify what type of part was destroyed.
-Arm destroyed is significantly different than losing a torso.
-
 DONE Consider adding a tracking of how much damage a mech has taken in a round for triggering piloting rolls.
+
 DONE Then you can turn the Apply Heatsinks button into an End Turn button that applies heat sinks and resets the damage count.
 
 DONE This also applies to the Mech Lab where it seems you can only assign things to the Head crit table and nothing else.
@@ -40,6 +34,7 @@ DONE	The “Update” button on the MechLab doesn’t seem to work. It returned the fo
 		it: “Invalid BSON data type ‘Null’ on field ‘_id’”
 
 DONE	I assume the “Update” button should update the values recorded in the excel sheet. Consider combining it with the “Save Mech” button.
+
 DONE	Pressing the “Save Mech” button creates a new entry even if you already have a mech with the same Variant value.
 
 DONE	Consider adding a “Remove” option on the MechLab. I currently have two Test Mechs in the excel file.
@@ -54,23 +49,48 @@ DONE	Damage from a charge is also dependent on how far you move as well as your 
 
 DONE	Heat Reset removes the modifers and alerts, but doesn’t actually change the heat. If you fire a weapon after hitting heat reset the status will go straight back to where it was, plus whatever you fired. Only the Apply HS button on the mech actually reduces the heat.
 
+DONE	One design consideration, consider putting the Apply Damage options on the mech sheets rather than just on the toolbar. When I first opened it, I didn’t realize which mech I had active, so when I went to apply damage it showed up on the wrong mech. Maybe you could have a toggle on the Weapons Equipment Inventory. One option is apply heat from weapons you fire. Press a button and it switches to the Apply Damage options. One of those options could be “Physicals” which bring up another dialogue box asking what type of physical it was and what weight of mech is involved.
+
+DONE	You don’t have a Fall Damage option. I find the falls from 20+ damage happen regularly and they do damage your mech. Falls from 2+ height do extra damage, but those don’t come up very often. There is also a piloting check for having fallen to avoid pilot damage, maybe have a reminder of that.
+
+DONE	No machine guns option for Apply Damage? I can understand why they don’t need to be in the Equipment Inventory yet, they don’t produce heat, but they should probably be on Apply Damage. SRMs can be used as a stand in, but it would be nice for them to have their own option.
+
+DONE	Aside from the name in the top left, there is nothing to distinguish Red Army mechs from Blue Army mechs. Maybe add some coloring to help tell them apart? I wouldn’t consider that a priority though.
+
+DONE	One more thing, consider adding an About option in the Help menu so you can take credit for this awesome program and list what version it is currently using.
+
+DONE	keep track of what weapons the 'Mech has on it.
+
+DONE	Consider adding a way to cancel applying damage if you select the wrong option. May just put a “Cancel” button right under the “Select Locations” alert. Have it only be visible when applying damage.
+
+DONE	When I went to install the new version, the installer wouldn’t let me do anything until I had uninstalled the previous version. Maybe add an update option to the installer to bypass that? Not a high priority, I got past it just fine.
+
+DONE	It would help to have a way to sort or search the component list in the MechLab. Maybe make sublists for Energy, Ballistic, and Missiles. Solaris Skunk Werkz does a good job sorting their lists to make things findable.
+
+DONE	Sort the MechBay, either by weight or by alphabetical order. When I added the components to the Commando in the MechLab it moved it to the bottom of the MechBay list.
+
+DONE	Ran into an error modifying a pilot. I made a test pilot, saved it and added them to an open mech. Then I went back and tried to modify the pilot to change their piloting and gunnery. When I tried to save the modified pilot, it gave me an “Object reference not set to an instance of an object” error. I think the problem was that I also created a second new mechwarrior when I tried to edit the first. I accidentally saved a mechwarrior with no name or callsign. I don’t think the program knew how to handle them not having a name. When I tried to delete the pilot it threw another error and the program crashed. Probably need to add an alert that prevents people from saving nameless mechwarriors. (I was able to delete all of the mechwarriors with the Clear option)
+
+This is absolutely a viable build that I could run a game with. It would be nice having the parts preloaded for the mech variants you provided, but not essential.
+
+The MechLab needs some work. Make multi-slot weapons actually use more than one slot. I can put an AC 20 in my mech’s head, replacing the cockpit even. Still, it works for what it needs to do.
+
+The “Destroyed” alert that plays when a part is destroyed should probably specify what type of part was destroyed. Arm destroyed is significantly different than losing a torso.
+
 I tried destroying a mech with a head hit and it marked all of the sections in black. I initially thought it had removed all of the damage amounts, but it just made them really hard to read. Maybe just put a “Mech Destroyed” watermark over the armor and structure diagrams instead of blacking out everything?
 
 Also, after taking the head off, I tried applying more damage, but couldn’t. It isn’t unusual for there to be extra fire coming in on the same turn that a mech gets cored or the head gets shot off and if you are playing a campaign the extra damage could affect salvage.
 
-Consider adding a way to cancel applying damage if you select the wrong option. May just put a “Cancel” button right under the “Select Locations” alert. Have it only be visible when applying damage.
-
-DONE	One design consideration, consider putting the Apply Damage options on the mech sheets rather than just on the toolbar. When I first opened it, I didn’t realize which mech I had active, so when I went to apply damage it showed up on the wrong mech. Maybe you could have a toggle on the Weapons Equipment Inventory. One option is apply heat from weapons you fire. Press a button and it switches to the Apply Damage options. One of those options could be “Physicals” which bring up another dialogue box asking what type of physical it was and what weight of mech is involved.
-
-You don’t have a Fall Damage option. I find the falls from 20+ damage happen regularly and they do damage your mech. Falls from 2+ height do extra damage, but those don’t come up very often. There is also a piloting check for having fallen to avoid pilot damage, maybe have a reminder of that.
-
-DONE	No machine guns option for Apply Damage? I can understand why they don’t need to be in the Equipment Inventory yet, they don’t produce heat, but they should probably be on Apply Damage. SRMs can be used as a stand in, but it would be nice for them to have their own option.
-
 Once you start tracking equipment and criticals actually on the mechs, you should have some kind of ammo indicator and pressing the button to fire the weapon should reduce the ammo count (this would be the point where Machine Guns need to be in the Equipment Inventory).
-
-Aside from the name in the top left, there is nothing to distinguish Red Army mechs from Blue Army mechs. Maybe add some coloring to help tell them apart? I wouldn’t consider that a priority though.
 
 Another minor thing, consider different sounds for the different sizes of AC, SRM, and LRM. Also is there an SRM sound that is different from the LRMs? An actually different sound rather than just being shorter?
 
-DONE	One more thing, consider adding an About option in the Help menu so you can take credit for this awesome program and list what version it is currently using.
+option to change the sound effects that are used
+
+
+
+
+
+
+
 

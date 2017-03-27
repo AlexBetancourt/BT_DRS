@@ -86,7 +86,7 @@ namespace BT_DRS_WinForm
                 for (int i = 0; i < length; i++)
                 {
                     player.Play();
-                    Thread.Sleep(2000);
+                    Thread.Sleep(2300);
                 }
                 System.Media.SoundPlayer player2 = new System.Media.SoundPlayer(Application.StartupPath + @"\Sounds\MW4 V Betty - STARTUP Sensors Online.wav");
                 for (int i = 0; i < length; i++)

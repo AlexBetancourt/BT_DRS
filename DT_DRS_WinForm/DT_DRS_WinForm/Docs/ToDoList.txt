@@ -13,6 +13,6 @@ This following list is for the features to be released at later versions (In suc
 
     Add BT DiceRoller dynamics to the Apply Damage feature.
     Add Damage and Components modifiers.
-    Show damage on the Mech's Avatar image
+REMOVED    Show damage on the Mech's Avatar image
     Add background images, mech images, pilot portraits, icons (just to make it a little more pleasing to the eye), more sounds and maybe some background music.
 DONE    Add essential BT tables as reference (Movement cost, facing after fall, cluster hits, piloting skill roll, mech hit location, attack modifiers, heat point, physical attack modifiers, determining critical hits, mech punch location, mech kick location)

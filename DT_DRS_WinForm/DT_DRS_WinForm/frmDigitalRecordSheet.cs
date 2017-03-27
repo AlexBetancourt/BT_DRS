@@ -317,7 +317,7 @@ namespace BT_DRS_WinForm
         #region "DAMAGE MENU SELECTION"
         private void toolStripMenuItem6_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
 
             ApplyDamage = 6;
             DamageLocations = 3;
@@ -335,7 +335,7 @@ namespace BT_DRS_WinForm
         }
         private void hitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 2;
             DamageLocations = 1;
             DamageLocationsApplied = 0;
@@ -361,6 +361,7 @@ namespace BT_DRS_WinForm
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
             AccumulatedDamage(ApplyDamage);
             AlertColor();
+            cancelDamageToolStripMenuItem.Visible = true;
         }
 
         private void largeLaserToolStripMenuItem_Click(object sender, EventArgs e)
@@ -374,6 +375,7 @@ namespace BT_DRS_WinForm
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
             AccumulatedDamage(ApplyDamage);
             AlertColor();
+            cancelDamageToolStripMenuItem.Visible = true;
         }
 
         private void pPCToolStripMenuItem_Click(object sender, EventArgs e)
@@ -387,6 +389,7 @@ namespace BT_DRS_WinForm
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
             AccumulatedDamage(ApplyDamage);
             AlertColor();
+            cancelDamageToolStripMenuItem.Visible = true;
         }
 
         private void mediumLaserToolStripMenuItem_Click(object sender, EventArgs e)
@@ -400,6 +403,7 @@ namespace BT_DRS_WinForm
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
             AccumulatedDamage(ApplyDamage);
             AlertColor();
+            cancelDamageToolStripMenuItem.Visible = true;
 
         }
         int TotalDamage = 0;
@@ -420,11 +424,12 @@ namespace BT_DRS_WinForm
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
             AccumulatedDamage(ApplyDamage);
             AlertColor();
+            cancelDamageToolStripMenuItem.Visible = true;
         }
 
         private void aC2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 2;
             DamageLocations = 1;
             DamageLocationsApplied = 0;
@@ -437,7 +442,7 @@ namespace BT_DRS_WinForm
 
         private void aC5ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 5;
             DamageLocations = 1;
             DamageLocationsApplied = 0;
@@ -450,7 +455,7 @@ namespace BT_DRS_WinForm
 
         private void aC10ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 10;
             DamageLocations = 1;
             DamageLocationsApplied = 0;
@@ -463,7 +468,7 @@ namespace BT_DRS_WinForm
 
         private void aC20ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 20;
             DamageLocations = 1;
             DamageLocationsApplied = 0;
@@ -476,7 +481,7 @@ namespace BT_DRS_WinForm
 
         private void hitToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 1;
             DamageLocations = 1;
             DamageLocationsApplied = 0;
@@ -489,7 +494,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem6_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 2;
             DamageLocations = 1;
             DamageLocationsApplied = 0;
@@ -502,7 +507,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem7_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 3;
             DamageLocations = 1;
             DamageLocationsApplied = 0;
@@ -515,7 +520,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem8_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 4;
             DamageLocations = 1;
             DamageLocationsApplied = 0;
@@ -528,7 +533,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem9_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 5;
             DamageLocations = 1;
             DamageLocationsApplied = 0;
@@ -541,7 +546,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem10_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 3;
             DamageLocations = 1;
             DamageLocationsApplied = 0;
@@ -554,7 +559,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem11_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 4;
             DamageLocations = 1;
             DamageLocationsApplied = 0;
@@ -567,7 +572,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem12_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 6;
             DamageLocations = 2;
             DamageLocationsApplied = 0;
@@ -582,7 +587,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem13_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 8;
             DamageLocations = 2;
             DamageLocationsApplied = 0;
@@ -595,7 +600,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem14_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 10;
             DamageLocations = 2;
             DamageLocationsApplied = 0;
@@ -608,7 +613,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem20_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 6;
             DamageLocations = 2;
             DamageLocationsApplied = 0;
@@ -621,7 +626,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem21_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 9;
             DamageLocations = 2;
             DamageLocationsApplied = 0;
@@ -634,7 +639,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem22_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 12;
             DamageLocations = 3;
             DamageLocationsApplied = 0;
@@ -647,7 +652,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem23_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 16;
             DamageLocations = 4;
             DamageLocationsApplied = 0;
@@ -660,7 +665,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem24_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 20;
             DamageLocations = 4;
             DamageLocationsApplied = 0;
@@ -673,7 +678,7 @@ namespace BT_DRS_WinForm
 
         private void hItsToolStripMenuItem19_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 15;
             DamageLocations = 3;
             DamageLocationsApplied = 0;
@@ -686,7 +691,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem18_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 12;
             DamageLocations = 3;
             DamageLocationsApplied = 0;
@@ -699,7 +704,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem17_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 9;
             DamageLocations = 2;
             DamageLocationsApplied = 0;
@@ -712,7 +717,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem16_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 6;
             DamageLocations = 2;
             DamageLocationsApplied = 0;
@@ -725,7 +730,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem15_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 5;
             DamageLocations = 1;
             DamageLocationsApplied = 0;
@@ -738,7 +743,7 @@ namespace BT_DRS_WinForm
 
         private void toolStripMenuItem4_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 2;
             DamageLocations = 1;
             DamageLocationsApplied = 0;
@@ -752,7 +757,7 @@ namespace BT_DRS_WinForm
 
         private void toolStripMenuItem5_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 4;
             DamageLocations = 2;
             DamageLocationsApplied = 0;
@@ -765,7 +770,7 @@ namespace BT_DRS_WinForm
 
         private void toolStripMenuItem7_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 8;
             DamageLocations = 4;
             DamageLocationsApplied = 0;
@@ -779,7 +784,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 4;
             DamageLocations = 2;
             DamageLocationsApplied = 0;
@@ -793,7 +798,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 6;
             DamageLocations = 3;
             DamageLocationsApplied = 0;
@@ -807,7 +812,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 8;
             DamageLocations = 4;
             DamageLocationsApplied = 0;
@@ -821,7 +826,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem4_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 10;
             DamageLocations = 5;
             DamageLocationsApplied = 0;
@@ -834,7 +839,7 @@ namespace BT_DRS_WinForm
 
         private void hitsToolStripMenuItem5_Click(object sender, EventArgs e)
         {
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = 12;
             DamageLocations = 6;
             DamageLocationsApplied = 0;
@@ -1369,6 +1374,7 @@ namespace BT_DRS_WinForm
 
         private void ApplyDamageFall(int Tons, int Levels)
         {
+            cancelDamageToolStripMenuItem.Visible = true;
             decimal DecimalDamage;
             DecimalDamage = (decimal.Parse(Tons.ToString()) / 10) + Levels;
 
@@ -1390,6 +1396,7 @@ namespace BT_DRS_WinForm
 
         public void ApplyDamagePunch(int Tons)
         {
+            cancelDamageToolStripMenuItem.Visible = true;
             decimal DecimalDamage;
             DecimalDamage = decimal.Parse(Tons.ToString()) / 10;
             ApplyDamage = int.Parse(Math.Ceiling(DecimalDamage).ToString());
@@ -1406,7 +1413,7 @@ namespace BT_DRS_WinForm
         {
             decimal DecimalDamage;
             DecimalDamage = decimal.Parse(Tons.ToString()) / 5;
-
+            cancelDamageToolStripMenuItem.Visible = true;
             ApplyDamage = int.Parse(Math.Ceiling(DecimalDamage).ToString());
             DamageLocations = 1;
             DamageLocationsApplied = 0;
@@ -1419,6 +1426,7 @@ namespace BT_DRS_WinForm
 
         public void ApplyDamageChargeDefender(int Tons)
         {
+            cancelDamageToolStripMenuItem.Visible = true;
             decimal DecimalDamage;
             DecimalDamage = decimal.Parse(Tons.ToString()) / 10;
             int Charge;
@@ -1442,6 +1450,7 @@ namespace BT_DRS_WinForm
 
         public void ApplyDamageChargeAttacker(int Tons)
         {
+            cancelDamageToolStripMenuItem.Visible = true;
             decimal DecimalDamage;
             DecimalDamage = decimal.Parse(Tons.ToString()) / 10;
 
@@ -1461,9 +1470,9 @@ namespace BT_DRS_WinForm
             AlertColor();
         }
 
-
         public void ApplyDamageDFADefender(int Tons)
         {
+            cancelDamageToolStripMenuItem.Visible = true;
             decimal DecimalDamage;
             DecimalDamage = decimal.Parse(Tons.ToString()) / 10;
 
@@ -1486,6 +1495,7 @@ namespace BT_DRS_WinForm
 
         public void ApplyDamageDFAAttacker(int Tons)
         {
+            cancelDamageToolStripMenuItem.Visible = true;
             decimal DecimalDamage;
             DecimalDamage = decimal.Parse(Tons.ToString()) / 5;
 
@@ -1885,7 +1895,7 @@ namespace BT_DRS_WinForm
                     if (TotalDamage >= 20)
                     {
 
-                        lblDamage.Text = TotalDamage + " Total Damage, Roll a PSR! ";
+                        lblDamage.Text = TotalDamage + " DMG, Roll PSR! ";
                         lblDamage.BackColor = Color.Yellow;
                     }
                 }
@@ -1902,7 +1912,7 @@ namespace BT_DRS_WinForm
                     else if (TotalDamage >= 20)
                     {
 
-                        lblDamage.Text = TotalDamage + " Total Damage, Roll a PSR! ";
+                        lblDamage.Text = TotalDamage + " DMG, Roll PSR! ";
                         lblDamage.BackColor = Color.Yellow;
                     }
 
@@ -1989,6 +1999,7 @@ namespace BT_DRS_WinForm
 
 
         }
+
         private void frmDataRecordSheet_Load(object sender, EventArgs e)
         {
 
@@ -1998,7 +2009,18 @@ namespace BT_DRS_WinForm
             if (MDL.Length > 1)
             {
                 txtModel.Text = MDL[1].Substring(0, MDL[1].Length - 1);
+                if (MDL[0].Substring(0, 4) == "BLUE")
+                {
+                    mnuApplyDamage.BackColor = Color.Blue;
+                    mnuApplyDamage.ForeColor = Color.White;
+                }
+                else
+                {
+                    mnuApplyDamage.BackColor = Color.Red;
+                    mnuApplyDamage.ForeColor = Color.White;
+                }
             }
+            
             HeatModifiers();
             txtModel.ReadOnly = true;
             txtName.ReadOnly = true;
@@ -2010,6 +2032,7 @@ namespace BT_DRS_WinForm
             lblLifeSupportHits.Text = "";
             lblLifeSupportHits2.Text = "";
             lblSensorHits.Text = "";
+            
         }
 
         private void label40_Click(object sender, EventArgs e)
@@ -2772,6 +2795,7 @@ namespace BT_DRS_WinForm
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
             AccumulatedDamage(ApplyDamage);
             AlertColor();
+            cancelDamageToolStripMenuItem.Visible = true;
         }
 
         private void fallToolStripMenuItem_Click(object sender, EventArgs e)
@@ -2786,6 +2810,18 @@ namespace BT_DRS_WinForm
             {
                 MessageBox.Show("Enter a valid value", "Invalid value entered", MessageBoxButtons.OK);
             }
+        }
+
+        private void cancelDamageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ApplyDamage = 0;
+            DamageLocationsApplied = 0;
+            DamageLocations = 0;
+            AppliedDamage = 0;
+            DamageFactor = 0;
+            lblDamage.Text = "";
+            lblDamage.BackColor = Color.WhiteSmoke;
+            cancelDamageToolStripMenuItem.Visible = false;
         }
     }
 }

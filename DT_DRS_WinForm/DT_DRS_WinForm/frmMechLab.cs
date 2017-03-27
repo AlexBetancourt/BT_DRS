@@ -1606,7 +1606,7 @@ namespace BT_DRS_WinForm
                 }
                 else
                 {
-                    if (chklstLA.Items.Count < 6)
+                    if (chklstLA.Items.Count < 12)
                         chklstLA.Items.Add(e.Data.GetData(DataFormats.Text));
                     else
                         MessageBox.Show("Can't add any more components to this location!", "INVALID!", MessageBoxButtons.OK);
@@ -1729,7 +1729,7 @@ namespace BT_DRS_WinForm
                 }
                 else
                 {
-                    if (chklstRA.Items.Count < 6)
+                    if (chklstRA.Items.Count < 12)
                         chklstRA.Items.Add(e.Data.GetData(DataFormats.Text));
                     else
                         MessageBox.Show("Can't add any more components to this location!", "INVALID!", MessageBoxButtons.OK);
@@ -2029,6 +2029,12 @@ namespace BT_DRS_WinForm
             chklstRA.Items.Add("Hand Actuator");
             chklstRA.Items.Add("Roll Again");
             chklstRA.Items.Add("Roll Again");
+            chklstRA.Items.Add("Roll Again");
+            chklstRA.Items.Add("Roll Again");
+            chklstRA.Items.Add("Roll Again");
+            chklstRA.Items.Add("Roll Again");
+            chklstRA.Items.Add("Roll Again");
+            chklstRA.Items.Add("Roll Again");
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -2038,6 +2044,12 @@ namespace BT_DRS_WinForm
             chklstLA.Items.Add("Upper Arm Actuator");
             chklstLA.Items.Add("Lower Arm Actuator");
             chklstLA.Items.Add("Hand Actuator");
+            chklstLA.Items.Add("Roll Again");
+            chklstLA.Items.Add("Roll Again");
+            chklstLA.Items.Add("Roll Again");
+            chklstLA.Items.Add("Roll Again");
+            chklstLA.Items.Add("Roll Again");
+            chklstLA.Items.Add("Roll Again");
             chklstLA.Items.Add("Roll Again");
             chklstLA.Items.Add("Roll Again");
         }
