@@ -186,7 +186,7 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Location = new System.Drawing.Point(811, 358);
+            this.groupBox7.Location = new System.Drawing.Point(811, 344);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(244, 291);
             this.groupBox7.TabIndex = 12;
@@ -1813,6 +1813,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmMechLab";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.frmMechLab_Load);
             this.groupBox6.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
