@@ -32,6 +32,7 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHead = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -40,6 +41,7 @@
             this.cmdRemoveComponentH = new System.Windows.Forms.Button();
             this.chklstH = new System.Windows.Forms.CheckedListBox();
             this.tabCenterTorso = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -48,6 +50,7 @@
             this.cmdRemoveComponentCT = new System.Windows.Forms.Button();
             this.chklstCT = new System.Windows.Forms.CheckedListBox();
             this.tabLeftTorso = new System.Windows.Forms.TabPage();
+            this.button8 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -56,6 +59,7 @@
             this.cmdRemoveComponentLT = new System.Windows.Forms.Button();
             this.chklstLT = new System.Windows.Forms.CheckedListBox();
             this.tabRightTorso = new System.Windows.Forms.TabPage();
+            this.button9 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
@@ -64,6 +68,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.chklstRT = new System.Windows.Forms.CheckedListBox();
             this.tabLeftArm = new System.Windows.Forms.TabPage();
+            this.button10 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
@@ -72,6 +77,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.chklstLA = new System.Windows.Forms.CheckedListBox();
             this.tabRightArm = new System.Windows.Forms.TabPage();
+            this.button11 = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
@@ -80,6 +86,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.chklstRA = new System.Windows.Forms.CheckedListBox();
             this.tabLeftLeg = new System.Windows.Forms.TabPage();
+            this.button12 = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
@@ -88,6 +95,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.chklstLL = new System.Windows.Forms.CheckedListBox();
             this.tabRightLeg = new System.Windows.Forms.TabPage();
+            this.button13 = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
@@ -155,14 +163,6 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cmdRefresh = new System.Windows.Forms.Button();
             this.cmdDelete = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
             this.groupBox6.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabHead.SuspendLayout();
@@ -240,6 +240,16 @@
             this.tabHead.Text = "Head";
             this.tabHead.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 405);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(184, 41);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Reset Location Components";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // label25
             // 
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -288,6 +298,7 @@
             this.chklstComponentsH.Location = new System.Drawing.Point(254, 27);
             this.chklstComponentsH.Name = "chklstComponentsH";
             this.chklstComponentsH.Size = new System.Drawing.Size(245, 327);
+            this.chklstComponentsH.Sorted = true;
             this.chklstComponentsH.TabIndex = 5;
             this.chklstComponentsH.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstComponentsH_DragEnter);
             this.chklstComponentsH.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.chklstComponentsH_QueryContinueDrag);
@@ -345,6 +356,16 @@
             this.tabCenterTorso.Text = "Center Torso";
             this.tabCenterTorso.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(6, 405);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(184, 41);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "Reset Location Components";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -393,6 +414,7 @@
             this.chklstComponentsCT.Location = new System.Drawing.Point(254, 27);
             this.chklstComponentsCT.Name = "chklstComponentsCT";
             this.chklstComponentsCT.Size = new System.Drawing.Size(245, 327);
+            this.chklstComponentsCT.Sorted = true;
             this.chklstComponentsCT.TabIndex = 18;
             this.chklstComponentsCT.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstComponentsCT_DragEnter);
             this.chklstComponentsCT.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.chklstComponentsCT_QueryContinueDrag);
@@ -454,6 +476,16 @@
             this.tabLeftTorso.Text = "LeftTorso";
             this.tabLeftTorso.UseVisualStyleBackColor = true;
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(6, 405);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(184, 41);
+            this.button8.TabIndex = 23;
+            this.button8.Text = "Reset Location Components";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -502,6 +534,7 @@
             this.chklstComponentsLT.Location = new System.Drawing.Point(254, 27);
             this.chklstComponentsLT.Name = "chklstComponentsLT";
             this.chklstComponentsLT.Size = new System.Drawing.Size(248, 327);
+            this.chklstComponentsLT.Sorted = true;
             this.chklstComponentsLT.TabIndex = 18;
             this.chklstComponentsLT.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstComponentsLT_DragEnter);
             this.chklstComponentsLT.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.chklstComponentsLT_QueryContinueDrag);
@@ -563,6 +596,16 @@
             this.tabRightTorso.Text = "Right Torso";
             this.tabRightTorso.UseVisualStyleBackColor = true;
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(6, 405);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(184, 41);
+            this.button9.TabIndex = 23;
+            this.button9.Text = "Reset Location Components";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -611,6 +654,7 @@
             this.chklstComponentsRT.Location = new System.Drawing.Point(254, 27);
             this.chklstComponentsRT.Name = "chklstComponentsRT";
             this.chklstComponentsRT.Size = new System.Drawing.Size(248, 327);
+            this.chklstComponentsRT.Sorted = true;
             this.chklstComponentsRT.TabIndex = 18;
             this.chklstComponentsRT.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstComponentsRT_DragEnter);
             this.chklstComponentsRT.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.chklstComponentsRT_QueryContinueDrag);
@@ -672,6 +716,16 @@
             this.tabLeftArm.Text = "Left Arm";
             this.tabLeftArm.UseVisualStyleBackColor = true;
             // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(6, 405);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(184, 41);
+            this.button10.TabIndex = 23;
+            this.button10.Text = "Reset Location Components";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -720,6 +774,7 @@
             this.chklstComponentsLA.Location = new System.Drawing.Point(254, 27);
             this.chklstComponentsLA.Name = "chklstComponentsLA";
             this.chklstComponentsLA.Size = new System.Drawing.Size(248, 327);
+            this.chklstComponentsLA.Sorted = true;
             this.chklstComponentsLA.TabIndex = 18;
             this.chklstComponentsLA.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstComponentsLA_DragEnter);
             this.chklstComponentsLA.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.chklstComponentsLA_QueryContinueDrag);
@@ -775,6 +830,16 @@
             this.tabRightArm.Text = "Right Arm";
             this.tabRightArm.UseVisualStyleBackColor = true;
             // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(6, 405);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(184, 41);
+            this.button11.TabIndex = 23;
+            this.button11.Text = "Reset Location Components";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
             // label16
             // 
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -823,6 +888,7 @@
             this.chklstComponentsRA.Location = new System.Drawing.Point(254, 27);
             this.chklstComponentsRA.Name = "chklstComponentsRA";
             this.chklstComponentsRA.Size = new System.Drawing.Size(248, 327);
+            this.chklstComponentsRA.Sorted = true;
             this.chklstComponentsRA.TabIndex = 18;
             this.chklstComponentsRA.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstComponentsRA_DragEnter);
             this.chklstComponentsRA.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.chklstComponentsRA_QueryContinueDrag);
@@ -878,6 +944,16 @@
             this.tabLeftLeg.Text = "Left Leg";
             this.tabLeftLeg.UseVisualStyleBackColor = true;
             // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(6, 405);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(184, 41);
+            this.button12.TabIndex = 23;
+            this.button12.Text = "Reset Location Components";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
             // label19
             // 
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -926,6 +1002,7 @@
             this.chklstComponentsLL.Location = new System.Drawing.Point(254, 27);
             this.chklstComponentsLL.Name = "chklstComponentsLL";
             this.chklstComponentsLL.Size = new System.Drawing.Size(248, 327);
+            this.chklstComponentsLL.Sorted = true;
             this.chklstComponentsLL.TabIndex = 18;
             this.chklstComponentsLL.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstComponentsLL_DragEnter);
             this.chklstComponentsLL.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.chklstComponentsLL_QueryContinueDrag);
@@ -981,6 +1058,16 @@
             this.tabRightLeg.Text = "Right Leg";
             this.tabRightLeg.UseVisualStyleBackColor = true;
             // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(6, 405);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(184, 41);
+            this.button13.TabIndex = 23;
+            this.button13.Text = "Reset Location Components";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
             // label20
             // 
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1029,6 +1116,7 @@
             this.chklstComponentsRL.Location = new System.Drawing.Point(254, 27);
             this.chklstComponentsRL.Name = "chklstComponentsRL";
             this.chklstComponentsRL.Size = new System.Drawing.Size(248, 327);
+            this.chklstComponentsRL.Sorted = true;
             this.chklstComponentsRL.TabIndex = 18;
             this.chklstComponentsRL.DragEnter += new System.Windows.Forms.DragEventHandler(this.chklstComponentsRL_DragEnter);
             this.chklstComponentsRL.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.chklstComponentsRL_QueryContinueDrag);
@@ -1698,86 +1786,6 @@
             this.cmdDelete.Text = "Delete Mech";
             this.cmdDelete.UseVisualStyleBackColor = true;
             this.cmdDelete.Click += new System.EventHandler(this.cmdDelete_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(6, 405);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 41);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Reset Location Components";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(6, 405);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(184, 41);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "Reset Location Components";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(6, 405);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(184, 41);
-            this.button8.TabIndex = 23;
-            this.button8.Text = "Reset Location Components";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(6, 405);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(184, 41);
-            this.button9.TabIndex = 23;
-            this.button9.Text = "Reset Location Components";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(6, 405);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(184, 41);
-            this.button10.TabIndex = 23;
-            this.button10.Text = "Reset Location Components";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(6, 405);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(184, 41);
-            this.button11.TabIndex = 23;
-            this.button11.Text = "Reset Location Components";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(6, 405);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(184, 41);
-            this.button12.TabIndex = 23;
-            this.button12.Text = "Reset Location Components";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(6, 405);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(184, 41);
-            this.button13.TabIndex = 23;
-            this.button13.Text = "Reset Location Components";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // frmMechLab
             // 

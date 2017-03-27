@@ -147,6 +147,7 @@
             this.cmdSL = new System.Windows.Forms.Button();
             this.mnuApplyDamage = new System.Windows.Forms.MenuStrip();
             this.applyDamageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.smallLaserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mediumLaserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.largeLaserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -376,7 +377,7 @@
             this.chklstRL = new System.Windows.Forms.CheckedListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.fallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -1761,16 +1762,24 @@
             this.toolStripMenuItem2,
             this.aCToolStripMenuItem,
             this.toolStripSeparator2,
-            this.toolStripSeparator1,
             this.punchToolStripMenuItem,
             this.kickToolStripMenuItem,
             this.chargeToolStripMenuItem,
-            this.dFAToolStripMenuItem});
+            this.dFAToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.fallToolStripMenuItem});
             this.applyDamageToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.applyDamageToolStripMenuItem.Name = "applyDamageToolStripMenuItem";
             this.applyDamageToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
             this.applyDamageToolStripMenuItem.Size = new System.Drawing.Size(111, 23);
             this.applyDamageToolStripMenuItem.Text = "Apply Damage";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
+            this.toolStripMenuItem1.Text = "Mechine Gun";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // smallLaserToolStripMenuItem
             // 
@@ -3807,12 +3816,12 @@
             this.label43.TabIndex = 58;
             this.label43.Text = "NOTES:";
             // 
-            // toolStripMenuItem1
+            // fallToolStripMenuItem
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
-            this.toolStripMenuItem1.Text = "Mechine Gun";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            this.fallToolStripMenuItem.Name = "fallToolStripMenuItem";
+            this.fallToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.fallToolStripMenuItem.Text = "Fall";
+            this.fallToolStripMenuItem.Click += new System.EventHandler(this.fallToolStripMenuItem_Click);
             // 
             // frmDigitalRecordSheet
             // 
@@ -4246,5 +4255,6 @@
         private System.Windows.Forms.ToolStripMenuItem tonsToolStripMenuItem100;
         private System.Windows.Forms.ToolStripTextBox tsTeam;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem fallToolStripMenuItem;
     }
 }

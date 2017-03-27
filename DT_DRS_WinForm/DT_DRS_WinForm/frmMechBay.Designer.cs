@@ -60,6 +60,7 @@
             this.lbMechs.Location = new System.Drawing.Point(7, 22);
             this.lbMechs.Name = "lbMechs";
             this.lbMechs.Size = new System.Drawing.Size(211, 303);
+            this.lbMechs.Sorted = true;
             this.lbMechs.TabIndex = 1;
             // 
             // groupBox2

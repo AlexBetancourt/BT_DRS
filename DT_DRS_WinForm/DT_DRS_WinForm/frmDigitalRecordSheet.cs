@@ -1367,6 +1367,27 @@ namespace BT_DRS_WinForm
 
         #region "FUNCTIONS"
 
+        private void ApplyDamageFall(int Tons, int Levels)
+        {
+            decimal DecimalDamage;
+            DecimalDamage = (decimal.Parse(Tons.ToString()) / 10) + Levels;
+
+            ApplyDamage = int.Parse(Math.Ceiling(DecimalDamage).ToString());
+
+            decimal DecimalLocations;
+            DecimalLocations = decimal.Parse(ApplyDamage.ToString()) / 5;
+            int Locations;
+            Locations = int.Parse(Math.Ceiling(DecimalLocations).ToString());
+
+            DamageLocations = Locations;
+            DamageLocationsApplied = 0;
+            AppliedDamage = 0;
+            DamageFactor = 5;
+            lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
+            AccumulatedDamage(ApplyDamage);
+            AlertColor();
+        }
+
         public void ApplyDamagePunch(int Tons)
         {
             decimal DecimalDamage;
@@ -1423,7 +1444,7 @@ namespace BT_DRS_WinForm
         {
             decimal DecimalDamage;
             DecimalDamage = decimal.Parse(Tons.ToString()) / 10;
-            
+
             ApplyDamage = int.Parse(Math.Ceiling(DecimalDamage).ToString());
 
             decimal DecimalLocations;
@@ -2751,6 +2772,20 @@ namespace BT_DRS_WinForm
             lblDamage.Text = "Select " + DamageLocations.ToString() + " Locations";
             AccumulatedDamage(ApplyDamage);
             AlertColor();
+        }
+
+        private void fallToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int Levels = int.Parse(Microsoft.VisualBasic.Interaction.InputBox("Number of Levels fallen? (current level count as 0)", "Fall"));
+
+            try
+            {
+                ApplyDamageFall(int.Parse(txtTons.Text), Levels);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Enter a valid value", "Invalid value entered", MessageBoxButtons.OK);
+            }
         }
     }
 }
