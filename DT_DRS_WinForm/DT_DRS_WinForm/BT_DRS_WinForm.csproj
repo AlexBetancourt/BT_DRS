@@ -108,6 +108,12 @@
       <DependentUpon>DS_BTDRS.xsd</DependentUpon>
     </Compile>
     <Compile Include="DS_BTDRSClasses.cs" />
+    <Compile Include="frmArmory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArmory.Designer.cs">
+      <DependentUpon>frmArmory.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBarracks.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArmory.resx">
+      <DependentUpon>frmArmory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBarracks.resx">
       <DependentUpon>frmBarracks.cs</DependentUpon>
