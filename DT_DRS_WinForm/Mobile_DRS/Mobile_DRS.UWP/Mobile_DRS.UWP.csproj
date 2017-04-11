@@ -133,7 +133,6 @@
       <Name>Visual C++ 2015 Runtime for Universal Windows Platform Apps</Name>
     </SDKReference>
   </ItemGroup>
-  <Import Project="..\Mobile_DRS\Mobile_DRS.projitems" Label="Shared" Condition="Exists('..\Mobile_DRS\Mobile_DRS.projitems')" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

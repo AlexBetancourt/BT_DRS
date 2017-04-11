@@ -156,7 +156,7 @@ namespace BT_DRS_WinForm
         {
             try
             {
-                if (lsPilots.SelectedItems.Count > 1)
+                if (lsPilots.SelectedItems.Count > 0)
                 {
                     string[] MDL = new string[3];
                     MDL = lsPilots.SelectedItem.ToString().Split('(');
