@@ -696,5 +696,13 @@ namespace BT_DRS_WinForm
             childForm.Text = "About";
             childForm.Show();
         }
+
+        private void armoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form childForm = new frmArmory();
+            childForm.MdiParent = this;
+            childForm.Text = "Armory";
+            childForm.Show();
+        }
     }
 }

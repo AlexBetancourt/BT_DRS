@@ -232,5 +232,10 @@ namespace BT_DRS_WinForm
         {
             LoadPilotList();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
