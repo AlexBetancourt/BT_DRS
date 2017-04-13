@@ -104,7 +104,7 @@ namespace BT_DRS_WinForm
                 if (Weapon != null)
                 {
                     txtName.Text = Weapon.Name.ToString();
-                    txtHeat.Text= Weapon.Heat.ToString();
+                    txtHeat.Text = Weapon.Heat.ToString();
                     txtDamage.Text = Weapon.Damage;
                     txtMinimum.Text = Weapon.Minimum;
                     txtShort.Text = Weapon.Short;
@@ -124,60 +124,56 @@ namespace BT_DRS_WinForm
         {
             try
             {
-                if (txtName.Text == "")
+                if (txtName.Text == "" || txtAmmo.Text == "" || txtCrits.Text == "" || txtDamage.Text == "" || txtHeat.Text == "" || txtLong.Text == "" || txtMedium.Text == "" || txtMinimum.Text == "" || txtShort.Text == "" || txtTons.Text == "" || txtWeaponType.Text == "")
                 {
-                    MessageBox.Show("Enter Pilot's Name", "Invalid Name", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    return;
-                }
-
-                if (txtCallSign.Text == "")
-                {
-                    MessageBox.Show("Enter Pilot's Callsign", "Invalid Callsign", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("All info must be entered!", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return;
                 }
 
                 using (var db = new LiteDatabase(@"DRS.db"))
                 {
-                    var Pilots = db.GetCollection<DS_BTDRSMechPilots>("Pilots");
-                    Pilots.EnsureIndex(x => x.Callsign);
-                    int PilotIDTemp;
-                    DS_BTDRSMechPilots PilotSearch = Pilots.FindOne(Query.EQ("Callsign", txtCallSign.Text));
-                    if (PilotSearch != null)
+                    var Weapons = db.GetCollection<DS_BTDRSWeapons>("Weapons");
+                    Weapons.EnsureIndex(x => x.Name);
+                    int WeaponIDTemp;
+                    DS_BTDRSWeapons WeaponSearch = Weapons.FindOne(Query.EQ("Name", txtName.Text));
+                    if (WeaponSearch != null)
                     {
-                        PilotIDTemp = PilotSearch.PilotID;
-                        Pilots.Delete(Query.EQ("Callsign", PilotSearch.Callsign));
-                        PilotSearch.PilotID = PilotIDTemp;
-                        PilotSearch.Name = txtName.Text;
-                        PilotSearch.Callsign = txtCallSign.Text;
-                        PilotSearch.Affiliation = comboBox2.Text;
-                        PilotSearch.Rank = txtRank.Text;
-                        PilotSearch.Description = txtDescription.Text;
-                        PilotSearch.PilotingSkill = int.Parse(nmPS.Value.ToString());
-                        PilotSearch.GunnerySkill = int.Parse(nmGS.Value.ToString());
-                        PilotSearch.HitPoints = int.Parse(nmHP.Value.ToString());
-                        PilotSearch.DamageTaken = int.Parse(nmDT.Value.ToString());
-                        PilotSearch.Kills = int.Parse(nmKS.Value.ToString());
-                        Pilots.Insert(PilotSearch);
+                        WeaponIDTemp = WeaponSearch.WeaponID;
+                        Weapons.Delete(Query.EQ("Name", WeaponSearch.Name));
+                        WeaponSearch.WeaponID = WeaponIDTemp;
+                        WeaponSearch.Name = txtName.Text;
+                        WeaponSearch.Damage = txtDamage.Text;
+                        WeaponSearch.Heat = int.Parse(txtHeat.Text);
+                        WeaponSearch.Minimum = txtMinimum.Text;
+                        WeaponSearch.Short = txtShort.Text;
+                        WeaponSearch.Medium = txtMedium.Text;
+                        WeaponSearch.Long = txtLong.Text;
+                        WeaponSearch.WeaponType = txtWeaponType.Text;
+                        WeaponSearch.Crits = int.Parse(txtCrits.Text);
+                        WeaponSearch.Tons = int.Parse(txtTons.Text);
+                        WeaponSearch.Ammo = txtAmmo.Text;
+                        Weapons.Insert(WeaponSearch);
                     }
                     else
                     {
-                        DS_BTDRSMechPilots Pilot = new DS_BTDRSMechPilots
+                        DS_BTDRSWeapons Weapon = new DS_BTDRSWeapons
                         {
-                            PilotID = Pilots.Count() + 1,
+                            WeaponID = Weapons.Count() + 1,
                             Name = txtName.Text,
-                            Callsign = txtCallSign.Text,
-                            Affiliation = comboBox2.Text,
-                            Rank = txtRank.Text,
-                            Description = txtDescription.Text,
-                            PilotingSkill = int.Parse(nmPS.Value.ToString()),
-                            GunnerySkill = int.Parse(nmGS.Value.ToString()),
-                            HitPoints = int.Parse(nmHP.Value.ToString()),
-                            DamageTaken = int.Parse(nmDT.Value.ToString()),
-                            Kills = int.Parse(nmKS.Value.ToString())
+                            Damage = txtDamage.Text,
+                            Heat = int.Parse(txtHeat.Text),
+                            Minimum = txtMinimum.Text,
+                            Short = txtShort.Text,
+                            Medium = txtMedium.Text,
+                            Long = txtLong.Text,
+                            WeaponType = txtWeaponType.Text,
+                            Tons = int.Parse(txtTons.Text),
+                            Crits = int.Parse(txtCrits.Text),
+                            Ammo = txtAmmo.Text
                         };
-                        Pilots.Insert(Pilot);
+                        Weapons.Insert(Weapon);
                     }
-                    LoadPilotList();
+                    LoadWnEList();
                     ClearFields();
                 }
             }
@@ -185,6 +181,43 @@ namespace BT_DRS_WinForm
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void ClearFields()
+        {
+
+            txtName.Text = "";
+            txtDamage.Text = "";
+            txtHeat.Text = "";
+            txtMinimum.Text = "";
+            txtShort.Text = "";
+            txtMinimum.Text = "";
+            txtLong.Text = "";
+            txtWeaponType.Text = "";
+            txtCrits.Text = "";
+            txtTons.Text = "";
+            txtAmmo.Text = "";
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (var db = new LiteDatabase(@"DRS.db"))
+            {
+                var Weapons = db.GetCollection<DS_BTDRSWeapons>("Weapons");
+                Weapons.EnsureIndex(x => x.Name);
+
+                DS_BTDRSWeapons Weapon = Weapons.FindOne(Query.EQ("Name", txtName.Text));
+                if (Weapon != null)
+                {
+                    if (MessageBox.Show("Do you really want to delete this Equipment??? (this action cannot be undone!)", "Deleting Equipment", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                    {
+                        Weapons.Delete(Query.EQ("Name", Weapon.Name));
+                    }
+                }
+            }
+            LoadWnEList();
+            ClearFields();
         }
     }
 }

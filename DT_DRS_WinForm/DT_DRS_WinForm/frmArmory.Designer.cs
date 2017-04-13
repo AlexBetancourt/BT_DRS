@@ -31,7 +31,10 @@
             this.lbWnE = new System.Windows.Forms.ListBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpWnE = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblWeaponType = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
@@ -67,9 +70,6 @@
             this.txtBVAmmo = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.lbAmmo = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tpWnE.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -83,6 +83,7 @@
             this.lbWnE.Location = new System.Drawing.Point(493, 19);
             this.lbWnE.Name = "lbWnE";
             this.lbWnE.Size = new System.Drawing.Size(134, 277);
+            this.lbWnE.Sorted = true;
             this.lbWnE.TabIndex = 0;
             this.lbWnE.SelectedValueChanged += new System.EventHandler(this.lbWnE_SelectedValueChanged);
             // 
@@ -109,6 +110,25 @@
             this.tpWnE.TabIndex = 0;
             this.tpWnE.Text = "Weapons & Equipment";
             this.tpWnE.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(560, 308);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(67, 25);
+            this.button3.TabIndex = 29;
+            this.button3.Text = "Refresh";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(493, 308);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(67, 25);
+            this.button2.TabIndex = 28;
+            this.button2.Text = "Delete";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // groupBox1
             // 
@@ -141,6 +161,16 @@
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Details";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(333, 45);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 20);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -326,7 +356,7 @@
             this.tpAmmo.Location = new System.Drawing.Point(4, 22);
             this.tpAmmo.Name = "tpAmmo";
             this.tpAmmo.Padding = new System.Windows.Forms.Padding(3);
-            this.tpAmmo.Size = new System.Drawing.Size(633, 296);
+            this.tpAmmo.Size = new System.Drawing.Size(633, 339);
             this.tpAmmo.TabIndex = 1;
             this.tpAmmo.Text = "Ammo";
             this.tpAmmo.UseVisualStyleBackColor = true;
@@ -437,34 +467,6 @@
             this.lbAmmo.Name = "lbAmmo";
             this.lbAmmo.Size = new System.Drawing.Size(134, 277);
             this.lbAmmo.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(333, 45);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 20);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(493, 308);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(67, 25);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(560, 308);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(67, 25);
-            this.button3.TabIndex = 29;
-            this.button3.Text = "Refresh";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // frmArmory
             // 
