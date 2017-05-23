@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Barracas.cs">
+    <Compile Include="Cuartel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Barracas.Designer.cs">
-      <DependentUpon>Barracas.cs</DependentUpon>
+    <Compile Include="Cuartel.Designer.cs">
+      <DependentUpon>Cuartel.cs</DependentUpon>
     </Compile>
     <Compile Include="MDI_CEG.cs">
       <SubType>Form</SubType>
@@ -57,8 +57,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Barracas.resx">
-      <DependentUpon>Barracas.cs</DependentUpon>
+    <EmbeddedResource Include="Cuartel.resx">
+      <DependentUpon>Cuartel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDI_CEG.resx">
       <DependentUpon>MDI_CEG.cs</DependentUpon>

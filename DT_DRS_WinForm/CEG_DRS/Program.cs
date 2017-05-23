@@ -15,7 +15,7 @@ namespace CEG_DRS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MDI_CEG());
+            Application.Run(new frmCharCreation());
         }
     }
 }

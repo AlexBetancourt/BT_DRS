@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.12
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT_DRS_WinForm", "DT_DRS_WinForm\BT_DRS_WinForm.csproj", "{402F560E-6D55-4A05-9BA4-C30A2AFF9F0C}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BTDRS_Install", "BTDRS_Install\BTDRS_Install.vdproj", "{90080457-2B05-4EDC-ACB2-CA95297EBDB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CEG_DRS", "CEG_DRS\CEG_DRS.csproj", "{BF1FBCA6-F87F-43AC-9BF4-D639D9DB6514}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICONS_DRS", "CEG_DRS\ICONS_DRS.csproj", "{BF1FBCA6-F87F-43AC-9BF4-D639D9DB6514}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
