@@ -51,6 +51,7 @@
             this.tileHorizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arrangeIconsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.armoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.barracksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mechLabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mechBayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -89,7 +90,6 @@
             this.tsProgBar = new System.Windows.Forms.ToolStripProgressBar();
             this.tsLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.armoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -286,6 +286,13 @@
             this.arrangeIconsToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.arrangeIconsToolStripMenuItem.Text = "&Arrange Icons";
             this.arrangeIconsToolStripMenuItem.Click += new System.EventHandler(this.ArrangeIconsToolStripMenuItem_Click);
+            // 
+            // armoryToolStripMenuItem
+            // 
+            this.armoryToolStripMenuItem.Name = "armoryToolStripMenuItem";
+            this.armoryToolStripMenuItem.Size = new System.Drawing.Size(59, 25);
+            this.armoryToolStripMenuItem.Text = "Armory";
+            this.armoryToolStripMenuItem.Click += new System.EventHandler(this.armoryToolStripMenuItem_Click);
             // 
             // barracksToolStripMenuItem
             // 
@@ -567,17 +574,13 @@
             this.tsLabel.Size = new System.Drawing.Size(116, 17);
             this.tsLabel.Text = "Configuration Status";
             // 
-            // armoryToolStripMenuItem
-            // 
-            this.armoryToolStripMenuItem.Name = "armoryToolStripMenuItem";
-            this.armoryToolStripMenuItem.Size = new System.Drawing.Size(59, 25);
-            this.armoryToolStripMenuItem.Text = "Armory";
-            this.armoryToolStripMenuItem.Click += new System.EventHandler(this.armoryToolStripMenuItem_Click);
-            // 
             // MDI_BTDRS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.BackgroundImage = global::BT_DRS_WinForm.Properties.Resources.BTDRS;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(979, 576);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);

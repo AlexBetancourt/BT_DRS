@@ -73,6 +73,16 @@ namespace BT_DRS_WinForm.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BTDRS {
+            get {
+                object obj = ResourceManager.GetObject("BTDRS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap índice {
             get {
                 object obj = ResourceManager.GetObject("índice", resourceCulture);

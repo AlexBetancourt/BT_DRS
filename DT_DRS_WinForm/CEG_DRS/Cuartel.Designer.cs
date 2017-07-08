@@ -32,7 +32,14 @@
             this.txtNacionalidad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblPV = new System.Windows.Forms.Label();
+            this.lblVoluntad = new System.Windows.Forms.Label();
+            this.lblConsciencia = new System.Windows.Forms.Label();
+            this.lblIntelecto = new System.Windows.Forms.Label();
+            this.lblFuerza = new System.Windows.Forms.Label();
+            this.lblCoordinacion = new System.Windows.Forms.Label();
+            this.lblDestreza = new System.Windows.Forms.Label();
+            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
+            this.lblV = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,21 +55,14 @@
             this.tirarDadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.d100ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.d100ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            this.lblVoluntad = new System.Windows.Forms.Label();
-            this.lblConsciencia = new System.Windows.Forms.Label();
-            this.lblIntelecto = new System.Windows.Forms.Label();
-            this.lblFuerza = new System.Windows.Forms.Label();
-            this.lblCoordinacion = new System.Windows.Forms.Label();
-            this.lblDestreza = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNombre
@@ -97,7 +97,7 @@
             this.groupBox1.Controls.Add(this.lblCoordinacion);
             this.groupBox1.Controls.Add(this.lblDestreza);
             this.groupBox1.Controls.Add(this.numericUpDown6);
-            this.groupBox1.Controls.Add(this.lblPV);
+            this.groupBox1.Controls.Add(this.lblV);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
@@ -119,14 +119,85 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Generales";
             // 
-            // lblPV
+            // lblVoluntad
             // 
-            this.lblPV.AutoSize = true;
-            this.lblPV.Location = new System.Drawing.Point(11, 234);
-            this.lblPV.Name = "lblPV";
-            this.lblPV.Size = new System.Drawing.Size(52, 13);
-            this.lblPV.TabIndex = 18;
-            this.lblPV.Text = "Voluntad:";
+            this.lblVoluntad.AutoSize = true;
+            this.lblVoluntad.Location = new System.Drawing.Point(206, 234);
+            this.lblVoluntad.Name = "lblVoluntad";
+            this.lblVoluntad.Size = new System.Drawing.Size(10, 13);
+            this.lblVoluntad.TabIndex = 25;
+            this.lblVoluntad.Text = ".";
+            // 
+            // lblConsciencia
+            // 
+            this.lblConsciencia.AutoSize = true;
+            this.lblConsciencia.Location = new System.Drawing.Point(206, 205);
+            this.lblConsciencia.Name = "lblConsciencia";
+            this.lblConsciencia.Size = new System.Drawing.Size(10, 13);
+            this.lblConsciencia.TabIndex = 24;
+            this.lblConsciencia.Text = ".";
+            // 
+            // lblIntelecto
+            // 
+            this.lblIntelecto.AutoSize = true;
+            this.lblIntelecto.Location = new System.Drawing.Point(206, 179);
+            this.lblIntelecto.Name = "lblIntelecto";
+            this.lblIntelecto.Size = new System.Drawing.Size(10, 13);
+            this.lblIntelecto.TabIndex = 23;
+            this.lblIntelecto.Text = ".";
+            // 
+            // lblFuerza
+            // 
+            this.lblFuerza.AutoSize = true;
+            this.lblFuerza.Location = new System.Drawing.Point(206, 153);
+            this.lblFuerza.Name = "lblFuerza";
+            this.lblFuerza.Size = new System.Drawing.Size(10, 13);
+            this.lblFuerza.TabIndex = 22;
+            this.lblFuerza.Text = ".";
+            // 
+            // lblCoordinacion
+            // 
+            this.lblCoordinacion.AutoSize = true;
+            this.lblCoordinacion.Location = new System.Drawing.Point(206, 127);
+            this.lblCoordinacion.Name = "lblCoordinacion";
+            this.lblCoordinacion.Size = new System.Drawing.Size(10, 13);
+            this.lblCoordinacion.TabIndex = 21;
+            this.lblCoordinacion.Text = ".";
+            // 
+            // lblDestreza
+            // 
+            this.lblDestreza.AutoSize = true;
+            this.lblDestreza.Location = new System.Drawing.Point(206, 101);
+            this.lblDestreza.Name = "lblDestreza";
+            this.lblDestreza.Size = new System.Drawing.Size(10, 13);
+            this.lblDestreza.TabIndex = 20;
+            this.lblDestreza.Text = ".";
+            // 
+            // numericUpDown6
+            // 
+            this.numericUpDown6.Location = new System.Drawing.Point(112, 232);
+            this.numericUpDown6.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown6.Name = "numericUpDown6";
+            this.numericUpDown6.Size = new System.Drawing.Size(86, 20);
+            this.numericUpDown6.TabIndex = 19;
+            this.numericUpDown6.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // lblV
+            // 
+            this.lblV.AutoSize = true;
+            this.lblV.Location = new System.Drawing.Point(11, 234);
+            this.lblV.Name = "lblV";
+            this.lblV.Size = new System.Drawing.Size(52, 13);
+            this.lblV.TabIndex = 18;
+            this.lblV.Text = "Voluntad:";
             // 
             // label8
             // 
@@ -291,87 +362,16 @@
             // d100ToolStripMenuItem
             // 
             this.d100ToolStripMenuItem.Name = "d100ToolStripMenuItem";
-            this.d100ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.d100ToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.d100ToolStripMenuItem.Text = "1d100";
             this.d100ToolStripMenuItem.Click += new System.EventHandler(this.d100ToolStripMenuItem_Click);
             // 
             // d100ToolStripMenuItem1
             // 
             this.d100ToolStripMenuItem1.Name = "d100ToolStripMenuItem1";
-            this.d100ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.d100ToolStripMenuItem1.Size = new System.Drawing.Size(105, 22);
             this.d100ToolStripMenuItem1.Text = "5d100";
             this.d100ToolStripMenuItem1.Click += new System.EventHandler(this.d100ToolStripMenuItem1_Click);
-            // 
-            // numericUpDown6
-            // 
-            this.numericUpDown6.Location = new System.Drawing.Point(112, 232);
-            this.numericUpDown6.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(86, 20);
-            this.numericUpDown6.TabIndex = 19;
-            this.numericUpDown6.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // lblVoluntad
-            // 
-            this.lblVoluntad.AutoSize = true;
-            this.lblVoluntad.Location = new System.Drawing.Point(206, 234);
-            this.lblVoluntad.Name = "lblVoluntad";
-            this.lblVoluntad.Size = new System.Drawing.Size(10, 13);
-            this.lblVoluntad.TabIndex = 25;
-            this.lblVoluntad.Text = ".";
-            // 
-            // lblConsciencia
-            // 
-            this.lblConsciencia.AutoSize = true;
-            this.lblConsciencia.Location = new System.Drawing.Point(206, 205);
-            this.lblConsciencia.Name = "lblConsciencia";
-            this.lblConsciencia.Size = new System.Drawing.Size(10, 13);
-            this.lblConsciencia.TabIndex = 24;
-            this.lblConsciencia.Text = ".";
-            // 
-            // lblIntelecto
-            // 
-            this.lblIntelecto.AutoSize = true;
-            this.lblIntelecto.Location = new System.Drawing.Point(206, 179);
-            this.lblIntelecto.Name = "lblIntelecto";
-            this.lblIntelecto.Size = new System.Drawing.Size(10, 13);
-            this.lblIntelecto.TabIndex = 23;
-            this.lblIntelecto.Text = ".";
-            // 
-            // lblFuerza
-            // 
-            this.lblFuerza.AutoSize = true;
-            this.lblFuerza.Location = new System.Drawing.Point(206, 153);
-            this.lblFuerza.Name = "lblFuerza";
-            this.lblFuerza.Size = new System.Drawing.Size(10, 13);
-            this.lblFuerza.TabIndex = 22;
-            this.lblFuerza.Text = ".";
-            // 
-            // lblCoordinacion
-            // 
-            this.lblCoordinacion.AutoSize = true;
-            this.lblCoordinacion.Location = new System.Drawing.Point(206, 127);
-            this.lblCoordinacion.Name = "lblCoordinacion";
-            this.lblCoordinacion.Size = new System.Drawing.Size(10, 13);
-            this.lblCoordinacion.TabIndex = 21;
-            this.lblCoordinacion.Text = ".";
-            // 
-            // lblDestreza
-            // 
-            this.lblDestreza.AutoSize = true;
-            this.lblDestreza.Location = new System.Drawing.Point(206, 101);
-            this.lblDestreza.Name = "lblDestreza";
-            this.lblDestreza.Size = new System.Drawing.Size(10, 13);
-            this.lblDestreza.TabIndex = 20;
-            this.lblDestreza.Text = ".";
             // 
             // frmCharCreation
             // 
@@ -386,6 +386,7 @@
             this.Load += new System.EventHandler(this.frmCharCreation_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
@@ -393,7 +394,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -416,7 +416,7 @@
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblPV;
+        private System.Windows.Forms.Label lblV;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem tirarDadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem d100ToolStripMenuItem;

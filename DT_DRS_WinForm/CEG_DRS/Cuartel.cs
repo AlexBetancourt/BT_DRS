@@ -18,14 +18,14 @@ namespace CEG_DRS
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            if (numericUpDown1.Value < 10)
-                lblPV.Text = "Puntos de Vida: 5";
-            else
-            {
-                decimal PV = 0;
-                PV = Math.Floor(numericUpDown1.Value / 10) + 5;
-                lblPV.Text = "Puntos de Vida: " + PV;
-            }
+            //if (numericUpDown1.Value < 10)
+            //    lblV.Text = "Puntos de Vida: 5";
+            //else
+            //{
+            //    decimal PV = 0;
+            //    PV = Math.Floor(numericUpDown1.Value / 10) + 5;
+            //    lblV.Text = "Puntos de Vida: " + PV;
+            //}
         }
         Random random1 = new Random();
         private void d100ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -46,10 +46,7 @@ namespace CEG_DRS
             int randomNumber4 = random1.Next(2, 13);
             int randomNumber5 = random1.Next(2, 13);
             int randomNumber6 = random1.Next(2, 13);
-            tirarDadosToolStripMenuItem.ShowDropDown();
-            d100ToolStripMenuItem1.DropDownItems.Insert(0, d100ToolStripMenuItem1.DropDownItems.Add("Lanza 2d6 x 6:  " + randomNumber1.ToString() + " + " + randomNumber2.ToString() + " + " + randomNumber3.ToString() + " + " + randomNumber4.ToString() + " + " + randomNumber5.ToString() + " + " + randomNumber6.ToString() + " = " + (randomNumber1 + randomNumber2 + randomNumber3 + randomNumber4 + randomNumber5 + randomNumber6).ToString()));//  ToolStripDropDown();
-            d100ToolStripMenuItem1.ShowDropDown();
-            PuntosAsignar = randomNumber1 + randomNumber2 + randomNumber3 + randomNumber4 + randomNumber5 + randomNumber6;
+             PuntosAsignar = randomNumber1 + randomNumber2 + randomNumber3 + randomNumber4 + randomNumber5 + randomNumber6;
 
             numericUpDown1.Value = NivelTexto(numericUpDown1, lblDestreza, randomNumber1);
             numericUpDown2.Value = NivelTexto(numericUpDown2, lblCoordinacion, randomNumber2);
@@ -57,6 +54,11 @@ namespace CEG_DRS
             numericUpDown4.Value = NivelTexto(numericUpDown4, lblIntelecto, randomNumber4);
             numericUpDown5.Value = NivelTexto(numericUpDown5, lblConsciencia, randomNumber5);
             numericUpDown6.Value = NivelTexto(numericUpDown6, lblVoluntad, randomNumber6);
+
+            tirarDadosToolStripMenuItem.ShowDropDown();
+            d100ToolStripMenuItem1.DropDownItems.Insert(0, d100ToolStripMenuItem1.DropDownItems.Add("Lanza 2d6 x 6:  " + numericUpDown1.Value.ToString() + " + " + numericUpDown2.Value.ToString() + " + " + numericUpDown3.Value.ToString() + " + " + numericUpDown4.Value.ToString() + " + " + numericUpDown5.Value.ToString() + " + " + numericUpDown6.Value.ToString() + " = " + (numericUpDown1.Value + numericUpDown2.Value + numericUpDown3.Value + numericUpDown4.Value + numericUpDown5.Value + numericUpDown6.Value).ToString()));//  ToolStripDropDown();
+            d100ToolStripMenuItem1.ShowDropDown();
+
 
         }
 

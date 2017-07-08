@@ -292,6 +292,7 @@
     <Content Include="Images\índice.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\BTDRS.jpg" />
     <Content Include="Sounds\MW2 Betty - Critical Hit.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
