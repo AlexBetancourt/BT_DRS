@@ -464,11 +464,11 @@ namespace BT_DRS_WinForm
                            
                         }
 
-                        //WEAPON LOCATIONS
-                        var WeaponLocations = Database.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
-                        WeaponLocations.Delete(Query.All());
+                        ////WEAPON LOCATIONS
+                        //var WeaponLocations = Database.GetCollection<DS_BTDRSMechWeaponLocation>("MechWeaponLocations");
+                        //WeaponLocations.Delete(Query.All());
 
-                        //AMMO
+                        //MECH CONFIGURATIONS
                         var MechConfigsRowsCount = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\MechConfigs.csv"));
                         var MechConfigsRows = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\MechConfigs.csv"));
                         var MechConfigs = Database.GetCollection<DS_BTDRSMechConfigs>("MechConfigs");
@@ -515,6 +515,7 @@ namespace BT_DRS_WinForm
 
 
                     }
+                    AutoConfig = false;
                 }
             }
             catch (Exception ex)
@@ -703,6 +704,362 @@ namespace BT_DRS_WinForm
             childForm.MdiParent = this;
             childForm.Text = "Armory";
             childForm.Show();
+        }
+
+        private void initializeMechsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            int rowsCount = 0;
+            // Some language locals (eg. Hungarian) use "," as a decimal separator so we change that.
+            NumberFormatInfo nfi = new NumberFormatInfo();
+            nfi.NumberDecimalSeparator = ".";
+            using (var Database = new LiteDatabase(@"DRS.db"))
+            {
+                //MECHS
+                var MechsRowsCount = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\Mechs.csv"));
+            var MechsRows = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\Mechs.csv"));
+            var Mechs = Database.GetCollection<DS_BTDRSMechs>("Mechs");
+            Mechs.EnsureIndex(x => x.MechID);
+            var MechLocations = Database.GetCollection<DS_BTDRSMechLocation>("MechLocations");
+            MechLocations.Delete(Query.All());
+            Mechs.Delete(Query.All(1));
+            tsLabel.Text = "Adding Mechs";
+            tsProgBar.Value = 0;
+            rowsCount = 0;
+            while (!MechsRowsCount.EndOfStream)
+            {
+                var line = MechsRowsCount.ReadLine();
+                var values = line.Split('|');
+                if (values[0] != "MechID")
+                {
+                    rowsCount = rowsCount + 1;
+                }
+            }
+            tsProgBar.Maximum = rowsCount;
+                while (!MechsRows.EndOfStream)
+                {
+                    var line = MechsRows.ReadLine();
+                    var values = line.Split('|');
+                    if (values[0] != "MechID")
+                    {
+                        var Mech = new DS_BTDRSMechs
+                        {
+                            MechID = int.Parse(values[0]),
+                            Name = values[1],
+                            Model = values[2],
+                            Walk = int.Parse(values[3]),
+                            Run = int.Parse(values[4]),
+                            Jump = int.Parse(values[5]),
+                            Heatsinks = int.Parse(values[6]),
+                            Tons = int.Parse(values[7])
+                        };
+                        Mechs.Insert(Mech);
+                        tsProgBar.Value = tsProgBar.Value + 1;
+                        //var MechLocations = Database.GetCollection<DS_BTDRSMechLocation>("MechLocations");
+                        var MechLocation = new DS_BTDRSMechLocation
+                        {
+                            MechLocationID = MechLocations.Count() + 1,
+                            MechID = int.Parse(values[0]),
+                            LocationID = 1,
+                            HitPoints = int.Parse(values[8])
+                        };
+                        MechLocations.Insert(MechLocation);
+
+                        MechLocation.MechLocationID = MechLocations.Count() + 1;
+                        MechLocation.MechID = int.Parse(values[0]);
+                        MechLocation.LocationID = 2;
+                        MechLocation.HitPoints = int.Parse(values[9]);
+                        MechLocations.Insert(MechLocation);
+
+                        MechLocation.MechLocationID = MechLocations.Count() + 1;
+                        MechLocation.MechID = int.Parse(values[0]);
+                        MechLocation.LocationID = 3;
+                        MechLocation.HitPoints = int.Parse(values[10]);
+                        MechLocations.Insert(MechLocation);
+
+                        MechLocation.MechLocationID = MechLocations.Count() + 1;
+                        MechLocation.MechID = int.Parse(values[0]);
+                        MechLocation.LocationID = 4;
+                        MechLocation.HitPoints = int.Parse(values[11]);
+                        MechLocations.Insert(MechLocation);
+
+                        MechLocation.MechLocationID = MechLocations.Count() + 1;
+                        MechLocation.MechID = int.Parse(values[0]);
+                        MechLocation.LocationID = 5;
+                        MechLocation.HitPoints = int.Parse(values[12]);
+                        MechLocations.Insert(MechLocation);
+
+                        MechLocation.MechLocationID = MechLocations.Count() + 1;
+                        MechLocation.MechID = int.Parse(values[0]);
+                        MechLocation.LocationID = 6;
+                        MechLocation.HitPoints = int.Parse(values[13]);
+                        MechLocations.Insert(MechLocation);
+
+                        MechLocation.MechLocationID = MechLocations.Count() + 1;
+                        MechLocation.MechID = int.Parse(values[0]);
+                        MechLocation.LocationID = 7;
+                        MechLocation.HitPoints = int.Parse(values[14]);
+                        MechLocations.Insert(MechLocation);
+
+                        MechLocation.MechLocationID = MechLocations.Count() + 1;
+                        MechLocation.MechID = int.Parse(values[0]);
+                        MechLocation.LocationID = 8;
+                        MechLocation.HitPoints = int.Parse(values[15]);
+                        MechLocations.Insert(MechLocation);
+
+                        MechLocation.MechLocationID = MechLocations.Count() + 1;
+                        MechLocation.MechID = int.Parse(values[0]);
+                        MechLocation.LocationID = 9;
+                        MechLocation.HitPoints = int.Parse(values[16]);
+                        MechLocations.Insert(MechLocation);
+
+                        MechLocation.MechLocationID = MechLocations.Count() + 1;
+                        MechLocation.MechID = int.Parse(values[0]);
+                        MechLocation.LocationID = 10;
+                        MechLocation.HitPoints = int.Parse(values[17]);
+                        MechLocations.Insert(MechLocation);
+
+                        MechLocation.MechLocationID = MechLocations.Count() + 1;
+                        MechLocation.MechID = int.Parse(values[0]);
+                        MechLocation.LocationID = 11;
+                        MechLocation.HitPoints = int.Parse(values[18]);
+                        MechLocations.Insert(MechLocation);
+
+                        MechLocation.MechLocationID = MechLocations.Count() + 1;
+                        MechLocation.MechID = int.Parse(values[0]);
+                        MechLocation.LocationID = 12;
+                        MechLocation.HitPoints = int.Parse(values[19]);
+                        MechLocations.Insert(MechLocation);
+
+                        MechLocation.MechLocationID = MechLocations.Count() + 1;
+                        MechLocation.MechID = int.Parse(values[0]);
+                        MechLocation.LocationID = 13;
+                        MechLocation.HitPoints = int.Parse(values[20]);
+                        MechLocations.Insert(MechLocation);
+
+                        MechLocation.MechLocationID = MechLocations.Count() + 1;
+                        MechLocation.MechID = int.Parse(values[0]);
+                        MechLocation.LocationID = 14;
+                        MechLocation.HitPoints = int.Parse(values[21]);
+                        MechLocations.Insert(MechLocation);
+
+                        MechLocation.MechLocationID = MechLocations.Count() + 1;
+                        MechLocation.MechID = int.Parse(values[0]);
+                        MechLocation.LocationID = 15;
+                        MechLocation.HitPoints = int.Parse(values[22]);
+                        MechLocations.Insert(MechLocation);
+
+                        MechLocation.MechLocationID = MechLocations.Count() + 1;
+                        MechLocation.MechID = int.Parse(values[0]);
+                        MechLocation.LocationID = 16;
+                        MechLocation.HitPoints = int.Parse(values[23]);
+                        MechLocations.Insert(MechLocation);
+
+                        MechLocation.MechLocationID = MechLocations.Count() + 1;
+                        MechLocation.MechID = int.Parse(values[0]);
+                        MechLocation.LocationID = 17;
+                        MechLocation.HitPoints = int.Parse(values[24]);
+                        MechLocations.Insert(MechLocation);
+
+                        MechLocation.MechLocationID = MechLocations.Count() + 1;
+                        MechLocation.MechID = int.Parse(values[0]);
+                        MechLocation.LocationID = 18;
+                        MechLocation.HitPoints = int.Parse(values[25]);
+                        MechLocations.Insert(MechLocation);
+
+                        MechLocation.MechLocationID = MechLocations.Count() + 1;
+                        MechLocation.MechID = int.Parse(values[0]);
+                        MechLocation.LocationID = 19;
+                        MechLocation.HitPoints = int.Parse(values[26]);
+                        MechLocations.Insert(MechLocation);
+
+
+
+                    }
+                }
+            }
+            tsLabel.Text = "Initialization Complete.";
+        }
+
+        private void initializeMechWarriorsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (var db = new LiteDatabase(@"DRS.db"))
+                {
+                    var Pilots = db.GetCollection<DS_BTDRSMechPilots>("Pilots");
+                    if (MessageBox.Show("Do you really want to delete ALL MechPilots??? (this action cannot be undone!)", "Deleting MechPilots", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                    {
+                        Pilots.Delete(Query.All());
+                        tsLabel.Text = "Initialization Complete.";
+                    }
+                }
+               
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+        }
+
+        private void initializeWeaponsAndAmmoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+            int rowsCount = 0;
+            // Some language locals (eg. Hungarian) use "," as a decimal separator so we change that.
+            NumberFormatInfo nfi = new NumberFormatInfo();
+            nfi.NumberDecimalSeparator = ".";
+            using (var Database = new LiteDatabase(@"DRS.db"))
+            {
+                var WeaponRowsCount = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\WeaponsNEquipment.csv"));
+                var WeaponRows = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\WeaponsNEquipment.csv"));
+                var Weapons = Database.GetCollection<DS_BTDRSWeapons>("Weapons");
+                Weapons.EnsureIndex(x => x.WeaponID);
+
+                Weapons.Delete(Query.All(1));
+                tsLabel.Text = "Adding Weapons";
+                tsProgBar.Value = 0;
+                rowsCount = 0;
+                while (!WeaponRowsCount.EndOfStream)
+                {
+                    var line = WeaponRowsCount.ReadLine();
+                    var values = line.Split('|');
+                    if (values[0] != "WeaponID")
+                    {
+                        rowsCount = rowsCount + 1;
+                    }
+                }
+                tsProgBar.Maximum = rowsCount;
+
+
+                while (!WeaponRows.EndOfStream)
+                {
+                    var line = WeaponRows.ReadLine();
+                    var values = line.Split('|');
+                    if (values[0] != "WeaponID")
+                    {
+                        // decimal tonnage = decimal.Parse(values[8]);
+                        var Weapon = new DS_BTDRSWeapons
+                        {
+                            WeaponID = int.Parse(values[0]),
+                            Name = values[1],
+                            Heat = int.Parse(values[2]),
+                            Damage = values[3],
+                            Minimum = values[4],
+                            Short = values[5],
+                            Medium = values[6],
+                            Long = values[7],
+                            Tons = decimal.Parse(values[8], nfi),
+                            Crits = int.Parse(values[9]),
+                            Ammo = values[10],
+                            WeaponType = values[13]
+                        };
+                        Weapons.Insert(Weapon);
+                        tsProgBar.Value = tsProgBar.Value + 1;
+                    }
+
+
+                }
+
+
+                //AMMO
+                var AmmoRowsCount = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\Ammo.csv"));
+                var AmmoRows = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\Ammo.csv"));
+                var Ammos = Database.GetCollection<DS_BTDRSAmmo>("Ammos");
+                Ammos.EnsureIndex(x => x.AmmoID);
+
+                Ammos.Delete(Query.All(1));
+                tsLabel.Text = "Adding Ammo";
+                tsProgBar.Value = 0;
+                rowsCount = 0;
+                while (!AmmoRowsCount.EndOfStream)
+                {
+                    var line = AmmoRowsCount.ReadLine();
+                    var values = line.Split('|');
+                    if (values[0] != "AmmoID")
+                    {
+                        rowsCount = rowsCount + 1;
+                    }
+                }
+                tsProgBar.Maximum = rowsCount;
+                while (!AmmoRows.EndOfStream)
+                {
+                    var line = AmmoRows.ReadLine();
+                    var values = line.Split('|');
+                    if (values[0] != "AmmoID")
+                    {
+                        var Ammo = new DS_BTDRSAmmo
+                        {
+                            AmmoID = int.Parse(values[0]),
+                            AmmoName = values[1],
+                            Ammo = values[2],
+                            Tons = decimal.Parse(values[3], nfi),
+                            Cost = int.Parse(values[4]),
+                            BV = int.Parse(values[5])
+                        };
+                        Ammos.Insert(Ammo);
+                        tsProgBar.Value = tsProgBar.Value + 1;
+                    }
+                }
+            }
+            tsLabel.Text = "Initialization Complete.";
+        }
+
+        private void initializeMechConfigurationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //WEAPONS AND EQUIPMENT
+            int rowsCount = 0;
+            // Some language locals (eg. Hungarian) use "," as a decimal separator so we change that.
+            NumberFormatInfo nfi = new NumberFormatInfo();
+            nfi.NumberDecimalSeparator = ".";
+            using (var Database = new LiteDatabase(@"DRS.db"))
+            {
+
+                //MECH CONFIGURATIONS
+                var MechConfigsRowsCount = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\MechConfigs.csv"));
+                var MechConfigsRows = new StreamReader(File.OpenRead(Application.StartupPath + @"\Catalogs\MechConfigs.csv"));
+                var MechConfigs = Database.GetCollection<DS_BTDRSMechConfigs>("MechConfigs");
+                MechConfigs.EnsureIndex(x => x.Tons);
+
+                MechConfigs.Delete(Query.All(1));
+                tsLabel.Text = "Adding Configs";
+                tsProgBar.Value = 0;
+                rowsCount = 0;
+                while (!MechConfigsRowsCount.EndOfStream)
+                {
+                    var line = MechConfigsRowsCount.ReadLine();
+                    var values = line.Split('|');
+                    if (values[0] != "Tons")
+                    {
+                        rowsCount = rowsCount + 1;
+                    }
+                }
+                tsProgBar.Maximum = rowsCount;
+                while (!MechConfigsRows.EndOfStream)
+                {
+                    var line = MechConfigsRows.ReadLine();
+                    var values = line.Split('|');
+                    if (values[0] != "Tons")
+                    {
+                        var MechConfig = new DS_BTDRSMechConfigs
+                        {
+                            Tons = int.Parse(values[0]),
+                            StandarTons = decimal.Parse(values[1], nfi),
+                            EndoTons = decimal.Parse(values[2], nfi),
+                            HeadHP = int.Parse(values[3]),
+                            CTorsoHP = int.Parse(values[4]),
+                            LRTorsoHP = int.Parse(values[5]),
+                            LRArmsHP = int.Parse(values[6]),
+                            LRLegsHP = int.Parse(values[7]),
+                            MaxArmor = values[8]
+                        };
+                        MechConfigs.Insert(MechConfig);
+                        tsProgBar.Value = tsProgBar.Value + 1;
+                    }
+                }
+            }
+            tsLabel.Text = "Initialization Complete.";
         }
     }
 }

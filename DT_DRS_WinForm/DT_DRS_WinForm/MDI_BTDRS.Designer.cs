@@ -90,6 +90,7 @@
             this.tsProgBar = new System.Windows.Forms.ToolStripProgressBar();
             this.tsLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.initializeMechConfigurationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -322,7 +323,8 @@
             this.initializeWeaponsEquipmentToolStripMenuItem,
             this.initializeMechsToolStripMenuItem,
             this.initializeMechWarriorsToolStripMenuItem,
-            this.initializeWeaponsAndAmmoToolStripMenuItem});
+            this.initializeWeaponsAndAmmoToolStripMenuItem,
+            this.initializeMechConfigurationsToolStripMenuItem});
             this.toolsMenu.Name = "toolsMenu";
             this.toolsMenu.Size = new System.Drawing.Size(47, 25);
             this.toolsMenu.Text = "&Tools";
@@ -347,18 +349,21 @@
             this.initializeMechsToolStripMenuItem.Name = "initializeMechsToolStripMenuItem";
             this.initializeMechsToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
             this.initializeMechsToolStripMenuItem.Text = "Initialize Mechs";
+            this.initializeMechsToolStripMenuItem.Click += new System.EventHandler(this.initializeMechsToolStripMenuItem_Click);
             // 
             // initializeMechWarriorsToolStripMenuItem
             // 
             this.initializeMechWarriorsToolStripMenuItem.Name = "initializeMechWarriorsToolStripMenuItem";
             this.initializeMechWarriorsToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
             this.initializeMechWarriorsToolStripMenuItem.Text = "Initialize MechWarriors";
+            this.initializeMechWarriorsToolStripMenuItem.Click += new System.EventHandler(this.initializeMechWarriorsToolStripMenuItem_Click);
             // 
             // initializeWeaponsAndAmmoToolStripMenuItem
             // 
             this.initializeWeaponsAndAmmoToolStripMenuItem.Name = "initializeWeaponsAndAmmoToolStripMenuItem";
             this.initializeWeaponsAndAmmoToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
             this.initializeWeaponsAndAmmoToolStripMenuItem.Text = "Initialize Weapons and Ammo";
+            this.initializeWeaponsAndAmmoToolStripMenuItem.Click += new System.EventHandler(this.initializeWeaponsAndAmmoToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -574,6 +579,13 @@
             this.tsLabel.Size = new System.Drawing.Size(116, 17);
             this.tsLabel.Text = "Configuration Status";
             // 
+            // initializeMechConfigurationsToolStripMenuItem
+            // 
+            this.initializeMechConfigurationsToolStripMenuItem.Name = "initializeMechConfigurationsToolStripMenuItem";
+            this.initializeMechConfigurationsToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
+            this.initializeMechConfigurationsToolStripMenuItem.Text = "Initialize Mech Configurations";
+            this.initializeMechConfigurationsToolStripMenuItem.Click += new System.EventHandler(this.initializeMechConfigurationsToolStripMenuItem_Click);
+            // 
             // MDI_BTDRS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -663,6 +675,7 @@
         private System.Windows.Forms.ToolStripMenuItem initializeMechWarriorsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem initializeWeaponsAndAmmoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem armoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem initializeMechConfigurationsToolStripMenuItem;
     }
 }
 

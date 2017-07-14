@@ -126,7 +126,7 @@ namespace BT_DRS_WinForm
             {
                 if (txtName.Text == "" || txtAmmo.Text == "" || txtCrits.Text == "" || txtDamage.Text == "" || txtHeat.Text == "" || txtLong.Text == "" || txtMedium.Text == "" || txtMinimum.Text == "" || txtShort.Text == "" || txtTons.Text == "" || txtWeaponType.Text == "")
                 {
-                    MessageBox.Show("All info must be entered!", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("All info must be captured!", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return;
                 }
 

@@ -61,6 +61,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -77,6 +85,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -113,11 +129,6 @@
             "AssemblyAsmDisplayName" = "8:LiteDB, Version=2.0.4.0, Culture=neutral, PublicKeyToken=4ee40123013c9f27, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_BA63048514E92C912763485C27B1C44F"
-                    {
-                    "Name" = "8:LiteDB.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:LiteDB.dll"
             "TargetName" = "8:"
@@ -222,12 +233,12 @@
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:BetaDevs"
+        "Manufacturer" = "8:Mexkal Games"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
         "Title" = "8:BTDRS_Install"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:BetaDevs"
+        "ARPCONTACT" = "8:Mexkal Games"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
@@ -833,7 +844,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_CE24566A7B3E429FAF6E8D7CC45BA708"
             {
-            "SourcePath" = "8:..\\DT_DRS_WinForm\\obj\\Release\\BT_DRS_WinForm.exe"
+            "SourcePath" = "8:..\\DT_DRS_WinForm\\obj\\Debug\\BT_DRS_WinForm.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_2737B0DB36A7481991D1BBF026ACB784"

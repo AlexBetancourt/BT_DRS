@@ -1202,7 +1202,7 @@
             0});
             this.nmTons.Location = new System.Drawing.Point(268, 71);
             this.nmTons.Minimum = new decimal(new int[] {
-            25,
+            20,
             0,
             0,
             0});
