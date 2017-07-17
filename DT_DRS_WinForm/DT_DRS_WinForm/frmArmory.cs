@@ -219,5 +219,166 @@ namespace BT_DRS_WinForm
             LoadWnEList();
             ClearFields();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            LoadWnEList();
+            ClearFields();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            LoadAmmoList();
+            ClearFieldsAmmo();
+        }
+
+        private void LoadAmmoEList()
+        {
+            try
+            {
+                lbAmmo.Items.Clear();
+                using (var db = new LiteDatabase(@"DRS.db"))
+                {
+                    var Ammos = db.GetCollection<DS_BTDRSAmmo>("Ammos");
+                    Ammos.EnsureIndex(x => x.AmmoID);
+
+                    foreach (DS_BTDRSAmmo Ammo in Ammos.FindAll())
+                    {
+                        lbAmmo.Items.Add(Ammo.AmmoName);
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void ClearFieldsAmmo()
+        {
+            txtNameAmmo.Text = "";
+            txtAmmoA.Text = "";
+            txtTonsAmmo.Text = "";
+            txtCostAmmo.Text = "";
+            txtBVAmmo.Text = "";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtNameAmmo.Text== "" || txtAmmoA.Text == "" || txtTonsAmmo.Text == "" || txtCostAmmo.Text == "" || txtBVAmmo.Text == "" )
+                {
+                    MessageBox.Show("All info must be captured!", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+
+                using (var db = new LiteDatabase(@"DRS.db"))
+                {
+                    var Ammos = db.GetCollection<DS_BTDRSAmmo>("Ammos");
+                    Ammos.EnsureIndex(x => x.AmmoID);
+                    int AmmoIDTemp;
+                    DS_BTDRSAmmo AmmoSearch = Ammos.FindOne(Query.EQ("AmmoName", txtNameAmmo.Text.Trim()));
+                    if (AmmoSearch != null)
+                    {
+                        AmmoIDTemp = AmmoSearch.AmmoID;
+                        Ammos.Delete(Query.EQ("AmmoName", AmmoSearch.AmmoName.Trim()));
+                        AmmoSearch.AmmoID = AmmoIDTemp;
+                        AmmoSearch.AmmoName = txtNameAmmo.Text;
+                        AmmoSearch.Tons = decimal.Parse(txtTons.Text);
+                        AmmoSearch.Cost = int.Parse(txtCostAmmo.Text);
+                        AmmoSearch.BV = int.Parse(txtBVAmmo.Text);
+                        AmmoSearch.Ammo = txtAmmoA.Text;
+                        Ammos.Insert(AmmoSearch);
+                    }
+                    else
+                    {
+                        DS_BTDRSAmmo Ammo = new DS_BTDRSAmmo
+                        {
+                            AmmoID = Ammos.Count() + 1,
+                            AmmoName = txtNameAmmo.Text,
+                            Tons = decimal.Parse(txtDamage.Text),
+                            Ammo = txtHeat.Text,
+                            Cost = int.Parse(txtMinimum.Text),
+                            BV = int.Parse(txtShort.Text)
+                            
+                        };
+                        Ammos.Insert(Ammo);
+                    }
+                    LoadAmmoList();
+                    ClearFieldsAmmo();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            using (var db = new LiteDatabase(@"DRS.db"))
+            {
+                var Ammos = db.GetCollection<DS_BTDRSAmmo>("Ammos");
+                Ammos.EnsureIndex(x => x.AmmoID);
+
+                DS_BTDRSAmmo Ammo = Ammos.FindOne(Query.EQ("AmmoName", txtNameAmmo.Text));
+                if (Ammo != null)
+                {
+                    if (MessageBox.Show("Do you really want to delete this Ammo??? (this action cannot be undone!)", "Deleting Ammo", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                    {
+                        Ammos.Delete(Query.EQ("AmmoName", Ammo.AmmoName));
+                    }
+                }
+            }
+            LoadAmmoList();
+            ClearFieldsAmmo();
+        }
+
+        private void lbAmmo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (lbAmmo.SelectedItems.Count > 0)
+                {
+                    string[] MDL = new string[3];
+                    MDL = lbAmmo.SelectedItem.ToString().Split('(');
+                    if (MDL.Length > 0)
+                    {
+                        txtNameAmmo.Text = MDL[0];
+                        //txtCallSign.Text = MDL[1].Substring(0, MDL[1].Length - 1);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+        }
+
+        private void txtNameAmmo_TextChanged(object sender, EventArgs e)
+        {
+            using (var db = new LiteDatabase(@"DRS.db"))
+            {
+                var Ammos = db.GetCollection<DS_BTDRSAmmo>("Ammos");
+                Ammos.EnsureIndex(x => x.AmmoName);
+
+                DS_BTDRSAmmo Ammo = Ammos.FindOne(Query.EQ("AmmoName", txtNameAmmo.Text.TrimEnd()));
+                if (Ammo != null)
+                {
+                    txtName.Text = Ammo.AmmoName.ToString();
+                    txtCostAmmo.Text = Ammo.Cost.ToString();
+                    txtTonsAmmo.Text = Ammo.Tons.ToString();
+                    txtBVAmmo.Text = Ammo.BV.ToString();
+                    txtAmmoA.Text = Ammo.Ammo.ToString();
+                  
+
+                }
+
+            }
+        }
     }
 }

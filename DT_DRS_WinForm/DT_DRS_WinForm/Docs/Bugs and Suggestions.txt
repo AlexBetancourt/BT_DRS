@@ -71,7 +71,7 @@ DONE	Sort the MechBay, either by weight or by alphabetical order. When I added t
 
 DONE	Ran into an error modifying a pilot. I made a test pilot, saved it and added them to an open mech. Then I went back and tried to modify the pilot to change their piloting and gunnery. When I tried to save the modified pilot, it gave me an “Object reference not set to an instance of an object” error. I think the problem was that I also created a second new mechwarrior when I tried to edit the first. I accidentally saved a mechwarrior with no name or callsign. I don’t think the program knew how to handle them not having a name. When I tried to delete the pilot it threw another error and the program crashed. Probably need to add an alert that prevents people from saving nameless mechwarriors. (I was able to delete all of the mechwarriors with the Clear option)
 
-This is absolutely a viable build that I could run a game with. It would be nice having the parts preloaded for the mech variants you provided, but not essential.
+DONE	This is absolutely a viable build that I could run a game with. It would be nice having the parts preloaded for the mech variants you provided, but not essential.
 
 The MechLab needs some work. Make multi-slot weapons actually use more than one slot. I can put an AC 20 in my mech’s head, replacing the cockpit even. Still, it works for what it needs to do.
 

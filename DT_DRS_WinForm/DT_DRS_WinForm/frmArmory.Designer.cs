@@ -70,6 +70,9 @@
             this.txtBVAmmo = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.lbAmmo = new System.Windows.Forms.ListBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tpWnE.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -119,6 +122,7 @@
             this.button3.TabIndex = 29;
             this.button3.Text = "Refresh";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -351,6 +355,8 @@
             // 
             // tpAmmo
             // 
+            this.tpAmmo.Controls.Add(this.button5);
+            this.tpAmmo.Controls.Add(this.button4);
             this.tpAmmo.Controls.Add(this.groupBox2);
             this.tpAmmo.Controls.Add(this.lbAmmo);
             this.tpAmmo.Location = new System.Drawing.Point(4, 22);
@@ -363,6 +369,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button6);
             this.groupBox2.Controls.Add(this.txtNameAmmo);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.txtAmmoA);
@@ -386,6 +393,7 @@
             this.txtNameAmmo.Name = "txtNameAmmo";
             this.txtNameAmmo.Size = new System.Drawing.Size(197, 20);
             this.txtNameAmmo.TabIndex = 26;
+            this.txtNameAmmo.TextChanged += new System.EventHandler(this.txtNameAmmo_TextChanged);
             // 
             // label11
             // 
@@ -467,6 +475,37 @@
             this.lbAmmo.Name = "lbAmmo";
             this.lbAmmo.Size = new System.Drawing.Size(134, 277);
             this.lbAmmo.TabIndex = 1;
+            this.lbAmmo.SelectedIndexChanged += new System.EventHandler(this.lbAmmo_SelectedIndexChanged);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(560, 289);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(67, 25);
+            this.button4.TabIndex = 38;
+            this.button4.Text = "Refresh";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(493, 289);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(67, 25);
+            this.button5.TabIndex = 37;
+            this.button5.Text = "Delete";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(333, 101);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(100, 20);
+            this.button6.TabIndex = 36;
+            this.button6.Text = "Save";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // frmArmory
             // 
@@ -532,5 +571,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button6;
     }
 }
